@@ -3,7 +3,12 @@ import ProgressBar from "../components/common/ProgressBar";
 import MenuCard from "../components/common/MenuCard";
 import ProgressCard from "../components/dashboard/ProgressCard";
 
+import { getAllStickers } from "../database/repositories/StickerRepository";
+
+
 export default function HomeScreen() {
+  console.log(getAllStickers());
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
@@ -26,37 +31,37 @@ export default function HomeScreen() {
         0 / 980 Stickere
       </Text> */}
 
-<View style={styles.progressContainer}>
-  <ProgressCard owned={0} total={980} />
-</View>
+      <View style={styles.progressContainer}>
+        <ProgressCard owned={0} total={980} />
+      </View>
       
-<View style={styles.row}>
-    <MenuCard
-        title="Album"
-        icon="book-outline"
-        onPress={() => console.log("Album")}
-    />
-
-    <MenuCard
-        title="Search"
-        icon="search-outline"
-        onPress={() => console.log("Search")}
-    />
-</View>
-
-<View style={styles.row}>
-    <MenuCard
-        title="Duplicates"
-        icon="copy-outline"
-        onPress={() => console.log("Duplicates")}
-    />
-
-    <MenuCard
-        title="Statistics"
-        icon="stats-chart-outline"
-        onPress={() => console.log("Statistics")}
-    />
-</View>
+      <View style={styles.row}>
+          <MenuCard
+              title="Album"
+              icon="book-outline"
+              onPress={() => console.log("Album")}
+          />
+      
+          <MenuCard
+              title="Search"
+              icon="search-outline"
+              onPress={() => console.log("Search")}
+          />
+      </View>
+      
+      <View style={styles.row}>
+          <MenuCard
+              title="Duplicates"
+              icon="copy-outline"
+              onPress={() => console.log("Duplicates")}
+          />
+      
+          <MenuCard
+              title="Statistics"
+              icon="stats-chart-outline"
+              onPress={() => console.log("Statistics")}
+          />
+      </View>
       
     </View>
   );

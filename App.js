@@ -21,8 +21,23 @@ const styles = StyleSheet.create({
 });
 */
 
+import { useEffect } from "react";
+import { initializeDatabase } from "./src/database/schema";
+import { seedDatabase } from "./src/database/seed";
 import AppNavigator from "./src/navigation/AppNavigator";
 
+/*
 export default function App() {
+  return <AppNavigator />;
+}
+*/
+
+export default function App() {
+
+  useEffect(() => {
+    initializeDatabase();
+    seedDatabase();
+  }, []);
+
   return <AppNavigator />;
 }
