@@ -1,4 +1,4 @@
-const Colors = {
+const ColorsOld = {
   // primary: "#0057B8",
   // secondary: "#00A651",
   // accent: "#FFD100",
@@ -19,6 +19,25 @@ const Colors = {
 
   text: "#1F2937",
 
+  subtitle: "#6B7280",
+
+  border: "#E5E7EB",
+};
+
+
+const Colors = {
+  primary: "#0057B8",
+  secondary: "#00A651",
+  accent: "#FFD100",
+
+  success: "#4CAF50",
+  warning: "#FFC107",
+  danger: "#F44336",
+
+  background: "#F5F7FA",
+  surface: "#FFFFFF",
+
+  text: "#1F2937",
   subtitle: "#6B7280",
 
   border: "#E5E7EB",
