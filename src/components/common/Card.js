@@ -9,7 +9,7 @@ export default function Card({ children, style }) {
   );
 }
 
-const styles = StyleSheet.create({
+const stylesOld = StyleSheet.create({
   card: {
     backgroundColor: Colors.surface,
     borderRadius: 16,
@@ -17,5 +17,16 @@ const styles = StyleSheet.create({
     marginVertical: 8,
 
     elevation: 2,
+  },
+});
+
+const styles = StyleSheet.create({
+  card: {
+    width: "100%",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 16,
+    padding: 16,
+
+    elevation: 3,
   },
 });

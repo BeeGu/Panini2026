@@ -25,7 +25,7 @@ const ColorsOld = {
 };
 
 
-const Colors = {
+const Colors2 = {
   primary: "#0057B8",
   secondary: "#00A651",
   accent: "#FFD100",
@@ -41,6 +41,23 @@ const Colors = {
   subtitle: "#6B7280",
 
   border: "#E5E7EB",
+};
+
+const Colors = {
+  primary: "#0057B8",
+  secondary: "#00A651",
+
+  background: "#F4F6F8",
+  surface: "#FFFFFF",
+
+  text: "#1F2937",
+  textSecondary: "#6B7280",
+
+  border: "#E5E7EB",
+
+  success: "#16A34A",
+  warning: "#F59E0B",
+  danger: "#DC2626",
 };
 
 export default Colors;

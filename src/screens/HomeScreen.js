@@ -1,39 +1,63 @@
 import { View, Text, StyleSheet } from "react-native";
 import ProgressBar from "../components/common/ProgressBar";
-
+import MenuCard from "../components/common/MenuCard";
+import ProgressCard from "../components/dashboard/ProgressCard";
 
 export default function HomeScreen() {
-  console.log("HomeScreen rendered");
   return (
     <View style={styles.container}>
       <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
 
-
-<View style={{ width: "80%" }}>
-  <ProgressBar progress={25} />
-  {/*
-  <ProgressBar progress={80} color="green" />
-  
-  <ProgressBar progress={50} height={20} />
-  */}
-</View>
-
-      
-{/* <View
-  style={{
-    width: 200,
-    height: 20,
-    backgroundColor: "red",
-  }}
-/> */}
-      
       <Text style={styles.subtitle}>
         Album FIFA World Cup 2026
       </Text>
 
+      {/*
+      <View style={styles.progressContainer}>
+        <ProgressBar progress={25} />
+        
+        <ProgressBar progress={80} color="green" />
+        
+        <ProgressBar progress={50} height={20} />
+        
+      </View>
+
       <Text style={styles.progress}>
         0 / 980 Stickere
-      </Text>
+      </Text> */}
+
+<View style={styles.progressContainer}>
+  <ProgressCard owned={0} total={980} />
+</View>
+      
+<View style={styles.row}>
+    <MenuCard
+        title="Album"
+        icon="book-outline"
+        onPress={() => console.log("Album")}
+    />
+
+    <MenuCard
+        title="Search"
+        icon="search-outline"
+        onPress={() => console.log("Search")}
+    />
+</View>
+
+<View style={styles.row}>
+    <MenuCard
+        title="Duplicates"
+        icon="copy-outline"
+        onPress={() => console.log("Duplicates")}
+    />
+
+    <MenuCard
+        title="Statistics"
+        icon="stats-chart-outline"
+        onPress={() => console.log("Statistics")}
+    />
+</View>
+      
     </View>
   );
 }
@@ -41,9 +65,9 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: "#F4F6F8",
+    paddingTop: 50,
+    alignItems: "center",
   },
 
   title: {
@@ -57,9 +81,21 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
 
+  progressContainer: {
+    width: "90%",
+    marginTop: 20,
+  },
+  
   progress: {
-    marginTop: 40,
+    marginTop: 20,
+    marginBottom: 20,
     fontSize: 22,
     fontWeight: "bold",
+  },
+
+  row: {
+    flexDirection: "row",
+    width: "90%",
+    marginBottom: 16,
   },
 });
