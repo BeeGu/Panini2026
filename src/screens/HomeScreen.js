@@ -1,22 +1,32 @@
-/*
-import { View, Text } from "react-native";
-
-export default function HomeScreen() {
-  return (
-    <View>
-      <Text>Panini Tracker 2026</Text>
-    </View>
-  );
-}
-*/
-
 import { View, Text, StyleSheet } from "react-native";
+import ProgressBar from "../components/common/ProgressBar";
+
 
 export default function HomeScreen() {
+  console.log("HomeScreen rendered");
   return (
     <View style={styles.container}>
       <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
 
+
+<View style={{ width: "80%" }}>
+  <ProgressBar progress={25} />
+  {/*
+  <ProgressBar progress={80} color="green" />
+  
+  <ProgressBar progress={50} height={20} />
+  */}
+</View>
+
+      
+{/* <View
+  style={{
+    width: 200,
+    height: 20,
+    backgroundColor: "red",
+  }}
+/> */}
+      
       <Text style={styles.subtitle}>
         Album FIFA World Cup 2026
       </Text>
