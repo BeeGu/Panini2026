@@ -1,4 +1,4 @@
-const ColorsOld = {
+const Colors1 = {
   // primary: "#0057B8",
   // secondary: "#00A651",
   // accent: "#FFD100",
@@ -43,7 +43,7 @@ const Colors2 = {
   border: "#E5E7EB",
 };
 
-const Colors = {
+const Colors3 = {
   primary: "#0057B8",
   secondary: "#00A651",
 
@@ -58,6 +58,26 @@ const Colors = {
   success: "#16A34A",
   warning: "#F59E0B",
   danger: "#DC2626",
+};
+
+const Colors = {
+  primary: "#0057B8",
+  secondary: "#F4F6F8",
+
+  success: "#22C55E",
+  warning: "#F59E0B",
+  danger: "#EF4444",
+
+  white: "#FFFFFF",
+
+  text: "#111827",
+  textSecondary: "#6B7280",
+
+  border: "#E5E7EB",
+
+  card: "#FFFFFF",
+
+  background: "#F4F6F8",
 };
 
 export default Colors;

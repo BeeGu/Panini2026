@@ -1,45 +1,40 @@
+// import { useEffect, useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { View, Text, StyleSheet } from "react-native";
-import ProgressBar from "../components/common/ProgressBar";
 import MenuCard from "../components/common/MenuCard";
 import ProgressCard from "../components/dashboard/ProgressCard";
-
-import { getAllStickers } from "../database/repositories/StickerRepository";
-
+import useStickers from "../hooks/useStickers";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
-  console.log(getAllStickers());
+  const navigation = useNavigation();
+
+  const {
+      ownedCount,
+      totalCount,
+  } = useStickers();
+  console.log("🔰 HomeScreen useStickers hook", { ownedCount, totalCount });
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
 
       <Text style={styles.subtitle}>
         Album FIFA World Cup 2026
       </Text>
 
-      {/*
       <View style={styles.progressContainer}>
-        <ProgressBar progress={25} />
-        
-        <ProgressBar progress={80} color="green" />
-        
-        <ProgressBar progress={50} height={20} />
-        
-      </View>
-
-      <Text style={styles.progress}>
-        0 / 980 Stickere
-      </Text> */}
-
-      <View style={styles.progressContainer}>
-        <ProgressCard owned={0} total={980} />
+        <ProgressCard
+            owned={ownedCount}
+            total={totalCount}
+        />
       </View>
       
       <View style={styles.row}>
           <MenuCard
               title="Album"
               icon="book-outline"
-              onPress={() => console.log("Album")}
+              onPress={() => navigation.navigate("Album")}
           />
       
           <MenuCard
@@ -63,7 +58,7 @@ export default function HomeScreen() {
           />
       </View>
       
-    </View>
+    </SafeAreaView>
   );
 }
 

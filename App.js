@@ -24,13 +24,8 @@ const styles = StyleSheet.create({
 import { useEffect } from "react";
 import { initializeDatabase } from "./src/database/schema";
 import { seedDatabase } from "./src/database/seed";
+import StickerProvider from "./src/context/StickerProvider";
 import AppNavigator from "./src/navigation/AppNavigator";
-
-/*
-export default function App() {
-  return <AppNavigator />;
-}
-*/
 
 export default function App() {
 
@@ -38,6 +33,10 @@ export default function App() {
     initializeDatabase();
     seedDatabase();
   }, []);
-
-  return <AppNavigator />;
+  
+  return (
+    <StickerProvider>
+      <AppNavigator />
+    </StickerProvider>
+  );
 }

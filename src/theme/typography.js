@@ -1,6 +1,6 @@
 // typography.js
 
-const TypographyOld = {
+const Typography1 = {
   h1: 32,
   h2: 24,
   h3: 20,

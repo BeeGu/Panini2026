@@ -2,12 +2,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import HomeScreen from "../screens/HomeScreen";
+import AlbumScreen from "../screens/AlbumScreen";
+
+import BottomTabs from "./BottomTabs";
 
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
     <NavigationContainer>
+{/*
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
@@ -24,7 +28,14 @@ export default function AppNavigator() {
             title: "Panini Tracker 2026",
           }}
         />
+        <Stack.Screen
+            name="Album"
+            component={AlbumScreen}
+        />
       </Stack.Navigator>
+*/}
+      <BottomTabs/>
+      
     </NavigationContainer>
   );
 }

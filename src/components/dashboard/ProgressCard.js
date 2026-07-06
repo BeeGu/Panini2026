@@ -13,6 +13,9 @@ export default function ProgressCard({
       <Text style={styles.title}>Album Progress</Text>
 
       <ProgressBar progress={percent} />
+      {/* <ProgressBar progress={25} />
+      <ProgressBar progress={80} color="green" />
+      <ProgressBar progress={50} height={20} /> */}
 
       <Text style={styles.progress}>
         {owned} / {total} ({percent}%)
