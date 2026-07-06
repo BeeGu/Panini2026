@@ -1,21 +1,28 @@
-# Panini Tracker 2026
+# 🏆 Panini Tracker 2026
 
-Android application for managing the official Panini FIFA World Cup 2026 sticker collection.
+Panini Tracker 2026 este o aplicație Android realizată cu React Native + Expo pentru gestionarea albumului Panini FIFA World Cup 2026.
 
-## Features
+## Funcționalități
 
-- Offline
-- Search stickers
-- Track duplicates
-- Missing stickers
-- Statistics
-- SQLite database
+- ✅ Album
+- ✅ Căutare
+- ✅ Filtrare
+- ✅ SQLite
+- 🚧 Statistici
+- 🚧 Duplicates
+- 🚧 Import Excel
+- 🚧 Backup
 
-## Roadmap
+## Tehnologii
 
-- [x] Initial project
-- [ ] Dashboard
-- [ ] Album
-- [ ] Search
-- [ ] Statistics
-- [ ] Backup
+- React Native
+- Expo SDK 57
+- Expo SQLite
+- React Navigation
+- Expo Vector Icons
+
+## Instalare
+
+```bash
+npm install
+npx expo start

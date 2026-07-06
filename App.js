@@ -24,14 +24,17 @@ const styles = StyleSheet.create({
 import { useEffect } from "react";
 import { initializeDatabase } from "./src/database/schema";
 import { seedDatabase } from "./src/database/seed";
+import { initializeAppDatabase } from "./src/database/DatabaseManager";
 import StickerProvider from "./src/context/StickerProvider";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 export default function App() {
 
   useEffect(() => {
-    initializeDatabase();
-    seedDatabase();
+    // initializeDatabase();
+    // seedDatabase();
+
+    initializeAppDatabase();
   }, []);
   
   return (

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import StickerContext from "./StickerContext";
 
-import {
-  getAll,
-  toggleOwned,
-} from "../database/repositories/StickerRepository";
+// import {
+//   getAll,
+//   toggleOwned,
+// } from "../database/repositories/StickerRepository";
+import StickerRepository from "../database/repositories/StickerRepository";
 
 export default function StickerProvider({ children }) {
 
@@ -15,11 +16,13 @@ export default function StickerProvider({ children }) {
   }, []);
 
   function loadStickers() {
-    setStickers(getAll());
+    // setStickers(getAll());
+    setStickers(StickerRepository.getAll());
   }
 
   function toggleSticker(id) {
-    toggleOwned(id);
+    // toggleOwned(id);
+    StickerRepository.toggleOwned(id);
     loadStickers();
   }
 

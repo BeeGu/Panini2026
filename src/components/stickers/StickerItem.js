@@ -3,6 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
+import { formatStickerNumber } from "../../utils/formatters";
 
 export default function StickerItem({ sticker, onPress }) {
 
@@ -23,8 +24,11 @@ export default function StickerItem({ sticker, onPress }) {
 
                 <View style={styles.header}>
 
-                    <Text style={styles.number}>
+                  {/* <Text style={styles.number}>
                         #{sticker.number}
+                    </Text> */}
+                    <Text>
+                        {formatStickerNumber(sticker.number)}
                     </Text>
 
                     {sticker.duplicates > 0 && (

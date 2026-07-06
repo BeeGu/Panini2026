@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { FlatList, View, Text, StyleSheet } from "react-native";
+import { FlatList, View, Text, SectionList, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import StickerItem from "../components/stickers/StickerItem";
@@ -15,6 +15,7 @@ import { FILTERS } from "../constants/filters";
 import { ScrollView } from "react-native";
 import FilterChip from "../components/common/FilterChip";
 import useAlbum from "../hooks/useAlbum";
+import SectionHeader from "../components/album/SectionHeader";
 
 export default function AlbumScreen() {
 
@@ -43,13 +44,14 @@ const {
     filter,
     setFilter,
     toggleSticker,
+    sections,
 } = useAlbum();
   
   const filters = [
       {
           key: FILTERS.ALL,
           // title: `All (${stats.all})`,
-          title={`All (${stats.total})`}
+          title: `All (${stats.total})`,
       },
       {
           key: FILTERS.MISSING,
@@ -138,7 +140,7 @@ const {
       </View>
 
       
-      <FlatList
+      {/*<FlatList
         data={filteredStickers}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
@@ -154,7 +156,23 @@ const {
         contentContainerStyle={{
             paddingBottom: 24,
         }}
-      />
+      /> */}
+
+      <SectionList
+        sections={sections}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+            <StickerItem
+                sticker={item}
+                onPress={() => toggleSticker(item.id)}
+            />
+        )}
+        renderSectionHeader={({ section }) => (
+            <SectionHeader
+                title={section.title}
+            />
+        )}
+    />
 
     </SafeAreaView>
   );

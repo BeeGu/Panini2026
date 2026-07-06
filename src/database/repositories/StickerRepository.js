@@ -1,5 +1,5 @@
 import db from "../db";
-
+/*
 export function getAll() {
   return db.getAllSync(
     "SELECT * FROM stickers ORDER BY number"
@@ -42,3 +42,37 @@ export function toggleOwned(id) {
 
   return newValue;
 }
+*/
+
+const StickerRepository = {
+
+    getAll() {
+        return db.getAllSync(
+            "SELECT * FROM stickers ORDER BY number"
+        );
+    },
+
+    toggleOwned(id) {
+        const sticker = db.getFirstSync(
+            "SELECT owned FROM stickers WHERE id=?",
+            [id]
+        );
+
+        // db.runSync(
+        //     "UPDATE stickers SET owned=? WHERE id=?",
+        //     [sticker.owned ? 0 : 1, id]
+        // );
+
+        const newValue = sticker.owned ? 0 : 1;
+
+        db.runSync(
+          "UPDATE stickers SET owned = ? WHERE id = ?",
+          [newValue, id]
+        );
+      
+        return newValue;
+    },
+
+};
+
+export default StickerRepository;
