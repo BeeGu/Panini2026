@@ -7,6 +7,7 @@ import { FILTERS } from "../constants/filters";
 // } from "../database/repositories/StickerRepository";
 
 import StickerRepository from "../database/repositories/StickerRepository";
+import AlbumService from "../services/AlbumService";
 
 export default function useAlbum() {
 
@@ -20,12 +21,14 @@ export default function useAlbum() {
 
     function loadStickers() {
         // setStickers(getAll());
-        setStickers(StickerRepository.getAll());
+        // setStickers(StickerRepository.getAll());
+        setStickers(AlbumService.load());
     }
 
     function toggleSticker(id) {
         // toggleOwned(id);
-        StickerRepository.toggleOwned(id)
+        // StickerRepository.toggleOwned(id);
+        AlbumService.toggleSticker(id);
         loadStickers();
     }
 

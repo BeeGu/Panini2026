@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 
-export default function SettingsScreen(){
+export default function LoadingView(){
 
     return(
 
@@ -12,11 +12,7 @@ export default function SettingsScreen(){
             }}
         >
 
-            <Text>
-
-                Settings
-
-            </Text>
+            <ActivityIndicator size="large"/>
 
         </View>
 

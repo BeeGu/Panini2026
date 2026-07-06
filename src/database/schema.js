@@ -41,7 +41,7 @@ export function initializeDatabaseOld() {
   `);
 }
 
-export function initializeDatabase() {
+export function initializeDatabase2() {
     db.execSync(`
         CREATE TABLE IF NOT EXISTS stickers(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -55,7 +55,7 @@ export function initializeDatabase() {
 
 }
 
-export function resetDatabase() {
+export function resetDatabaseOld() {
 
   db.execSync(`
     DROP TABLE IF EXISTS pack_stickers;
@@ -82,4 +82,52 @@ export function resetDatabase() {
   `);
 
   initializeDatabase();
+}
+
+
+export function initializeDatabase() {
+
+    db.execSync(`
+        PRAGMA foreign_keys = ON;
+    `);
+
+    db.execSync(`
+        CREATE TABLE IF NOT EXISTS sections (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL UNIQUE,
+            sort_order INTEGER
+        );
+    `);
+
+    db.execSync(`
+        CREATE TABLE IF NOT EXISTS teams (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            section_id INTEGER NOT NULL,
+            code TEXT,
+            name TEXT NOT NULL,
+            sort_order INTEGER,
+
+            FOREIGN KEY(section_id)
+                REFERENCES sections(id)
+                ON DELETE CASCADE
+        );
+    `);
+
+    db.execSync(`
+        CREATE TABLE IF NOT EXISTS stickers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            team_id INTEGER NOT NULL,
+            code TEXT UNIQUE,
+            number INTEGER NOT NULL,
+            name TEXT,
+            owned INTEGER DEFAULT 0,
+            duplicates INTEGER DEFAULT 0,
+            notes TEXT,
+
+            FOREIGN KEY(team_id)
+                REFERENCES teams(id)
+                ON DELETE CASCADE
+        );
+    `);
+
 }

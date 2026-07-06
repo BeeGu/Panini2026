@@ -4,10 +4,11 @@ import { View, Text, StyleSheet } from "react-native";
 import MenuCard from "../components/common/MenuCard";
 import ProgressCard from "../components/dashboard/ProgressCard";
 import useStickers from "../hooks/useStickers";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
+  // const insets = useSafeAreaInsets();
 
   const {
       ownedCount,
@@ -16,7 +17,15 @@ export default function HomeScreen() {
   console.log("🔰 HomeScreen useStickers hook", { ownedCount, totalCount });
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+      style={styles.container}
+      /*style={[
+          styles.container,
+          {
+              paddingTop: insets.top,
+          },
+      ]}*/
+    >
       <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
 
       <Text style={styles.subtitle}>
@@ -66,7 +75,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F4F6F8",
-    paddingTop: 50,
+    // paddingTop: 50,
     alignItems: "center",
   },
 

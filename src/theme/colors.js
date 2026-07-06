@@ -60,7 +60,7 @@ const Colors3 = {
   danger: "#DC2626",
 };
 
-const Colors = {
+const Colors4 = {
   primary: "#0057B8",
   secondary: "#F4F6F8",
 
@@ -78,6 +78,23 @@ const Colors = {
   card: "#FFFFFF",
 
   background: "#F4F6F8",
+};
+
+const Colors = {
+primary:     "#0057B8",
+secondary:   "#F7C600",
+success:     "#2E7D32",
+danger:      "#D32F2F",
+
+background:  "#F5F7FA",
+
+card:        "#FFFFFF",
+
+border:      "#E5E7EB",
+
+text:        "#111827",
+
+textLight:   "#6B7280",
 };
 
 export default Colors;

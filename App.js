@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
 */
 
 import { useEffect } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
 import { initializeDatabase } from "./src/database/schema";
 import { seedDatabase } from "./src/database/seed";
 import { initializeAppDatabase } from "./src/database/DatabaseManager";
@@ -37,9 +39,12 @@ export default function App() {
     initializeAppDatabase();
   }, []);
   
-  return (
-    <StickerProvider>
-      <AppNavigator />
-    </StickerProvider>
-  );
+
+    return (
+        <SafeAreaProvider>
+            <StickerProvider>
+                <AppNavigator />
+            </StickerProvider>
+        </SafeAreaProvider>
+    );
 }

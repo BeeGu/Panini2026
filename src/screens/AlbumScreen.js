@@ -16,6 +16,8 @@ import { ScrollView } from "react-native";
 import FilterChip from "../components/common/FilterChip";
 import useAlbum from "../hooks/useAlbum";
 import SectionHeader from "../components/album/SectionHeader";
+import AlbumHeader from "../components/album/AlbumHeader";
+import EmptyState from "../components/common/EmptyState";
 
 export default function AlbumScreen() {
 
@@ -106,16 +108,24 @@ const {
   return (
     <SafeAreaView style={styles.container}>
 
+      <AlbumHeader
+          owned={stats.owned}
+          total={stats.total}
+      />
+
+      
       <View style={styles.header}>
 
+        {/*
         <Text style={styles.title}>
           Album
         </Text>
 
         <Text style={styles.subtitle}>
-          {/* {ownedCount} / {totalCount} stickere */}
+          // {ownedCount} / {totalCount} stickere
           {stats.owned} / {stats.total} stickere
         </Text>
+        */}
 
       <SearchBar
           value={search}
@@ -156,9 +166,14 @@ const {
         contentContainerStyle={{
             paddingBottom: 24,
         }}
-      /> */}
-
-      <SectionList
+        ListEmptyComponent={
+            <EmptyState
+                text="Nu s-au găsit stickere."
+            />
+        }
+      />*/}
+      
+    <SectionList
         sections={sections}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
@@ -172,6 +187,11 @@ const {
                 title={section.title}
             />
         )}
+        ListEmptyComponent={
+              <EmptyState
+                  text="Nu s-au găsit stickere."
+              />
+        }
     />
 
     </SafeAreaView>
