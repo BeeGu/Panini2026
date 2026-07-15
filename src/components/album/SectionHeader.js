@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 
 import Colors from "../../theme/colors";
+import Spacing from "../../theme/spacing";
+import Typography from "../../theme/typography";
 
 export default function SectionHeader({ title }) {
 
@@ -20,16 +22,17 @@ export default function SectionHeader({ title }) {
 
 const styles = StyleSheet.create({
 
-    container:{
-        backgroundColor:"#EEF4FF",
-        paddingVertical:10,
-        paddingHorizontal:20,
+    container: {
+        backgroundColor: Colors.background,
+        paddingHorizontal: Spacing.lg,
+        paddingVertical: Spacing.sm,
     },
 
-    title:{
-        fontWeight:"700",
-        fontSize:18,
-        color:Colors.primary,
-    }
+    title: {
+        fontSize: Typography.body,
+        fontWeight: "700",
+        color: Colors.primary,
+        textTransform: "uppercase",
+    },
 
 });

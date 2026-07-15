@@ -1,0 +1,82 @@
+[
+  {
+    "sort_order": 1,
+    "code": "A",
+    "name": "Group A"
+  },
+  {
+    "sort_order": 2,
+    "code": "B",
+    "name": "Group B"
+  },
+  {
+    "sort_order": 3,
+    "code": "C",
+    "name": "Group C"
+  },
+  {
+    "sort_order": 4,
+    "code": "D",
+    "name": "Group D"
+  },
+  {
+    "sort_order": 5,
+    "code": "E",
+    "name": "Group E"
+  },
+  {
+    "sort_order": 6,
+    "code": "F",
+    "name": "Group F"
+  },
+  {
+    "sort_order": 7,
+    "code": "G",
+    "name": "Group G"
+  },
+  {
+    "sort_order": 8,
+    "code": "H",
+    "name": "Group H"
+  },
+  {
+    "sort_order": 9,
+    "code": "I",
+    "name": "Group I"
+  },
+  {
+    "sort_order": 10,
+    "code": "J",
+    "name": "Group J"
+  },
+  {
+    "sort_order": 11,
+    "code": "K",
+    "name": "Group K"
+  },
+  {
+    "sort_order": 12,
+    "code": "L",
+    "name": "Group L"
+  },
+  {
+    "sort_order": 13,
+    "code": "LOGO",
+    "name": "Logo"
+  },
+  {
+    "sort_order": 14,
+    "code": "HISTORY",
+    "name": "FIFA World Cup History"
+  },
+  {
+    "sort_order": 15,
+    "code": "TEAMS",
+    "name": "National Teams"
+  },
+  {
+    "sort_order": 16,
+    "code": "COCA-COLA",
+    "name": "Coca-Cola"
+  }
+]

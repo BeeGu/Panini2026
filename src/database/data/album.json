@@ -1,0 +1,6269 @@
+{
+  "version": 1,
+  "generated": "2026-07-09T08:27:47.763Z",
+  "sections": [
+    {
+      "name": "Unknown",
+      "teams": [
+        {
+          "code": "LOGO",
+          "name": "Logo",
+          "stickers": [
+            {
+              "code": "FCW0",
+              "number": 0,
+              "page": "",
+              "name": ""
+            }
+          ]
+        },
+        {
+          "code": "FIFA_WORLD_CUP_HISTORY",
+          "name": "FIFA World Cup History",
+          "stickers": [
+            {
+              "code": "FWC1",
+              "number": 1,
+              "page": "",
+              "name": "Official Emblem"
+            },
+            {
+              "code": "FWC2",
+              "number": 2,
+              "page": "",
+              "name": "Official Emblem"
+            },
+            {
+              "code": "FWC3",
+              "number": 3,
+              "page": "",
+              "name": "Official Mascots"
+            },
+            {
+              "code": "FWC4",
+              "number": 4,
+              "page": "",
+              "name": "Official Slogan"
+            },
+            {
+              "code": "FWC5",
+              "number": 5,
+              "page": "",
+              "name": "Official Ball"
+            },
+            {
+              "code": "FWC6",
+              "number": 6,
+              "page": "",
+              "name": "Host Country Emblem"
+            },
+            {
+              "code": "FWC7",
+              "number": 7,
+              "page": "",
+              "name": "Host Country Emblem"
+            },
+            {
+              "code": "FWC8",
+              "number": 8,
+              "page": "",
+              "name": "Host Country Emblem"
+            },
+            {
+              "code": "FWC9",
+              "number": 9,
+              "page": "",
+              "name": "FIFA World Cup Italy 1934"
+            },
+            {
+              "code": "FWC10",
+              "number": 10,
+              "page": "",
+              "name": "FIFA World Cup Brazil 1950"
+            },
+            {
+              "code": "FWC11",
+              "number": 11,
+              "page": "",
+              "name": "FIFA World Cup Switzerland 1954"
+            },
+            {
+              "code": "FWC12",
+              "number": 12,
+              "page": "",
+              "name": "FIFA World Cup Chile 1962"
+            },
+            {
+              "code": "FWC13",
+              "number": 13,
+              "page": "",
+              "name": "FIFA World Cup Germany 1974"
+            },
+            {
+              "code": "FWC14",
+              "number": 14,
+              "page": "",
+              "name": "FIFA World Cup Mexico 1986"
+            },
+            {
+              "code": "FWC15",
+              "number": 15,
+              "page": "",
+              "name": "FIFA World Cup USA 1994"
+            },
+            {
+              "code": "FWC16",
+              "number": 16,
+              "page": "",
+              "name": "FIFA World Cup Korea-Japan 2002"
+            },
+            {
+              "code": "FWC17",
+              "number": 17,
+              "page": "",
+              "name": "FIFA World Cup Germany 2006"
+            },
+            {
+              "code": "FWC18",
+              "number": 18,
+              "page": "",
+              "name": "FIFA World Cup Brazil 2014"
+            },
+            {
+              "code": "FWC19",
+              "number": 19,
+              "page": "",
+              "name": "FIFA World Cup Qatar 2022"
+            }
+          ]
+        },
+        {
+          "code": "MEXICO",
+          "name": "Mexico",
+          "stickers": [
+            {
+              "code": "MEX1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "MEX2",
+              "number": 2,
+              "page": "",
+              "name": "Luis Malagón"
+            },
+            {
+              "code": "MEX3",
+              "number": 3,
+              "page": "",
+              "name": "Johan Vásquez"
+            },
+            {
+              "code": "MEX4",
+              "number": 4,
+              "page": "",
+              "name": "Jorge Sánchez"
+            },
+            {
+              "code": "MEX5",
+              "number": 5,
+              "page": "",
+              "name": "César Montes"
+            },
+            {
+              "code": "MEX6",
+              "number": 6,
+              "page": "",
+              "name": "Jesús Gallardo"
+            },
+            {
+              "code": "MEX7",
+              "number": 7,
+              "page": "",
+              "name": "Israel Reyes"
+            },
+            {
+              "code": "MEX8",
+              "number": 8,
+              "page": "",
+              "name": "Diego Lainez"
+            },
+            {
+              "code": "MEX9",
+              "number": 9,
+              "page": "",
+              "name": "Carlos Rodríguez"
+            },
+            {
+              "code": "MEX10",
+              "number": 10,
+              "page": "",
+              "name": "Edson Álvarez"
+            },
+            {
+              "code": "MEX11",
+              "number": 11,
+              "page": "",
+              "name": "Orbelin Pineda"
+            },
+            {
+              "code": "MEX12",
+              "number": 12,
+              "page": "",
+              "name": "Marcel Ruiz"
+            },
+            {
+              "code": "MEX13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "MEX14",
+              "number": 14,
+              "page": "",
+              "name": "Érick Sánchez"
+            },
+            {
+              "code": "MEX15",
+              "number": 15,
+              "page": "",
+              "name": "Hirving Lozano"
+            },
+            {
+              "code": "MEX16",
+              "number": 16,
+              "page": "",
+              "name": "Santiago Giménez"
+            },
+            {
+              "code": "MEX17",
+              "number": 17,
+              "page": "",
+              "name": "Raúl Jiménez"
+            },
+            {
+              "code": "MEX18",
+              "number": 18,
+              "page": "",
+              "name": "Alexis Vega"
+            },
+            {
+              "code": "MEX19",
+              "number": 19,
+              "page": "",
+              "name": "Roberto Alvarado"
+            },
+            {
+              "code": "MEX20",
+              "number": 20,
+              "page": "",
+              "name": "César Huerta"
+            }
+          ]
+        },
+        {
+          "code": "SOUTH_AFRICA",
+          "name": "South Africa",
+          "stickers": [
+            {
+              "code": "RSA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "RSA2",
+              "number": 2,
+              "page": "",
+              "name": "Ronwen Williams"
+            },
+            {
+              "code": "RSA3",
+              "number": 3,
+              "page": "",
+              "name": "Sipho Chaine"
+            },
+            {
+              "code": "RSA4",
+              "number": 4,
+              "page": "",
+              "name": "Aubrey Modiba"
+            },
+            {
+              "code": "RSA5",
+              "number": 5,
+              "page": "",
+              "name": "Samukele Kabini"
+            },
+            {
+              "code": "RSA6",
+              "number": 6,
+              "page": "",
+              "name": "Mbekezeli Mbokazi"
+            },
+            {
+              "code": "RSA7",
+              "number": 7,
+              "page": "",
+              "name": "Khulumani Ndamane"
+            },
+            {
+              "code": "RSA8",
+              "number": 8,
+              "page": "",
+              "name": "Siyabonga Ngezana"
+            },
+            {
+              "code": "RSA9",
+              "number": 9,
+              "page": "",
+              "name": "Khuliso Mudau"
+            },
+            {
+              "code": "RSA10",
+              "number": 10,
+              "page": "",
+              "name": "Nkosinathi Sibisi"
+            },
+            {
+              "code": "RSA11",
+              "number": 11,
+              "page": "",
+              "name": "Teboho Mokoena"
+            },
+            {
+              "code": "RSA12",
+              "number": 12,
+              "page": "",
+              "name": "Thalente Mbatha"
+            },
+            {
+              "code": "RSA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "RSA14",
+              "number": 14,
+              "page": "",
+              "name": "Bathusi Aubaas"
+            },
+            {
+              "code": "RSA15",
+              "number": 15,
+              "page": "",
+              "name": "Yaya Sithole"
+            },
+            {
+              "code": "RSA16",
+              "number": 16,
+              "page": "",
+              "name": "Sipho Mbule"
+            },
+            {
+              "code": "RSA17",
+              "number": 17,
+              "page": "",
+              "name": "Lyle Foster"
+            },
+            {
+              "code": "RSA18",
+              "number": 18,
+              "page": "",
+              "name": "Iqraam Rayners"
+            },
+            {
+              "code": "RSA19",
+              "number": 19,
+              "page": "",
+              "name": "Mohau Nkota"
+            },
+            {
+              "code": "RSA20",
+              "number": 20,
+              "page": "",
+              "name": "Oswin Appollis"
+            }
+          ]
+        },
+        {
+          "code": "KOREA_REPUBLIC",
+          "name": "Korea Republic",
+          "stickers": [
+            {
+              "code": "KOR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "KOR2",
+              "number": 2,
+              "page": "",
+              "name": "Hyeon-woo Jo"
+            },
+            {
+              "code": "KOR3",
+              "number": 3,
+              "page": "",
+              "name": "Seung-gyu Kim"
+            },
+            {
+              "code": "KOR4",
+              "number": 4,
+              "page": "",
+              "name": "Min-jae Kim"
+            },
+            {
+              "code": "KOR5",
+              "number": 5,
+              "page": "",
+              "name": "Yu-min Cho"
+            },
+            {
+              "code": "KOR6",
+              "number": 6,
+              "page": "",
+              "name": "Young-woo Seol"
+            },
+            {
+              "code": "KOR7",
+              "number": 7,
+              "page": "",
+              "name": "Han-beom Lee"
+            },
+            {
+              "code": "KOR8",
+              "number": 8,
+              "page": "",
+              "name": "Tae-seok Lee"
+            },
+            {
+              "code": "KOR9",
+              "number": 9,
+              "page": "",
+              "name": "Myung-jae Lee"
+            },
+            {
+              "code": "KOR10",
+              "number": 10,
+              "page": "",
+              "name": "Jae-sung Lee"
+            },
+            {
+              "code": "KOR11",
+              "number": 11,
+              "page": "",
+              "name": "In-beom Hwang"
+            },
+            {
+              "code": "KOR12",
+              "number": 12,
+              "page": "",
+              "name": "Kang-in Lee"
+            },
+            {
+              "code": "KOR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "KOR14",
+              "number": 14,
+              "page": "",
+              "name": "Seung-ho Paik"
+            },
+            {
+              "code": "KOR15",
+              "number": 15,
+              "page": "",
+              "name": "Jens Castrop"
+            },
+            {
+              "code": "KOR16",
+              "number": 16,
+              "page": "",
+              "name": "Dong-gyeong Lee"
+            },
+            {
+              "code": "KOR17",
+              "number": 17,
+              "page": "",
+              "name": "Gue-sung Cho"
+            },
+            {
+              "code": "KOR18",
+              "number": 18,
+              "page": "",
+              "name": "Heung-min Son"
+            },
+            {
+              "code": "KOR19",
+              "number": 19,
+              "page": "",
+              "name": "Hee-chan Hwang"
+            },
+            {
+              "code": "KOR20",
+              "number": 20,
+              "page": "",
+              "name": "Hyeon-gyu Oh"
+            }
+          ]
+        },
+        {
+          "code": "CZECHIA",
+          "name": "Czechia",
+          "stickers": [
+            {
+              "code": "CZE1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CZE2",
+              "number": 2,
+              "page": "",
+              "name": "Matěj Kovář"
+            },
+            {
+              "code": "CZE3",
+              "number": 3,
+              "page": "",
+              "name": "Jindřich Staněk"
+            },
+            {
+              "code": "CZE4",
+              "number": 4,
+              "page": "",
+              "name": "Ladislav Krejčí"
+            },
+            {
+              "code": "CZE5",
+              "number": 5,
+              "page": "",
+              "name": "Vladimír Coufal"
+            },
+            {
+              "code": "CZE6",
+              "number": 6,
+              "page": "",
+              "name": "Jaroslav Zelený"
+            },
+            {
+              "code": "CZE7",
+              "number": 7,
+              "page": "",
+              "name": "Tomáš Holeš"
+            },
+            {
+              "code": "CZE8",
+              "number": 8,
+              "page": "",
+              "name": "David Zima"
+            },
+            {
+              "code": "CZE9",
+              "number": 9,
+              "page": "",
+              "name": "Michal Sadílek"
+            },
+            {
+              "code": "CZE10",
+              "number": 10,
+              "page": "",
+              "name": "Lukáš Provod"
+            },
+            {
+              "code": "CZE11",
+              "number": 11,
+              "page": "",
+              "name": "Lukáš Červ"
+            },
+            {
+              "code": "CZE12",
+              "number": 12,
+              "page": "",
+              "name": "Tomáš Souček"
+            },
+            {
+              "code": "CZE13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CZE14",
+              "number": 14,
+              "page": "",
+              "name": "Pavel Šulc"
+            },
+            {
+              "code": "CZE15",
+              "number": 15,
+              "page": "",
+              "name": "Matěj Vydra"
+            },
+            {
+              "code": "CZE16",
+              "number": 16,
+              "page": "",
+              "name": "Vasil Kušej"
+            },
+            {
+              "code": "CZE17",
+              "number": 17,
+              "page": "",
+              "name": "Tomáš Chorý"
+            },
+            {
+              "code": "CZE18",
+              "number": 18,
+              "page": "",
+              "name": "Václav Černý"
+            },
+            {
+              "code": "CZE19",
+              "number": 19,
+              "page": "",
+              "name": "Adam Hložek"
+            },
+            {
+              "code": "CZE20",
+              "number": 20,
+              "page": "",
+              "name": "Patrik Schick"
+            }
+          ]
+        },
+        {
+          "code": "CANADA",
+          "name": "Canada",
+          "stickers": [
+            {
+              "code": "CAN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CAN2",
+              "number": 2,
+              "page": "",
+              "name": "Dayne St. Clair"
+            },
+            {
+              "code": "CAN3",
+              "number": 3,
+              "page": "",
+              "name": "Alphonso Davies"
+            },
+            {
+              "code": "CAN4",
+              "number": 4,
+              "page": "",
+              "name": "Alistair Johnston"
+            },
+            {
+              "code": "CAN5",
+              "number": 5,
+              "page": "",
+              "name": "Samuel Adekugbe"
+            },
+            {
+              "code": "CAN6",
+              "number": 6,
+              "page": "",
+              "name": "Richie Laryea"
+            },
+            {
+              "code": "CAN7",
+              "number": 7,
+              "page": "",
+              "name": "Derek Cornelius"
+            },
+            {
+              "code": "CAN8",
+              "number": 8,
+              "page": "",
+              "name": "Moïse Bombito"
+            },
+            {
+              "code": "CAN9",
+              "number": 9,
+              "page": "",
+              "name": "Kamal Miller"
+            },
+            {
+              "code": "CAN10",
+              "number": 10,
+              "page": "",
+              "name": "Stephen Eustáquio"
+            },
+            {
+              "code": "CAN11",
+              "number": 11,
+              "page": "",
+              "name": "Ismaël Koné"
+            },
+            {
+              "code": "CAN12",
+              "number": 12,
+              "page": "",
+              "name": "Jonathan Osorio"
+            },
+            {
+              "code": "CAN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CAN14",
+              "number": 14,
+              "page": "",
+              "name": "Jacob Shaffelburg"
+            },
+            {
+              "code": "CAN15",
+              "number": 15,
+              "page": "",
+              "name": "Mathieu Choinière"
+            },
+            {
+              "code": "CAN16",
+              "number": 16,
+              "page": "",
+              "name": "Niko Sigur"
+            },
+            {
+              "code": "CAN17",
+              "number": 17,
+              "page": "",
+              "name": "Tajon Buchanan"
+            },
+            {
+              "code": "CAN18",
+              "number": 18,
+              "page": "",
+              "name": "Liam Millar"
+            },
+            {
+              "code": "CAN19",
+              "number": 19,
+              "page": "",
+              "name": "Cyle Larin"
+            },
+            {
+              "code": "CAN20",
+              "number": 20,
+              "page": "",
+              "name": "Jonathan David"
+            }
+          ]
+        },
+        {
+          "code": "BOSNIA-HERZEGOVINA",
+          "name": "Bosnia-Herzegovina",
+          "stickers": [
+            {
+              "code": "BIH1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "BIH2",
+              "number": 2,
+              "page": "",
+              "name": "Nikola Vasilj"
+            },
+            {
+              "code": "BIH3",
+              "number": 3,
+              "page": "",
+              "name": "Amar Dedić"
+            },
+            {
+              "code": "BIH4",
+              "number": 4,
+              "page": "",
+              "name": "Sead Kolašinac"
+            },
+            {
+              "code": "BIH5",
+              "number": 5,
+              "page": "",
+              "name": "Tarik Muharemović"
+            },
+            {
+              "code": "BIH6",
+              "number": 6,
+              "page": "",
+              "name": "Nihad Mujakić"
+            },
+            {
+              "code": "BIH7",
+              "number": 7,
+              "page": "",
+              "name": "Nikola Katić"
+            },
+            {
+              "code": "BIH8",
+              "number": 8,
+              "page": "",
+              "name": "Amir Hadžiahmetović"
+            },
+            {
+              "code": "BIH9",
+              "number": 9,
+              "page": "",
+              "name": "Benjamin Tahirović"
+            },
+            {
+              "code": "BIH10",
+              "number": 10,
+              "page": "",
+              "name": "Armin Gigović"
+            },
+            {
+              "code": "BIH11",
+              "number": 11,
+              "page": "",
+              "name": "Ivan Šunjić"
+            },
+            {
+              "code": "BIH12",
+              "number": 12,
+              "page": "",
+              "name": "Ivan Bašić"
+            },
+            {
+              "code": "BIH13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "BIH14",
+              "number": 14,
+              "page": "",
+              "name": "Dženis Burnić"
+            },
+            {
+              "code": "BIH15",
+              "number": 15,
+              "page": "",
+              "name": "Esmir Bajraktarević"
+            },
+            {
+              "code": "BIH16",
+              "number": 16,
+              "page": "",
+              "name": "Amar Memić"
+            },
+            {
+              "code": "BIH17",
+              "number": 17,
+              "page": "",
+              "name": "Ermedin Demirović"
+            },
+            {
+              "code": "BIH18",
+              "number": 18,
+              "page": "",
+              "name": "Edin Džeko"
+            },
+            {
+              "code": "BIH19",
+              "number": 19,
+              "page": "",
+              "name": "Samed Baždar"
+            },
+            {
+              "code": "BIH20",
+              "number": 20,
+              "page": "",
+              "name": "Haris Tabaković"
+            }
+          ]
+        },
+        {
+          "code": "QATAR",
+          "name": "Qatar",
+          "stickers": [
+            {
+              "code": "QAT1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "QAT2",
+              "number": 2,
+              "page": "",
+              "name": "Meshaal Barsham"
+            },
+            {
+              "code": "QAT3",
+              "number": 3,
+              "page": "",
+              "name": "Sultan Albrake"
+            },
+            {
+              "code": "QAT4",
+              "number": 4,
+              "page": "",
+              "name": "Lucas Mendes"
+            },
+            {
+              "code": "QAT5",
+              "number": 5,
+              "page": "",
+              "name": "Homam Ahmed"
+            },
+            {
+              "code": "QAT6",
+              "number": 6,
+              "page": "",
+              "name": "Boualem Khoukhi"
+            },
+            {
+              "code": "QAT7",
+              "number": 7,
+              "page": "",
+              "name": "Pedro Miguel"
+            },
+            {
+              "code": "QAT8",
+              "number": 8,
+              "page": "",
+              "name": "Tarek Salman"
+            },
+            {
+              "code": "QAT9",
+              "number": 9,
+              "page": "",
+              "name": "Mohammed Mannai"
+            },
+            {
+              "code": "QAT10",
+              "number": 10,
+              "page": "",
+              "name": "Karim Boudiaf"
+            },
+            {
+              "code": "QAT11",
+              "number": 11,
+              "page": "",
+              "name": "Assim Madibo"
+            },
+            {
+              "code": "QAT12",
+              "number": 12,
+              "page": "",
+              "name": "Hamed Fatehi"
+            },
+            {
+              "code": "QAT13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "QAT14",
+              "number": 14,
+              "page": "",
+              "name": "Mohammed Waad"
+            },
+            {
+              "code": "QAT15",
+              "number": 15,
+              "page": "",
+              "name": "Abdulaziz Hatem"
+            },
+            {
+              "code": "QAT16",
+              "number": 16,
+              "page": "",
+              "name": "Hassan Al-Haydos"
+            },
+            {
+              "code": "QAT17",
+              "number": 17,
+              "page": "",
+              "name": "Edmilson Junior"
+            },
+            {
+              "code": "QAT18",
+              "number": 18,
+              "page": "",
+              "name": "Akram Hassan Afif"
+            },
+            {
+              "code": "QAT19",
+              "number": 19,
+              "page": "",
+              "name": "Ahmed Al-Ganehi"
+            },
+            {
+              "code": "QAT20",
+              "number": 20,
+              "page": "",
+              "name": "Almoez Ali"
+            }
+          ]
+        },
+        {
+          "code": "SWITZERLAND",
+          "name": "Switzerland",
+          "stickers": [
+            {
+              "code": "SUI1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "SUI2",
+              "number": 2,
+              "page": "",
+              "name": "Gregor Kobel"
+            },
+            {
+              "code": "SUI3",
+              "number": 3,
+              "page": "",
+              "name": "Yvon Mvogo"
+            },
+            {
+              "code": "SUI4",
+              "number": 4,
+              "page": "",
+              "name": "Manuel Akanji"
+            },
+            {
+              "code": "SUI5",
+              "number": 5,
+              "page": "",
+              "name": "Ricardo Rodríguez"
+            },
+            {
+              "code": "SUI6",
+              "number": 6,
+              "page": "",
+              "name": "Nico Elvedi"
+            },
+            {
+              "code": "SUI7",
+              "number": 7,
+              "page": "",
+              "name": "Aurèle Amenda"
+            },
+            {
+              "code": "SUI8",
+              "number": 8,
+              "page": "",
+              "name": "Silvan Widmer"
+            },
+            {
+              "code": "SUI9",
+              "number": 9,
+              "page": "",
+              "name": "Granit Xhaka"
+            },
+            {
+              "code": "SUI10",
+              "number": 10,
+              "page": "",
+              "name": "Denis Zakaria"
+            },
+            {
+              "code": "SUI11",
+              "number": 11,
+              "page": "",
+              "name": "Remo Freuler"
+            },
+            {
+              "code": "SUI12",
+              "number": 12,
+              "page": "",
+              "name": "Fabian Rieder"
+            },
+            {
+              "code": "SUI13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "SUI14",
+              "number": 14,
+              "page": "",
+              "name": "Ardon Jashari"
+            },
+            {
+              "code": "SUI15",
+              "number": 15,
+              "page": "",
+              "name": "Johan Manzambi"
+            },
+            {
+              "code": "SUI16",
+              "number": 16,
+              "page": "",
+              "name": "Michel Aebischer"
+            },
+            {
+              "code": "SUI17",
+              "number": 17,
+              "page": "",
+              "name": "Breel Embolo"
+            },
+            {
+              "code": "SUI18",
+              "number": 18,
+              "page": "",
+              "name": "Ruben Vargas"
+            },
+            {
+              "code": "SUI19",
+              "number": 19,
+              "page": "",
+              "name": "Dan Ndoye"
+            },
+            {
+              "code": "SUI20",
+              "number": 20,
+              "page": "",
+              "name": "Zeki Amdouni"
+            }
+          ]
+        },
+        {
+          "code": "BRAZIL",
+          "name": "Brazil",
+          "stickers": [
+            {
+              "code": "BRA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "BRA2",
+              "number": 2,
+              "page": "",
+              "name": "Alisson"
+            },
+            {
+              "code": "BRA3",
+              "number": 3,
+              "page": "",
+              "name": "Bento"
+            },
+            {
+              "code": "BRA4",
+              "number": 4,
+              "page": "",
+              "name": "Marquinhos"
+            },
+            {
+              "code": "BRA5",
+              "number": 5,
+              "page": "",
+              "name": "Éder Militão"
+            },
+            {
+              "code": "BRA6",
+              "number": 6,
+              "page": "",
+              "name": "Gabriel Magalhães"
+            },
+            {
+              "code": "BRA7",
+              "number": 7,
+              "page": "",
+              "name": "Danilo"
+            },
+            {
+              "code": "BRA8",
+              "number": 8,
+              "page": "",
+              "name": "Wesley"
+            },
+            {
+              "code": "BRA9",
+              "number": 9,
+              "page": "",
+              "name": "Lucas Paquetá"
+            },
+            {
+              "code": "BRA10",
+              "number": 10,
+              "page": "",
+              "name": "Casemiro"
+            },
+            {
+              "code": "BRA11",
+              "number": 11,
+              "page": "",
+              "name": "Bruno Guimarães"
+            },
+            {
+              "code": "BRA12",
+              "number": 12,
+              "page": "",
+              "name": "Luiz Henrique"
+            },
+            {
+              "code": "BRA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "BRA14",
+              "number": 14,
+              "page": "",
+              "name": "Vinícius Júnior"
+            },
+            {
+              "code": "BRA15",
+              "number": 15,
+              "page": "",
+              "name": "Rodrygo"
+            },
+            {
+              "code": "BRA16",
+              "number": 16,
+              "page": "",
+              "name": "João Pedro"
+            },
+            {
+              "code": "BRA17",
+              "number": 17,
+              "page": "",
+              "name": "Matheus Cunha"
+            },
+            {
+              "code": "BRA18",
+              "number": 18,
+              "page": "",
+              "name": "Gabriel Martinelli"
+            },
+            {
+              "code": "BRA19",
+              "number": 19,
+              "page": "",
+              "name": "Raphinha"
+            },
+            {
+              "code": "BRA20",
+              "number": 20,
+              "page": "",
+              "name": "Estêvão"
+            }
+          ]
+        },
+        {
+          "code": "MOROCCO",
+          "name": "Morocco",
+          "stickers": [
+            {
+              "code": "MAR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "MAR2",
+              "number": 2,
+              "page": "",
+              "name": "Yassine Bounou"
+            },
+            {
+              "code": "MAR3",
+              "number": 3,
+              "page": "",
+              "name": "Munir El Kajoui"
+            },
+            {
+              "code": "MAR4",
+              "number": 4,
+              "page": "",
+              "name": "Achraf Hakimi"
+            },
+            {
+              "code": "MAR5",
+              "number": 5,
+              "page": "",
+              "name": "Noussair Mazraoui"
+            },
+            {
+              "code": "MAR6",
+              "number": 6,
+              "page": "",
+              "name": "Nayef Aguerd"
+            },
+            {
+              "code": "MAR7",
+              "number": 7,
+              "page": "",
+              "name": "Romain Saïss"
+            },
+            {
+              "code": "MAR8",
+              "number": 8,
+              "page": "",
+              "name": "Jawad El Yamiq"
+            },
+            {
+              "code": "MAR9",
+              "number": 9,
+              "page": "",
+              "name": "Adam Masina"
+            },
+            {
+              "code": "MAR10",
+              "number": 10,
+              "page": "",
+              "name": "Sofyan Amrabat"
+            },
+            {
+              "code": "MAR11",
+              "number": 11,
+              "page": "",
+              "name": "Azzedine Ounahi"
+            },
+            {
+              "code": "MAR12",
+              "number": 12,
+              "page": "",
+              "name": "Eliesse Ben Seghir"
+            },
+            {
+              "code": "MAR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "MAR14",
+              "number": 14,
+              "page": "",
+              "name": "Bilal El Khannouss"
+            },
+            {
+              "code": "MAR15",
+              "number": 15,
+              "page": "",
+              "name": "Ismael Saibari"
+            },
+            {
+              "code": "MAR16",
+              "number": 16,
+              "page": "",
+              "name": "Youssef En-Nesyri"
+            },
+            {
+              "code": "MAR17",
+              "number": 17,
+              "page": "",
+              "name": "Abde Ezzalzouli"
+            },
+            {
+              "code": "MAR18",
+              "number": 18,
+              "page": "",
+              "name": "Soufiane Rahimi"
+            },
+            {
+              "code": "MAR19",
+              "number": 19,
+              "page": "",
+              "name": "Brahim Díaz"
+            },
+            {
+              "code": "MAR20",
+              "number": 20,
+              "page": "",
+              "name": "Ayoub El Kaabi"
+            }
+          ]
+        },
+        {
+          "code": "HAITI",
+          "name": "Haiti",
+          "stickers": [
+            {
+              "code": "HAI1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "HAI2",
+              "number": 2,
+              "page": "",
+              "name": "Johny Placide"
+            },
+            {
+              "code": "HAI3",
+              "number": 3,
+              "page": "",
+              "name": "Carlens Arcus"
+            },
+            {
+              "code": "HAI4",
+              "number": 4,
+              "page": "",
+              "name": "Martin Expérience"
+            },
+            {
+              "code": "HAI5",
+              "number": 5,
+              "page": "",
+              "name": "Jean-Kévin Duverne"
+            },
+            {
+              "code": "HAI6",
+              "number": 6,
+              "page": "",
+              "name": "Ricardo Adé"
+            },
+            {
+              "code": "HAI7",
+              "number": 7,
+              "page": "",
+              "name": "Duke Lacroix"
+            },
+            {
+              "code": "HAI8",
+              "number": 8,
+              "page": "",
+              "name": "Garven Metusala"
+            },
+            {
+              "code": "HAI9",
+              "number": 9,
+              "page": "",
+              "name": "Hannes Delcroix"
+            },
+            {
+              "code": "HAI10",
+              "number": 10,
+              "page": "",
+              "name": "Leverton Pierre"
+            },
+            {
+              "code": "HAI11",
+              "number": 11,
+              "page": "",
+              "name": "Danley Jean Jacques"
+            },
+            {
+              "code": "HAI12",
+              "number": 12,
+              "page": "",
+              "name": "Jean-Ricner Bellegarde"
+            },
+            {
+              "code": "HAI13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "HAI14",
+              "number": 14,
+              "page": "",
+              "name": "Christopher Attys"
+            },
+            {
+              "code": "HAI15",
+              "number": 15,
+              "page": "",
+              "name": "Derrick Etienne Jr."
+            },
+            {
+              "code": "HAI16",
+              "number": 16,
+              "page": "",
+              "name": "Josué Casimir"
+            },
+            {
+              "code": "HAI17",
+              "number": 17,
+              "page": "",
+              "name": "Ruben Providence"
+            },
+            {
+              "code": "HAI18",
+              "number": 18,
+              "page": "",
+              "name": "Duckens Nazon"
+            },
+            {
+              "code": "HAI19",
+              "number": 19,
+              "page": "",
+              "name": "Louicius Deedson"
+            },
+            {
+              "code": "HAI20",
+              "number": 20,
+              "page": "",
+              "name": "Frantzdy Pierrot"
+            }
+          ]
+        },
+        {
+          "code": "SCOTLAND",
+          "name": "Scotland",
+          "stickers": [
+            {
+              "code": "SCO1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "SCO2",
+              "number": 2,
+              "page": "",
+              "name": "Angus Gunn"
+            },
+            {
+              "code": "SCO3",
+              "number": 3,
+              "page": "",
+              "name": "Jack Hendry"
+            },
+            {
+              "code": "SCO4",
+              "number": 4,
+              "page": "",
+              "name": "Kieran Tierney"
+            },
+            {
+              "code": "SCO5",
+              "number": 5,
+              "page": "",
+              "name": "Aaron Hickey"
+            },
+            {
+              "code": "SCO6",
+              "number": 6,
+              "page": "",
+              "name": "Andrew Robertson"
+            },
+            {
+              "code": "SCO7",
+              "number": 7,
+              "page": "",
+              "name": "Scott McKenna"
+            },
+            {
+              "code": "SCO8",
+              "number": 8,
+              "page": "",
+              "name": "John Souttar"
+            },
+            {
+              "code": "SCO9",
+              "number": 9,
+              "page": "",
+              "name": "Anthony Ralston"
+            },
+            {
+              "code": "SCO10",
+              "number": 10,
+              "page": "",
+              "name": "Grant Hanley"
+            },
+            {
+              "code": "SCO11",
+              "number": 11,
+              "page": "",
+              "name": "Scott McTominay"
+            },
+            {
+              "code": "SCO12",
+              "number": 12,
+              "page": "",
+              "name": "Billy Gilmour"
+            },
+            {
+              "code": "SCO13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "SCO14",
+              "number": 14,
+              "page": "",
+              "name": "Lewis Ferguson"
+            },
+            {
+              "code": "SCO15",
+              "number": 15,
+              "page": "",
+              "name": "Ryan Christie"
+            },
+            {
+              "code": "SCO16",
+              "number": 16,
+              "page": "",
+              "name": "Kenny McLean"
+            },
+            {
+              "code": "SCO17",
+              "number": 17,
+              "page": "",
+              "name": "John McGinn"
+            },
+            {
+              "code": "SCO18",
+              "number": 18,
+              "page": "",
+              "name": "Lyndon Dykes"
+            },
+            {
+              "code": "SCO19",
+              "number": 19,
+              "page": "",
+              "name": "Ché Adams"
+            },
+            {
+              "code": "SCO20",
+              "number": 20,
+              "page": "",
+              "name": "Ben Gannon-Doak"
+            }
+          ]
+        },
+        {
+          "code": "USA",
+          "name": "USA",
+          "stickers": [
+            {
+              "code": "USA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "USA2",
+              "number": 2,
+              "page": "",
+              "name": "Matt Freese"
+            },
+            {
+              "code": "USA3",
+              "number": 3,
+              "page": "",
+              "name": "Chris Richards"
+            },
+            {
+              "code": "USA4",
+              "number": 4,
+              "page": "",
+              "name": "Tim Ream"
+            },
+            {
+              "code": "USA5",
+              "number": 5,
+              "page": "",
+              "name": "Mark McKenzie"
+            },
+            {
+              "code": "USA6",
+              "number": 6,
+              "page": "",
+              "name": "Alex Freeman"
+            },
+            {
+              "code": "USA7",
+              "number": 7,
+              "page": "",
+              "name": "Antonee Robinson"
+            },
+            {
+              "code": "USA8",
+              "number": 8,
+              "page": "",
+              "name": "Tyler Adams"
+            },
+            {
+              "code": "USA9",
+              "number": 9,
+              "page": "",
+              "name": "Tanner Tessmann"
+            },
+            {
+              "code": "USA10",
+              "number": 10,
+              "page": "",
+              "name": "Weston McKennie"
+            },
+            {
+              "code": "USA11",
+              "number": 11,
+              "page": "",
+              "name": "Christian Roldan"
+            },
+            {
+              "code": "USA12",
+              "number": 12,
+              "page": "",
+              "name": "Timothy Weah"
+            },
+            {
+              "code": "USA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "USA14",
+              "number": 14,
+              "page": "",
+              "name": "Diego Luna"
+            },
+            {
+              "code": "USA15",
+              "number": 15,
+              "page": "",
+              "name": "Malik Tillman"
+            },
+            {
+              "code": "USA16",
+              "number": 16,
+              "page": "",
+              "name": "Christian Pulisic"
+            },
+            {
+              "code": "USA17",
+              "number": 17,
+              "page": "",
+              "name": "Brenden Aaronson"
+            },
+            {
+              "code": "USA18",
+              "number": 18,
+              "page": "",
+              "name": "Ricardo Pepi"
+            },
+            {
+              "code": "USA19",
+              "number": 19,
+              "page": "",
+              "name": "Haji Wright"
+            },
+            {
+              "code": "USA20",
+              "number": 20,
+              "page": "",
+              "name": "Folarin Balogun"
+            }
+          ]
+        },
+        {
+          "code": "PARAGUAY",
+          "name": "Paraguay",
+          "stickers": [
+            {
+              "code": "PAR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "PAR2",
+              "number": 2,
+              "page": "",
+              "name": "Roberto Fernández"
+            },
+            {
+              "code": "PAR3",
+              "number": 3,
+              "page": "",
+              "name": "Orlando Gill"
+            },
+            {
+              "code": "PAR4",
+              "number": 4,
+              "page": "",
+              "name": "Gustavo Gómez"
+            },
+            {
+              "code": "PAR5",
+              "number": 5,
+              "page": "",
+              "name": "Fabián Balbuena"
+            },
+            {
+              "code": "PAR6",
+              "number": 6,
+              "page": "",
+              "name": "Juan José Cáceres"
+            },
+            {
+              "code": "PAR7",
+              "number": 7,
+              "page": "",
+              "name": "Omar Alderete"
+            },
+            {
+              "code": "PAR8",
+              "number": 8,
+              "page": "",
+              "name": "Júnior Alonso"
+            },
+            {
+              "code": "PAR9",
+              "number": 9,
+              "page": "",
+              "name": "Mathías Villasanti"
+            },
+            {
+              "code": "PAR10",
+              "number": 10,
+              "page": "",
+              "name": "Diego Gómez"
+            },
+            {
+              "code": "PAR11",
+              "number": 11,
+              "page": "",
+              "name": "Damián Bobadilla"
+            },
+            {
+              "code": "PAR12",
+              "number": 12,
+              "page": "",
+              "name": "Andrés Cubas"
+            },
+            {
+              "code": "PAR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "PAR14",
+              "number": 14,
+              "page": "",
+              "name": "Matías Galarza Fonda"
+            },
+            {
+              "code": "PAR15",
+              "number": 15,
+              "page": "",
+              "name": "Julio Enciso"
+            },
+            {
+              "code": "PAR16",
+              "number": 16,
+              "page": "",
+              "name": "Alejandro Romero Gamarra"
+            },
+            {
+              "code": "PAR17",
+              "number": 17,
+              "page": "",
+              "name": "Miguel Almirón"
+            },
+            {
+              "code": "PAR18",
+              "number": 18,
+              "page": "",
+              "name": "Ramón Sosa"
+            },
+            {
+              "code": "PAR19",
+              "number": 19,
+              "page": "",
+              "name": "Ángel Romero"
+            },
+            {
+              "code": "PAR20",
+              "number": 20,
+              "page": "",
+              "name": "Antonio Sanabria"
+            }
+          ]
+        },
+        {
+          "code": "AUSTRALIA",
+          "name": "Australia",
+          "stickers": [
+            {
+              "code": "AUS1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "AUS2",
+              "number": 2,
+              "page": "",
+              "name": "Mathew Ryan"
+            },
+            {
+              "code": "AUS3",
+              "number": 3,
+              "page": "",
+              "name": "Joe Gauci"
+            },
+            {
+              "code": "AUS4",
+              "number": 4,
+              "page": "",
+              "name": "Harry Souttar"
+            },
+            {
+              "code": "AUS5",
+              "number": 5,
+              "page": "",
+              "name": "Alessandro Circati"
+            },
+            {
+              "code": "AUS6",
+              "number": 6,
+              "page": "",
+              "name": "Jordan Bos"
+            },
+            {
+              "code": "AUS7",
+              "number": 7,
+              "page": "",
+              "name": "Aziz Behich"
+            },
+            {
+              "code": "AUS8",
+              "number": 8,
+              "page": "",
+              "name": "Cameron Burgess"
+            },
+            {
+              "code": "AUS9",
+              "number": 9,
+              "page": "",
+              "name": "Lewis Miller"
+            },
+            {
+              "code": "AUS10",
+              "number": 10,
+              "page": "",
+              "name": "Milos Degenek"
+            },
+            {
+              "code": "AUS11",
+              "number": 11,
+              "page": "",
+              "name": "Jackson Irvine"
+            },
+            {
+              "code": "AUS12",
+              "number": 12,
+              "page": "",
+              "name": "Riley McGree"
+            },
+            {
+              "code": "AUS13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "AUS14",
+              "number": 14,
+              "page": "",
+              "name": "Aiden O'Neill"
+            },
+            {
+              "code": "AUS15",
+              "number": 15,
+              "page": "",
+              "name": "Connor Metcalfe"
+            },
+            {
+              "code": "AUS16",
+              "number": 16,
+              "page": "",
+              "name": "Patrick Yazbek"
+            },
+            {
+              "code": "AUS17",
+              "number": 17,
+              "page": "",
+              "name": "Craig Goodwin"
+            },
+            {
+              "code": "AUS18",
+              "number": 18,
+              "page": "",
+              "name": "Kusini Yengi"
+            },
+            {
+              "code": "AUS19",
+              "number": 19,
+              "page": "",
+              "name": "Nestory Irankunda"
+            },
+            {
+              "code": "AUS20",
+              "number": 20,
+              "page": "",
+              "name": "Mohamed Touré"
+            }
+          ]
+        },
+        {
+          "code": "TÜRKIYE",
+          "name": "Türkiye",
+          "stickers": [
+            {
+              "code": "TUR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "TUR2",
+              "number": 2,
+              "page": "",
+              "name": "Uğurcan Çakır"
+            },
+            {
+              "code": "TUR3",
+              "number": 3,
+              "page": "",
+              "name": "Mert Müldür"
+            },
+            {
+              "code": "TUR4",
+              "number": 4,
+              "page": "",
+              "name": "Zeki Çelik"
+            },
+            {
+              "code": "TUR5",
+              "number": 5,
+              "page": "",
+              "name": "Abdülkerim Bardakcı"
+            },
+            {
+              "code": "TUR6",
+              "number": 6,
+              "page": "",
+              "name": "Çağlar Söyüncü"
+            },
+            {
+              "code": "TUR7",
+              "number": 7,
+              "page": "",
+              "name": "Merih Demiral"
+            },
+            {
+              "code": "TUR8",
+              "number": 8,
+              "page": "",
+              "name": "Ferdi Kadıoğlu"
+            },
+            {
+              "code": "TUR9",
+              "number": 9,
+              "page": "",
+              "name": "Kaan Ayhan"
+            },
+            {
+              "code": "TUR10",
+              "number": 10,
+              "page": "",
+              "name": "İsmail Yüksek"
+            },
+            {
+              "code": "TUR11",
+              "number": 11,
+              "page": "",
+              "name": "Hakan Çalhanoğlu"
+            },
+            {
+              "code": "TUR12",
+              "number": 12,
+              "page": "",
+              "name": "Orkun Kökçü"
+            },
+            {
+              "code": "TUR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "TUR14",
+              "number": 14,
+              "page": "",
+              "name": "Arda Güler"
+            },
+            {
+              "code": "TUR15",
+              "number": 15,
+              "page": "",
+              "name": "İrfan Can Kahveci"
+            },
+            {
+              "code": "TUR16",
+              "number": 16,
+              "page": "",
+              "name": "Yunus Akgün"
+            },
+            {
+              "code": "TUR17",
+              "number": 17,
+              "page": "",
+              "name": "Can Uzun"
+            },
+            {
+              "code": "TUR18",
+              "number": 18,
+              "page": "",
+              "name": "Barış Alper Yılmaz"
+            },
+            {
+              "code": "TUR19",
+              "number": 19,
+              "page": "",
+              "name": "Kerem Aktürkoğlu"
+            },
+            {
+              "code": "TUR20",
+              "number": 20,
+              "page": "",
+              "name": "Kenan Yıldız"
+            }
+          ]
+        },
+        {
+          "code": "GERMANY",
+          "name": "Germany",
+          "stickers": [
+            {
+              "code": "GER1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "GER2",
+              "number": 2,
+              "page": "",
+              "name": "Marc-André ter Stegen"
+            },
+            {
+              "code": "GER3",
+              "number": 3,
+              "page": "",
+              "name": "Jonathan Tah"
+            },
+            {
+              "code": "GER4",
+              "number": 4,
+              "page": "",
+              "name": "David Raum"
+            },
+            {
+              "code": "GER5",
+              "number": 5,
+              "page": "",
+              "name": "Nico Schlotterbeck"
+            },
+            {
+              "code": "GER6",
+              "number": 6,
+              "page": "",
+              "name": "Antonio Rüdiger"
+            },
+            {
+              "code": "GER7",
+              "number": 7,
+              "page": "",
+              "name": "Waldemar Anton"
+            },
+            {
+              "code": "GER8",
+              "number": 8,
+              "page": "",
+              "name": "Ridle Baku"
+            },
+            {
+              "code": "GER9",
+              "number": 9,
+              "page": "",
+              "name": "Maximilian Mittelstädt"
+            },
+            {
+              "code": "GER10",
+              "number": 10,
+              "page": "",
+              "name": "Joshua Kimmich"
+            },
+            {
+              "code": "GER11",
+              "number": 11,
+              "page": "",
+              "name": "Florian Wirtz"
+            },
+            {
+              "code": "GER12",
+              "number": 12,
+              "page": "",
+              "name": "Felix Nmecha"
+            },
+            {
+              "code": "GER13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "GER14",
+              "number": 14,
+              "page": "",
+              "name": "Leon Goretzka"
+            },
+            {
+              "code": "GER15",
+              "number": 15,
+              "page": "",
+              "name": "Jamal Musiala"
+            },
+            {
+              "code": "GER16",
+              "number": 16,
+              "page": "",
+              "name": "Serge Gnabry"
+            },
+            {
+              "code": "GER17",
+              "number": 17,
+              "page": "",
+              "name": "Kai Havertz"
+            },
+            {
+              "code": "GER18",
+              "number": 18,
+              "page": "",
+              "name": "Leroy Sané"
+            },
+            {
+              "code": "GER19",
+              "number": 19,
+              "page": "",
+              "name": "Karim Adeyemi"
+            },
+            {
+              "code": "GER20",
+              "number": 20,
+              "page": "",
+              "name": "Nick Woltemade"
+            }
+          ]
+        },
+        {
+          "code": "CURAÇAO",
+          "name": "Curaçao",
+          "stickers": [
+            {
+              "code": "CUW1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CUW2",
+              "number": 2,
+              "page": "",
+              "name": "Eloy Room"
+            },
+            {
+              "code": "CUW3",
+              "number": 3,
+              "page": "",
+              "name": "Armando Obispo"
+            },
+            {
+              "code": "CUW4",
+              "number": 4,
+              "page": "",
+              "name": "Sherel Floranus"
+            },
+            {
+              "code": "CUW5",
+              "number": 5,
+              "page": "",
+              "name": "Jurien Gaari"
+            },
+            {
+              "code": "CUW6",
+              "number": 6,
+              "page": "",
+              "name": "Joshua Brenet"
+            },
+            {
+              "code": "CUW7",
+              "number": 7,
+              "page": "",
+              "name": "Roshon van Eijma"
+            },
+            {
+              "code": "CUW8",
+              "number": 8,
+              "page": "",
+              "name": "Shurandy Sambo"
+            },
+            {
+              "code": "CUW9",
+              "number": 9,
+              "page": "",
+              "name": "Livano Comenencia"
+            },
+            {
+              "code": "CUW10",
+              "number": 10,
+              "page": "",
+              "name": "Godfried Roemeratoe"
+            },
+            {
+              "code": "CUW11",
+              "number": 11,
+              "page": "",
+              "name": "Juninho Bacuna"
+            },
+            {
+              "code": "CUW12",
+              "number": 12,
+              "page": "",
+              "name": "Leandro Bacuna"
+            },
+            {
+              "code": "CUW13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CUW14",
+              "number": 14,
+              "page": "",
+              "name": "Tahith Chong"
+            },
+            {
+              "code": "CUW15",
+              "number": 15,
+              "page": "",
+              "name": "Kenji Gorré"
+            },
+            {
+              "code": "CUW16",
+              "number": 16,
+              "page": "",
+              "name": "Jearl Margaritha"
+            },
+            {
+              "code": "CUW17",
+              "number": 17,
+              "page": "",
+              "name": "Jürgen Locadia"
+            },
+            {
+              "code": "CUW18",
+              "number": 18,
+              "page": "",
+              "name": "Jeremy Antonisse"
+            },
+            {
+              "code": "CUW19",
+              "number": 19,
+              "page": "",
+              "name": "Gervane Kastaneer"
+            },
+            {
+              "code": "CUW20",
+              "number": 20,
+              "page": "",
+              "name": "Sontje Hansen"
+            }
+          ]
+        },
+        {
+          "code": "CÔTE_D'IVOIRE",
+          "name": "Côte d'Ivoire",
+          "stickers": [
+            {
+              "code": "CIV1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CIV2",
+              "number": 2,
+              "page": "",
+              "name": "Yahia Fofana"
+            },
+            {
+              "code": "CIV3",
+              "number": 3,
+              "page": "",
+              "name": "Ghislain Konan"
+            },
+            {
+              "code": "CIV4",
+              "number": 4,
+              "page": "",
+              "name": "Wilfried Singo"
+            },
+            {
+              "code": "CIV5",
+              "number": 5,
+              "page": "",
+              "name": "Odilon Kossounou"
+            },
+            {
+              "code": "CIV6",
+              "number": 6,
+              "page": "",
+              "name": "Evan Ndicka"
+            },
+            {
+              "code": "CIV7",
+              "number": 7,
+              "page": "",
+              "name": "Willy Boly"
+            },
+            {
+              "code": "CIV8",
+              "number": 8,
+              "page": "",
+              "name": "Emmanuel Agbadou"
+            },
+            {
+              "code": "CIV9",
+              "number": 9,
+              "page": "",
+              "name": "Ousmane Diomande"
+            },
+            {
+              "code": "CIV10",
+              "number": 10,
+              "page": "",
+              "name": "Franck Kessié"
+            },
+            {
+              "code": "CIV11",
+              "number": 11,
+              "page": "",
+              "name": "Seko Fofana"
+            },
+            {
+              "code": "CIV12",
+              "number": 12,
+              "page": "",
+              "name": "Ibrahim Sangaré"
+            },
+            {
+              "code": "CIV13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CIV14",
+              "number": 14,
+              "page": "",
+              "name": "Jean-Philippe Gbamin"
+            },
+            {
+              "code": "CIV15",
+              "number": 15,
+              "page": "",
+              "name": "Amad Diallo"
+            },
+            {
+              "code": "CIV16",
+              "number": 16,
+              "page": "",
+              "name": "Sébastien Haller"
+            },
+            {
+              "code": "CIV17",
+              "number": 17,
+              "page": "",
+              "name": "Simon Adingra"
+            },
+            {
+              "code": "CIV18",
+              "number": 18,
+              "page": "",
+              "name": "Yan Diomande"
+            },
+            {
+              "code": "CIV19",
+              "number": 19,
+              "page": "",
+              "name": "Evann Guessand"
+            },
+            {
+              "code": "CIV20",
+              "number": 20,
+              "page": "",
+              "name": "Oumar Diakité"
+            }
+          ]
+        },
+        {
+          "code": "ECUADOR",
+          "name": "Ecuador",
+          "stickers": [
+            {
+              "code": "ECU1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "ECU2",
+              "number": 2,
+              "page": "",
+              "name": "Hernán Galíndez"
+            },
+            {
+              "code": "ECU3",
+              "number": 3,
+              "page": "",
+              "name": "Gonzalo Valle"
+            },
+            {
+              "code": "ECU4",
+              "number": 4,
+              "page": "",
+              "name": "Piero Hincapié"
+            },
+            {
+              "code": "ECU5",
+              "number": 5,
+              "page": "",
+              "name": "Pervis Estupiñán"
+            },
+            {
+              "code": "ECU6",
+              "number": 6,
+              "page": "",
+              "name": "Willian Pacho"
+            },
+            {
+              "code": "ECU7",
+              "number": 7,
+              "page": "",
+              "name": "Ángelo Preciado"
+            },
+            {
+              "code": "ECU8",
+              "number": 8,
+              "page": "",
+              "name": "Joel Ordóñez"
+            },
+            {
+              "code": "ECU9",
+              "number": 9,
+              "page": "",
+              "name": "Moisés Caicedo"
+            },
+            {
+              "code": "ECU10",
+              "number": 10,
+              "page": "",
+              "name": "Alan Franco"
+            },
+            {
+              "code": "ECU11",
+              "number": 11,
+              "page": "",
+              "name": "Kendry Páez"
+            },
+            {
+              "code": "ECU12",
+              "number": 12,
+              "page": "",
+              "name": "Pedro Vite"
+            },
+            {
+              "code": "ECU13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "ECU14",
+              "number": 14,
+              "page": "",
+              "name": "John Yeboah"
+            },
+            {
+              "code": "ECU15",
+              "number": 15,
+              "page": "",
+              "name": "Leonardo Campana"
+            },
+            {
+              "code": "ECU16",
+              "number": 16,
+              "page": "",
+              "name": "Gonzalo Plata"
+            },
+            {
+              "code": "ECU17",
+              "number": 17,
+              "page": "",
+              "name": "Nilson Angulo"
+            },
+            {
+              "code": "ECU18",
+              "number": 18,
+              "page": "",
+              "name": "Alan Minda"
+            },
+            {
+              "code": "ECU19",
+              "number": 19,
+              "page": "",
+              "name": "Kevin Rodríguez"
+            },
+            {
+              "code": "ECU20",
+              "number": 20,
+              "page": "",
+              "name": "Enner Valencia"
+            }
+          ]
+        },
+        {
+          "code": "NETHERLANDS",
+          "name": "Netherlands",
+          "stickers": [
+            {
+              "code": "NED1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "NED2",
+              "number": 2,
+              "page": "",
+              "name": "Bart Verbruggen"
+            },
+            {
+              "code": "NED3",
+              "number": 3,
+              "page": "",
+              "name": "Virgil van Dijk"
+            },
+            {
+              "code": "NED4",
+              "number": 4,
+              "page": "",
+              "name": "Micky van de Ven"
+            },
+            {
+              "code": "NED5",
+              "number": 5,
+              "page": "",
+              "name": "Jurrien Timber"
+            },
+            {
+              "code": "NED6",
+              "number": 6,
+              "page": "",
+              "name": "Denzel Dumfries"
+            },
+            {
+              "code": "NED7",
+              "number": 7,
+              "page": "",
+              "name": "Nathan Aké"
+            },
+            {
+              "code": "NED8",
+              "number": 8,
+              "page": "",
+              "name": "Jeremie Frimpong"
+            },
+            {
+              "code": "NED9",
+              "number": 9,
+              "page": "",
+              "name": "Jan Paul van Hecke"
+            },
+            {
+              "code": "NED10",
+              "number": 10,
+              "page": "",
+              "name": "Tijjani Reijnders"
+            },
+            {
+              "code": "NED11",
+              "number": 11,
+              "page": "",
+              "name": "Ryan Gravenberch"
+            },
+            {
+              "code": "NED12",
+              "number": 12,
+              "page": "",
+              "name": "Teun Koopmeiners"
+            },
+            {
+              "code": "NED13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "NED14",
+              "number": 14,
+              "page": "",
+              "name": "Frenkie de Jong"
+            },
+            {
+              "code": "NED15",
+              "number": 15,
+              "page": "",
+              "name": "Xavi Simons"
+            },
+            {
+              "code": "NED16",
+              "number": 16,
+              "page": "",
+              "name": "Justin Kluivert"
+            },
+            {
+              "code": "NED17",
+              "number": 17,
+              "page": "",
+              "name": "Memphis Depay"
+            },
+            {
+              "code": "NED18",
+              "number": 18,
+              "page": "",
+              "name": "Donyell Malen"
+            },
+            {
+              "code": "NED19",
+              "number": 19,
+              "page": "",
+              "name": "Wout Weghorst"
+            },
+            {
+              "code": "NED20",
+              "number": 20,
+              "page": "",
+              "name": "Cody Gakpo"
+            }
+          ]
+        },
+        {
+          "code": "JAPAN",
+          "name": "Japan",
+          "stickers": [
+            {
+              "code": "JPN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "JPN2",
+              "number": 2,
+              "page": "",
+              "name": "Viktor Johansson"
+            },
+            {
+              "code": "JPN3",
+              "number": 3,
+              "page": "",
+              "name": "Isak Hien"
+            },
+            {
+              "code": "JPN4",
+              "number": 4,
+              "page": "",
+              "name": "Gabriel Gudmundsson"
+            },
+            {
+              "code": "JPN5",
+              "number": 5,
+              "page": "",
+              "name": "Emil Holm"
+            },
+            {
+              "code": "JPN6",
+              "number": 6,
+              "page": "",
+              "name": "Victor Nilsson Lindelöf"
+            },
+            {
+              "code": "JPN7",
+              "number": 7,
+              "page": "",
+              "name": "Gustaf Lagerbielke"
+            },
+            {
+              "code": "JPN8",
+              "number": 8,
+              "page": "",
+              "name": "Lucas Bergvall"
+            },
+            {
+              "code": "JPN9",
+              "number": 9,
+              "page": "",
+              "name": "Hugo Larsson"
+            },
+            {
+              "code": "JPN10",
+              "number": 10,
+              "page": "",
+              "name": "Jesper Karlström"
+            },
+            {
+              "code": "JPN11",
+              "number": 11,
+              "page": "",
+              "name": "Yasin Ayari"
+            },
+            {
+              "code": "JPN12",
+              "number": 12,
+              "page": "",
+              "name": "Mattias Svanberg"
+            },
+            {
+              "code": "JPN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "JPN14",
+              "number": 14,
+              "page": "",
+              "name": "Daniel Svensson"
+            },
+            {
+              "code": "JPN15",
+              "number": 15,
+              "page": "",
+              "name": "Ken Sema"
+            },
+            {
+              "code": "JPN16",
+              "number": 16,
+              "page": "",
+              "name": "Roony Bardghji"
+            },
+            {
+              "code": "JPN17",
+              "number": 17,
+              "page": "",
+              "name": "Dejan Kulusevski"
+            },
+            {
+              "code": "JPN18",
+              "number": 18,
+              "page": "",
+              "name": "Anthony Elanga"
+            },
+            {
+              "code": "JPN19",
+              "number": 19,
+              "page": "",
+              "name": "Alexander Isak"
+            },
+            {
+              "code": "JPN20",
+              "number": 20,
+              "page": "",
+              "name": "Viktor Gyökeres"
+            }
+          ]
+        },
+        {
+          "code": "SWEDEN",
+          "name": "Sweden",
+          "stickers": [
+            {
+              "code": "SWE1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "SWE2",
+              "number": 2,
+              "page": "",
+              "name": "Viktor Johansson"
+            },
+            {
+              "code": "SWE3",
+              "number": 3,
+              "page": "",
+              "name": "Isak Hien"
+            },
+            {
+              "code": "SWE4",
+              "number": 4,
+              "page": "",
+              "name": "Gabriel Gudmundsson"
+            },
+            {
+              "code": "SWE5",
+              "number": 5,
+              "page": "",
+              "name": "Emil Holm"
+            },
+            {
+              "code": "SWE6",
+              "number": 6,
+              "page": "",
+              "name": "Victor Nilsson Lindelöf"
+            },
+            {
+              "code": "SWE7",
+              "number": 7,
+              "page": "",
+              "name": "Gustaf Lagerbielke"
+            },
+            {
+              "code": "SWE8",
+              "number": 8,
+              "page": "",
+              "name": "Lucas Bergvall"
+            },
+            {
+              "code": "SWE9",
+              "number": 9,
+              "page": "",
+              "name": "Hugo Larsson"
+            },
+            {
+              "code": "SWE10",
+              "number": 10,
+              "page": "",
+              "name": "Jesper Karlström"
+            },
+            {
+              "code": "SWE11",
+              "number": 11,
+              "page": "",
+              "name": "Yasin Ayari"
+            },
+            {
+              "code": "SWE12",
+              "number": 12,
+              "page": "",
+              "name": "Mattias Svanberg"
+            },
+            {
+              "code": "SWE13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "SWE14",
+              "number": 14,
+              "page": "",
+              "name": "Daniel Svensson"
+            },
+            {
+              "code": "SWE15",
+              "number": 15,
+              "page": "",
+              "name": "Ken Sema"
+            },
+            {
+              "code": "SWE16",
+              "number": 16,
+              "page": "",
+              "name": "Roony Bardghji"
+            },
+            {
+              "code": "SWE17",
+              "number": 17,
+              "page": "",
+              "name": "Dejan Kulusevski"
+            },
+            {
+              "code": "SWE18",
+              "number": 18,
+              "page": "",
+              "name": "Anthony Elanga"
+            },
+            {
+              "code": "SWE19",
+              "number": 19,
+              "page": "",
+              "name": "Alexander Isak"
+            },
+            {
+              "code": "SWE20",
+              "number": 20,
+              "page": "",
+              "name": "Viktor Gyökeres"
+            }
+          ]
+        },
+        {
+          "code": "TUNISIA",
+          "name": "Tunisia",
+          "stickers": [
+            {
+              "code": "TUN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "TUN2",
+              "number": 2,
+              "page": "",
+              "name": "Bechir Ben Said"
+            },
+            {
+              "code": "TUN3",
+              "number": 3,
+              "page": "",
+              "name": "Aymen Dahmen"
+            },
+            {
+              "code": "TUN4",
+              "number": 4,
+              "page": "",
+              "name": "Yan Valery"
+            },
+            {
+              "code": "TUN5",
+              "number": 5,
+              "page": "",
+              "name": "Montassar Talbi"
+            },
+            {
+              "code": "TUN6",
+              "number": 6,
+              "page": "",
+              "name": "Yassine Meriah"
+            },
+            {
+              "code": "TUN7",
+              "number": 7,
+              "page": "",
+              "name": "Ali Abdi"
+            },
+            {
+              "code": "TUN8",
+              "number": 8,
+              "page": "",
+              "name": "Dylan Bronn"
+            },
+            {
+              "code": "TUN9",
+              "number": 9,
+              "page": "",
+              "name": "Ellyes Skhiri"
+            },
+            {
+              "code": "TUN10",
+              "number": 10,
+              "page": "",
+              "name": "Aïssa Laïdouni"
+            },
+            {
+              "code": "TUN11",
+              "number": 11,
+              "page": "",
+              "name": "Ferjani Sassi"
+            },
+            {
+              "code": "TUN12",
+              "number": 12,
+              "page": "",
+              "name": "Mohamed Ali Ben Romdhane"
+            },
+            {
+              "code": "TUN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "TUN14",
+              "number": 14,
+              "page": "",
+              "name": "Hannibal Mejbri"
+            },
+            {
+              "code": "TUN15",
+              "number": 15,
+              "page": "",
+              "name": "Elias Achouri"
+            },
+            {
+              "code": "TUN16",
+              "number": 16,
+              "page": "",
+              "name": "Elias Saad"
+            },
+            {
+              "code": "TUN17",
+              "number": 17,
+              "page": "",
+              "name": "Hazem Mastouri"
+            },
+            {
+              "code": "TUN18",
+              "number": 18,
+              "page": "",
+              "name": "Ismael Gharbi"
+            },
+            {
+              "code": "TUN19",
+              "number": 19,
+              "page": "",
+              "name": "Sayfallah Ltaief"
+            },
+            {
+              "code": "TUN20",
+              "number": 20,
+              "page": "",
+              "name": "Naïm Sliti"
+            }
+          ]
+        },
+        {
+          "code": "BELGIUM",
+          "name": "Belgium",
+          "stickers": [
+            {
+              "code": "BEL1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "BEL2",
+              "number": 2,
+              "page": "",
+              "name": "Thibaut Courtois"
+            },
+            {
+              "code": "BEL3",
+              "number": 3,
+              "page": "",
+              "name": "Arthur Theate"
+            },
+            {
+              "code": "BEL4",
+              "number": 4,
+              "page": "",
+              "name": "Timothy Castagne"
+            },
+            {
+              "code": "BEL5",
+              "number": 5,
+              "page": "",
+              "name": "Zeno Debast"
+            },
+            {
+              "code": "BEL6",
+              "number": 6,
+              "page": "",
+              "name": "Brandon Mechele"
+            },
+            {
+              "code": "BEL7",
+              "number": 7,
+              "page": "",
+              "name": "Maxim De Cuyper"
+            },
+            {
+              "code": "BEL8",
+              "number": 8,
+              "page": "",
+              "name": "Thomas Meunier"
+            },
+            {
+              "code": "BEL9",
+              "number": 9,
+              "page": "",
+              "name": "Youri Tielemans"
+            },
+            {
+              "code": "BEL10",
+              "number": 10,
+              "page": "",
+              "name": "Amadou Onana"
+            },
+            {
+              "code": "BEL11",
+              "number": 11,
+              "page": "",
+              "name": "Nicolas Raskin"
+            },
+            {
+              "code": "BEL12",
+              "number": 12,
+              "page": "",
+              "name": "Alexis Saelemaekers"
+            },
+            {
+              "code": "BEL13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "BEL14",
+              "number": 14,
+              "page": "",
+              "name": "Hans Vanaken"
+            },
+            {
+              "code": "BEL15",
+              "number": 15,
+              "page": "",
+              "name": "Kevin De Bruyne"
+            },
+            {
+              "code": "BEL16",
+              "number": 16,
+              "page": "",
+              "name": "Jérémy Doku"
+            },
+            {
+              "code": "BEL17",
+              "number": 17,
+              "page": "",
+              "name": "Charles De Ketelaere"
+            },
+            {
+              "code": "BEL18",
+              "number": 18,
+              "page": "",
+              "name": "Leandro Trossard"
+            },
+            {
+              "code": "BEL19",
+              "number": 19,
+              "page": "",
+              "name": "Loïs Openda"
+            },
+            {
+              "code": "BEL20",
+              "number": 20,
+              "page": "",
+              "name": "Romelu Lukaku"
+            }
+          ]
+        },
+        {
+          "code": "EGYPT",
+          "name": "Egypt",
+          "stickers": [
+            {
+              "code": "EGY1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "EGY2",
+              "number": 2,
+              "page": "",
+              "name": "Mohamed El Shenawy"
+            },
+            {
+              "code": "EGY3",
+              "number": 3,
+              "page": "",
+              "name": "Mohamed Hany"
+            },
+            {
+              "code": "EGY4",
+              "number": 4,
+              "page": "",
+              "name": "Mohamed Hamdy"
+            },
+            {
+              "code": "EGY5",
+              "number": 5,
+              "page": "",
+              "name": "Yasser Ibrahim"
+            },
+            {
+              "code": "EGY6",
+              "number": 6,
+              "page": "",
+              "name": "Khaled Sobhi"
+            },
+            {
+              "code": "EGY7",
+              "number": 7,
+              "page": "",
+              "name": "Ramy Rabia"
+            },
+            {
+              "code": "EGY8",
+              "number": 8,
+              "page": "",
+              "name": "Hossam Abdelmaguid"
+            },
+            {
+              "code": "EGY9",
+              "number": 9,
+              "page": "",
+              "name": "Ahmed Fatouh"
+            },
+            {
+              "code": "EGY10",
+              "number": 10,
+              "page": "",
+              "name": "Marwan Attia"
+            },
+            {
+              "code": "EGY11",
+              "number": 11,
+              "page": "",
+              "name": "Zizo"
+            },
+            {
+              "code": "EGY12",
+              "number": 12,
+              "page": "",
+              "name": "Hamdy Fathy"
+            },
+            {
+              "code": "EGY13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "EGY14",
+              "number": 14,
+              "page": "",
+              "name": "Mohamed Lasheen"
+            },
+            {
+              "code": "EGY15",
+              "number": 15,
+              "page": "",
+              "name": "Emam Ashour"
+            },
+            {
+              "code": "EGY16",
+              "number": 16,
+              "page": "",
+              "name": "Osama Faisal"
+            },
+            {
+              "code": "EGY17",
+              "number": 17,
+              "page": "",
+              "name": "Mohamed Salah"
+            },
+            {
+              "code": "EGY18",
+              "number": 18,
+              "page": "",
+              "name": "Mostafa Mohamed"
+            },
+            {
+              "code": "EGY19",
+              "number": 19,
+              "page": "",
+              "name": "Trézéguet"
+            },
+            {
+              "code": "EGY20",
+              "number": 20,
+              "page": "",
+              "name": "Omar Marmoush"
+            }
+          ]
+        },
+        {
+          "code": "IRAN",
+          "name": "Iran",
+          "stickers": [
+            {
+              "code": "IRN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "IRN2",
+              "number": 2,
+              "page": "",
+              "name": "Alireza Beiranvand"
+            },
+            {
+              "code": "IRN3",
+              "number": 3,
+              "page": "",
+              "name": "Morteza Pouraliganji"
+            },
+            {
+              "code": "IRN4",
+              "number": 4,
+              "page": "",
+              "name": "Ehsan Hajsafi"
+            },
+            {
+              "code": "IRN5",
+              "number": 5,
+              "page": "",
+              "name": "Milad Mohammadi"
+            },
+            {
+              "code": "IRN6",
+              "number": 6,
+              "page": "",
+              "name": "Shojae Khalilzadeh"
+            },
+            {
+              "code": "IRN7",
+              "number": 7,
+              "page": "",
+              "name": "Ramin Rezaeian"
+            },
+            {
+              "code": "IRN8",
+              "number": 8,
+              "page": "",
+              "name": "Hossein Kanaani"
+            },
+            {
+              "code": "IRN9",
+              "number": 9,
+              "page": "",
+              "name": "Sadegh Moharrami"
+            },
+            {
+              "code": "IRN10",
+              "number": 10,
+              "page": "",
+              "name": "Saleh Hardani"
+            },
+            {
+              "code": "IRN11",
+              "number": 11,
+              "page": "",
+              "name": "Saeed Ezatolahi"
+            },
+            {
+              "code": "IRN12",
+              "number": 12,
+              "page": "",
+              "name": "Saman Ghoddos"
+            },
+            {
+              "code": "IRN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "IRN14",
+              "number": 14,
+              "page": "",
+              "name": "Omid Noorafkan"
+            },
+            {
+              "code": "IRN15",
+              "number": 15,
+              "page": "",
+              "name": "Roozbeh Cheshmi"
+            },
+            {
+              "code": "IRN16",
+              "number": 16,
+              "page": "",
+              "name": "Mohammad Mohebi"
+            },
+            {
+              "code": "IRN17",
+              "number": 17,
+              "page": "",
+              "name": "Sardar Azmoun"
+            },
+            {
+              "code": "IRN18",
+              "number": 18,
+              "page": "",
+              "name": "Mehdi Taremi"
+            },
+            {
+              "code": "IRN19",
+              "number": 19,
+              "page": "",
+              "name": "Alireza Jahanbakhsh"
+            },
+            {
+              "code": "IRN20",
+              "number": 20,
+              "page": "",
+              "name": "Ali Gholizadeh"
+            }
+          ]
+        },
+        {
+          "code": "NEW_ZEALAND",
+          "name": "New Zealand",
+          "stickers": [
+            {
+              "code": "NZL1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "NZL2",
+              "number": 2,
+              "page": "",
+              "name": "Max Crocombe"
+            },
+            {
+              "code": "NZL3",
+              "number": 3,
+              "page": "",
+              "name": "Alex Paulsen"
+            },
+            {
+              "code": "NZL4",
+              "number": 4,
+              "page": "",
+              "name": "Michael Boxall"
+            },
+            {
+              "code": "NZL5",
+              "number": 5,
+              "page": "",
+              "name": "Liberato Cacace"
+            },
+            {
+              "code": "NZL6",
+              "number": 6,
+              "page": "",
+              "name": "Tim Payne"
+            },
+            {
+              "code": "NZL7",
+              "number": 7,
+              "page": "",
+              "name": "Tyler Bindon"
+            },
+            {
+              "code": "NZL8",
+              "number": 8,
+              "page": "",
+              "name": "Francis de Vries"
+            },
+            {
+              "code": "NZL9",
+              "number": 9,
+              "page": "",
+              "name": "Finn Surman"
+            },
+            {
+              "code": "NZL10",
+              "number": 10,
+              "page": "",
+              "name": "Joe Bell"
+            },
+            {
+              "code": "NZL11",
+              "number": 11,
+              "page": "",
+              "name": "Sarpreet Singh"
+            },
+            {
+              "code": "NZL12",
+              "number": 12,
+              "page": "",
+              "name": "Ryan Thomas"
+            },
+            {
+              "code": "NZL13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "NZL14",
+              "number": 14,
+              "page": "",
+              "name": "Matthew Garbett"
+            },
+            {
+              "code": "NZL15",
+              "number": 15,
+              "page": "",
+              "name": "Marko Stamenic"
+            },
+            {
+              "code": "NZL16",
+              "number": 16,
+              "page": "",
+              "name": "Ben Old"
+            },
+            {
+              "code": "NZL17",
+              "number": 17,
+              "page": "",
+              "name": "Chris Wood"
+            },
+            {
+              "code": "NZL18",
+              "number": 18,
+              "page": "",
+              "name": "Elijah Just"
+            },
+            {
+              "code": "NZL19",
+              "number": 19,
+              "page": "",
+              "name": "Callum McCowatt"
+            },
+            {
+              "code": "NZL20",
+              "number": 20,
+              "page": "",
+              "name": "Kosta Barbarouses"
+            }
+          ]
+        },
+        {
+          "code": "SPAIN",
+          "name": "Spain",
+          "stickers": [
+            {
+              "code": "ESP1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "ESP2",
+              "number": 2,
+              "page": "",
+              "name": "Unai Simón"
+            },
+            {
+              "code": "ESP3",
+              "number": 3,
+              "page": "",
+              "name": "Robin Le Normand"
+            },
+            {
+              "code": "ESP4",
+              "number": 4,
+              "page": "",
+              "name": "Aymeric Laporte"
+            },
+            {
+              "code": "ESP5",
+              "number": 5,
+              "page": "",
+              "name": "Dean Huijsen"
+            },
+            {
+              "code": "ESP6",
+              "number": 6,
+              "page": "",
+              "name": "Pedro Porro"
+            },
+            {
+              "code": "ESP7",
+              "number": 7,
+              "page": "",
+              "name": "Dani Carvajal"
+            },
+            {
+              "code": "ESP8",
+              "number": 8,
+              "page": "",
+              "name": "Marc Cucurella"
+            },
+            {
+              "code": "ESP9",
+              "number": 9,
+              "page": "",
+              "name": "Martín Zubimendi"
+            },
+            {
+              "code": "ESP10",
+              "number": 10,
+              "page": "",
+              "name": "Rodri"
+            },
+            {
+              "code": "ESP11",
+              "number": 11,
+              "page": "",
+              "name": "Pedri"
+            },
+            {
+              "code": "ESP12",
+              "number": 12,
+              "page": "",
+              "name": "Fabián Ruiz"
+            },
+            {
+              "code": "ESP13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "ESP14",
+              "number": 14,
+              "page": "",
+              "name": "Mikel Merino"
+            },
+            {
+              "code": "ESP15",
+              "number": 15,
+              "page": "",
+              "name": "Lamine Yamal"
+            },
+            {
+              "code": "ESP16",
+              "number": 16,
+              "page": "",
+              "name": "Dani Olmo"
+            },
+            {
+              "code": "ESP17",
+              "number": 17,
+              "page": "",
+              "name": "Nico Williams"
+            },
+            {
+              "code": "ESP18",
+              "number": 18,
+              "page": "",
+              "name": "Ferran Torres"
+            },
+            {
+              "code": "ESP19",
+              "number": 19,
+              "page": "",
+              "name": "Álvaro Morata"
+            },
+            {
+              "code": "ESP20",
+              "number": 20,
+              "page": "",
+              "name": "Mikel Oyarzabal"
+            }
+          ]
+        },
+        {
+          "code": "CABO_VERDE",
+          "name": "Cabo Verde",
+          "stickers": [
+            {
+              "code": "CPV1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CPV2",
+              "number": 2,
+              "page": "",
+              "name": "Vozinha"
+            },
+            {
+              "code": "CPV3",
+              "number": 3,
+              "page": "",
+              "name": "Logan Costa"
+            },
+            {
+              "code": "CPV4",
+              "number": 4,
+              "page": "",
+              "name": "Pico"
+            },
+            {
+              "code": "CPV5",
+              "number": 5,
+              "page": "",
+              "name": "Diney"
+            },
+            {
+              "code": "CPV6",
+              "number": 6,
+              "page": "",
+              "name": "Steven Moreira"
+            },
+            {
+              "code": "CPV7",
+              "number": 7,
+              "page": "",
+              "name": "Wagner Pina"
+            },
+            {
+              "code": "CPV8",
+              "number": 8,
+              "page": "",
+              "name": "João Paulo"
+            },
+            {
+              "code": "CPV9",
+              "number": 9,
+              "page": "",
+              "name": "Yannick Semedo"
+            },
+            {
+              "code": "CPV10",
+              "number": 10,
+              "page": "",
+              "name": "Kevin Pina"
+            },
+            {
+              "code": "CPV11",
+              "number": 11,
+              "page": "",
+              "name": "Patrick Andrade"
+            },
+            {
+              "code": "CPV12",
+              "number": 12,
+              "page": "",
+              "name": "Jamiro Monteiro"
+            },
+            {
+              "code": "CPV13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CPV14",
+              "number": 14,
+              "page": "",
+              "name": "Deroy Duarte"
+            },
+            {
+              "code": "CPV15",
+              "number": 15,
+              "page": "",
+              "name": "Garry Rodrigues"
+            },
+            {
+              "code": "CPV16",
+              "number": 16,
+              "page": "",
+              "name": "Jovane Cabral"
+            },
+            {
+              "code": "CPV17",
+              "number": 17,
+              "page": "",
+              "name": "Ryan Mendes"
+            },
+            {
+              "code": "CPV18",
+              "number": 18,
+              "page": "",
+              "name": "Dailon Livramento"
+            },
+            {
+              "code": "CPV19",
+              "number": 19,
+              "page": "",
+              "name": "Willy Semedo"
+            },
+            {
+              "code": "CPV20",
+              "number": 20,
+              "page": "",
+              "name": "Bebé"
+            }
+          ]
+        },
+        {
+          "code": "SAUDI_ARABIA",
+          "name": "Saudi Arabia",
+          "stickers": [
+            {
+              "code": "KSA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "KSA2",
+              "number": 2,
+              "page": "",
+              "name": "Nawaf Alaqidi"
+            },
+            {
+              "code": "KSA3",
+              "number": 3,
+              "page": "",
+              "name": "Abdulrahman Al-Sanbi"
+            },
+            {
+              "code": "KSA4",
+              "number": 4,
+              "page": "",
+              "name": "Saud Abdulhamid"
+            },
+            {
+              "code": "KSA5",
+              "number": 5,
+              "page": "",
+              "name": "Nawaf Boushal"
+            },
+            {
+              "code": "KSA6",
+              "number": 6,
+              "page": "",
+              "name": "Jihad Thakri"
+            },
+            {
+              "code": "KSA7",
+              "number": 7,
+              "page": "",
+              "name": "Moteb Al-Harbi"
+            },
+            {
+              "code": "KSA8",
+              "number": 8,
+              "page": "",
+              "name": "Hassan Altambakti"
+            },
+            {
+              "code": "KSA9",
+              "number": 9,
+              "page": "",
+              "name": "Musab Aljuwayr"
+            },
+            {
+              "code": "KSA10",
+              "number": 10,
+              "page": "",
+              "name": "Ziyad Aljohani"
+            },
+            {
+              "code": "KSA11",
+              "number": 11,
+              "page": "",
+              "name": "Abdullah Alkhaibari"
+            },
+            {
+              "code": "KSA12",
+              "number": 12,
+              "page": "",
+              "name": "Nasser Aldawsari"
+            },
+            {
+              "code": "KSA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "KSA14",
+              "number": 14,
+              "page": "",
+              "name": "Saleh Abu Alshamat"
+            },
+            {
+              "code": "KSA15",
+              "number": 15,
+              "page": "",
+              "name": "Marwan Alsahafi"
+            },
+            {
+              "code": "KSA16",
+              "number": 16,
+              "page": "",
+              "name": "Salem Aldawsari"
+            },
+            {
+              "code": "KSA17",
+              "number": 17,
+              "page": "",
+              "name": "Abdulrahman Al-Aboud"
+            },
+            {
+              "code": "KSA18",
+              "number": 18,
+              "page": "",
+              "name": "Feras Albrikan"
+            },
+            {
+              "code": "KSA19",
+              "number": 19,
+              "page": "",
+              "name": "Saleh Al-Shehri"
+            },
+            {
+              "code": "KSA20",
+              "number": 20,
+              "page": "",
+              "name": "Abdullah Al-Hamdan"
+            }
+          ]
+        },
+        {
+          "code": "URUGUAY",
+          "name": "Uruguay",
+          "stickers": [
+            {
+              "code": "URU1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "URU2",
+              "number": 2,
+              "page": "",
+              "name": "Sergio Rochet"
+            },
+            {
+              "code": "URU3",
+              "number": 3,
+              "page": "",
+              "name": "Santiago Mele"
+            },
+            {
+              "code": "URU4",
+              "number": 4,
+              "page": "",
+              "name": "Ronald Araújo"
+            },
+            {
+              "code": "URU5",
+              "number": 5,
+              "page": "",
+              "name": "José María Giménez"
+            },
+            {
+              "code": "URU6",
+              "number": 6,
+              "page": "",
+              "name": "Sebastián Cáceres"
+            },
+            {
+              "code": "URU7",
+              "number": 7,
+              "page": "",
+              "name": "Mathías Olivera"
+            },
+            {
+              "code": "URU8",
+              "number": 8,
+              "page": "",
+              "name": "Guillermo Varela"
+            },
+            {
+              "code": "URU9",
+              "number": 9,
+              "page": "",
+              "name": "Nahitan Nández"
+            },
+            {
+              "code": "URU10",
+              "number": 10,
+              "page": "",
+              "name": "Federico Valverde"
+            },
+            {
+              "code": "URU11",
+              "number": 11,
+              "page": "",
+              "name": "Giorgian De Arrascaeta"
+            },
+            {
+              "code": "URU12",
+              "number": 12,
+              "page": "",
+              "name": "Rodrigo Bentancur"
+            },
+            {
+              "code": "URU13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "URU14",
+              "number": 14,
+              "page": "",
+              "name": "Manuel Ugarte"
+            },
+            {
+              "code": "URU15",
+              "number": 15,
+              "page": "",
+              "name": "Nicolás de la Cruz"
+            },
+            {
+              "code": "URU16",
+              "number": 16,
+              "page": "",
+              "name": "Maxi Araújo"
+            },
+            {
+              "code": "URU17",
+              "number": 17,
+              "page": "",
+              "name": "Darwin Núñez"
+            },
+            {
+              "code": "URU18",
+              "number": 18,
+              "page": "",
+              "name": "Federico Viñas"
+            },
+            {
+              "code": "URU19",
+              "number": 19,
+              "page": "",
+              "name": "Rodrigo Aguirre"
+            },
+            {
+              "code": "URU20",
+              "number": 20,
+              "page": "",
+              "name": "Facundo Pellistri"
+            }
+          ]
+        },
+        {
+          "code": "FRANCE",
+          "name": "France",
+          "stickers": [
+            {
+              "code": "FRA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "FRA2",
+              "number": 2,
+              "page": "",
+              "name": "Mike Maignan"
+            },
+            {
+              "code": "FRA3",
+              "number": 3,
+              "page": "",
+              "name": "Théo Hernandez"
+            },
+            {
+              "code": "FRA4",
+              "number": 4,
+              "page": "",
+              "name": "William Saliba"
+            },
+            {
+              "code": "FRA5",
+              "number": 5,
+              "page": "",
+              "name": "Jules Koundé"
+            },
+            {
+              "code": "FRA6",
+              "number": 6,
+              "page": "",
+              "name": "Ibrahima Konaté"
+            },
+            {
+              "code": "FRA7",
+              "number": 7,
+              "page": "",
+              "name": "Dayot Upamecano"
+            },
+            {
+              "code": "FRA8",
+              "number": 8,
+              "page": "",
+              "name": "Lucas Digne"
+            },
+            {
+              "code": "FRA9",
+              "number": 9,
+              "page": "",
+              "name": "Aurélien Tchouaméni"
+            },
+            {
+              "code": "FRA10",
+              "number": 10,
+              "page": "",
+              "name": "Eduardo Camavinga"
+            },
+            {
+              "code": "FRA11",
+              "number": 11,
+              "page": "",
+              "name": "Manu Koné"
+            },
+            {
+              "code": "FRA12",
+              "number": 12,
+              "page": "",
+              "name": "Adrien Rabiot"
+            },
+            {
+              "code": "FRA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "FRA14",
+              "number": 14,
+              "page": "",
+              "name": "Michael Olise"
+            },
+            {
+              "code": "FRA15",
+              "number": 15,
+              "page": "",
+              "name": "Ousmane Dembélé"
+            },
+            {
+              "code": "FRA16",
+              "number": 16,
+              "page": "",
+              "name": "Bradley Barcola"
+            },
+            {
+              "code": "FRA17",
+              "number": 17,
+              "page": "",
+              "name": "Désiré Doué"
+            },
+            {
+              "code": "FRA18",
+              "number": 18,
+              "page": "",
+              "name": "Kingsley Coman"
+            },
+            {
+              "code": "FRA19",
+              "number": 19,
+              "page": "",
+              "name": "Hugo Ekitike"
+            },
+            {
+              "code": "FRA20",
+              "number": 20,
+              "page": "",
+              "name": "Kylian Mbappé"
+            }
+          ]
+        },
+        {
+          "code": "SENEGAL",
+          "name": "Senegal",
+          "stickers": [
+            {
+              "code": "SEN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "SEN2",
+              "number": 2,
+              "page": "",
+              "name": "Edouard Mendy"
+            },
+            {
+              "code": "SEN3",
+              "number": 3,
+              "page": "",
+              "name": "Yehvann Diouf"
+            },
+            {
+              "code": "SEN4",
+              "number": 4,
+              "page": "",
+              "name": "Moussa Niakhaté"
+            },
+            {
+              "code": "SEN5",
+              "number": 5,
+              "page": "",
+              "name": "Abdoulaye Seck"
+            },
+            {
+              "code": "SEN6",
+              "number": 6,
+              "page": "",
+              "name": "Ismail Jakobs"
+            },
+            {
+              "code": "SEN7",
+              "number": 7,
+              "page": "",
+              "name": "El Hadji Malick Diouf"
+            },
+            {
+              "code": "SEN8",
+              "number": 8,
+              "page": "",
+              "name": "Kalidou Koulibaly"
+            },
+            {
+              "code": "SEN9",
+              "number": 9,
+              "page": "",
+              "name": "Idrissa Gana Gueye"
+            },
+            {
+              "code": "SEN10",
+              "number": 10,
+              "page": "",
+              "name": "Pape Matar Sarr"
+            },
+            {
+              "code": "SEN11",
+              "number": 11,
+              "page": "",
+              "name": "Pape Gueye"
+            },
+            {
+              "code": "SEN12",
+              "number": 12,
+              "page": "",
+              "name": "Habib Diarra"
+            },
+            {
+              "code": "SEN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "SEN14",
+              "number": 14,
+              "page": "",
+              "name": "Lamine Camara"
+            },
+            {
+              "code": "SEN15",
+              "number": 15,
+              "page": "",
+              "name": "Sadio Mané"
+            },
+            {
+              "code": "SEN16",
+              "number": 16,
+              "page": "",
+              "name": "Ismaïla Sarr"
+            },
+            {
+              "code": "SEN17",
+              "number": 17,
+              "page": "",
+              "name": "Boulaye Dia"
+            },
+            {
+              "code": "SEN18",
+              "number": 18,
+              "page": "",
+              "name": "Iliman Ndiaye"
+            },
+            {
+              "code": "SEN19",
+              "number": 19,
+              "page": "",
+              "name": "Nicolas Jackson"
+            },
+            {
+              "code": "SEN20",
+              "number": 20,
+              "page": "",
+              "name": "Krépin Diatta"
+            }
+          ]
+        },
+        {
+          "code": "IRAQ",
+          "name": "Iraq",
+          "stickers": [
+            {
+              "code": "IRQ1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "IRQ2",
+              "number": 2,
+              "page": "",
+              "name": "Jalal Hassan"
+            },
+            {
+              "code": "IRQ3",
+              "number": 3,
+              "page": "",
+              "name": "Rebin Sulaka"
+            },
+            {
+              "code": "IRQ4",
+              "number": 4,
+              "page": "",
+              "name": "Hussein Ali"
+            },
+            {
+              "code": "IRQ5",
+              "number": 5,
+              "page": "",
+              "name": "Akam Hashem"
+            },
+            {
+              "code": "IRQ6",
+              "number": 6,
+              "page": "",
+              "name": "Merchas Doski"
+            },
+            {
+              "code": "IRQ7",
+              "number": 7,
+              "page": "",
+              "name": "Zaid Tahseen"
+            },
+            {
+              "code": "IRQ8",
+              "number": 8,
+              "page": "",
+              "name": "Manaf Younis"
+            },
+            {
+              "code": "IRQ9",
+              "number": 9,
+              "page": "",
+              "name": "Zidane Iqbal"
+            },
+            {
+              "code": "IRQ10",
+              "number": 10,
+              "page": "",
+              "name": "Amir Al-Ammari"
+            },
+            {
+              "code": "IRQ11",
+              "number": 11,
+              "page": "",
+              "name": "Ibrahim Bayesh"
+            },
+            {
+              "code": "IRQ12",
+              "number": 12,
+              "page": "",
+              "name": "Ali Jasim"
+            },
+            {
+              "code": "IRQ13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "IRQ14",
+              "number": 14,
+              "page": "",
+              "name": "Youssef Amyn"
+            },
+            {
+              "code": "IRQ15",
+              "number": 15,
+              "page": "",
+              "name": "Aimar Sher"
+            },
+            {
+              "code": "IRQ16",
+              "number": 16,
+              "page": "",
+              "name": "Marko Farji"
+            },
+            {
+              "code": "IRQ17",
+              "number": 17,
+              "page": "",
+              "name": "Osama Rashid"
+            },
+            {
+              "code": "IRQ18",
+              "number": 18,
+              "page": "",
+              "name": "Ali Al-Hamadi"
+            },
+            {
+              "code": "IRQ19",
+              "number": 19,
+              "page": "",
+              "name": "Aymen Hussein"
+            },
+            {
+              "code": "IRQ20",
+              "number": 20,
+              "page": "",
+              "name": "Mohanad Ali"
+            }
+          ]
+        },
+        {
+          "code": "NORWAY",
+          "name": "Norway",
+          "stickers": [
+            {
+              "code": "NOR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "NOR2",
+              "number": 2,
+              "page": "",
+              "name": "Ørjan Nyland"
+            },
+            {
+              "code": "NOR3",
+              "number": 3,
+              "page": "",
+              "name": "Julian Ryerson"
+            },
+            {
+              "code": "NOR4",
+              "number": 4,
+              "page": "",
+              "name": "Leo Østigård"
+            },
+            {
+              "code": "NOR5",
+              "number": 5,
+              "page": "",
+              "name": "Kristoffer Vassbakk Ajer"
+            },
+            {
+              "code": "NOR6",
+              "number": 6,
+              "page": "",
+              "name": "Marcus Holmgren Pedersen"
+            },
+            {
+              "code": "NOR7",
+              "number": 7,
+              "page": "",
+              "name": "David Møller Wolfe"
+            },
+            {
+              "code": "NOR8",
+              "number": 8,
+              "page": "",
+              "name": "Torbjørn Heggem"
+            },
+            {
+              "code": "NOR9",
+              "number": 9,
+              "page": "",
+              "name": "Morten Thorsby"
+            },
+            {
+              "code": "NOR10",
+              "number": 10,
+              "page": "",
+              "name": "Martin Ødegaard"
+            },
+            {
+              "code": "NOR11",
+              "number": 11,
+              "page": "",
+              "name": "Sander Berge"
+            },
+            {
+              "code": "NOR12",
+              "number": 12,
+              "page": "",
+              "name": "Andreas Schjelderup"
+            },
+            {
+              "code": "NOR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "NOR14",
+              "number": 14,
+              "page": "",
+              "name": "Patrick Berg"
+            },
+            {
+              "code": "NOR15",
+              "number": 15,
+              "page": "",
+              "name": "Erling Haaland"
+            },
+            {
+              "code": "NOR16",
+              "number": 16,
+              "page": "",
+              "name": "Alexander Sørloth"
+            },
+            {
+              "code": "NOR17",
+              "number": 17,
+              "page": "",
+              "name": "Aron Dønnum"
+            },
+            {
+              "code": "NOR18",
+              "number": 18,
+              "page": "",
+              "name": "Jørgen Strand Larsen"
+            },
+            {
+              "code": "NOR19",
+              "number": 19,
+              "page": "",
+              "name": "Antonio Nusa"
+            },
+            {
+              "code": "NOR20",
+              "number": 20,
+              "page": "",
+              "name": "Oscar Bobb"
+            }
+          ]
+        },
+        {
+          "code": "ARGENTINA",
+          "name": "Argentina",
+          "stickers": [
+            {
+              "code": "ARG1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "ARG2",
+              "number": 2,
+              "page": "",
+              "name": "Emiliano Martínez"
+            },
+            {
+              "code": "ARG3",
+              "number": 3,
+              "page": "",
+              "name": "Nahuel Molina"
+            },
+            {
+              "code": "ARG4",
+              "number": 4,
+              "page": "",
+              "name": "Cristian Romero"
+            },
+            {
+              "code": "ARG5",
+              "number": 5,
+              "page": "",
+              "name": "Nicolás Otamendi"
+            },
+            {
+              "code": "ARG6",
+              "number": 6,
+              "page": "",
+              "name": "Nicolás Tagliafico"
+            },
+            {
+              "code": "ARG7",
+              "number": 7,
+              "page": "",
+              "name": "Leonardo Balerdi"
+            },
+            {
+              "code": "ARG8",
+              "number": 8,
+              "page": "",
+              "name": "Enzo Fernández"
+            },
+            {
+              "code": "ARG9",
+              "number": 9,
+              "page": "",
+              "name": "Alexis Mac Allister"
+            },
+            {
+              "code": "ARG10",
+              "number": 10,
+              "page": "",
+              "name": "Rodrigo De Paul"
+            },
+            {
+              "code": "ARG11",
+              "number": 11,
+              "page": "",
+              "name": "Exequiel Palacios"
+            },
+            {
+              "code": "ARG12",
+              "number": 12,
+              "page": "",
+              "name": "Leandro Paredes"
+            },
+            {
+              "code": "ARG13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "ARG14",
+              "number": 14,
+              "page": "",
+              "name": "Nico Paz"
+            },
+            {
+              "code": "ARG15",
+              "number": 15,
+              "page": "",
+              "name": "Franco Mastantuono"
+            },
+            {
+              "code": "ARG16",
+              "number": 16,
+              "page": "",
+              "name": "Nico González"
+            },
+            {
+              "code": "ARG17",
+              "number": 17,
+              "page": "",
+              "name": "Lionel Messi"
+            },
+            {
+              "code": "ARG18",
+              "number": 18,
+              "page": "",
+              "name": "Lautaro Martínez"
+            },
+            {
+              "code": "ARG19",
+              "number": 19,
+              "page": "",
+              "name": "Julián Álvarez"
+            },
+            {
+              "code": "ARG20",
+              "number": 20,
+              "page": "",
+              "name": "Giuliano Simeone"
+            }
+          ]
+        },
+        {
+          "code": "ALGERIA",
+          "name": "Algeria",
+          "stickers": [
+            {
+              "code": "ALG1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "ALG2",
+              "number": 2,
+              "page": "",
+              "name": "Alexis Guendouz"
+            },
+            {
+              "code": "ALG3",
+              "number": 3,
+              "page": "",
+              "name": "Ramy Bensebaini"
+            },
+            {
+              "code": "ALG4",
+              "number": 4,
+              "page": "",
+              "name": "Youcef Atal"
+            },
+            {
+              "code": "ALG5",
+              "number": 5,
+              "page": "",
+              "name": "Rayan Aït-Nouri"
+            },
+            {
+              "code": "ALG6",
+              "number": 6,
+              "page": "",
+              "name": "Mohamed Amine Tougaï"
+            },
+            {
+              "code": "ALG7",
+              "number": 7,
+              "page": "",
+              "name": "Aïssa Mandi"
+            },
+            {
+              "code": "ALG8",
+              "number": 8,
+              "page": "",
+              "name": "Ismaël Bennacer"
+            },
+            {
+              "code": "ALG9",
+              "number": 9,
+              "page": "",
+              "name": "Houssem Aouar"
+            },
+            {
+              "code": "ALG10",
+              "number": 10,
+              "page": "",
+              "name": "Hicham Boudaoui"
+            },
+            {
+              "code": "ALG11",
+              "number": 11,
+              "page": "",
+              "name": "Ramiz Zerrouki"
+            },
+            {
+              "code": "ALG12",
+              "number": 12,
+              "page": "",
+              "name": "Nabil Bentaleb"
+            },
+            {
+              "code": "ALG13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "ALG14",
+              "number": 14,
+              "page": "",
+              "name": "Farès Chaïbi"
+            },
+            {
+              "code": "ALG15",
+              "number": 15,
+              "page": "",
+              "name": "Riyad Mahrez"
+            },
+            {
+              "code": "ALG16",
+              "number": 16,
+              "page": "",
+              "name": "Saïd Benrahma"
+            },
+            {
+              "code": "ALG17",
+              "number": 17,
+              "page": "",
+              "name": "Anis Hadj Moussa"
+            },
+            {
+              "code": "ALG18",
+              "number": 18,
+              "page": "",
+              "name": "Amine Gouiri"
+            },
+            {
+              "code": "ALG19",
+              "number": 19,
+              "page": "",
+              "name": "Baghdad Bounedjah"
+            },
+            {
+              "code": "ALG20",
+              "number": 20,
+              "page": "",
+              "name": "Mohamed Amoura"
+            }
+          ]
+        },
+        {
+          "code": "AUSTRIA",
+          "name": "Austria",
+          "stickers": [
+            {
+              "code": "AUT1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "AUT2",
+              "number": 2,
+              "page": "",
+              "name": "Alexander Schlager"
+            },
+            {
+              "code": "AUT3",
+              "number": 3,
+              "page": "",
+              "name": "Patrick Pentz"
+            },
+            {
+              "code": "AUT4",
+              "number": 4,
+              "page": "",
+              "name": "David Alaba"
+            },
+            {
+              "code": "AUT5",
+              "number": 5,
+              "page": "",
+              "name": "Kevin Danso"
+            },
+            {
+              "code": "AUT6",
+              "number": 6,
+              "page": "",
+              "name": "Philipp Lienhart"
+            },
+            {
+              "code": "AUT7",
+              "number": 7,
+              "page": "",
+              "name": "Stefan Posch"
+            },
+            {
+              "code": "AUT8",
+              "number": 8,
+              "page": "",
+              "name": "Philipp Mwene"
+            },
+            {
+              "code": "AUT9",
+              "number": 9,
+              "page": "",
+              "name": "Alexander Prass"
+            },
+            {
+              "code": "AUT10",
+              "number": 10,
+              "page": "",
+              "name": "Xaver Schlager"
+            },
+            {
+              "code": "AUT11",
+              "number": 11,
+              "page": "",
+              "name": "Marcel Sabitzer"
+            },
+            {
+              "code": "AUT12",
+              "number": 12,
+              "page": "",
+              "name": "Konrad Laimer"
+            },
+            {
+              "code": "AUT13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "AUT14",
+              "number": 14,
+              "page": "",
+              "name": "Florian Grillitsch"
+            },
+            {
+              "code": "AUT15",
+              "number": 15,
+              "page": "",
+              "name": "Nicolas Seiwald"
+            },
+            {
+              "code": "AUT16",
+              "number": 16,
+              "page": "",
+              "name": "Romano Schmid"
+            },
+            {
+              "code": "AUT17",
+              "number": 17,
+              "page": "",
+              "name": "Patrick Wimmer"
+            },
+            {
+              "code": "AUT18",
+              "number": 18,
+              "page": "",
+              "name": "Christoph Baumgartner"
+            },
+            {
+              "code": "AUT19",
+              "number": 19,
+              "page": "",
+              "name": "Michael Gregoritsch"
+            },
+            {
+              "code": "AUT20",
+              "number": 20,
+              "page": "",
+              "name": "Marko Arnautović"
+            }
+          ]
+        },
+        {
+          "code": "JORDAN",
+          "name": "Jordan",
+          "stickers": [
+            {
+              "code": "JOR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "JOR2",
+              "number": 2,
+              "page": "",
+              "name": "Yazeed Abulaila"
+            },
+            {
+              "code": "JOR3",
+              "number": 3,
+              "page": "",
+              "name": "Ihsan Haddad"
+            },
+            {
+              "code": "JOR4",
+              "number": 4,
+              "page": "",
+              "name": "Mohammad Abu Hashish"
+            },
+            {
+              "code": "JOR5",
+              "number": 5,
+              "page": "",
+              "name": "Yazan Al-Arab"
+            },
+            {
+              "code": "JOR6",
+              "number": 6,
+              "page": "",
+              "name": "Abdallah Nasib"
+            },
+            {
+              "code": "JOR7",
+              "number": 7,
+              "page": "",
+              "name": "Saleem Obaid"
+            },
+            {
+              "code": "JOR8",
+              "number": 8,
+              "page": "",
+              "name": "Mohammad Abualnadi"
+            },
+            {
+              "code": "JOR9",
+              "number": 9,
+              "page": "",
+              "name": "Ibrahim Saadeh"
+            },
+            {
+              "code": "JOR10",
+              "number": 10,
+              "page": "",
+              "name": "Nizar Al-Rashdan"
+            },
+            {
+              "code": "JOR11",
+              "number": 11,
+              "page": "",
+              "name": "Noor Al-Rawabdeh"
+            },
+            {
+              "code": "JOR12",
+              "number": 12,
+              "page": "",
+              "name": "Mohannad Abu Taha"
+            },
+            {
+              "code": "JOR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "JOR14",
+              "number": 14,
+              "page": "",
+              "name": "Amer Jamous"
+            },
+            {
+              "code": "JOR15",
+              "number": 15,
+              "page": "",
+              "name": "Musa Al-Taamari"
+            },
+            {
+              "code": "JOR16",
+              "number": 16,
+              "page": "",
+              "name": "Yazan Al-Naimat"
+            },
+            {
+              "code": "JOR17",
+              "number": 17,
+              "page": "",
+              "name": "Mahmoud Al-Mardi"
+            },
+            {
+              "code": "JOR18",
+              "number": 18,
+              "page": "",
+              "name": "Ali Olwan"
+            },
+            {
+              "code": "JOR19",
+              "number": 19,
+              "page": "",
+              "name": "Mohammad Abu Zrayq"
+            },
+            {
+              "code": "JOR20",
+              "number": 20,
+              "page": "",
+              "name": "Ibrahim Sabra"
+            }
+          ]
+        },
+        {
+          "code": "PORTUGAL",
+          "name": "Portugal",
+          "stickers": [
+            {
+              "code": "POR1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "POR2",
+              "number": 2,
+              "page": "",
+              "name": "Diogo Costa"
+            },
+            {
+              "code": "POR3",
+              "number": 3,
+              "page": "",
+              "name": "José Sá"
+            },
+            {
+              "code": "POR4",
+              "number": 4,
+              "page": "",
+              "name": "Rúben Dias"
+            },
+            {
+              "code": "POR5",
+              "number": 5,
+              "page": "",
+              "name": "João Cancelo"
+            },
+            {
+              "code": "POR6",
+              "number": 6,
+              "page": "",
+              "name": "Diogo Dalot"
+            },
+            {
+              "code": "POR7",
+              "number": 7,
+              "page": "",
+              "name": "Nuno Mendes"
+            },
+            {
+              "code": "POR8",
+              "number": 8,
+              "page": "",
+              "name": "Gonçalo Inácio"
+            },
+            {
+              "code": "POR9",
+              "number": 9,
+              "page": "",
+              "name": "Bernardo Silva"
+            },
+            {
+              "code": "POR10",
+              "number": 10,
+              "page": "",
+              "name": "Bruno Fernandes"
+            },
+            {
+              "code": "POR11",
+              "number": 11,
+              "page": "",
+              "name": "Rúben Neves"
+            },
+            {
+              "code": "POR12",
+              "number": 12,
+              "page": "",
+              "name": "Vitinha"
+            },
+            {
+              "code": "POR13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "POR14",
+              "number": 14,
+              "page": "",
+              "name": "João Neves"
+            },
+            {
+              "code": "POR15",
+              "number": 15,
+              "page": "",
+              "name": "Cristiano Ronaldo"
+            },
+            {
+              "code": "POR16",
+              "number": 16,
+              "page": "",
+              "name": "Francisco Trincão"
+            },
+            {
+              "code": "POR17",
+              "number": 17,
+              "page": "",
+              "name": "João Félix"
+            },
+            {
+              "code": "POR18",
+              "number": 18,
+              "page": "",
+              "name": "Gonçalo Ramos"
+            },
+            {
+              "code": "POR19",
+              "number": 19,
+              "page": "",
+              "name": "Pedro Neto"
+            },
+            {
+              "code": "POR20",
+              "number": 20,
+              "page": "",
+              "name": "Rafael Leão"
+            }
+          ]
+        },
+        {
+          "code": "CONGO_DR",
+          "name": "Congo DR",
+          "stickers": [
+            {
+              "code": "COD1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "COD2",
+              "number": 2,
+              "page": "",
+              "name": "Lionel Mpasi"
+            },
+            {
+              "code": "COD3",
+              "number": 3,
+              "page": "",
+              "name": "Aaron Wan-Bissaka"
+            },
+            {
+              "code": "COD4",
+              "number": 4,
+              "page": "",
+              "name": "Axel Tuanzebe"
+            },
+            {
+              "code": "COD5",
+              "number": 5,
+              "page": "",
+              "name": "Arthur Masuaku"
+            },
+            {
+              "code": "COD6",
+              "number": 6,
+              "page": "",
+              "name": "Chancel Mbemba"
+            },
+            {
+              "code": "COD7",
+              "number": 7,
+              "page": "",
+              "name": "Joris Kayembe"
+            },
+            {
+              "code": "COD8",
+              "number": 8,
+              "page": "",
+              "name": "Charles Pickel"
+            },
+            {
+              "code": "COD9",
+              "number": 9,
+              "page": "",
+              "name": "Ngal'ayel Mukau"
+            },
+            {
+              "code": "COD10",
+              "number": 10,
+              "page": "",
+              "name": "Edo Kayembe"
+            },
+            {
+              "code": "COD11",
+              "number": 11,
+              "page": "",
+              "name": "Samuel Moutoussamy"
+            },
+            {
+              "code": "COD12",
+              "number": 12,
+              "page": "",
+              "name": "Noah Sadiki"
+            },
+            {
+              "code": "COD13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "COD14",
+              "number": 14,
+              "page": "",
+              "name": "Théo Bongonda"
+            },
+            {
+              "code": "COD15",
+              "number": 15,
+              "page": "",
+              "name": "Meschack Elia"
+            },
+            {
+              "code": "COD16",
+              "number": 16,
+              "page": "",
+              "name": "Yoane Wissa"
+            },
+            {
+              "code": "COD17",
+              "number": 17,
+              "page": "",
+              "name": "Brian Cipenga"
+            },
+            {
+              "code": "COD18",
+              "number": 18,
+              "page": "",
+              "name": "Fiston Mayele"
+            },
+            {
+              "code": "COD19",
+              "number": 19,
+              "page": "",
+              "name": "Cédric Bakambu"
+            },
+            {
+              "code": "COD20",
+              "number": 20,
+              "page": "",
+              "name": "Nathanaël Mbuku"
+            }
+          ]
+        },
+        {
+          "code": "UZBEKISTAN",
+          "name": "Uzbekistan",
+          "stickers": [
+            {
+              "code": "UZB1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "UZB2",
+              "number": 2,
+              "page": "",
+              "name": "Utkir Yusupov"
+            },
+            {
+              "code": "UZB3",
+              "number": 3,
+              "page": "",
+              "name": "Farrukh Sayfiev"
+            },
+            {
+              "code": "UZB4",
+              "number": 4,
+              "page": "",
+              "name": "Sherzod Nasrullaev"
+            },
+            {
+              "code": "UZB5",
+              "number": 5,
+              "page": "",
+              "name": "Umar Eshmurodov"
+            },
+            {
+              "code": "UZB6",
+              "number": 6,
+              "page": "",
+              "name": "Husniddin Aliqulov"
+            },
+            {
+              "code": "UZB7",
+              "number": 7,
+              "page": "",
+              "name": "Rustamjon Ashurmatov"
+            },
+            {
+              "code": "UZB8",
+              "number": 8,
+              "page": "",
+              "name": "Khojiakbar Alijonov"
+            },
+            {
+              "code": "UZB9",
+              "number": 9,
+              "page": "",
+              "name": "Abdukodir Khusanov"
+            },
+            {
+              "code": "UZB10",
+              "number": 10,
+              "page": "",
+              "name": "Odiljon Hamrobekov"
+            },
+            {
+              "code": "UZB11",
+              "number": 11,
+              "page": "",
+              "name": "Otabek Shukurov"
+            },
+            {
+              "code": "UZB12",
+              "number": 12,
+              "page": "",
+              "name": "Jamshid Iskanderov"
+            },
+            {
+              "code": "UZB13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "UZB14",
+              "number": 14,
+              "page": "",
+              "name": "Azizbek Turgunboev"
+            },
+            {
+              "code": "UZB15",
+              "number": 15,
+              "page": "",
+              "name": "Khojimat Erkinov"
+            },
+            {
+              "code": "UZB16",
+              "number": 16,
+              "page": "",
+              "name": "Eldor Shomurodov"
+            },
+            {
+              "code": "UZB17",
+              "number": 17,
+              "page": "",
+              "name": "Oston Urunov"
+            },
+            {
+              "code": "UZB18",
+              "number": 18,
+              "page": "",
+              "name": "Jaloliddin Masharipov"
+            },
+            {
+              "code": "UZB19",
+              "number": 19,
+              "page": "",
+              "name": "Igor Sergeev"
+            },
+            {
+              "code": "UZB20",
+              "number": 20,
+              "page": "",
+              "name": "Abbosbek Fayzullaev"
+            }
+          ]
+        },
+        {
+          "code": "COLOMBIA",
+          "name": "Colombia",
+          "stickers": [
+            {
+              "code": "COL1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "COL2",
+              "number": 2,
+              "page": "",
+              "name": "Camilo Vargas"
+            },
+            {
+              "code": "COL3",
+              "number": 3,
+              "page": "",
+              "name": "David Ospina"
+            },
+            {
+              "code": "COL4",
+              "number": 4,
+              "page": "",
+              "name": "Davinson Sánchez"
+            },
+            {
+              "code": "COL5",
+              "number": 5,
+              "page": "",
+              "name": "Yerry Mina"
+            },
+            {
+              "code": "COL6",
+              "number": 6,
+              "page": "",
+              "name": "Daniel Muñoz"
+            },
+            {
+              "code": "COL7",
+              "number": 7,
+              "page": "",
+              "name": "Johan Mojica"
+            },
+            {
+              "code": "COL8",
+              "number": 8,
+              "page": "",
+              "name": "Jhon Lucumí"
+            },
+            {
+              "code": "COL9",
+              "number": 9,
+              "page": "",
+              "name": "Santiago Arias"
+            },
+            {
+              "code": "COL10",
+              "number": 10,
+              "page": "",
+              "name": "Jefferson Lerma"
+            },
+            {
+              "code": "COL11",
+              "number": 11,
+              "page": "",
+              "name": "Kevin Castaño"
+            },
+            {
+              "code": "COL12",
+              "number": 12,
+              "page": "",
+              "name": "Richard Ríos"
+            },
+            {
+              "code": "COL13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "COL14",
+              "number": 14,
+              "page": "",
+              "name": "James Rodríguez"
+            },
+            {
+              "code": "COL15",
+              "number": 15,
+              "page": "",
+              "name": "Juan Fernando Quintero"
+            },
+            {
+              "code": "COL16",
+              "number": 16,
+              "page": "",
+              "name": "Jorge Carrascal"
+            },
+            {
+              "code": "COL17",
+              "number": 17,
+              "page": "",
+              "name": "Jhon Arias"
+            },
+            {
+              "code": "COL18",
+              "number": 18,
+              "page": "",
+              "name": "Jhon Córdoba"
+            },
+            {
+              "code": "COL19",
+              "number": 19,
+              "page": "",
+              "name": "Luis Suárez"
+            },
+            {
+              "code": "COL20",
+              "number": 20,
+              "page": "",
+              "name": "Luis Díaz"
+            }
+          ]
+        },
+        {
+          "code": "ENGLAND",
+          "name": "England",
+          "stickers": [
+            {
+              "code": "ENG1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "ENG2",
+              "number": 2,
+              "page": "",
+              "name": "Jordan Pickford"
+            },
+            {
+              "code": "ENG3",
+              "number": 3,
+              "page": "",
+              "name": "John Stones"
+            },
+            {
+              "code": "ENG4",
+              "number": 4,
+              "page": "",
+              "name": "Marc Guéhi"
+            },
+            {
+              "code": "ENG5",
+              "number": 5,
+              "page": "",
+              "name": "Ezri Konsa"
+            },
+            {
+              "code": "ENG6",
+              "number": 6,
+              "page": "",
+              "name": "Trent Alexander-Arnold"
+            },
+            {
+              "code": "ENG7",
+              "number": 7,
+              "page": "",
+              "name": "Reece James"
+            },
+            {
+              "code": "ENG8",
+              "number": 8,
+              "page": "",
+              "name": "Dan Burn"
+            },
+            {
+              "code": "ENG9",
+              "number": 9,
+              "page": "",
+              "name": "Jordan Henderson"
+            },
+            {
+              "code": "ENG10",
+              "number": 10,
+              "page": "",
+              "name": "Declan Rice"
+            },
+            {
+              "code": "ENG11",
+              "number": 11,
+              "page": "",
+              "name": "Jude Bellingham"
+            },
+            {
+              "code": "ENG12",
+              "number": 12,
+              "page": "",
+              "name": "Cole Palmer"
+            },
+            {
+              "code": "ENG13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "ENG14",
+              "number": 14,
+              "page": "",
+              "name": "Morgan Rogers"
+            },
+            {
+              "code": "ENG15",
+              "number": 15,
+              "page": "",
+              "name": "Anthony Gordon"
+            },
+            {
+              "code": "ENG16",
+              "number": 16,
+              "page": "",
+              "name": "Phil Foden"
+            },
+            {
+              "code": "ENG17",
+              "number": 17,
+              "page": "",
+              "name": "Bukayo Saka"
+            },
+            {
+              "code": "ENG18",
+              "number": 18,
+              "page": "",
+              "name": "Harry Kane"
+            },
+            {
+              "code": "ENG19",
+              "number": 19,
+              "page": "",
+              "name": "Marcus Rashford"
+            },
+            {
+              "code": "ENG20",
+              "number": 20,
+              "page": "",
+              "name": "Ollie Watkins"
+            }
+          ]
+        },
+        {
+          "code": "CROATIA",
+          "name": "Croatia",
+          "stickers": [
+            {
+              "code": "CRO1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "CRO2",
+              "number": 2,
+              "page": "",
+              "name": "Dominik Livaković"
+            },
+            {
+              "code": "CRO3",
+              "number": 3,
+              "page": "",
+              "name": "Duje Ćaleta-Car"
+            },
+            {
+              "code": "CRO4",
+              "number": 4,
+              "page": "",
+              "name": "Joško Gvardiol"
+            },
+            {
+              "code": "CRO5",
+              "number": 5,
+              "page": "",
+              "name": "Josip Stanišić"
+            },
+            {
+              "code": "CRO6",
+              "number": 6,
+              "page": "",
+              "name": "Luka Vušković"
+            },
+            {
+              "code": "CRO7",
+              "number": 7,
+              "page": "",
+              "name": "Josip Šutalo"
+            },
+            {
+              "code": "CRO8",
+              "number": 8,
+              "page": "",
+              "name": "Kristijan Jakić"
+            },
+            {
+              "code": "CRO9",
+              "number": 9,
+              "page": "",
+              "name": "Luka Modrić"
+            },
+            {
+              "code": "CRO10",
+              "number": 10,
+              "page": "",
+              "name": "Mateo Kovačić"
+            },
+            {
+              "code": "CRO11",
+              "number": 11,
+              "page": "",
+              "name": "Martin Baturina"
+            },
+            {
+              "code": "CRO12",
+              "number": 12,
+              "page": "",
+              "name": "Lovro Majer"
+            },
+            {
+              "code": "CRO13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "CRO14",
+              "number": 14,
+              "page": "",
+              "name": "Mario Pašalić"
+            },
+            {
+              "code": "CRO15",
+              "number": 15,
+              "page": "",
+              "name": "Petar Sučić"
+            },
+            {
+              "code": "CRO16",
+              "number": 16,
+              "page": "",
+              "name": "Ivan Perišić"
+            },
+            {
+              "code": "CRO17",
+              "number": 17,
+              "page": "",
+              "name": "Marco Pašalić"
+            },
+            {
+              "code": "CRO18",
+              "number": 18,
+              "page": "",
+              "name": "Ante Budimir"
+            },
+            {
+              "code": "CRO19",
+              "number": 19,
+              "page": "",
+              "name": "Andrej Kramarić"
+            },
+            {
+              "code": "CRO20",
+              "number": 20,
+              "page": "",
+              "name": "Franjo Ivanović"
+            }
+          ]
+        },
+        {
+          "code": "GHANA",
+          "name": "Ghana",
+          "stickers": [
+            {
+              "code": "GHA1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "GHA2",
+              "number": 2,
+              "page": "",
+              "name": "Lawrence Ati Zigi"
+            },
+            {
+              "code": "GHA3",
+              "number": 3,
+              "page": "",
+              "name": "Tariq Lamptey"
+            },
+            {
+              "code": "GHA4",
+              "number": 4,
+              "page": "",
+              "name": "Mohammed Salisu"
+            },
+            {
+              "code": "GHA5",
+              "number": 5,
+              "page": "",
+              "name": "Alidu Seidu"
+            },
+            {
+              "code": "GHA6",
+              "number": 6,
+              "page": "",
+              "name": "Alexander Djiku"
+            },
+            {
+              "code": "GHA7",
+              "number": 7,
+              "page": "",
+              "name": "Gideon Mensah"
+            },
+            {
+              "code": "GHA8",
+              "number": 8,
+              "page": "",
+              "name": "Caleb Yirenkyi"
+            },
+            {
+              "code": "GHA9",
+              "number": 9,
+              "page": "",
+              "name": "Abdul Issahaku Fatawu"
+            },
+            {
+              "code": "GHA10",
+              "number": 10,
+              "page": "",
+              "name": "Thomas Partey"
+            },
+            {
+              "code": "GHA11",
+              "number": 11,
+              "page": "",
+              "name": "Salis Abdul Samed"
+            },
+            {
+              "code": "GHA12",
+              "number": 12,
+              "page": "",
+              "name": "Kamaldeen Sulemana"
+            },
+            {
+              "code": "GHA13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "GHA14",
+              "number": 14,
+              "page": "",
+              "name": "Mohammed Kudus"
+            },
+            {
+              "code": "GHA15",
+              "number": 15,
+              "page": "",
+              "name": "Iñaki Williams"
+            },
+            {
+              "code": "GHA16",
+              "number": 16,
+              "page": "",
+              "name": "Jordan Ayew"
+            },
+            {
+              "code": "GHA17",
+              "number": 17,
+              "page": "",
+              "name": "André Ayew"
+            },
+            {
+              "code": "GHA18",
+              "number": 18,
+              "page": "",
+              "name": "Joseph Paintsil"
+            },
+            {
+              "code": "GHA19",
+              "number": 19,
+              "page": "",
+              "name": "Osman Bukari"
+            },
+            {
+              "code": "GHA20",
+              "number": 20,
+              "page": "",
+              "name": "Antoine Semenyo"
+            }
+          ]
+        },
+        {
+          "code": "PANAMA",
+          "name": "Panama",
+          "stickers": [
+            {
+              "code": "PAN1",
+              "number": 1,
+              "page": "",
+              "name": "Badge"
+            },
+            {
+              "code": "PAN2",
+              "number": 2,
+              "page": "",
+              "name": "Orlando Mosquera"
+            },
+            {
+              "code": "PAN3",
+              "number": 3,
+              "page": "",
+              "name": "Luis Mejía"
+            },
+            {
+              "code": "PAN4",
+              "number": 4,
+              "page": "",
+              "name": "Fidel Escobar"
+            },
+            {
+              "code": "PAN5",
+              "number": 5,
+              "page": "",
+              "name": "Andrés Andrade"
+            },
+            {
+              "code": "PAN6",
+              "number": 6,
+              "page": "",
+              "name": "Michael Amir Murillo"
+            },
+            {
+              "code": "PAN7",
+              "number": 7,
+              "page": "",
+              "name": "Eric Davis"
+            },
+            {
+              "code": "PAN8",
+              "number": 8,
+              "page": "",
+              "name": "José Córdoba"
+            },
+            {
+              "code": "PAN9",
+              "number": 9,
+              "page": "",
+              "name": "César Blackman"
+            },
+            {
+              "code": "PAN10",
+              "number": 10,
+              "page": "",
+              "name": "Cristian Martínez"
+            },
+            {
+              "code": "PAN11",
+              "number": 11,
+              "page": "",
+              "name": "Aníbal Godoy"
+            },
+            {
+              "code": "PAN12",
+              "number": 12,
+              "page": "",
+              "name": "Adalberto Carrasquilla"
+            },
+            {
+              "code": "PAN13",
+              "number": 13,
+              "page": "",
+              "name": "Squad"
+            },
+            {
+              "code": "PAN14",
+              "number": 14,
+              "page": "",
+              "name": "Édgar Bárcenas"
+            },
+            {
+              "code": "PAN15",
+              "number": 15,
+              "page": "",
+              "name": "Carlos Harvey"
+            },
+            {
+              "code": "PAN16",
+              "number": 16,
+              "page": "",
+              "name": "Ismael Díaz"
+            },
+            {
+              "code": "PAN17",
+              "number": 17,
+              "page": "",
+              "name": "José Fajardo"
+            },
+            {
+              "code": "PAN18",
+              "number": 18,
+              "page": "",
+              "name": "Cecilio Waterman"
+            },
+            {
+              "code": "PAN19",
+              "number": 19,
+              "page": "",
+              "name": "José Luis Rodríguez"
+            },
+            {
+              "code": "PAN20",
+              "number": 20,
+              "page": "",
+              "name": "Alberto Quintero"
+            }
+          ]
+        },
+        {
+          "code": "COCA-COLA",
+          "name": "Coca-Cola",
+          "stickers": [
+            {
+              "code": "CC1",
+              "number": 1,
+              "page": "",
+              "name": "Lamine Yamal"
+            },
+            {
+              "code": "CC2",
+              "number": 2,
+              "page": "",
+              "name": "Joshua Kimmich"
+            },
+            {
+              "code": "CC3",
+              "number": 3,
+              "page": "",
+              "name": "Eduardo Camavinga"
+            },
+            {
+              "code": "CC4",
+              "number": 4,
+              "page": "",
+              "name": "Josko Vardiol"
+            },
+            {
+              "code": "CC5",
+              "number": 5,
+              "page": "",
+              "name": "Federico Valverde"
+            },
+            {
+              "code": "CC6",
+              "number": 6,
+              "page": "",
+              "name": "Virgil van Dijk"
+            },
+            {
+              "code": "CC7",
+              "number": 7,
+              "page": "",
+              "name": "Alphonso Davies"
+            },
+            {
+              "code": "CC8",
+              "number": 8,
+              "page": "",
+              "name": "Raul Jimenez"
+            },
+            {
+              "code": "CC9",
+              "number": 9,
+              "page": "",
+              "name": "William Saliba"
+            },
+            {
+              "code": "CC10",
+              "number": 10,
+              "page": "",
+              "name": "Lautaro mArtinez"
+            },
+            {
+              "code": "CC11",
+              "number": 11,
+              "page": "",
+              "name": "Harry Kane"
+            },
+            {
+              "code": "CC12",
+              "number": 12,
+              "page": "",
+              "name": "Antonee Robinson"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -21,30 +21,34 @@ const styles = StyleSheet.create({
 });
 */
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-import { initializeDatabase } from "./src/database/schema";
-import { seedDatabase } from "./src/database/seed";
 import { initializeAppDatabase } from "./src/database/DatabaseManager";
-import StickerProvider from "./src/context/StickerProvider";
+import AlbumProvider from "./src/context/AlbumProvider";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 export default function App() {
+    const [ready, setReady] = useState(false);
 
-  useEffect(() => {
-    // initializeDatabase();
-    // seedDatabase();
+    useEffect(() => {
+        async function init() {
+            await initializeAppDatabase();
+            setReady(true);
+        }
 
-    initializeAppDatabase();
-  }, []);
+        init();
+    }, []);
+
+    if (!ready) {
+        return null;
+    }
   
-
     return (
         <SafeAreaProvider>
-            <StickerProvider>
+            <AlbumProvider>
                 <AppNavigator />
-            </StickerProvider>
+            </AlbumProvider>
         </SafeAreaProvider>
     );
 }

@@ -4,56 +4,41 @@ import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 import { formatStickerNumber } from "../../utils/formatters";
+import StickerStatus from "./StickerStatus";
+import StickerInfo from "./StickerInfo";
+import { useNavigation } from "@react-navigation/native";
+import Flag from "../common/Flag";
 
-export default function StickerItem({ sticker, onPress }) {
-
+export default function StickerItem({
+    sticker,
+    onToggle,
+    onPress,
+    onLongPress,
+}) {
+    const navigation = useNavigation();
+  
     return (
 
         <Pressable
             style={styles.container}
-            onPress={onPress}
+            // onPress={() => onPress?.(sticker)}
+            onPress={() =>
+              navigation.navigate("StickerDetails", {
+                  stickerId: sticker.id,
+                  title: sticker.name,
+              })
+            }
+            onLongPress={() => onLongPress?.(sticker)}
         >
 
-            <Ionicons
-                name={sticker.owned ? "checkmark-circle" : "ellipse-outline"}
-                size={30}
-                color={sticker.owned ? Colors.success : "#9CA3AF"}
+            <StickerStatus
+                owned={sticker.owned}
+                onPress={() => onToggle(sticker.id)}
             />
 
-            <View style={styles.content}>
-
-                <View style={styles.header}>
-
-                  {/* <Text style={styles.number}>
-                        #{sticker.number}
-                    </Text> */}
-                    <Text>
-                        {formatStickerNumber(sticker.number)}
-                    </Text>
-
-                    {sticker.duplicates > 0 && (
-
-                        <View style={styles.badge}>
-
-                            <Text style={styles.badgeText}>
-                                +{sticker.duplicates}
-                            </Text>
-
-                        </View>
-
-                    )}
-
-                </View>
-
-                <Text style={styles.name}>
-                    {sticker.name}
-                </Text>
-
-                <Text style={styles.team}>
-                    {sticker.team}
-                </Text>
-
-            </View>
+            <StickerInfo
+                sticker={sticker}
+            />
 
         </Pressable>
 
@@ -73,43 +58,5 @@ const styles = StyleSheet.create({
         borderRadius: 14,
         elevation: 2,
     },
-
-    content: {
-        flex: 1,
-        marginLeft: Spacing.md,
-    },
-
-    header:{
-        flexDirection:"row",
-        justifyContent:"space-between",
-        alignItems:"center",
-    },
-
-    number:{
-        fontWeight:"bold",
-        fontSize:Typography.body,
-    },
-
-    name:{
-        fontSize:18,
-        marginTop:4,
-    },
-
-    team:{
-        color:Colors.textSecondary,
-        marginTop:2,
-    },
-
-    badge:{
-        backgroundColor:Colors.primary,
-        paddingHorizontal:8,
-        paddingVertical:3,
-        borderRadius:10,
-    },
-
-    badgeText:{
-        color:"white",
-        fontWeight:"bold",
-    }
 
 });

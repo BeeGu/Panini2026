@@ -80,7 +80,7 @@ const Colors4 = {
   background: "#F4F6F8",
 };
 
-const Colors = {
+const Colors5 = {
 primary:     "#0057B8",
 secondary:   "#F7C600",
 success:     "#2E7D32",
@@ -95,6 +95,20 @@ border:      "#E5E7EB",
 text:        "#111827",
 
 textLight:   "#6B7280",
+};
+
+
+const Colors = {
+    primary: "#0057B8",
+    success: "#16A34A",
+    warning: "#F59E0B",
+    danger: "#DC2626",
+
+    background: "#F4F6F8",
+    white: "#FFFFFF",
+    text: "#111827",
+    textSecondary: "#6B7280",
+    border: "#E5E7EB",
 };
 
 export default Colors;

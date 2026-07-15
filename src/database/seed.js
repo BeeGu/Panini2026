@@ -1,97 +1,134 @@
 import db from "./db";
-import stickers from "./data/worldcup2026";
+import sections from "../data/sections.json";
+import teams from "../data/teams.json";
+import album from "../data/album.json";
 
-/*
-// Acesta va introduce câteva stickere de test.
-export function seedDatabase() {
+function seedSections() {
 
-    const count = db.getFirstSync(
-        "SELECT COUNT(*) as total FROM stickers"
-    );
-
-    if (count.total > 0) {
-        return;
-    }
-
-    db.runSync(
-        `
-        INSERT INTO stickers(number,name,team)
-        VALUES
-        (1,'Official Emblem','FIFA'),
-        (2,'Official Ball','FIFA'),
-        (3,'Ianis Hagi','Romania'),
-        (4,'Nicolae Stanciu','Romania'),
-        (5,'Lionel Messi','Argentina');
-        `
-    );
-
-}
-*/
-
-/*
-stickers.forEach(sticker => {
-
-    db.runSync(
-
-        `INSERT INTO stickers
-        (number,name,team)
-        VALUES(?,?,?)`,
-
-        [
-            sticker.number,
-            sticker.name,
-            sticker.team,
-        ]
-
-    );
-
-});
-*/
-
-
-export function seedDatabase() {
-
-    const count = db.getFirstSync(
-        "SELECT COUNT(*) AS total FROM stickers"
-    );
-
-    if (count.total > 0) {
-        return;
-    }
-
-    const statement = db.prepareSync(`
-        INSERT INTO stickers
-        (
-            number,
+    const stmt = db.prepareSync(`
+        INSERT INTO sections(
             code,
             name,
-            team,
-            section,
-            page,
-            type
+            sort_order
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?)
     `);
 
     try {
-
-        for (const sticker of stickers) {
-
-            statement.executeSync([
-                sticker.number,
-                sticker.code,
-                sticker.name,
-                sticker.team,
-                sticker.section,
-                sticker.page,
-                sticker.type,
+        sections.forEach(section => {
+            stmt.executeSync([
+                section.code,
+                section.name,
+                section.sort_order,
             ]);
-
-        }
-
+        });
     } finally {
-
-        statement.finalizeSync();
-
+        stmt.finalizeSync();
     }
+}
+
+function seedTeams() {
+
+    const sectionMap = new Map();
+
+    db.getAllSync(`
+        SELECT id, code
+        FROM sections
+    `).forEach(section => {
+        sectionMap.set(
+            section.code,
+            section.id
+        );
+    });
+
+    const stmt = db.prepareSync(`
+        INSERT INTO teams(
+            section_id,
+            code,
+            iso2,
+            name,
+            sort_order
+        )
+        VALUES (?, ?, ?, ?, ?)
+    `);
+
+    try {
+        teams.forEach(team => {
+            stmt.executeSync([
+                sectionMap.get(
+                    team.section_code
+                ),
+
+                team.code,
+                team.iso2,
+                team.name,
+                team.sort_order,
+            ]);
+        });
+    } finally {
+        stmt.finalizeSync();
+    }
+}
+
+function seedStickers() {
+
+    const teamMap = new Map();
+
+    db.getAllSync(`
+        SELECT id, code
+        FROM teams
+    `).forEach(team => {
+
+        teamMap.set(
+            team.code,
+            team.id
+        );
+
+    });
+
+    const stmt = db.prepareSync(`
+        INSERT INTO stickers(
+            team_id,
+            code,
+            number,
+            name
+        )
+        VALUES (?, ?, ?, ?)
+    `);
+
+    try {
+        album.forEach(sticker => {
+            stmt.executeSync([
+                sticker.team_code
+                    ? teamMap.get(sticker.team_code)
+                    : null,
+                sticker.code,
+                sticker.number,
+                sticker.name,
+            ]);
+        });
+    } finally {
+        stmt.finalizeSync();
+    }
+}
+
+export function seedDatabase() {
+
+    console.log("🌱 Seeding database...");
+    db.execSync("BEGIN TRANSACTION");
+
+    try {
+        seedSections();
+        seedTeams();
+        seedStickers();
+
+        db.execSync("COMMIT");
+
+        console.log("✅ Database seeded");
+
+    } catch (error) {
+        db.execSync("ROLLBACK");
+        throw error;
+    }
+
 }

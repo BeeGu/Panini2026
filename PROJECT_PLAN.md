@@ -15,6 +15,20 @@
 - [ ] SQLite
 - [ ] Album
 
+Milestone 2 - UX & Design
+✓ Dashboard nou (Home)
+✓ Bottom Tabs complete
+✓ Search Screen
+✓ Statistics Screen
+✓ Settings Screen
+
+abia apoi
+
+✓ Import complet Excel
+✓ Grupare pe secțiuni
+✓ Favorite teams
+✓ Backup
+
 ## Milestone 3
 - [ ] Search
 - [ ] Duplicates
@@ -59,3 +73,49 @@
 
 ## v1.0
 - Stable Release
+
+
+⚠️ pkg install tree
+apoi ruleaza: tree src
+
+⚠️ run project:
+npx expo start --clear
+
+#Excel to json
+#node tools/excel-to-json.js
+
+⚠️ Rulează doctor să vedem dacă există probleme de configurare.
+npx expo-doctor
+npx expo-doctor --verbose
+
+
+export EAS_SKIP_AUTO_FINGERPRINT=1
+
+⚠️ Build. Din Termux:
+eas build -p android --profile preview
+
+⚠️ Dacă vrei versiunea finală pentru Google Play atunci:
+eas build --platform android --profile production
+si produce .aab
+
+
+🟢🟢🟢
+3. Curăță cache-ul Expo
+rm -rf .expo
+rm -rf .eas
+rm -rf node_modules/.cache
+
+npx expo install
+
+eas build -p android --profile preview
+🟢🟢🟢
+
+
+⚠️ 4. Verifică dacă ai un folder foarte mare
+Din rădăcina proiectului:
+du -sh .
+du -sh node_modules
+
+⚠️
+npx expo config --type public
+

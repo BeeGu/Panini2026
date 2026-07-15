@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
-import { FlatList, View, Text, SectionList, StyleSheet } from "react-native";
+import { FlatList, View, Text, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import StickerItem from "../components/stickers/StickerItem";
-import useStickers from "../hooks/useStickers";
 
 import Colors from "../theme/colors";
 import Spacing from "../theme/spacing";
@@ -17,42 +16,33 @@ import FilterChip from "../components/common/FilterChip";
 import useAlbum from "../hooks/useAlbum";
 import SectionHeader from "../components/album/SectionHeader";
 import AlbumHeader from "../components/album/AlbumHeader";
+import AlbumSearch from "../components/album/AlbumSearch";
+import AlbumFilters from "../components/album/AlbumFilters";
+import StickerList from "../components/album/StickerList";
 import EmptyState from "../components/common/EmptyState";
+
+import TeamList from "../components/album/TeamList";
+import SectionList from "../components/album/SectionList";
 
 export default function AlbumScreen() {
 
-  // const {
-  //   stickers,
-  //   ownedCount,
-  //   totalCount,
-  //   toggleSticker,
-  // } = useStickers();
-
-  // const [search, setSearch] = useState("");
-  // const [filter, setFilter] = useState(FILTERS.ALL);
-
-  // const stats = useMemo(() => ({
-  //     all: stickers.length,
-  //     missing: stickers.filter(s => !s.owned).length,
-  //     owned: stickers.filter(s => s.owned).length,
-  //     duplicates: stickers.filter(s => s.duplicates > 0).length,
-  // }), [stickers]);
-
-const {
-    stickers,
-    stats,
+  const {
+    filteredStickers,
+    toggleSticker,
     search,
     setSearch,
     filter,
     setFilter,
-    toggleSticker,
-    sections,
-} = useAlbum();
+    stats,
+    
+    groupedTeams,
+    groupedAlbum,
+  } = useAlbum();
+  // const album = useAlbum();
   
   const filters = [
       {
           key: FILTERS.ALL,
-          // title: `All (${stats.all})`,
           title: `All (${stats.total})`,
       },
       {
@@ -69,42 +59,6 @@ const {
       },
   ];
   
-  const filteredStickers = useMemo(() => {
-      let result = [...stickers];
-  
-      switch(filter){
-          case FILTERS.MISSING:
-              result = result.filter(s => !s.owned);
-              break;
-  
-          case FILTERS.OWNED:
-              result = result.filter(s => s.owned);
-              break;
-  
-          case FILTERS.DUPLICATES:
-              result = result.filter(s => s.duplicates > 0);
-              break;
-      }
-  
-      if(search.trim()){
-          if(/^\d+$/.test(search)){
-              result = result.filter(
-                  s => s.number === Number(search)
-              );
-          }else{
-              const term = search.toLowerCase();
-  
-              result = result.filter(s =>
-                  s.name?.toLowerCase().includes(term)
-                  || s.team?.toLowerCase().includes(term)
-              );
-          }
-      }
-  
-      return result;
-  
-  }, [stickers, search, filter]);
-
   return (
     <SafeAreaView style={styles.container}>
 
@@ -113,87 +67,34 @@ const {
           total={stats.total}
       />
 
-      
-      <View style={styles.header}>
-
-        {/*
-        <Text style={styles.title}>
-          Album
-        </Text>
-
-        <Text style={styles.subtitle}>
-          // {ownedCount} / {totalCount} stickere
-          {stats.owned} / {stats.total} stickere
-        </Text>
-        */}
-
-      <SearchBar
+      <AlbumSearch
           value={search}
           onChangeText={setSearch}
-          placeholder="Număr, jucător sau echipă..."
       />
 
-      <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.filters}
-      >
-          {filters.map(item => (
-              <FilterChip
-                  key={item.key}
-                  title={item.title}
-                  selected={filter === item.key}
-                  onPress={() => setFilter(item.key)}
-              />
-          ))}
-      </ScrollView>
-      </View>
+      <AlbumFilters
+          filter={filter}
+          setFilter={setFilter}
+          stats={stats}
+      />
 
+      {/*<StickerList
+          stickers={filteredStickers}
+          onToggle={toggleSticker}
+          onPress={(sticker) => console.log(sticker)}
+          onLongPress={(sticker) => console.log("Edit", sticker)}
+      /> */}
+
+      {/* <TeamList
+          teams={groupedTeams}
+          onToggle={toggleSticker}
+      /> */}
+
+      <SectionList
+          sections={groupedAlbum}
+          onToggle={toggleSticker}
+      />
       
-      {/*<FlatList
-        data={filteredStickers}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <StickerItem
-            sticker={item}
-            onPress={() => toggleSticker(item.id)}
-          />
-        )}
-        //showsVerticalScrollIndicator={false}
-        //contentContainerStyle={styles.list}
-
-        style={{ flex: 1 }}
-        contentContainerStyle={{
-            paddingBottom: 24,
-        }}
-        ListEmptyComponent={
-            <EmptyState
-                text="Nu s-au găsit stickere."
-            />
-        }
-      />*/}
-      
-    <SectionList
-        sections={sections}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-            <StickerItem
-                sticker={item}
-                onPress={() => toggleSticker(item.id)}
-            />
-        )}
-        renderSectionHeader={({ section }) => (
-            <SectionHeader
-                title={section.title}
-            />
-        )}
-        ListEmptyComponent={
-              <EmptyState
-                  text="Nu s-au găsit stickere."
-              />
-        }
-    />
-
     </SafeAreaView>
   );
 }
@@ -229,12 +130,6 @@ const styles = StyleSheet.create({
     // paddingVertical: Spacing.sm,
     // paddingBottom: Spacing.xl,
     flex: 1,
-  },
-
-  filters: {
-    paddingHorizontal: 24,
-    paddingBottom: 12,
-    // alignItems: "center",
   },
   
 });

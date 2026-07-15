@@ -1,41 +1,44 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import HomeScreen from "../screens/HomeScreen";
-import AlbumScreen from "../screens/AlbumScreen";
-
 import BottomTabs from "./BottomTabs";
+import StickerDetailsScreen from "../screens/StickerDetailsScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
-  return (
-    <NavigationContainer>
-{/*
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#0057B8",
-          },
-          headerTintColor: "#fff",
-          headerTitleAlign: "center",
-        }}
-      >
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            title: "Panini Tracker 2026",
-          }}
-        />
-        <Stack.Screen
-            name="Album"
-            component={AlbumScreen}
-        />
-      </Stack.Navigator>
-*/}
-      <BottomTabs/>
-      
-    </NavigationContainer>
-  );
+
+    return (
+
+        <NavigationContainer>
+
+            <Stack.Navigator
+                screenOptions={{
+                    headerBackTitleVisible: false,
+                    headerTitleAlign: "center",
+                }}
+            >
+
+                <Stack.Screen
+                    name="Main"
+                    component={BottomTabs}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+                <Stack.Screen
+                    name="StickerDetails"
+                    component={StickerDetailsScreen}
+                    options={{
+                        title: "Sticker",
+                    }}
+                />
+
+            </Stack.Navigator>
+
+        </NavigationContainer>
+
+    );
+
 }

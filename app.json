@@ -5,11 +5,15 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "panini2026",
     "userInterfaceStyle": "light",
+
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.catalin.panini2026",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -23,6 +27,11 @@
     "plugins": [
       "expo-sqlite",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ca8d5724-4d96-4cc8-a693-e54316059941"
+      }
+    }
   }
 }

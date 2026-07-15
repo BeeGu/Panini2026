@@ -1,72 +1,57 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, StyleSheet } from "react-native";
+import { ScrollView } from "react-native";
 import MenuCard from "../components/common/MenuCard";
 import ProgressCard from "../components/dashboard/ProgressCard";
-import useStickers from "../hooks/useStickers";
+import useAlbum from "../hooks/useAlbum";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import DashboardStats from "../components/dashboard/DashboardStats";
+import Colors from "../theme/colors";
+import Spacing from "../theme/spacing";
+import QuickActions from "../components/dashboard/QuickActions";
+import DashboardHeader from "../components/dashboard/DashboardHeader";
+import RecentActivity from "../components/dashboard/RecentActivity";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
-  // const insets = useSafeAreaInsets();
-
-  const {
-      ownedCount,
-      totalCount,
-  } = useStickers();
-  console.log("🔰 HomeScreen useStickers hook", { ownedCount, totalCount });
+  const { stats, recentActivity } = useAlbum();
+  // console.log("🔰 HomeScreen useAlbum hook", { stats });
 
   return (
     <SafeAreaView
       style={styles.container}
-      /*style={[
-          styles.container,
-          {
-              paddingTop: insets.top,
-          },
-      ]}*/
     >
-      <Text style={styles.title}>🏆 Panini Tracker 2026</Text>
 
-      <Text style={styles.subtitle}>
-        Album FIFA World Cup 2026
-      </Text>
+        <ScrollView
+            contentContainerStyle={styles.content}
+            showsVerticalScrollIndicator={false}
+        >
 
-      <View style={styles.progressContainer}>
-        <ProgressCard
-            owned={ownedCount}
-            total={totalCount}
-        />
-      </View>
+            <DashboardHeader
+                title="🏆 Panini Tracker"
+                subtitle="FIFA World Cup 2026"
+                // subtitle="UEFA Euro 2028"
+            />
+
+            <ProgressCard
+                owned={stats.owned}
+                total={stats.total}
+            />
       
-      <View style={styles.row}>
-          <MenuCard
-              title="Album"
-              icon="book-outline"
-              onPress={() => navigation.navigate("Album")}
-          />
-      
-          <MenuCard
-              title="Search"
-              icon="search-outline"
-              onPress={() => console.log("Search")}
-          />
-      </View>
-      
-      <View style={styles.row}>
-          <MenuCard
-              title="Duplicates"
-              icon="copy-outline"
-              onPress={() => console.log("Duplicates")}
-          />
-      
-          <MenuCard
-              title="Statistics"
-              icon="stats-chart-outline"
-              onPress={() => console.log("Statistics")}
-          />
-      </View>
-      
+            <DashboardStats
+                stats={stats}
+            />
+
+            <QuickActions
+                navigation={navigation}
+            />
+
+            <RecentActivity
+              stickers={recentActivity}
+            />
+          
+        </ScrollView>
     </SafeAreaView>
   );
 }
@@ -74,9 +59,13 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F4F6F8",
-    // paddingTop: 50,
-    alignItems: "center",
+    backgroundColor: Colors.background,
+  },
+  
+  content: {
+      paddingVertical: 24,
+      alignItems: "center",
+      paddingBottom: 40,
   },
 
   title: {
@@ -88,18 +77,6 @@ const styles = StyleSheet.create({
   subtitle: {
     marginTop: 10,
     fontSize: 18,
-  },
-
-  progressContainer: {
-    width: "90%",
-    marginTop: 20,
-  },
-  
-  progress: {
-    marginTop: 20,
-    marginBottom: 20,
-    fontSize: 22,
-    fontWeight: "bold",
   },
 
   row: {
