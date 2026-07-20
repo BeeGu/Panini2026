@@ -12,6 +12,7 @@ import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
 import TeamAccordion from "./TeamAccordion";
+import AlbumStats from "./AlbumStats";
 import ProgressBar from "../common/ProgressBar";
 
 export default function SectionAccordion({
@@ -19,20 +20,17 @@ export default function SectionAccordion({
     onToggle,
     defaultExpanded = false,
 }) {
-
     const [expanded, setExpanded] = useState(defaultExpanded);
 
     return (
 
         <View style={styles.container}>
-
             <Pressable
                 style={styles.header}
                 onPress={() => setExpanded(!expanded)}
             >
 
                 <View style={styles.left}>
-
                     <Text style={styles.title}>
                         {section.name}
                     </Text>
@@ -40,12 +38,17 @@ export default function SectionAccordion({
                     <Text style={styles.subtitle}>
                         {section.owned} / {section.total}
                     </Text>
-                    
+
                     <ProgressBar
                         value={section.owned}
                         max={section.total}
                     />
 
+                    <AlbumStats
+                        owned={section.owned}
+                        total={section.total}
+                        duplicates={section.duplicates}
+                    />
                 </View>
 
                 <Ionicons
@@ -61,22 +64,16 @@ export default function SectionAccordion({
             </Pressable>
 
             {expanded && (
-
                 <View style={styles.content}>
-
                     {section.teams.map((team, index) => (
-
                         <TeamAccordion
                             key={team.id}
                             team={team}
                             onToggle={onToggle}
                             defaultExpanded={index === 0}
                         />
-
                     ))}
-
                 </View>
-
             )}
 
         </View>

@@ -15,25 +15,17 @@ export default function TeamCard({
 }) {
 
     return (
-
         <View style={styles.card}>
-
             <Pressable onPress={onPress}>
-
                 <TeamHeader
                     team={team}
                     owned={owned}
                     total={total}
                 />
-
             </Pressable>
-
             {expanded && children}
-
         </View>
-
     );
-
 }
 
 const styles = StyleSheet.create({

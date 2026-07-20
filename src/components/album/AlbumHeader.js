@@ -5,66 +5,17 @@ import ProgressBar from "../common/ProgressBar";
 import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
-/*
-export default function AlbumHeader({ owned, total }) {
 
-    const progress = total ? (owned / total) * 100 : 0;
+import MathUtils from "../../utils/MathUtils";
 
-    return (
-
-        <View style={styles.container}>
-
-            <Text style={styles.title}>
-                🏆 FIFA World Cup 2026
-            </Text>
-
-            <ProgressBar progress={progress} />
-
-            <Text style={styles.progress}>
-                {owned} / {total} stickere ({progress.toFixed(1)}%)
-            </Text>
-
-        </View>
-
-    );
-
-}
-
-const styles = StyleSheet.create({
-
-    container:{
-        backgroundColor:Colors.white,
-        padding:Spacing.lg,
-    },
-
-    title:{
-        fontSize:Typography.h1,
-        fontWeight:"bold",
-        color:Colors.primary,
-        marginBottom:12,
-    },
-
-    progress:{
-        marginTop:10,
-        textAlign:"center",
-        fontWeight:"600",
-    }
-
-});
-*/
 export default function AlbumHeader({
     owned,
     total,
 }) {
-
-    const percentage = total
-        ? Math.round((owned / total) * 100)
-        : 0;
+    const percentage = MathUtils.percentage(owned, total, 0);
 
     return (
-
         <View style={styles.container}>
-
             <Text style={styles.title}>
                 Album
             </Text>
@@ -72,25 +23,14 @@ export default function AlbumHeader({
             <Text style={styles.subtitle}>
                 {owned} / {total} stickere ({percentage}%)
             </Text>
-{/*
-<Text style={styles.subtitle}>
-    {owned} / {total}
-</Text>
-*/}
-<ProgressBar
-    value={owned}
-    max={total}
-    height={12}
-/>
-{/*
-<Text style={styles.percent}>
-    {Math.round(owned / total * 100)}%
-</Text>
-*/}
+
+            <ProgressBar
+                value={owned}
+                max={total}
+                height={12}
+            />
         </View>
-
     );
-
 }
 
 const styles = StyleSheet.create({

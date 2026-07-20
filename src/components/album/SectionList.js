@@ -10,29 +10,18 @@ export default function SectionList({
     return (
 
         <FlatList
-
             data={sections}
-
             keyExtractor={(item) => item.id.toString()}
-
             renderItem={({ item }) => (
-
                 <SectionAccordion
-
                     section={item}
-
                     onToggle={onToggle}
-
                 />
-
             )}
-
             contentContainerStyle={{
                 paddingBottom: 24,
             }}
-
         />
-
     );
 
 }

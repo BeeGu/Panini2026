@@ -6,11 +6,13 @@ import StatisticsService from "../services/StatisticsService";
 import { FILTERS } from "../constants/filters";
 import filterStickers from "../utils/filterStickers";
 import groupAlbum from "../utils/groupAlbum";
+import groupBySectionAndTeam from "../utils/groupBySectionAndTeam";
 
 export default function AlbumProvider({ children }) {
     const [stickers, setStickers] = useState([]);
     const [recentActivity, setRecentActivity] = useState([]);
     const [teamProgress, setTeamProgress] = useState([]);
+    const [sectionProgress, setSectionProgress] = useState([]);
     const [search, setSearch] = useState("");
     const [filter, setFilter] = useState(FILTERS.ALL);
 
@@ -29,6 +31,10 @@ export default function AlbumProvider({ children }) {
 
         setTeamProgress(
             AlbumService.getTeamProgress()
+        );
+
+        setSectionProgress(
+            AlbumService.getSectionProgress()
         );
 
     }
@@ -107,37 +113,91 @@ export default function AlbumProvider({ children }) {
             .find(section => section.id === id);
     }
 
-const groupedTeams = useMemo(() => {
+    const groupedTeams = useMemo(() => {
+    
+        const teams = AlbumService.getTeams();
+    
+        return teams.map(team => {
+    
+            const teamStickers = filteredStickers.filter(
+                s => s.team_id === team.id
+            );
+    
+            return {
+                team,
+                stickers: teamStickers,
+                owned: teamStickers.filter(s => s.owned).length,
+                total: teamStickers.length,
+            };
+    
+        });
+    
+    }, [filteredStickers]);
 
-    const teams = AlbumService.getTeams();
+    // const groupedAlbum = useMemo(() => {
+    
+    //     return groupAlbum(filteredStickers);
+    
+    // }, [filteredStickers]);
 
-    return teams.map(team => {
+    // trade
+    const duplicateStickers = useMemo(() => {
+    
+        return stickers
+            .filter(s => s.duplicates > 0)
+            .sort((a, b) => {
+                if (b.duplicates !== a.duplicates)
+                    return b.duplicates - a.duplicates;
+    
+                return a.number - b.number;
+            });
+    }, [stickers]);
 
-        const teamStickers = filteredStickers.filter(
-            s => s.team_id === team.id
-        );
+    const missingStickers = useMemo(() => {
+    
+        return stickers
+            .filter(s => !s.owned)
+            .sort((a, b) => a.number - b.number);
+    }, [stickers]);
 
+    const tradeSummary = useMemo(() => {
+    
         return {
-
-            team,
-
-            stickers: teamStickers,
-
-            owned: teamStickers.filter(s => s.owned).length,
-
-            total: teamStickers.length,
-
+            duplicateStickers: duplicateStickers.length,
+            duplicates: duplicateStickers.reduce(
+                (sum, sticker) => sum + sticker.duplicates,
+                0
+            ),
+            missing: missingStickers.length,
         };
+    }, [
+        duplicateStickers,
+        missingStickers,
+    ]);
 
-    });
+    const groupedAlbum = useMemo(() => {
+    
+        return groupBySectionAndTeam(
+            filteredStickers
+        );
+    
+    }, [filteredStickers]);
 
-}, [filteredStickers]);
+const groupedDuplicates = useMemo(() => {
 
-const groupedAlbum = useMemo(() => {
+    return groupBySectionAndTeam(
+        stickers.filter(s => s.duplicates > 0)
+    );
 
-    return groupAlbum(filteredStickers);
+}, [stickers]);
 
-}, [filteredStickers]);
+const groupedMissing = useMemo(() => {
+
+    return groupBySectionAndTeam(
+        stickers.filter(s => !s.owned)
+    );
+
+}, [stickers]);
   
     return (
         <AlbumContext.Provider
@@ -150,6 +210,7 @@ const groupedAlbum = useMemo(() => {
                 stats,
                 recentActivity,
                 teamProgress,
+                sectionProgress,
         
                 // -----------------------------
                 // Queries
@@ -157,7 +218,14 @@ const groupedAlbum = useMemo(() => {
                 getSticker,
                 getTeam,
                 getSection,
-        
+
+                // -----------------------------
+                // Trade
+                // -----------------------------
+                duplicateStickers,
+                missingStickers,
+                tradeSummary,
+
                 // -----------------------------
                 // Commands
                 // -----------------------------
@@ -179,14 +247,15 @@ const groupedAlbum = useMemo(() => {
 
                 groupedTeams,
                 groupedAlbum,
+              
+                groupedDuplicates,
+                groupedMissing,
             }}
         >
             {children}
         </AlbumContext.Provider>
     );
 }
-
-
 
 
 

@@ -3,12 +3,10 @@ import Card from "../common/Card";
 import ProgressBar from "../common/ProgressBar";
 import MathUtils from "../../utils/MathUtils";
 
-
 export default function ProgressCard({
   owned = 0,
   total = 980,
 }) {
-  // const percent = Math.round((owned / total) * 100);
   const percent = MathUtils.percentage(owned, total, 0);
 
   return (

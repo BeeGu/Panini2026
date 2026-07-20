@@ -82,34 +82,34 @@ const StickerRepository = {
 
     },
 
-update(sticker) {
-
-    db.runSync(
-        `
-        UPDATE stickers
-        SET
-            code = ?,
-            number = ?,
-            name = ?,
-            team_id = ?,
-            owned = ?,
-            duplicates = ?,
-            notes = ?
-        WHERE id = ?
-        `,
-        [
-            sticker.code,
-            sticker.number,
-            sticker.name,
-            sticker.team_id,
-            sticker.owned,
-            sticker.duplicates,
-            sticker.notes,
-            sticker.id,
-        ]
-    );
-
-},
+    update(sticker) {
+    
+        db.runSync(
+            `
+            UPDATE stickers
+            SET
+                code = ?,
+                number = ?,
+                name = ?,
+                team_id = ?,
+                owned = ?,
+                duplicates = ?,
+                notes = ?
+            WHERE id = ?
+            `,
+            [
+                sticker.code,
+                sticker.number,
+                sticker.name,
+                sticker.team_id,
+                sticker.owned,
+                sticker.duplicates,
+                sticker.notes,
+                sticker.id,
+            ]
+        );
+    
+    },
   
     updateOwned(id, owned) {
   
@@ -148,30 +148,30 @@ update(sticker) {
 
     },
 
-incrementDuplicates(id) {
+    incrementDuplicates(id) {
+    
+        db.runSync(`
+            UPDATE stickers
+            SET duplicates = duplicates + 1
+            WHERE id = ?
+        `, [id]);
+    
+    },
 
-    db.runSync(`
-        UPDATE stickers
-        SET duplicates = duplicates + 1
-        WHERE id = ?
-    `, [id]);
-
-},
-
-decrementDuplicates(id) {
-
-    db.runSync(`
-        UPDATE stickers
-        SET duplicates =
-            CASE
-                WHEN duplicates > 0
-                THEN duplicates - 1
-                ELSE 0
-            END
-        WHERE id = ?
-    `, [id]);
-
-},
+    decrementDuplicates(id) {
+    
+        db.runSync(`
+            UPDATE stickers
+            SET duplicates =
+                CASE
+                    WHEN duplicates > 0
+                    THEN duplicates - 1
+                    ELSE 0
+                END
+            WHERE id = ?
+        `, [id]);
+    
+    },
   
     updateNotes(id, notes) {
 
@@ -204,8 +204,31 @@ decrementDuplicates(id) {
             FROM stickers
         `);
 
-    }
+    },
 
+    // Trade
+    findDuplicates() {
+    
+        return db.getAllSync(`
+            ${SELECT_STICKERS}
+            WHERE s.duplicates > 0
+            ORDER BY
+                s.duplicates DESC,
+                s.number
+        `);
+    
+    },
+
+    findMissing() {
+    
+        return db.getAllSync(`
+            ${SELECT_STICKERS}
+            WHERE s.owned = 0
+            ORDER BY s.number
+        `);
+    
+    },
+  
 };
 
 export default StickerRepository;

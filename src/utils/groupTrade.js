@@ -1,4 +1,4 @@
-export default function groupAlbum(stickers) {
+export default function groupTrade(stickers, type = "duplicate") {
 
     const sectionsMap = new Map();
 
@@ -12,7 +12,13 @@ export default function groupAlbum(stickers) {
                 id: sticker.section_id,
                 code: sticker.section_code,
                 name: sticker.section,
+
                 teams: new Map(),
+
+                total: 0,
+                owned: 0,
+                duplicates: 0,
+                missing: 0,
             };
 
             sectionsMap.set(section.id, section);
@@ -29,55 +35,39 @@ export default function groupAlbum(stickers) {
                 iso2: sticker.team_iso2,
                 name: sticker.team,
                 stickers: [],
-                owned: 0,
                 total: 0,
+                owned: 0,
                 duplicates: 0,
+                missing: 0,
             };
 
             section.teams.set(team.id, team);
-
         }
 
         team.stickers.push(sticker);
         team.total++;
+        section.total++;
 
-        if (sticker.owned)
+        if (sticker.owned) {
             team.owned++;
+            section.owned++;
+        }
 
-        team.duplicates += sticker.duplicates ?? 0;
+        if (sticker.duplicates > 0) {
+            team.duplicates += sticker.duplicates;
+            section.duplicates += sticker.duplicates;
+        }
+
+        if (!sticker.owned) {
+            team.missing++;
+            section.missing++;
+        }
 
     });
 
-    return [...sectionsMap.values()]
-        .map(section => {
-
-            const teams = [...section.teams.values()];
-
-            return {
-
-                id: section.id,
-                code: section.code,
-                name: section.name,
-
-                owned: teams.reduce(
-                    (s, t) => s + t.owned,
-                    0
-                ),
-
-                total: teams.reduce(
-                    (s, t) => s + t.total,
-                    0
-                ),
-
-                duplicates: teams.reduce(
-                    (s, t) => s + t.duplicates,
-                    0
-                ),
-
-                teams,
-
-            };
-
-        });
+    return [...sectionsMap.values()].map(section => ({
+        ...section,
+        teams: [...section.teams.values()]
+    }));
 
 }

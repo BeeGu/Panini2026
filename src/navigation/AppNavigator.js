@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import BottomTabs from "./BottomTabs";
 import StickerDetailsScreen from "../screens/StickerDetailsScreen";
+import StatisticsScreen from "../screens/StatisticsScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,14 @@ export default function AppNavigator() {
                     }}
                 />
 
+              {/* <Stack.Screen
+                    name="Statistics"
+                    component={StatisticsScreen}
+                    options={{
+                        title: "Statistics",
+                    }}
+                /> */}
+
             </Stack.Navigator>
 
         </NavigationContainer>
@@ -42,3 +51,5 @@ export default function AppNavigator() {
     );
 
 }
+
+

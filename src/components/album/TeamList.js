@@ -8,29 +8,18 @@ export default function TeamList({
     teams,
     onToggle,
 }) {
-
     const [expandedId, setExpandedId] = useState(null);
 
     return (
-
         <FlatList
-
             data={teams}
-
             keyExtractor={(item) => item.team.id.toString()}
-
             renderItem={({ item }) => (
-
                 <TeamCard
-
                     team={item.team}
-
                     owned={item.owned}
-
                     total={item.total}
-
                     expanded={expandedId === item.team.id}
-
                     onPress={() =>
                         setExpandedId(
                             expandedId === item.team.id
@@ -38,20 +27,13 @@ export default function TeamList({
                                 : item.team.id
                         )
                     }
-
                 >
-
                     <TeamAccordion
                         stickers={item.stickers}
                         onToggle={onToggle}
                     />
-
                 </TeamCard>
-
             )}
-
         />
-
     );
-
 }

@@ -132,29 +132,85 @@ const AlbumService = {
     // getTeamProgress() {
     //     return AlbumRepository.getTeamProgress();
     // },
-  getTeamProgress() {
+
+    getTeamProgress() {
         const teams = TeamRepository.findAll();
 
         return teams.map(team => {
-            const stickers = StickerRepository.findByTeam(team.id);
-            const total = stickers.length;
-            const owned = stickers.filter(s => s.owned).length;
+          const stickers = StickerRepository.findByTeam(team.id);
+          const total = stickers.length;
+          const owned = stickers.filter(s => s.owned).length;
 
-            return {
-                id: team.id,
-                name: team.name,
-                code: team.code,
-                total,
-                owned,
-                percent: total === 0
-                    ? 0
-                    : Math.round((owned / total) * 100),
-            };
+          const duplicates = stickers.reduce(
+              (sum, sticker) => sum + sticker.duplicates,
+              0
+          );
+
+          return {
+              id: team.id,
+              name: team.name,
+              code: team.code,
+              iso2: team.iso2,
+          
+              total,
+              owned,
+              duplicates: duplicates,
+          
+              percent:
+                  total === 0
+                      ? 0
+                      : Math.round((owned / total) * 100),
+          };
 
         });
 
     },
 
+    getSectionProgress() {
+    
+        const sections = SectionRepository.findAll();
+    
+        return sections.map(section => {
+    
+            const stickers =
+                StickerRepository.findBySection(section.id);
+    
+            const total = stickers.length;
+    
+            const owned = stickers.filter(
+                s => s.owned
+            ).length;
+    
+            const duplicates = stickers.reduce(
+                (sum, s) => sum + s.duplicates,
+                0
+            );
+    
+            return {
+    
+                id: section.id,
+                code: section.code,
+                name: section.name,
+    
+                owned,
+                total,
+                duplicates,
+    
+                missing: total - owned,
+    
+                percent:
+                    total === 0
+                        ? 0
+                        : Math.round(
+                            owned / total * 100
+                        ),
+    
+            };
+    
+        });
+    
+    },
+  
     // Sticker
     updateSticker(data) {
         StickerRepository.update(data);
