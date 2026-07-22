@@ -106,6 +106,16 @@ export default function BottomTabs() {
             <Tab.Screen
                 name="Settings"
                 component={SettingsScreen}
+                options={{
+                    title: "Settings",
+                    tabBarIcon: ({ color, size }) => (
+                        <Ionicons
+                            name="settings-outline"
+                            color={color}
+                            size={size}
+                        />
+                    ),
+                }}
             />
 
         </Tab.Navigator>

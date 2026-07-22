@@ -3,6 +3,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { initializeAppDatabase } from "./src/database/DatabaseManager";
 import ToastProvider from "./src/context/ToastProvider";
+import SettingsProvider from "./src/context/SettingsProvider";
 import AlbumProvider from "./src/context/AlbumProvider";
 import AppNavigator from "./src/navigation/AppNavigator";
 
@@ -23,15 +24,20 @@ export default function App() {
     }
   
     return (
+
         <SafeAreaProvider>
   
             <ToastProvider>
         
-                <AlbumProvider>
+                <SettingsProvider>
         
-                    <AppNavigator />
+                    <AlbumProvider>
         
-                </AlbumProvider>
+                        <AppNavigator />
+        
+                    </AlbumProvider>
+        
+                </SettingsProvider>
         
             </ToastProvider>
         

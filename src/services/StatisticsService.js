@@ -1,3 +1,9 @@
+import StickerRepository from "../database/repositories/StickerRepository";
+import TeamRepository from "../database/repositories/TeamRepository";
+import SectionRepository from "../database/repositories/SectionRepository";
+import AlbumRepository from "../database/repositories/AlbumRepository";
+
+
 const StatisticsService = {
 
     calculateAlbum(stickers) {
@@ -107,6 +113,21 @@ const StatisticsService = {
 
     },
 
+    getGeneralStatistics() {
+    
+        return {
+            version: "1.0.0",
+            databaseVersion: 1,
+            sections: SectionRepository.findAll().length,
+            teams: TeamRepository.findAll().length,
+            stickers: StickerRepository.count(),
+            ...this.calculateAlbum(
+                StickerRepository.findAll()
+            ),
+        };
+    
+    },
+  
 };
 
 export default StatisticsService;

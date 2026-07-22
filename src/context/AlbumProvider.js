@@ -198,7 +198,14 @@ const groupedMissing = useMemo(() => {
     );
 
 }, [stickers]);
-  
+
+// settings
+const generalStats = useMemo(() => {
+
+    return StatisticsService.getGeneralStatistics();
+
+}, [stickers]);
+
     return (
         <AlbumContext.Provider
             value={{
@@ -250,6 +257,9 @@ const groupedMissing = useMemo(() => {
               
                 groupedDuplicates,
                 groupedMissing,
+
+                // settings
+                generalStats,
             }}
         >
             {children}

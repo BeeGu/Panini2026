@@ -228,6 +228,16 @@ const StickerRepository = {
         `);
     
     },
+
+    // settings
+    count() {
+  
+      return db.getFirstSync(`
+          SELECT COUNT(*) AS total
+          FROM stickers
+      `).total;
+  
+    },
   
 };
 

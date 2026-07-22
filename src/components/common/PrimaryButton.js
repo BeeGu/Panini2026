@@ -1,13 +1,18 @@
 import { Pressable, Text, StyleSheet } from "react-native";
 import Colors from "../../theme/colors";
 
-export default function PrimaryButton({ title, onPress }) {
+export default function PrimaryButton({
+    title,
+    onPress,
+    style,
+}) {
   return (
     <Pressable
       onPress={onPress}
       style={({ pressed }) => [
-        styles.button,
-        pressed && styles.pressed,
+          styles.button,
+          style,
+          pressed && styles.pressed,
       ]}
     >
       <Text style={styles.text}>{title}</Text>

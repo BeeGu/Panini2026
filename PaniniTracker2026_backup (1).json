@@ -1,0 +1,7950 @@
+{
+  "app": "Panini Tracker 2026",
+  "album": "FIFA World Cup 2026",
+  "version": 1,
+  "createdAt": "2026-07-22T04:45:58.759Z",
+  "stats": {
+    "total": 992,
+    "owned": 887,
+    "missing": 105,
+    "duplicates": 63
+  },
+  "collection": [
+    {
+      "id": 1,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:10.636Z",
+      "updated_at": "2026-07-15T19:23:10.636Z"
+    },
+    {
+      "id": 2,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:15.204Z",
+      "updated_at": "2026-07-15T19:23:15.204Z"
+    },
+    {
+      "id": 3,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:15.776Z",
+      "updated_at": "2026-07-15T19:23:15.776Z"
+    },
+    {
+      "id": 4,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:20.143Z",
+      "updated_at": "2026-07-15T19:23:20.143Z"
+    },
+    {
+      "id": 5,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:20.753Z",
+      "updated_at": "2026-07-15T19:23:20.753Z"
+    },
+    {
+      "id": 6,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:45.079Z",
+      "updated_at": "2026-07-15T19:23:45.079Z"
+    },
+    {
+      "id": 7,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:45.627Z",
+      "updated_at": "2026-07-15T19:23:45.627Z"
+    },
+    {
+      "id": 8,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:47.359Z",
+      "updated_at": "2026-07-15T19:23:47.359Z"
+    },
+    {
+      "id": 9,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:23:47.933Z",
+      "updated_at": "2026-07-15T19:23:47.933Z"
+    },
+    {
+      "id": 10,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:47.472Z",
+      "updated_at": "2026-07-15T20:03:47.472Z"
+    },
+    {
+      "id": 11,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:50.343Z",
+      "updated_at": "2026-07-15T20:03:50.343Z"
+    },
+    {
+      "id": 12,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:54.263Z",
+      "updated_at": "2026-07-15T20:03:54.263Z"
+    },
+    {
+      "id": 13,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:56.799Z",
+      "updated_at": "2026-07-15T20:03:56.799Z"
+    },
+    {
+      "id": 14,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:04:01.019Z",
+      "updated_at": "2026-07-15T20:04:01.019Z"
+    },
+    {
+      "id": 15,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:04:08.665Z",
+      "updated_at": "2026-07-15T20:04:08.665Z"
+    },
+    {
+      "id": 16,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 17,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:04:19.139Z",
+      "updated_at": "2026-07-15T20:04:19.139Z"
+    },
+    {
+      "id": 18,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:04:24.774Z",
+      "updated_at": "2026-07-15T20:04:24.774Z"
+    },
+    {
+      "id": 19,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 20,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:04:30.056Z",
+      "updated_at": "2026-07-15T20:04:30.056Z"
+    },
+    {
+      "id": 21,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T16:12:40.288Z",
+      "updated_at": "2026-07-15T19:25:42.399Z"
+    },
+    {
+      "id": 22,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T16:15:57.908Z",
+      "updated_at": "2026-07-15T16:15:57.908Z"
+    },
+    {
+      "id": 23,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:46.043Z",
+      "updated_at": "2026-07-15T19:25:46.043Z"
+    },
+    {
+      "id": 24,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:47.066Z",
+      "updated_at": "2026-07-15T19:25:47.066Z"
+    },
+    {
+      "id": 25,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:47.619Z",
+      "updated_at": "2026-07-15T19:25:47.619Z"
+    },
+    {
+      "id": 26,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:49.157Z",
+      "updated_at": "2026-07-15T19:25:49.157Z"
+    },
+    {
+      "id": 27,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:49.692Z",
+      "updated_at": "2026-07-15T19:25:49.692Z"
+    },
+    {
+      "id": 28,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:51.454Z",
+      "updated_at": "2026-07-15T19:25:51.454Z"
+    },
+    {
+      "id": 29,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:51.980Z",
+      "updated_at": "2026-07-15T19:25:51.980Z"
+    },
+    {
+      "id": 30,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:53.706Z",
+      "updated_at": "2026-07-15T19:25:53.706Z"
+    },
+    {
+      "id": 31,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:54.226Z",
+      "updated_at": "2026-07-15T19:25:54.226Z"
+    },
+    {
+      "id": 32,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:55.048Z",
+      "updated_at": "2026-07-15T19:25:55.048Z"
+    },
+    {
+      "id": 33,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 34,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:56.769Z",
+      "updated_at": "2026-07-15T19:25:56.769Z"
+    },
+    {
+      "id": 35,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:25:57.312Z",
+      "updated_at": "2026-07-15T19:25:57.312Z"
+    },
+    {
+      "id": 36,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:00.821Z",
+      "updated_at": "2026-07-15T19:26:00.821Z"
+    },
+    {
+      "id": 37,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:01.374Z",
+      "updated_at": "2026-07-15T19:26:01.374Z"
+    },
+    {
+      "id": 38,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:03.002Z",
+      "updated_at": "2026-07-15T19:26:03.002Z"
+    },
+    {
+      "id": 39,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:03.530Z",
+      "updated_at": "2026-07-15T19:26:03.530Z"
+    },
+    {
+      "id": 40,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:04.934Z",
+      "updated_at": "2026-07-15T19:26:04.934Z"
+    },
+    {
+      "id": 41,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T15:51:06.666Z",
+      "updated_at": "2026-07-15T19:26:14.973Z"
+    },
+    {
+      "id": 42,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T15:51:07.663Z",
+      "updated_at": "2026-07-15T19:26:15.564Z"
+    },
+    {
+      "id": 43,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:16.630Z",
+      "updated_at": "2026-07-15T19:26:16.630Z"
+    },
+    {
+      "id": 44,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:17.590Z",
+      "updated_at": "2026-07-15T19:26:17.590Z"
+    },
+    {
+      "id": 45,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:19.414Z",
+      "updated_at": "2026-07-15T19:26:19.414Z"
+    },
+    {
+      "id": 46,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:19.975Z",
+      "updated_at": "2026-07-15T19:26:19.975Z"
+    },
+    {
+      "id": 47,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:22.758Z",
+      "updated_at": "2026-07-15T19:26:22.758Z"
+    },
+    {
+      "id": 48,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:24.240Z",
+      "updated_at": "2026-07-15T19:26:24.240Z"
+    },
+    {
+      "id": 49,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:25.056Z",
+      "updated_at": "2026-07-15T19:26:25.056Z"
+    },
+    {
+      "id": 50,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:26.827Z",
+      "updated_at": "2026-07-15T19:26:26.827Z"
+    },
+    {
+      "id": 51,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:27.404Z",
+      "updated_at": "2026-07-15T19:26:27.404Z"
+    },
+    {
+      "id": 52,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:28.399Z",
+      "updated_at": "2026-07-15T19:26:28.399Z"
+    },
+    {
+      "id": 53,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:30.370Z",
+      "updated_at": "2026-07-15T19:26:30.370Z"
+    },
+    {
+      "id": 54,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:31.593Z",
+      "updated_at": "2026-07-15T19:26:31.593Z"
+    },
+    {
+      "id": 55,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:32.184Z",
+      "updated_at": "2026-07-15T19:26:32.184Z"
+    },
+    {
+      "id": 56,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 57,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:33.941Z",
+      "updated_at": "2026-07-15T19:26:33.941Z"
+    },
+    {
+      "id": 58,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:34.750Z",
+      "updated_at": "2026-07-15T19:26:34.750Z"
+    },
+    {
+      "id": 59,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:36.825Z",
+      "updated_at": "2026-07-15T19:26:36.825Z"
+    },
+    {
+      "id": 60,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:26:37.802Z",
+      "updated_at": "2026-07-15T19:26:37.802Z"
+    },
+    {
+      "id": 61,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:27:37.272Z",
+      "updated_at": "2026-07-15T19:27:37.272Z"
+    },
+    {
+      "id": 62,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:24.661Z",
+      "updated_at": "2026-07-15T19:29:24.661Z"
+    },
+    {
+      "id": 63,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:26.115Z",
+      "updated_at": "2026-07-15T19:29:26.115Z"
+    },
+    {
+      "id": 64,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 65,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:49:10.036Z",
+      "updated_at": "2026-07-20T18:49:10.036Z"
+    },
+    {
+      "id": 66,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:31.263Z",
+      "updated_at": "2026-07-15T19:29:31.263Z"
+    },
+    {
+      "id": 67,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:32.039Z",
+      "updated_at": "2026-07-15T19:29:32.039Z"
+    },
+    {
+      "id": 68,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 69,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:39.876Z",
+      "updated_at": "2026-07-15T19:29:39.876Z"
+    },
+    {
+      "id": 70,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:40.503Z",
+      "updated_at": "2026-07-15T19:29:40.503Z"
+    },
+    {
+      "id": 71,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:43.495Z",
+      "updated_at": "2026-07-15T19:29:43.495Z"
+    },
+    {
+      "id": 72,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 73,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:45.491Z",
+      "updated_at": "2026-07-15T19:29:45.491Z"
+    },
+    {
+      "id": 74,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:46.163Z",
+      "updated_at": "2026-07-15T19:29:46.163Z"
+    },
+    {
+      "id": 75,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:46.790Z",
+      "updated_at": "2026-07-15T19:29:46.790Z"
+    },
+    {
+      "id": 76,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:48.561Z",
+      "updated_at": "2026-07-15T19:29:48.561Z"
+    },
+    {
+      "id": 77,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:49.193Z",
+      "updated_at": "2026-07-15T19:29:49.193Z"
+    },
+    {
+      "id": 78,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:49.791Z",
+      "updated_at": "2026-07-15T19:29:49.791Z"
+    },
+    {
+      "id": 79,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 80,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:29:51.426Z",
+      "updated_at": "2026-07-15T19:29:51.426Z"
+    },
+    {
+      "id": 81,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:01.095Z",
+      "updated_at": "2026-07-15T19:30:01.095Z"
+    },
+    {
+      "id": 82,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:01.705Z",
+      "updated_at": "2026-07-15T19:30:01.705Z"
+    },
+    {
+      "id": 83,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:07.594Z",
+      "updated_at": "2026-07-15T19:30:07.594Z"
+    },
+    {
+      "id": 84,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:08.204Z",
+      "updated_at": "2026-07-15T19:30:08.204Z"
+    },
+    {
+      "id": 85,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:29.223Z",
+      "updated_at": "2026-07-17T10:06:29.223Z"
+    },
+    {
+      "id": 86,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:12.619Z",
+      "updated_at": "2026-07-15T19:30:12.619Z"
+    },
+    {
+      "id": 87,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:14.192Z",
+      "updated_at": "2026-07-15T19:30:14.192Z"
+    },
+    {
+      "id": 88,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 89,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:30.864Z",
+      "updated_at": "2026-07-17T10:06:30.864Z"
+    },
+    {
+      "id": 90,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:17.418Z",
+      "updated_at": "2026-07-15T19:30:17.418Z"
+    },
+    {
+      "id": 91,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:19.906Z",
+      "updated_at": "2026-07-15T19:30:19.906Z"
+    },
+    {
+      "id": 92,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:48:56.725Z",
+      "updated_at": "2026-07-20T18:48:56.725Z"
+    },
+    {
+      "id": 93,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:32.021Z",
+      "updated_at": "2026-07-17T10:06:32.021Z"
+    },
+    {
+      "id": 94,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:22.345Z",
+      "updated_at": "2026-07-15T19:30:22.345Z"
+    },
+    {
+      "id": 95,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:32.854Z",
+      "updated_at": "2026-07-17T10:06:32.854Z"
+    },
+    {
+      "id": 96,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:24.759Z",
+      "updated_at": "2026-07-15T19:30:24.759Z"
+    },
+    {
+      "id": 97,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:25.607Z",
+      "updated_at": "2026-07-15T19:30:25.607Z"
+    },
+    {
+      "id": 98,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:26.159Z",
+      "updated_at": "2026-07-15T19:30:26.159Z"
+    },
+    {
+      "id": 99,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:27.552Z",
+      "updated_at": "2026-07-15T19:30:27.552Z"
+    },
+    {
+      "id": 100,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:30:28.298Z",
+      "updated_at": "2026-07-15T19:30:28.298Z"
+    },
+    {
+      "id": 101,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:32:58.279Z",
+      "updated_at": "2026-07-15T19:32:58.279Z"
+    },
+    {
+      "id": 102,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:32:58.784Z",
+      "updated_at": "2026-07-15T19:32:58.784Z"
+    },
+    {
+      "id": 103,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:32:59.306Z",
+      "updated_at": "2026-07-15T19:32:59.306Z"
+    },
+    {
+      "id": 104,
+      "owned": 1,
+      "duplicates": 3,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:07.766Z",
+      "updated_at": "2026-07-15T19:33:07.766Z"
+    },
+    {
+      "id": 105,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:08.190Z",
+      "updated_at": "2026-07-15T19:33:08.190Z"
+    },
+    {
+      "id": 106,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:10.429Z",
+      "updated_at": "2026-07-15T19:33:10.429Z"
+    },
+    {
+      "id": 107,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:09.815Z",
+      "updated_at": "2026-07-15T19:33:09.815Z"
+    },
+    {
+      "id": 108,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:11.829Z",
+      "updated_at": "2026-07-15T19:33:11.829Z"
+    },
+    {
+      "id": 109,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 110,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 111,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 112,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:15.896Z",
+      "updated_at": "2026-07-15T19:33:15.896Z"
+    },
+    {
+      "id": 113,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 114,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:16.660Z",
+      "updated_at": "2026-07-15T19:33:16.660Z"
+    },
+    {
+      "id": 115,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:17.128Z",
+      "updated_at": "2026-07-15T19:33:17.128Z"
+    },
+    {
+      "id": 116,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:20.075Z",
+      "updated_at": "2026-07-15T19:33:20.075Z"
+    },
+    {
+      "id": 117,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:20.647Z",
+      "updated_at": "2026-07-15T19:33:20.647Z"
+    },
+    {
+      "id": 118,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:21.163Z",
+      "updated_at": "2026-07-15T19:33:21.163Z"
+    },
+    {
+      "id": 119,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:22.369Z",
+      "updated_at": "2026-07-15T19:33:22.369Z"
+    },
+    {
+      "id": 120,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 121,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:46.465Z",
+      "updated_at": "2026-07-15T19:33:46.465Z"
+    },
+    {
+      "id": 122,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:46.889Z",
+      "updated_at": "2026-07-15T19:33:46.889Z"
+    },
+    {
+      "id": 123,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:48.221Z",
+      "updated_at": "2026-07-15T19:33:48.221Z"
+    },
+    {
+      "id": 124,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:48.646Z",
+      "updated_at": "2026-07-15T19:33:48.646Z"
+    },
+    {
+      "id": 125,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:49.770Z",
+      "updated_at": "2026-07-15T19:33:49.770Z"
+    },
+    {
+      "id": 126,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:50.278Z",
+      "updated_at": "2026-07-15T19:33:50.278Z"
+    },
+    {
+      "id": 127,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T18:00:41.338Z",
+      "updated_at": "2026-07-17T18:00:41.338Z"
+    },
+    {
+      "id": 128,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:51.433Z",
+      "updated_at": "2026-07-15T19:33:51.433Z"
+    },
+    {
+      "id": 129,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:56.225Z",
+      "updated_at": "2026-07-17T10:06:56.225Z"
+    },
+    {
+      "id": 130,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:53.082Z",
+      "updated_at": "2026-07-15T19:33:53.082Z"
+    },
+    {
+      "id": 131,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:53.598Z",
+      "updated_at": "2026-07-15T19:33:53.598Z"
+    },
+    {
+      "id": 132,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:55.177Z",
+      "updated_at": "2026-07-15T19:33:55.177Z"
+    },
+    {
+      "id": 133,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:55.669Z",
+      "updated_at": "2026-07-15T19:33:55.669Z"
+    },
+    {
+      "id": 134,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:06:56.955Z",
+      "updated_at": "2026-07-17T10:06:56.955Z"
+    },
+    {
+      "id": 135,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:58.123Z",
+      "updated_at": "2026-07-15T19:33:58.123Z"
+    },
+    {
+      "id": 136,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:57.657Z",
+      "updated_at": "2026-07-15T19:33:57.657Z"
+    },
+    {
+      "id": 137,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:59.406Z",
+      "updated_at": "2026-07-15T19:33:59.406Z"
+    },
+    {
+      "id": 138,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:33:59.956Z",
+      "updated_at": "2026-07-15T19:33:59.956Z"
+    },
+    {
+      "id": 139,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:01.244Z",
+      "updated_at": "2026-07-15T19:34:01.244Z"
+    },
+    {
+      "id": 140,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:01.777Z",
+      "updated_at": "2026-07-15T19:34:01.777Z"
+    },
+    {
+      "id": 141,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-19T19:47:17.463Z",
+      "updated_at": "2026-07-19T19:47:17.463Z"
+    },
+    {
+      "id": 142,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:44.919Z",
+      "updated_at": "2026-07-15T19:34:44.919Z"
+    },
+    {
+      "id": 143,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:10.378Z",
+      "updated_at": "2026-07-17T10:07:10.378Z"
+    },
+    {
+      "id": 144,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:46.423Z",
+      "updated_at": "2026-07-15T19:34:46.423Z"
+    },
+    {
+      "id": 145,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:54.872Z",
+      "updated_at": "2026-07-15T19:34:54.872Z"
+    },
+    {
+      "id": 146,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:55.430Z",
+      "updated_at": "2026-07-15T19:34:55.430Z"
+    },
+    {
+      "id": 147,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:56.611Z",
+      "updated_at": "2026-07-15T19:34:56.611Z"
+    },
+    {
+      "id": 148,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:57.135Z",
+      "updated_at": "2026-07-15T19:34:57.135Z"
+    },
+    {
+      "id": 149,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:11.854Z",
+      "updated_at": "2026-07-17T10:07:11.854Z"
+    },
+    {
+      "id": 150,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:59.702Z",
+      "updated_at": "2026-07-15T19:34:59.702Z"
+    },
+    {
+      "id": 151,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:34:59.174Z",
+      "updated_at": "2026-07-15T19:34:59.174Z"
+    },
+    {
+      "id": 152,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:03.549Z",
+      "updated_at": "2026-07-15T19:35:03.549Z"
+    },
+    {
+      "id": 153,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:03.990Z",
+      "updated_at": "2026-07-15T19:35:03.990Z"
+    },
+    {
+      "id": 154,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:05.121Z",
+      "updated_at": "2026-07-15T19:35:05.121Z"
+    },
+    {
+      "id": 155,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 156,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:07.027Z",
+      "updated_at": "2026-07-15T19:35:07.027Z"
+    },
+    {
+      "id": 157,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 158,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:08.485Z",
+      "updated_at": "2026-07-15T19:35:08.485Z"
+    },
+    {
+      "id": 159,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:09.025Z",
+      "updated_at": "2026-07-15T19:35:09.025Z"
+    },
+    {
+      "id": 160,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:10.856Z",
+      "updated_at": "2026-07-15T19:35:10.856Z"
+    },
+    {
+      "id": 161,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:43.765Z",
+      "updated_at": "2026-07-15T19:35:43.765Z"
+    },
+    {
+      "id": 162,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:44.280Z",
+      "updated_at": "2026-07-15T19:35:44.280Z"
+    },
+    {
+      "id": 163,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:18.067Z",
+      "updated_at": "2026-07-17T10:07:18.067Z"
+    },
+    {
+      "id": 164,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:45.560Z",
+      "updated_at": "2026-07-15T19:35:45.560Z"
+    },
+    {
+      "id": 165,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:46.110Z",
+      "updated_at": "2026-07-15T19:35:46.110Z"
+    },
+    {
+      "id": 166,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:47.283Z",
+      "updated_at": "2026-07-15T19:35:47.283Z"
+    },
+    {
+      "id": 167,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:47.808Z",
+      "updated_at": "2026-07-15T19:35:47.808Z"
+    },
+    {
+      "id": 168,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:19.000Z",
+      "updated_at": "2026-07-17T10:07:19.000Z"
+    },
+    {
+      "id": 169,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:49.046Z",
+      "updated_at": "2026-07-15T19:35:49.046Z"
+    },
+    {
+      "id": 170,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:50.279Z",
+      "updated_at": "2026-07-15T19:35:50.279Z"
+    },
+    {
+      "id": 171,
+      "owned": 1,
+      "duplicates": 2,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:50.777Z",
+      "updated_at": "2026-07-15T19:35:50.777Z"
+    },
+    {
+      "id": 172,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:51.811Z",
+      "updated_at": "2026-07-15T19:35:51.811Z"
+    },
+    {
+      "id": 173,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:52.285Z",
+      "updated_at": "2026-07-15T19:35:52.285Z"
+    },
+    {
+      "id": 174,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:53.473Z",
+      "updated_at": "2026-07-15T19:35:53.473Z"
+    },
+    {
+      "id": 175,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:53.746Z",
+      "updated_at": "2026-07-15T19:35:53.746Z"
+    },
+    {
+      "id": 176,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:54.147Z",
+      "updated_at": "2026-07-15T19:35:54.147Z"
+    },
+    {
+      "id": 177,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:55.287Z",
+      "updated_at": "2026-07-15T19:35:55.287Z"
+    },
+    {
+      "id": 178,
+      "owned": 1,
+      "duplicates": 1,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:55.687Z",
+      "updated_at": "2026-07-15T19:35:55.687Z"
+    },
+    {
+      "id": 179,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:56.130Z",
+      "updated_at": "2026-07-15T19:35:56.130Z"
+    },
+    {
+      "id": 180,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:35:57.326Z",
+      "updated_at": "2026-07-15T19:35:57.326Z"
+    },
+    {
+      "id": 181,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:15.604Z",
+      "updated_at": "2026-07-15T19:37:15.604Z"
+    },
+    {
+      "id": 182,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:16.193Z",
+      "updated_at": "2026-07-15T19:37:16.193Z"
+    },
+    {
+      "id": 183,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:16.625Z",
+      "updated_at": "2026-07-15T19:37:16.625Z"
+    },
+    {
+      "id": 184,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:17.698Z",
+      "updated_at": "2026-07-15T19:37:17.698Z"
+    },
+    {
+      "id": 185,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:18.197Z",
+      "updated_at": "2026-07-15T19:37:18.197Z"
+    },
+    {
+      "id": 186,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:19.289Z",
+      "updated_at": "2026-07-15T19:37:19.289Z"
+    },
+    {
+      "id": 187,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:19.820Z",
+      "updated_at": "2026-07-15T19:37:19.820Z"
+    },
+    {
+      "id": 188,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:20.805Z",
+      "updated_at": "2026-07-15T19:37:20.805Z"
+    },
+    {
+      "id": 189,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:21.295Z",
+      "updated_at": "2026-07-15T19:37:21.295Z"
+    },
+    {
+      "id": 190,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:22.451Z",
+      "updated_at": "2026-07-15T19:37:22.451Z"
+    },
+    {
+      "id": 191,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:22.959Z",
+      "updated_at": "2026-07-15T19:37:22.959Z"
+    },
+    {
+      "id": 192,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:23.950Z",
+      "updated_at": "2026-07-15T19:37:23.950Z"
+    },
+    {
+      "id": 193,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:24.423Z",
+      "updated_at": "2026-07-15T19:37:24.423Z"
+    },
+    {
+      "id": 194,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:26.619Z",
+      "updated_at": "2026-07-15T19:37:26.619Z"
+    },
+    {
+      "id": 195,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:26.019Z",
+      "updated_at": "2026-07-15T19:37:26.019Z"
+    },
+    {
+      "id": 196,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:49:29.111Z",
+      "updated_at": "2026-07-20T18:49:29.111Z"
+    },
+    {
+      "id": 197,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:47.678Z",
+      "updated_at": "2026-07-15T19:37:47.678Z"
+    },
+    {
+      "id": 198,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 199,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:48.936Z",
+      "updated_at": "2026-07-15T19:37:48.936Z"
+    },
+    {
+      "id": 200,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:37:49.494Z",
+      "updated_at": "2026-07-15T19:37:49.494Z"
+    },
+    {
+      "id": 201,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:48.638Z",
+      "updated_at": "2026-07-15T19:38:48.638Z"
+    },
+    {
+      "id": 202,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 203,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:49.270Z",
+      "updated_at": "2026-07-15T19:38:49.270Z"
+    },
+    {
+      "id": 204,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:41.620Z",
+      "updated_at": "2026-07-17T10:07:41.620Z"
+    },
+    {
+      "id": 205,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 206,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 207,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:52.363Z",
+      "updated_at": "2026-07-15T19:38:52.363Z"
+    },
+    {
+      "id": 208,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:51.973Z",
+      "updated_at": "2026-07-15T19:38:51.973Z"
+    },
+    {
+      "id": 209,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:52.840Z",
+      "updated_at": "2026-07-15T19:38:52.840Z"
+    },
+    {
+      "id": 210,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:54.144Z",
+      "updated_at": "2026-07-15T19:38:54.144Z"
+    },
+    {
+      "id": 211,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:54.551Z",
+      "updated_at": "2026-07-15T19:38:54.551Z"
+    },
+    {
+      "id": 212,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:54.984Z",
+      "updated_at": "2026-07-15T19:38:54.984Z"
+    },
+    {
+      "id": 213,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:56.291Z",
+      "updated_at": "2026-07-15T19:38:56.291Z"
+    },
+    {
+      "id": 214,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:56.590Z",
+      "updated_at": "2026-07-15T19:38:56.590Z"
+    },
+    {
+      "id": 215,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:56.914Z",
+      "updated_at": "2026-07-15T19:38:56.914Z"
+    },
+    {
+      "id": 216,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:58.196Z",
+      "updated_at": "2026-07-15T19:38:58.196Z"
+    },
+    {
+      "id": 217,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:58.460Z",
+      "updated_at": "2026-07-15T19:38:58.460Z"
+    },
+    {
+      "id": 218,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:58.787Z",
+      "updated_at": "2026-07-15T19:38:58.787Z"
+    },
+    {
+      "id": 219,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:38:59.984Z",
+      "updated_at": "2026-07-15T19:38:59.984Z"
+    },
+    {
+      "id": 220,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:00.233Z",
+      "updated_at": "2026-07-15T19:39:00.233Z"
+    },
+    {
+      "id": 221,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:14.540Z",
+      "updated_at": "2026-07-15T19:39:14.540Z"
+    },
+    {
+      "id": 222,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:14.869Z",
+      "updated_at": "2026-07-15T19:39:14.869Z"
+    },
+    {
+      "id": 223,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 224,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:16.323Z",
+      "updated_at": "2026-07-15T19:39:16.323Z"
+    },
+    {
+      "id": 225,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:07:59.950Z",
+      "updated_at": "2026-07-17T10:07:59.950Z"
+    },
+    {
+      "id": 226,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:17.502Z",
+      "updated_at": "2026-07-15T19:39:17.502Z"
+    },
+    {
+      "id": 227,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:17.798Z",
+      "updated_at": "2026-07-15T19:39:17.798Z"
+    },
+    {
+      "id": 228,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T18:02:10.105Z",
+      "updated_at": "2026-07-17T18:02:10.105Z"
+    },
+    {
+      "id": 229,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:21.004Z",
+      "updated_at": "2026-07-15T19:39:21.004Z"
+    },
+    {
+      "id": 230,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:19.971Z",
+      "updated_at": "2026-07-15T19:39:19.971Z"
+    },
+    {
+      "id": 231,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:25.187Z",
+      "updated_at": "2026-07-15T19:39:25.187Z"
+    },
+    {
+      "id": 232,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 233,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:01.508Z",
+      "updated_at": "2026-07-17T10:08:01.508Z"
+    },
+    {
+      "id": 234,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:26.744Z",
+      "updated_at": "2026-07-15T19:39:26.744Z"
+    },
+    {
+      "id": 235,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:27.301Z",
+      "updated_at": "2026-07-15T19:39:27.301Z"
+    },
+    {
+      "id": 236,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:29.822Z",
+      "updated_at": "2026-07-15T19:39:29.822Z"
+    },
+    {
+      "id": 237,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:29.383Z",
+      "updated_at": "2026-07-15T19:39:29.383Z"
+    },
+    {
+      "id": 238,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:31.411Z",
+      "updated_at": "2026-07-15T19:39:31.411Z"
+    },
+    {
+      "id": 239,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:32.111Z",
+      "updated_at": "2026-07-15T19:39:32.111Z"
+    },
+    {
+      "id": 240,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:33.376Z",
+      "updated_at": "2026-07-15T19:39:33.376Z"
+    },
+    {
+      "id": 241,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:52.773Z",
+      "updated_at": "2026-07-15T19:39:52.773Z"
+    },
+    {
+      "id": 242,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:53.120Z",
+      "updated_at": "2026-07-15T19:39:53.120Z"
+    },
+    {
+      "id": 243,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:39:56.647Z",
+      "updated_at": "2026-07-15T19:39:56.647Z"
+    },
+    {
+      "id": 244,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:45:34.429Z",
+      "updated_at": "2026-07-20T18:45:34.429Z"
+    },
+    {
+      "id": 245,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:00.956Z",
+      "updated_at": "2026-07-15T19:40:00.956Z"
+    },
+    {
+      "id": 246,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:01.442Z",
+      "updated_at": "2026-07-15T19:40:01.442Z"
+    },
+    {
+      "id": 247,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:03.288Z",
+      "updated_at": "2026-07-15T19:40:03.288Z"
+    },
+    {
+      "id": 248,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:02.729Z",
+      "updated_at": "2026-07-15T19:40:02.729Z"
+    },
+    {
+      "id": 249,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:04.469Z",
+      "updated_at": "2026-07-15T19:40:04.469Z"
+    },
+    {
+      "id": 250,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:05.085Z",
+      "updated_at": "2026-07-15T19:40:05.085Z"
+    },
+    {
+      "id": 251,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 252,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 253,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:09.402Z",
+      "updated_at": "2026-07-15T19:40:09.402Z"
+    },
+    {
+      "id": 254,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 255,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:15.824Z",
+      "updated_at": "2026-07-15T19:40:15.824Z"
+    },
+    {
+      "id": 256,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:16.166Z",
+      "updated_at": "2026-07-15T19:40:16.166Z"
+    },
+    {
+      "id": 257,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:12.662Z",
+      "updated_at": "2026-07-17T10:08:12.662Z"
+    },
+    {
+      "id": 258,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:19.879Z",
+      "updated_at": "2026-07-15T19:40:19.879Z"
+    },
+    {
+      "id": 259,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:20.185Z",
+      "updated_at": "2026-07-15T19:40:20.185Z"
+    },
+    {
+      "id": 260,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:40:20.502Z",
+      "updated_at": "2026-07-15T19:40:20.502Z"
+    },
+    {
+      "id": 261,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:24.840Z",
+      "updated_at": "2026-07-15T19:41:24.840Z"
+    },
+    {
+      "id": 262,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:25.073Z",
+      "updated_at": "2026-07-15T19:41:25.073Z"
+    },
+    {
+      "id": 263,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:26.280Z",
+      "updated_at": "2026-07-15T19:41:26.280Z"
+    },
+    {
+      "id": 264,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:26.535Z",
+      "updated_at": "2026-07-15T19:41:26.535Z"
+    },
+    {
+      "id": 265,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:26.912Z",
+      "updated_at": "2026-07-15T19:41:26.912Z"
+    },
+    {
+      "id": 266,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:28.087Z",
+      "updated_at": "2026-07-15T19:41:28.087Z"
+    },
+    {
+      "id": 267,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:28.323Z",
+      "updated_at": "2026-07-15T19:41:28.323Z"
+    },
+    {
+      "id": 268,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:29.518Z",
+      "updated_at": "2026-07-15T19:41:29.518Z"
+    },
+    {
+      "id": 269,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:29.763Z",
+      "updated_at": "2026-07-15T19:41:29.763Z"
+    },
+    {
+      "id": 270,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:31.138Z",
+      "updated_at": "2026-07-15T19:41:31.138Z"
+    },
+    {
+      "id": 271,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:31.388Z",
+      "updated_at": "2026-07-15T19:41:31.388Z"
+    },
+    {
+      "id": 272,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:31.722Z",
+      "updated_at": "2026-07-15T19:41:31.722Z"
+    },
+    {
+      "id": 273,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:25.623Z",
+      "updated_at": "2026-07-17T10:08:25.623Z"
+    },
+    {
+      "id": 274,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:33.128Z",
+      "updated_at": "2026-07-15T19:41:33.128Z"
+    },
+    {
+      "id": 275,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:33.388Z",
+      "updated_at": "2026-07-15T19:41:33.388Z"
+    },
+    {
+      "id": 276,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:34.575Z",
+      "updated_at": "2026-07-15T19:41:34.575Z"
+    },
+    {
+      "id": 277,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:34.814Z",
+      "updated_at": "2026-07-15T19:41:34.814Z"
+    },
+    {
+      "id": 278,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:35.248Z",
+      "updated_at": "2026-07-15T19:41:35.248Z"
+    },
+    {
+      "id": 279,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:27.051Z",
+      "updated_at": "2026-07-17T10:08:27.051Z"
+    },
+    {
+      "id": 280,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:36.322Z",
+      "updated_at": "2026-07-15T19:41:36.322Z"
+    },
+    {
+      "id": 281,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:51.010Z",
+      "updated_at": "2026-07-15T19:41:51.010Z"
+    },
+    {
+      "id": 282,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:51.349Z",
+      "updated_at": "2026-07-15T19:41:51.349Z"
+    },
+    {
+      "id": 283,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:52.582Z",
+      "updated_at": "2026-07-15T19:41:52.582Z"
+    },
+    {
+      "id": 284,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:52.995Z",
+      "updated_at": "2026-07-15T19:41:52.995Z"
+    },
+    {
+      "id": 285,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:53.619Z",
+      "updated_at": "2026-07-15T19:41:53.619Z"
+    },
+    {
+      "id": 286,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:56.106Z",
+      "updated_at": "2026-07-15T19:41:56.106Z"
+    },
+    {
+      "id": 287,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:55.035Z",
+      "updated_at": "2026-07-15T19:41:55.035Z"
+    },
+    {
+      "id": 288,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:55.358Z",
+      "updated_at": "2026-07-15T19:41:55.358Z"
+    },
+    {
+      "id": 289,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:57.423Z",
+      "updated_at": "2026-07-15T19:41:57.423Z"
+    },
+    {
+      "id": 290,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:57.829Z",
+      "updated_at": "2026-07-15T19:41:57.829Z"
+    },
+    {
+      "id": 291,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:58.210Z",
+      "updated_at": "2026-07-15T19:41:58.210Z"
+    },
+    {
+      "id": 292,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:41:59.554Z",
+      "updated_at": "2026-07-15T19:41:59.554Z"
+    },
+    {
+      "id": 293,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:00.085Z",
+      "updated_at": "2026-07-15T19:42:00.085Z"
+    },
+    {
+      "id": 294,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 295,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:04.953Z",
+      "updated_at": "2026-07-15T19:42:04.953Z"
+    },
+    {
+      "id": 296,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:05.291Z",
+      "updated_at": "2026-07-15T19:42:05.291Z"
+    },
+    {
+      "id": 297,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:36.680Z",
+      "updated_at": "2026-07-17T10:08:36.680Z"
+    },
+    {
+      "id": 298,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:05.807Z",
+      "updated_at": "2026-07-15T19:42:05.807Z"
+    },
+    {
+      "id": 299,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:07.088Z",
+      "updated_at": "2026-07-15T19:42:07.088Z"
+    },
+    {
+      "id": 300,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:07.402Z",
+      "updated_at": "2026-07-15T19:42:07.402Z"
+    },
+    {
+      "id": 301,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 302,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:23.006Z",
+      "updated_at": "2026-07-15T19:42:23.006Z"
+    },
+    {
+      "id": 303,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:23.522Z",
+      "updated_at": "2026-07-15T19:42:23.522Z"
+    },
+    {
+      "id": 304,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:24.118Z",
+      "updated_at": "2026-07-15T19:42:24.118Z"
+    },
+    {
+      "id": 305,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:25.210Z",
+      "updated_at": "2026-07-15T19:42:25.210Z"
+    },
+    {
+      "id": 306,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:25.712Z",
+      "updated_at": "2026-07-15T19:42:25.712Z"
+    },
+    {
+      "id": 307,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:26.826Z",
+      "updated_at": "2026-07-15T19:42:26.826Z"
+    },
+    {
+      "id": 308,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:27.316Z",
+      "updated_at": "2026-07-15T19:42:27.316Z"
+    },
+    {
+      "id": 309,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:28.365Z",
+      "updated_at": "2026-07-15T19:42:28.365Z"
+    },
+    {
+      "id": 310,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:28.846Z",
+      "updated_at": "2026-07-15T19:42:28.846Z"
+    },
+    {
+      "id": 311,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:29.879Z",
+      "updated_at": "2026-07-15T19:42:29.879Z"
+    },
+    {
+      "id": 312,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:30.345Z",
+      "updated_at": "2026-07-15T19:42:30.345Z"
+    },
+    {
+      "id": 313,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:31.342Z",
+      "updated_at": "2026-07-15T19:42:31.342Z"
+    },
+    {
+      "id": 314,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:31.850Z",
+      "updated_at": "2026-07-15T19:42:31.850Z"
+    },
+    {
+      "id": 315,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:32.981Z",
+      "updated_at": "2026-07-15T19:42:32.981Z"
+    },
+    {
+      "id": 316,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:33.440Z",
+      "updated_at": "2026-07-15T19:42:33.440Z"
+    },
+    {
+      "id": 317,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:34.451Z",
+      "updated_at": "2026-07-15T19:42:34.451Z"
+    },
+    {
+      "id": 318,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:34.925Z",
+      "updated_at": "2026-07-15T19:42:34.925Z"
+    },
+    {
+      "id": 319,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:36.074Z",
+      "updated_at": "2026-07-15T19:42:45.668Z"
+    },
+    {
+      "id": 320,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:42:36.582Z",
+      "updated_at": "2026-07-15T19:42:36.582Z"
+    },
+    {
+      "id": 321,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:25.887Z",
+      "updated_at": "2026-07-15T19:43:25.887Z"
+    },
+    {
+      "id": 322,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:25.695Z",
+      "updated_at": "2026-07-15T19:43:25.695Z"
+    },
+    {
+      "id": 323,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:08:53.070Z",
+      "updated_at": "2026-07-17T10:08:53.070Z"
+    },
+    {
+      "id": 324,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:26.377Z",
+      "updated_at": "2026-07-15T19:43:27.060Z"
+    },
+    {
+      "id": 325,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:28.219Z",
+      "updated_at": "2026-07-15T19:43:28.219Z"
+    },
+    {
+      "id": 326,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:28.558Z",
+      "updated_at": "2026-07-15T19:43:28.558Z"
+    },
+    {
+      "id": 327,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:29.613Z",
+      "updated_at": "2026-07-15T19:43:29.613Z"
+    },
+    {
+      "id": 328,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:29.987Z",
+      "updated_at": "2026-07-15T19:43:29.987Z"
+    },
+    {
+      "id": 329,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 330,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:31.343Z",
+      "updated_at": "2026-07-15T19:43:31.343Z"
+    },
+    {
+      "id": 331,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:35.798Z",
+      "updated_at": "2026-07-15T19:43:35.798Z"
+    },
+    {
+      "id": 332,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 333,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:37.818Z",
+      "updated_at": "2026-07-15T19:43:37.818Z"
+    },
+    {
+      "id": 334,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:37.529Z",
+      "updated_at": "2026-07-15T19:43:37.529Z"
+    },
+    {
+      "id": 335,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:38.928Z",
+      "updated_at": "2026-07-15T19:43:38.928Z"
+    },
+    {
+      "id": 336,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:39.316Z",
+      "updated_at": "2026-07-15T19:43:39.316Z"
+    },
+    {
+      "id": 337,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:40.473Z",
+      "updated_at": "2026-07-15T19:43:40.473Z"
+    },
+    {
+      "id": 338,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:40.754Z",
+      "updated_at": "2026-07-15T19:43:40.754Z"
+    },
+    {
+      "id": 339,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:43:42.212Z",
+      "updated_at": "2026-07-15T19:43:42.212Z"
+    },
+    {
+      "id": 340,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:50:16.633Z",
+      "updated_at": "2026-07-20T18:50:16.633Z"
+    },
+    {
+      "id": 341,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:24.880Z",
+      "updated_at": "2026-07-15T19:44:24.880Z"
+    },
+    {
+      "id": 342,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:24.240Z",
+      "updated_at": "2026-07-15T19:44:24.240Z"
+    },
+    {
+      "id": 343,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 344,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:25.331Z",
+      "updated_at": "2026-07-15T19:44:25.331Z"
+    },
+    {
+      "id": 345,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:26.314Z",
+      "updated_at": "2026-07-15T19:44:26.314Z"
+    },
+    {
+      "id": 346,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:26.836Z",
+      "updated_at": "2026-07-15T19:44:26.836Z"
+    },
+    {
+      "id": 347,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:27.229Z",
+      "updated_at": "2026-07-15T19:44:27.229Z"
+    },
+    {
+      "id": 348,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:28.277Z",
+      "updated_at": "2026-07-15T19:44:28.277Z"
+    },
+    {
+      "id": 349,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:28.708Z",
+      "updated_at": "2026-07-15T19:44:28.708Z"
+    },
+    {
+      "id": 350,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:12.345Z",
+      "updated_at": "2026-07-17T10:09:12.345Z"
+    },
+    {
+      "id": 351,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:29.940Z",
+      "updated_at": "2026-07-15T19:44:29.940Z"
+    },
+    {
+      "id": 352,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:31.112Z",
+      "updated_at": "2026-07-15T19:44:31.112Z"
+    },
+    {
+      "id": 353,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:31.312Z",
+      "updated_at": "2026-07-15T19:44:31.312Z"
+    },
+    {
+      "id": 354,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:31.671Z",
+      "updated_at": "2026-07-15T19:44:31.671Z"
+    },
+    {
+      "id": 355,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:32.713Z",
+      "updated_at": "2026-07-15T19:44:32.713Z"
+    },
+    {
+      "id": 356,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:33.094Z",
+      "updated_at": "2026-07-15T19:44:33.094Z"
+    },
+    {
+      "id": 357,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:34.111Z",
+      "updated_at": "2026-07-15T19:44:34.111Z"
+    },
+    {
+      "id": 358,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:34.442Z",
+      "updated_at": "2026-07-15T19:44:34.442Z"
+    },
+    {
+      "id": 359,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:35.467Z",
+      "updated_at": "2026-07-15T19:44:35.467Z"
+    },
+    {
+      "id": 360,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:35.864Z",
+      "updated_at": "2026-07-15T19:44:35.864Z"
+    },
+    {
+      "id": 361,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:58.248Z",
+      "updated_at": "2026-07-15T19:44:58.248Z"
+    },
+    {
+      "id": 362,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:57.400Z",
+      "updated_at": "2026-07-15T19:44:57.400Z"
+    },
+    {
+      "id": 363,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:44:57.765Z",
+      "updated_at": "2026-07-15T19:44:57.765Z"
+    },
+    {
+      "id": 364,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 365,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 366,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:22.240Z",
+      "updated_at": "2026-07-17T10:09:22.240Z"
+    },
+    {
+      "id": 367,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:01.018Z",
+      "updated_at": "2026-07-15T19:45:01.018Z"
+    },
+    {
+      "id": 368,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:00.327Z",
+      "updated_at": "2026-07-15T19:45:00.327Z"
+    },
+    {
+      "id": 369,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:02.285Z",
+      "updated_at": "2026-07-15T19:45:02.285Z"
+    },
+    {
+      "id": 370,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:02.582Z",
+      "updated_at": "2026-07-15T19:45:02.582Z"
+    },
+    {
+      "id": 371,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:02.965Z",
+      "updated_at": "2026-07-15T19:45:02.965Z"
+    },
+    {
+      "id": 372,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:05.438Z",
+      "updated_at": "2026-07-15T19:45:05.438Z"
+    },
+    {
+      "id": 373,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:23.555Z",
+      "updated_at": "2026-07-20T18:50:40.060Z"
+    },
+    {
+      "id": 374,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:05.803Z",
+      "updated_at": "2026-07-15T19:45:05.803Z"
+    },
+    {
+      "id": 375,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:06.110Z",
+      "updated_at": "2026-07-15T19:45:06.110Z"
+    },
+    {
+      "id": 376,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:07.492Z",
+      "updated_at": "2026-07-15T19:45:07.492Z"
+    },
+    {
+      "id": 377,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:08.057Z",
+      "updated_at": "2026-07-15T19:45:08.057Z"
+    },
+    {
+      "id": 378,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 379,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:10.770Z",
+      "updated_at": "2026-07-15T19:45:10.770Z"
+    },
+    {
+      "id": 380,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:10.139Z",
+      "updated_at": "2026-07-15T19:45:10.139Z"
+    },
+    {
+      "id": 381,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:31.914Z",
+      "updated_at": "2026-07-15T19:45:31.914Z"
+    },
+    {
+      "id": 382,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:30.691Z",
+      "updated_at": "2026-07-15T19:45:30.691Z"
+    },
+    {
+      "id": 383,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:30.998Z",
+      "updated_at": "2026-07-15T19:45:30.998Z"
+    },
+    {
+      "id": 384,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:31.547Z",
+      "updated_at": "2026-07-15T19:45:31.547Z"
+    },
+    {
+      "id": 385,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:34.211Z",
+      "updated_at": "2026-07-15T19:45:34.211Z"
+    },
+    {
+      "id": 386,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:33.662Z",
+      "updated_at": "2026-07-15T19:45:33.662Z"
+    },
+    {
+      "id": 387,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 388,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:35.560Z",
+      "updated_at": "2026-07-15T19:45:35.560Z"
+    },
+    {
+      "id": 389,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:36.126Z",
+      "updated_at": "2026-07-15T19:45:36.126Z"
+    },
+    {
+      "id": 390,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:36.532Z",
+      "updated_at": "2026-07-15T19:45:36.532Z"
+    },
+    {
+      "id": 391,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:37.722Z",
+      "updated_at": "2026-07-15T19:45:37.722Z"
+    },
+    {
+      "id": 392,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:38.026Z",
+      "updated_at": "2026-07-15T19:45:38.026Z"
+    },
+    {
+      "id": 393,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:39.496Z",
+      "updated_at": "2026-07-15T19:45:39.496Z"
+    },
+    {
+      "id": 394,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:39.734Z",
+      "updated_at": "2026-07-15T19:45:39.734Z"
+    },
+    {
+      "id": 395,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:40.034Z",
+      "updated_at": "2026-07-15T19:45:40.034Z"
+    },
+    {
+      "id": 396,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:41.699Z",
+      "updated_at": "2026-07-15T19:45:41.699Z"
+    },
+    {
+      "id": 397,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:41.475Z",
+      "updated_at": "2026-07-15T19:45:41.475Z"
+    },
+    {
+      "id": 398,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:42.042Z",
+      "updated_at": "2026-07-15T19:45:42.042Z"
+    },
+    {
+      "id": 399,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:43.339Z",
+      "updated_at": "2026-07-15T19:45:43.339Z"
+    },
+    {
+      "id": 400,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:43.764Z",
+      "updated_at": "2026-07-15T19:45:43.764Z"
+    },
+    {
+      "id": 401,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:57.319Z",
+      "updated_at": "2026-07-15T19:45:57.319Z"
+    },
+    {
+      "id": 402,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 403,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:57.785Z",
+      "updated_at": "2026-07-15T19:45:57.785Z"
+    },
+    {
+      "id": 404,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:00.258Z",
+      "updated_at": "2026-07-15T19:46:00.258Z"
+    },
+    {
+      "id": 405,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:45:59.291Z",
+      "updated_at": "2026-07-15T19:45:59.291Z"
+    },
+    {
+      "id": 406,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 407,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:56:02.321Z",
+      "updated_at": "2026-07-20T18:56:02.321Z"
+    },
+    {
+      "id": 408,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:01.920Z",
+      "updated_at": "2026-07-15T19:46:01.920Z"
+    },
+    {
+      "id": 409,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:03.161Z",
+      "updated_at": "2026-07-15T19:46:03.161Z"
+    },
+    {
+      "id": 410,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:03.645Z",
+      "updated_at": "2026-07-15T19:46:03.645Z"
+    },
+    {
+      "id": 411,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:09.416Z",
+      "updated_at": "2026-07-15T19:46:09.416Z"
+    },
+    {
+      "id": 412,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 413,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:09.906Z",
+      "updated_at": "2026-07-15T19:46:09.906Z"
+    },
+    {
+      "id": 414,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:44.060Z",
+      "updated_at": "2026-07-17T10:09:44.060Z"
+    },
+    {
+      "id": 415,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:11.483Z",
+      "updated_at": "2026-07-15T19:46:11.483Z"
+    },
+    {
+      "id": 416,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:11.990Z",
+      "updated_at": "2026-07-15T19:46:11.990Z"
+    },
+    {
+      "id": 417,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:13.380Z",
+      "updated_at": "2026-07-15T19:46:13.380Z"
+    },
+    {
+      "id": 418,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:13.859Z",
+      "updated_at": "2026-07-15T19:46:13.859Z"
+    },
+    {
+      "id": 419,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:15.043Z",
+      "updated_at": "2026-07-15T19:46:15.043Z"
+    },
+    {
+      "id": 420,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:44.935Z",
+      "updated_at": "2026-07-17T10:09:44.935Z"
+    },
+    {
+      "id": 421,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:31.617Z",
+      "updated_at": "2026-07-15T19:46:31.617Z"
+    },
+    {
+      "id": 422,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:31.922Z",
+      "updated_at": "2026-07-15T19:46:31.922Z"
+    },
+    {
+      "id": 423,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 424,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:33.201Z",
+      "updated_at": "2026-07-15T19:46:33.201Z"
+    },
+    {
+      "id": 425,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:33.481Z",
+      "updated_at": "2026-07-15T19:46:33.481Z"
+    },
+    {
+      "id": 426,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:35.850Z",
+      "updated_at": "2026-07-15T19:46:35.850Z"
+    },
+    {
+      "id": 427,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:35.229Z",
+      "updated_at": "2026-07-15T19:46:35.229Z"
+    },
+    {
+      "id": 428,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:36.727Z",
+      "updated_at": "2026-07-15T19:46:36.727Z"
+    },
+    {
+      "id": 429,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:09:59.007Z",
+      "updated_at": "2026-07-17T10:09:59.007Z"
+    },
+    {
+      "id": 430,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:39.215Z",
+      "updated_at": "2026-07-15T19:46:39.215Z"
+    },
+    {
+      "id": 431,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:38.867Z",
+      "updated_at": "2026-07-15T19:46:38.867Z"
+    },
+    {
+      "id": 432,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:40.472Z",
+      "updated_at": "2026-07-15T19:46:40.472Z"
+    },
+    {
+      "id": 433,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:10:00.224Z",
+      "updated_at": "2026-07-20T18:56:42.725Z"
+    },
+    {
+      "id": 434,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:46.031Z",
+      "updated_at": "2026-07-15T19:46:46.031Z"
+    },
+    {
+      "id": 435,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 436,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:47.243Z",
+      "updated_at": "2026-07-15T19:46:47.243Z"
+    },
+    {
+      "id": 437,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:47.819Z",
+      "updated_at": "2026-07-15T19:46:47.819Z"
+    },
+    {
+      "id": 438,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:48.167Z",
+      "updated_at": "2026-07-15T19:46:48.167Z"
+    },
+    {
+      "id": 439,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:49.206Z",
+      "updated_at": "2026-07-15T19:46:49.206Z"
+    },
+    {
+      "id": 440,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:46:49.609Z",
+      "updated_at": "2026-07-15T19:46:49.609Z"
+    },
+    {
+      "id": 441,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:02.363Z",
+      "updated_at": "2026-07-15T19:47:02.363Z"
+    },
+    {
+      "id": 442,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:00.882Z",
+      "updated_at": "2026-07-15T19:47:00.882Z"
+    },
+    {
+      "id": 443,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:03.235Z",
+      "updated_at": "2026-07-15T19:47:03.235Z"
+    },
+    {
+      "id": 444,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:03.662Z",
+      "updated_at": "2026-07-15T19:47:03.662Z"
+    },
+    {
+      "id": 445,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:06.073Z",
+      "updated_at": "2026-07-15T19:47:06.073Z"
+    },
+    {
+      "id": 446,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:06.448Z",
+      "updated_at": "2026-07-15T19:47:06.448Z"
+    },
+    {
+      "id": 447,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:06.816Z",
+      "updated_at": "2026-07-15T19:47:06.816Z"
+    },
+    {
+      "id": 448,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:08.996Z",
+      "updated_at": "2026-07-15T19:47:08.996Z"
+    },
+    {
+      "id": 449,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:08.555Z",
+      "updated_at": "2026-07-15T19:47:08.555Z"
+    },
+    {
+      "id": 450,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:10.302Z",
+      "updated_at": "2026-07-15T19:47:10.302Z"
+    },
+    {
+      "id": 451,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:10.717Z",
+      "updated_at": "2026-07-15T19:47:10.717Z"
+    },
+    {
+      "id": 452,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:11.150Z",
+      "updated_at": "2026-07-15T19:47:11.150Z"
+    },
+    {
+      "id": 453,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:12.416Z",
+      "updated_at": "2026-07-15T19:47:12.416Z"
+    },
+    {
+      "id": 454,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:12.864Z",
+      "updated_at": "2026-07-15T19:47:12.864Z"
+    },
+    {
+      "id": 455,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:13.315Z",
+      "updated_at": "2026-07-15T19:47:13.315Z"
+    },
+    {
+      "id": 456,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:14.769Z",
+      "updated_at": "2026-07-15T19:47:14.769Z"
+    },
+    {
+      "id": 457,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:15.127Z",
+      "updated_at": "2026-07-15T19:47:15.127Z"
+    },
+    {
+      "id": 458,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:15.535Z",
+      "updated_at": "2026-07-15T19:47:15.535Z"
+    },
+    {
+      "id": 459,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:17.182Z",
+      "updated_at": "2026-07-15T19:47:17.182Z"
+    },
+    {
+      "id": 460,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:17.641Z",
+      "updated_at": "2026-07-15T19:47:17.641Z"
+    },
+    {
+      "id": 461,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:30.846Z",
+      "updated_at": "2026-07-15T19:47:30.846Z"
+    },
+    {
+      "id": 462,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:31.237Z",
+      "updated_at": "2026-07-15T19:47:31.237Z"
+    },
+    {
+      "id": 463,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:32.341Z",
+      "updated_at": "2026-07-15T19:47:32.341Z"
+    },
+    {
+      "id": 464,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:32.633Z",
+      "updated_at": "2026-07-15T19:47:32.633Z"
+    },
+    {
+      "id": 465,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:33.059Z",
+      "updated_at": "2026-07-15T19:47:33.059Z"
+    },
+    {
+      "id": 466,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:34.081Z",
+      "updated_at": "2026-07-15T19:47:34.081Z"
+    },
+    {
+      "id": 467,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:34.523Z",
+      "updated_at": "2026-07-15T19:47:34.523Z"
+    },
+    {
+      "id": 468,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:35.497Z",
+      "updated_at": "2026-07-15T19:47:35.497Z"
+    },
+    {
+      "id": 469,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:35.903Z",
+      "updated_at": "2026-07-15T19:47:35.903Z"
+    },
+    {
+      "id": 470,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:36.829Z",
+      "updated_at": "2026-07-15T19:47:36.829Z"
+    },
+    {
+      "id": 471,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:37.243Z",
+      "updated_at": "2026-07-15T19:47:37.243Z"
+    },
+    {
+      "id": 472,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:39.224Z",
+      "updated_at": "2026-07-15T19:47:39.224Z"
+    },
+    {
+      "id": 473,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:38.633Z",
+      "updated_at": "2026-07-15T19:47:38.633Z"
+    },
+    {
+      "id": 474,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 475,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:40.574Z",
+      "updated_at": "2026-07-15T19:47:40.574Z"
+    },
+    {
+      "id": 476,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:41.005Z",
+      "updated_at": "2026-07-15T19:47:41.005Z"
+    },
+    {
+      "id": 477,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:42.867Z",
+      "updated_at": "2026-07-15T19:47:42.867Z"
+    },
+    {
+      "id": 478,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:42.619Z",
+      "updated_at": "2026-07-15T19:47:42.619Z"
+    },
+    {
+      "id": 479,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:42.301Z",
+      "updated_at": "2026-07-15T19:47:42.301Z"
+    },
+    {
+      "id": 480,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:43.977Z",
+      "updated_at": "2026-07-15T19:47:43.977Z"
+    },
+    {
+      "id": 481,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:51.199Z",
+      "updated_at": "2026-07-15T19:47:51.199Z"
+    },
+    {
+      "id": 482,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:51.580Z",
+      "updated_at": "2026-07-15T19:47:51.580Z"
+    },
+    {
+      "id": 483,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:52.039Z",
+      "updated_at": "2026-07-15T19:47:52.039Z"
+    },
+    {
+      "id": 484,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:52.422Z",
+      "updated_at": "2026-07-15T19:47:52.422Z"
+    },
+    {
+      "id": 485,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:53.696Z",
+      "updated_at": "2026-07-15T19:47:53.696Z"
+    },
+    {
+      "id": 486,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:54.127Z",
+      "updated_at": "2026-07-15T19:47:54.127Z"
+    },
+    {
+      "id": 487,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:56.232Z",
+      "updated_at": "2026-07-15T19:47:56.232Z"
+    },
+    {
+      "id": 488,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:55.550Z",
+      "updated_at": "2026-07-15T19:47:55.550Z"
+    },
+    {
+      "id": 489,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:55.899Z",
+      "updated_at": "2026-07-15T19:47:55.899Z"
+    },
+    {
+      "id": 490,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:57.581Z",
+      "updated_at": "2026-07-15T19:47:57.581Z"
+    },
+    {
+      "id": 491,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:57.946Z",
+      "updated_at": "2026-07-15T19:47:57.946Z"
+    },
+    {
+      "id": 492,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:58.297Z",
+      "updated_at": "2026-07-15T19:47:58.297Z"
+    },
+    {
+      "id": 493,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:47:59.437Z",
+      "updated_at": "2026-07-15T19:47:59.437Z"
+    },
+    {
+      "id": 494,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:00.002Z",
+      "updated_at": "2026-07-15T19:48:00.002Z"
+    },
+    {
+      "id": 495,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:01.117Z",
+      "updated_at": "2026-07-15T19:48:01.117Z"
+    },
+    {
+      "id": 496,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 497,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:01.592Z",
+      "updated_at": "2026-07-15T19:48:01.592Z"
+    },
+    {
+      "id": 498,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:03.897Z",
+      "updated_at": "2026-07-15T19:48:03.897Z"
+    },
+    {
+      "id": 499,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:03.022Z",
+      "updated_at": "2026-07-15T19:48:03.022Z"
+    },
+    {
+      "id": 500,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:03.454Z",
+      "updated_at": "2026-07-15T19:48:03.454Z"
+    },
+    {
+      "id": 501,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:18.859Z",
+      "updated_at": "2026-07-15T19:48:18.859Z"
+    },
+    {
+      "id": 502,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:19.162Z",
+      "updated_at": "2026-07-15T19:48:19.162Z"
+    },
+    {
+      "id": 503,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:19.589Z",
+      "updated_at": "2026-07-15T19:48:19.589Z"
+    },
+    {
+      "id": 504,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:20.821Z",
+      "updated_at": "2026-07-15T19:48:20.821Z"
+    },
+    {
+      "id": 505,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:21.075Z",
+      "updated_at": "2026-07-15T19:48:21.075Z"
+    },
+    {
+      "id": 506,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:21.570Z",
+      "updated_at": "2026-07-15T19:48:21.570Z"
+    },
+    {
+      "id": 507,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:23.733Z",
+      "updated_at": "2026-07-15T19:48:23.733Z"
+    },
+    {
+      "id": 508,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:22.911Z",
+      "updated_at": "2026-07-15T19:48:22.911Z"
+    },
+    {
+      "id": 509,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:11:25.767Z",
+      "updated_at": "2026-07-17T10:11:25.767Z"
+    },
+    {
+      "id": 510,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:25.173Z",
+      "updated_at": "2026-07-15T19:48:25.173Z"
+    },
+    {
+      "id": 511,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:25.741Z",
+      "updated_at": "2026-07-15T19:48:25.741Z"
+    },
+    {
+      "id": 512,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:26.147Z",
+      "updated_at": "2026-07-15T19:48:26.147Z"
+    },
+    {
+      "id": 513,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:27.212Z",
+      "updated_at": "2026-07-15T19:48:27.212Z"
+    },
+    {
+      "id": 514,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:27.688Z",
+      "updated_at": "2026-07-15T19:48:27.688Z"
+    },
+    {
+      "id": 515,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 516,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:31.964Z",
+      "updated_at": "2026-07-15T19:48:31.964Z"
+    },
+    {
+      "id": 517,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:32.579Z",
+      "updated_at": "2026-07-15T19:48:32.579Z"
+    },
+    {
+      "id": 518,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 519,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 520,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:34.026Z",
+      "updated_at": "2026-07-15T19:48:34.026Z"
+    },
+    {
+      "id": 521,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 522,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:49.211Z",
+      "updated_at": "2026-07-15T19:48:49.211Z"
+    },
+    {
+      "id": 523,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:49.835Z",
+      "updated_at": "2026-07-15T19:48:49.835Z"
+    },
+    {
+      "id": 524,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:51.025Z",
+      "updated_at": "2026-07-15T19:48:51.025Z"
+    },
+    {
+      "id": 525,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:51.357Z",
+      "updated_at": "2026-07-15T19:48:51.357Z"
+    },
+    {
+      "id": 526,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:52.716Z",
+      "updated_at": "2026-07-15T19:48:52.716Z"
+    },
+    {
+      "id": 527,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 528,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:54.021Z",
+      "updated_at": "2026-07-15T19:48:54.021Z"
+    },
+    {
+      "id": 529,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:54.670Z",
+      "updated_at": "2026-07-17T10:22:50.520Z"
+    },
+    {
+      "id": 530,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:56.125Z",
+      "updated_at": "2026-07-15T19:48:56.125Z"
+    },
+    {
+      "id": 531,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:56.450Z",
+      "updated_at": "2026-07-15T19:48:56.450Z"
+    },
+    {
+      "id": 532,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:56.822Z",
+      "updated_at": "2026-07-15T19:48:56.822Z"
+    },
+    {
+      "id": 533,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:59.278Z",
+      "updated_at": "2026-07-15T19:48:59.278Z"
+    },
+    {
+      "id": 534,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:48:58.373Z",
+      "updated_at": "2026-07-15T19:48:58.373Z"
+    },
+    {
+      "id": 535,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:01.735Z",
+      "updated_at": "2026-07-15T19:49:01.735Z"
+    },
+    {
+      "id": 536,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:02.105Z",
+      "updated_at": "2026-07-15T19:49:02.105Z"
+    },
+    {
+      "id": 537,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:02.488Z",
+      "updated_at": "2026-07-15T19:49:02.488Z"
+    },
+    {
+      "id": 538,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:06.243Z",
+      "updated_at": "2026-07-15T19:49:06.243Z"
+    },
+    {
+      "id": 539,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:06.584Z",
+      "updated_at": "2026-07-15T19:49:06.584Z"
+    },
+    {
+      "id": 540,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:07.109Z",
+      "updated_at": "2026-07-15T19:49:07.109Z"
+    },
+    {
+      "id": 541,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:48.272Z",
+      "updated_at": "2026-07-15T19:49:48.272Z"
+    },
+    {
+      "id": 542,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:48.808Z",
+      "updated_at": "2026-07-15T19:49:48.808Z"
+    },
+    {
+      "id": 543,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:11:43.222Z",
+      "updated_at": "2026-07-17T10:11:43.222Z"
+    },
+    {
+      "id": 544,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:50.458Z",
+      "updated_at": "2026-07-15T19:49:50.458Z"
+    },
+    {
+      "id": 545,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:50.931Z",
+      "updated_at": "2026-07-15T19:49:50.931Z"
+    },
+    {
+      "id": 546,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 547,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 548,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:54.627Z",
+      "updated_at": "2026-07-15T19:49:56.025Z"
+    },
+    {
+      "id": 549,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:54.234Z",
+      "updated_at": "2026-07-15T19:50:27.588Z"
+    },
+    {
+      "id": 550,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:54.964Z",
+      "updated_at": "2026-07-15T19:49:54.964Z"
+    },
+    {
+      "id": 551,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:56.398Z",
+      "updated_at": "2026-07-15T19:49:56.398Z"
+    },
+    {
+      "id": 552,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:57.947Z",
+      "updated_at": "2026-07-15T19:49:57.947Z"
+    },
+    {
+      "id": 553,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:49:59.020Z",
+      "updated_at": "2026-07-15T19:49:59.020Z"
+    },
+    {
+      "id": 554,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 555,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:00.335Z",
+      "updated_at": "2026-07-15T19:50:00.335Z"
+    },
+    {
+      "id": 556,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:01.733Z",
+      "updated_at": "2026-07-15T19:50:01.733Z"
+    },
+    {
+      "id": 557,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:02.281Z",
+      "updated_at": "2026-07-15T19:50:02.281Z"
+    },
+    {
+      "id": 558,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:03.665Z",
+      "updated_at": "2026-07-15T19:50:03.665Z"
+    },
+    {
+      "id": 559,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:04.169Z",
+      "updated_at": "2026-07-15T19:50:04.169Z"
+    },
+    {
+      "id": 560,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:06.867Z",
+      "updated_at": "2026-07-15T19:50:06.867Z"
+    },
+    {
+      "id": 561,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:45.550Z",
+      "updated_at": "2026-07-15T19:50:45.550Z"
+    },
+    {
+      "id": 562,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:45.825Z",
+      "updated_at": "2026-07-15T19:50:45.825Z"
+    },
+    {
+      "id": 563,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:46.524Z",
+      "updated_at": "2026-07-15T19:50:46.524Z"
+    },
+    {
+      "id": 564,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:47.765Z",
+      "updated_at": "2026-07-15T19:50:47.765Z"
+    },
+    {
+      "id": 565,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:11:54.458Z",
+      "updated_at": "2026-07-17T10:11:54.458Z"
+    },
+    {
+      "id": 566,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:52.150Z",
+      "updated_at": "2026-07-15T19:50:52.150Z"
+    },
+    {
+      "id": 567,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:52.573Z",
+      "updated_at": "2026-07-15T19:50:52.573Z"
+    },
+    {
+      "id": 568,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:53.855Z",
+      "updated_at": "2026-07-15T19:50:53.855Z"
+    },
+    {
+      "id": 569,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 570,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:55.244Z",
+      "updated_at": "2026-07-15T19:50:55.244Z"
+    },
+    {
+      "id": 571,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:55.577Z",
+      "updated_at": "2026-07-15T19:50:55.577Z"
+    },
+    {
+      "id": 572,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:50:55.926Z",
+      "updated_at": "2026-07-15T19:50:55.926Z"
+    },
+    {
+      "id": 573,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 574,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:01.262Z",
+      "updated_at": "2026-07-15T19:51:01.262Z"
+    },
+    {
+      "id": 575,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:01.868Z",
+      "updated_at": "2026-07-15T19:51:01.868Z"
+    },
+    {
+      "id": 576,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 577,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:06.745Z",
+      "updated_at": "2026-07-15T19:51:06.745Z"
+    },
+    {
+      "id": 578,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 579,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:07.518Z",
+      "updated_at": "2026-07-15T19:51:07.518Z"
+    },
+    {
+      "id": 580,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:02:05.680Z",
+      "updated_at": "2026-07-20T19:02:05.680Z"
+    },
+    {
+      "id": 581,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:35.276Z",
+      "updated_at": "2026-07-15T19:51:35.276Z"
+    },
+    {
+      "id": 582,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:36.031Z",
+      "updated_at": "2026-07-15T19:51:36.031Z"
+    },
+    {
+      "id": 583,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:37.344Z",
+      "updated_at": "2026-07-15T19:51:37.344Z"
+    },
+    {
+      "id": 584,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:38.091Z",
+      "updated_at": "2026-07-15T19:51:38.091Z"
+    },
+    {
+      "id": 585,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:40.303Z",
+      "updated_at": "2026-07-15T19:51:40.303Z"
+    },
+    {
+      "id": 586,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:41.069Z",
+      "updated_at": "2026-07-15T19:51:41.069Z"
+    },
+    {
+      "id": 587,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:12:21.559Z",
+      "updated_at": "2026-07-17T10:12:21.559Z"
+    },
+    {
+      "id": 588,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:01:52.398Z",
+      "updated_at": "2026-07-20T19:01:52.398Z"
+    },
+    {
+      "id": 589,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:12:23.457Z",
+      "updated_at": "2026-07-17T10:12:23.457Z"
+    },
+    {
+      "id": 590,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:45.819Z",
+      "updated_at": "2026-07-15T19:51:45.819Z"
+    },
+    {
+      "id": 591,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:44.136Z",
+      "updated_at": "2026-07-15T19:51:44.136Z"
+    },
+    {
+      "id": 592,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:48.714Z",
+      "updated_at": "2026-07-15T19:51:48.714Z"
+    },
+    {
+      "id": 593,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:01:53.434Z",
+      "updated_at": "2026-07-20T19:01:53.434Z"
+    },
+    {
+      "id": 594,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:56.718Z",
+      "updated_at": "2026-07-15T19:51:56.718Z"
+    },
+    {
+      "id": 595,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:57.412Z",
+      "updated_at": "2026-07-15T19:51:57.412Z"
+    },
+    {
+      "id": 596,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:51:59.316Z",
+      "updated_at": "2026-07-15T19:51:59.316Z"
+    },
+    {
+      "id": 597,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:00.116Z",
+      "updated_at": "2026-07-15T19:52:00.116Z"
+    },
+    {
+      "id": 598,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:00.167Z",
+      "updated_at": "2026-07-15T19:52:00.167Z"
+    },
+    {
+      "id": 599,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:02.379Z",
+      "updated_at": "2026-07-15T19:52:02.379Z"
+    },
+    {
+      "id": 600,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 601,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:19.284Z",
+      "updated_at": "2026-07-15T19:52:19.284Z"
+    },
+    {
+      "id": 602,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 603,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:19.658Z",
+      "updated_at": "2026-07-15T19:52:19.658Z"
+    },
+    {
+      "id": 604,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 605,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:21.347Z",
+      "updated_at": "2026-07-15T19:52:21.347Z"
+    },
+    {
+      "id": 606,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:21.931Z",
+      "updated_at": "2026-07-15T19:52:21.931Z"
+    },
+    {
+      "id": 607,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:23.238Z",
+      "updated_at": "2026-07-15T19:52:23.238Z"
+    },
+    {
+      "id": 608,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:23.586Z",
+      "updated_at": "2026-07-15T19:52:23.586Z"
+    },
+    {
+      "id": 609,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:24.052Z",
+      "updated_at": "2026-07-15T19:52:24.052Z"
+    },
+    {
+      "id": 610,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:25.442Z",
+      "updated_at": "2026-07-15T19:52:25.442Z"
+    },
+    {
+      "id": 611,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:25.765Z",
+      "updated_at": "2026-07-15T19:52:25.765Z"
+    },
+    {
+      "id": 612,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:26.166Z",
+      "updated_at": "2026-07-15T19:52:26.166Z"
+    },
+    {
+      "id": 613,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:27.513Z",
+      "updated_at": "2026-07-15T19:52:27.513Z"
+    },
+    {
+      "id": 614,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:27.880Z",
+      "updated_at": "2026-07-15T19:52:27.880Z"
+    },
+    {
+      "id": 615,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:28.255Z",
+      "updated_at": "2026-07-15T19:52:28.255Z"
+    },
+    {
+      "id": 616,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:28.821Z",
+      "updated_at": "2026-07-15T19:52:28.821Z"
+    },
+    {
+      "id": 617,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:30.252Z",
+      "updated_at": "2026-07-15T19:52:30.252Z"
+    },
+    {
+      "id": 618,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:30.592Z",
+      "updated_at": "2026-07-15T19:52:30.592Z"
+    },
+    {
+      "id": 619,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:30.950Z",
+      "updated_at": "2026-07-15T19:52:30.950Z"
+    },
+    {
+      "id": 620,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:31.299Z",
+      "updated_at": "2026-07-15T19:52:31.299Z"
+    },
+    {
+      "id": 621,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:48.057Z",
+      "updated_at": "2026-07-15T19:52:48.057Z"
+    },
+    {
+      "id": 622,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:47.157Z",
+      "updated_at": "2026-07-15T19:52:47.157Z"
+    },
+    {
+      "id": 623,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:47.497Z",
+      "updated_at": "2026-07-15T19:52:47.497Z"
+    },
+    {
+      "id": 624,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:49.356Z",
+      "updated_at": "2026-07-15T19:52:49.356Z"
+    },
+    {
+      "id": 625,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:49.825Z",
+      "updated_at": "2026-07-15T19:52:49.825Z"
+    },
+    {
+      "id": 626,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:50.253Z",
+      "updated_at": "2026-07-15T19:52:50.253Z"
+    },
+    {
+      "id": 627,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:12:41.666Z",
+      "updated_at": "2026-07-17T10:12:41.666Z"
+    },
+    {
+      "id": 628,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:51.543Z",
+      "updated_at": "2026-07-15T19:52:51.543Z"
+    },
+    {
+      "id": 629,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:51.959Z",
+      "updated_at": "2026-07-15T19:52:51.959Z"
+    },
+    {
+      "id": 630,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:53.250Z",
+      "updated_at": "2026-07-15T19:52:53.250Z"
+    },
+    {
+      "id": 631,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 632,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:54.490Z",
+      "updated_at": "2026-07-15T19:52:54.490Z"
+    },
+    {
+      "id": 633,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:54.940Z",
+      "updated_at": "2026-07-15T19:52:54.940Z"
+    },
+    {
+      "id": 634,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:55.338Z",
+      "updated_at": "2026-07-15T19:52:55.338Z"
+    },
+    {
+      "id": 635,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:56.727Z",
+      "updated_at": "2026-07-15T19:52:56.727Z"
+    },
+    {
+      "id": 636,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:57.110Z",
+      "updated_at": "2026-07-15T19:52:57.110Z"
+    },
+    {
+      "id": 637,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:57.459Z",
+      "updated_at": "2026-07-15T19:52:57.459Z"
+    },
+    {
+      "id": 638,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:58.657Z",
+      "updated_at": "2026-07-15T19:52:58.657Z"
+    },
+    {
+      "id": 639,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:52:59.041Z",
+      "updated_at": "2026-07-15T19:52:59.041Z"
+    },
+    {
+      "id": 640,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:12:43.351Z",
+      "updated_at": "2026-07-17T10:12:43.351Z"
+    },
+    {
+      "id": 641,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:11.155Z",
+      "updated_at": "2026-07-15T19:53:11.155Z"
+    },
+    {
+      "id": 642,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:11.706Z",
+      "updated_at": "2026-07-15T19:53:11.706Z"
+    },
+    {
+      "id": 643,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:14.151Z",
+      "updated_at": "2026-07-15T19:53:14.151Z"
+    },
+    {
+      "id": 644,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:13.300Z",
+      "updated_at": "2026-07-15T19:53:13.300Z"
+    },
+    {
+      "id": 645,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:13.735Z",
+      "updated_at": "2026-07-15T19:53:13.735Z"
+    },
+    {
+      "id": 646,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:15.494Z",
+      "updated_at": "2026-07-15T19:53:15.494Z"
+    },
+    {
+      "id": 647,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:15.982Z",
+      "updated_at": "2026-07-15T19:53:15.982Z"
+    },
+    {
+      "id": 648,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:16.406Z",
+      "updated_at": "2026-07-15T19:53:16.406Z"
+    },
+    {
+      "id": 649,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:17.739Z",
+      "updated_at": "2026-07-15T19:53:17.739Z"
+    },
+    {
+      "id": 650,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:18.153Z",
+      "updated_at": "2026-07-15T19:53:18.153Z"
+    },
+    {
+      "id": 651,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:18.786Z",
+      "updated_at": "2026-07-15T19:53:18.786Z"
+    },
+    {
+      "id": 652,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 653,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:19.978Z",
+      "updated_at": "2026-07-15T19:53:19.978Z"
+    },
+    {
+      "id": 654,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:21.107Z",
+      "updated_at": "2026-07-15T19:53:21.107Z"
+    },
+    {
+      "id": 655,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:21.649Z",
+      "updated_at": "2026-07-15T19:53:21.649Z"
+    },
+    {
+      "id": 656,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:22.803Z",
+      "updated_at": "2026-07-15T19:53:22.803Z"
+    },
+    {
+      "id": 657,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:23.145Z",
+      "updated_at": "2026-07-15T19:53:23.145Z"
+    },
+    {
+      "id": 658,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:23.537Z",
+      "updated_at": "2026-07-15T19:53:23.537Z"
+    },
+    {
+      "id": 659,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:24.725Z",
+      "updated_at": "2026-07-15T19:53:24.725Z"
+    },
+    {
+      "id": 660,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:25.193Z",
+      "updated_at": "2026-07-15T19:53:25.193Z"
+    },
+    {
+      "id": 661,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 662,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:45.396Z",
+      "updated_at": "2026-07-15T19:53:45.396Z"
+    },
+    {
+      "id": 663,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:45.743Z",
+      "updated_at": "2026-07-15T19:53:45.743Z"
+    },
+    {
+      "id": 664,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:46.860Z",
+      "updated_at": "2026-07-15T19:53:46.860Z"
+    },
+    {
+      "id": 665,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 666,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:48.049Z",
+      "updated_at": "2026-07-15T19:53:48.049Z"
+    },
+    {
+      "id": 667,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 668,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:50.328Z",
+      "updated_at": "2026-07-15T19:53:50.328Z"
+    },
+    {
+      "id": 669,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:49.646Z",
+      "updated_at": "2026-07-15T19:53:49.646Z"
+    },
+    {
+      "id": 670,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:51.618Z",
+      "updated_at": "2026-07-15T19:53:51.618Z"
+    },
+    {
+      "id": 671,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:52.403Z",
+      "updated_at": "2026-07-15T19:53:52.403Z"
+    },
+    {
+      "id": 672,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:57.259Z",
+      "updated_at": "2026-07-15T19:53:57.259Z"
+    },
+    {
+      "id": 673,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:57.666Z",
+      "updated_at": "2026-07-15T19:53:57.666Z"
+    },
+    {
+      "id": 674,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:53:59.671Z",
+      "updated_at": "2026-07-15T19:53:59.671Z"
+    },
+    {
+      "id": 675,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 676,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:00.072Z",
+      "updated_at": "2026-07-15T19:54:00.072Z"
+    },
+    {
+      "id": 677,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:00.437Z",
+      "updated_at": "2026-07-15T19:54:00.437Z"
+    },
+    {
+      "id": 678,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 679,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:01.826Z",
+      "updated_at": "2026-07-15T19:54:01.826Z"
+    },
+    {
+      "id": 680,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:07.271Z",
+      "updated_at": "2026-07-17T10:13:07.271Z"
+    },
+    {
+      "id": 681,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:18.077Z",
+      "updated_at": "2026-07-15T19:54:18.077Z"
+    },
+    {
+      "id": 682,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:17.237Z",
+      "updated_at": "2026-07-15T19:54:17.237Z"
+    },
+    {
+      "id": 683,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:17.545Z",
+      "updated_at": "2026-07-15T19:54:17.545Z"
+    },
+    {
+      "id": 684,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:19.575Z",
+      "updated_at": "2026-07-15T19:54:19.575Z"
+    },
+    {
+      "id": 685,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 686,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:20.083Z",
+      "updated_at": "2026-07-15T19:54:20.083Z"
+    },
+    {
+      "id": 687,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 688,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 689,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:23.437Z",
+      "updated_at": "2026-07-15T19:54:23.437Z"
+    },
+    {
+      "id": 690,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:22.020Z",
+      "updated_at": "2026-07-15T19:54:22.020Z"
+    },
+    {
+      "id": 691,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:27.923Z",
+      "updated_at": "2026-07-15T19:54:27.923Z"
+    },
+    {
+      "id": 692,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:28.335Z",
+      "updated_at": "2026-07-15T19:54:28.335Z"
+    },
+    {
+      "id": 693,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:02:54.360Z",
+      "updated_at": "2026-07-20T19:02:54.360Z"
+    },
+    {
+      "id": 694,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:20.817Z",
+      "updated_at": "2026-07-17T10:13:20.817Z"
+    },
+    {
+      "id": 695,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:31.482Z",
+      "updated_at": "2026-07-15T19:54:31.482Z"
+    },
+    {
+      "id": 696,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:34.852Z",
+      "updated_at": "2026-07-15T19:54:34.852Z"
+    },
+    {
+      "id": 697,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:35.343Z",
+      "updated_at": "2026-07-15T19:54:35.343Z"
+    },
+    {
+      "id": 698,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 699,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:02:55.756Z",
+      "updated_at": "2026-07-20T19:02:55.756Z"
+    },
+    {
+      "id": 700,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:37.607Z",
+      "updated_at": "2026-07-15T19:54:37.607Z"
+    },
+    {
+      "id": 701,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:51.370Z",
+      "updated_at": "2026-07-15T19:54:51.370Z"
+    },
+    {
+      "id": 702,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:51.791Z",
+      "updated_at": "2026-07-15T19:54:51.791Z"
+    },
+    {
+      "id": 703,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:32.966Z",
+      "updated_at": "2026-07-17T10:13:32.966Z"
+    },
+    {
+      "id": 704,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:53.150Z",
+      "updated_at": "2026-07-15T19:54:53.150Z"
+    },
+    {
+      "id": 705,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:53.531Z",
+      "updated_at": "2026-07-15T19:54:53.531Z"
+    },
+    {
+      "id": 706,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:54.608Z",
+      "updated_at": "2026-07-15T19:54:54.608Z"
+    },
+    {
+      "id": 707,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:54.988Z",
+      "updated_at": "2026-07-15T19:54:54.988Z"
+    },
+    {
+      "id": 708,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:54:56.144Z",
+      "updated_at": "2026-07-15T19:54:56.144Z"
+    },
+    {
+      "id": 709,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:22:29.027Z",
+      "updated_at": "2026-07-17T10:22:29.027Z"
+    },
+    {
+      "id": 710,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:45.876Z",
+      "updated_at": "2026-07-17T10:13:45.876Z"
+    },
+    {
+      "id": 711,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:46.677Z",
+      "updated_at": "2026-07-17T10:13:46.677Z"
+    },
+    {
+      "id": 712,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:02.178Z",
+      "updated_at": "2026-07-15T19:55:02.178Z"
+    },
+    {
+      "id": 713,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:02.659Z",
+      "updated_at": "2026-07-15T19:55:02.659Z"
+    },
+    {
+      "id": 714,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:47.376Z",
+      "updated_at": "2026-07-17T10:13:47.376Z"
+    },
+    {
+      "id": 715,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:03.775Z",
+      "updated_at": "2026-07-15T19:55:03.775Z"
+    },
+    {
+      "id": 716,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:06.205Z",
+      "updated_at": "2026-07-15T19:55:06.205Z"
+    },
+    {
+      "id": 717,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:05.457Z",
+      "updated_at": "2026-07-15T19:55:05.457Z"
+    },
+    {
+      "id": 718,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:05.831Z",
+      "updated_at": "2026-07-15T19:55:05.831Z"
+    },
+    {
+      "id": 719,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:06.894Z",
+      "updated_at": "2026-07-15T19:55:06.894Z"
+    },
+    {
+      "id": 720,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:07.877Z",
+      "updated_at": "2026-07-15T19:55:07.877Z"
+    },
+    {
+      "id": 721,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:28.696Z",
+      "updated_at": "2026-07-15T19:55:28.696Z"
+    },
+    {
+      "id": 722,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:28.961Z",
+      "updated_at": "2026-07-15T19:55:28.961Z"
+    },
+    {
+      "id": 723,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:30.203Z",
+      "updated_at": "2026-07-15T19:55:30.203Z"
+    },
+    {
+      "id": 724,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:30.483Z",
+      "updated_at": "2026-07-15T19:55:30.483Z"
+    },
+    {
+      "id": 725,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:31.251Z",
+      "updated_at": "2026-07-15T19:55:31.251Z"
+    },
+    {
+      "id": 726,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 727,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:13:59.281Z",
+      "updated_at": "2026-07-17T10:13:59.281Z"
+    },
+    {
+      "id": 728,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 729,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:33.906Z",
+      "updated_at": "2026-07-15T19:55:33.906Z"
+    },
+    {
+      "id": 730,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 731,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:39.997Z",
+      "updated_at": "2026-07-15T19:55:39.997Z"
+    },
+    {
+      "id": 732,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 733,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:45.089Z",
+      "updated_at": "2026-07-15T19:55:45.089Z"
+    },
+    {
+      "id": 734,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:45.573Z",
+      "updated_at": "2026-07-15T19:55:45.573Z"
+    },
+    {
+      "id": 735,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:46.819Z",
+      "updated_at": "2026-07-15T19:55:46.819Z"
+    },
+    {
+      "id": 736,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:47.194Z",
+      "updated_at": "2026-07-15T19:55:47.194Z"
+    },
+    {
+      "id": 737,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T18:56:30.765Z",
+      "updated_at": "2026-07-20T18:56:30.765Z"
+    },
+    {
+      "id": 738,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:48.201Z",
+      "updated_at": "2026-07-15T19:55:48.201Z"
+    },
+    {
+      "id": 739,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:48.616Z",
+      "updated_at": "2026-07-15T19:55:48.616Z"
+    },
+    {
+      "id": 740,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:55:49.458Z",
+      "updated_at": "2026-07-15T19:55:49.458Z"
+    },
+    {
+      "id": 741,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:04.952Z",
+      "updated_at": "2026-07-15T19:56:04.952Z"
+    },
+    {
+      "id": 742,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:05.281Z",
+      "updated_at": "2026-07-15T19:56:05.281Z"
+    },
+    {
+      "id": 743,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:05.639Z",
+      "updated_at": "2026-07-15T19:56:05.639Z"
+    },
+    {
+      "id": 744,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:05.973Z",
+      "updated_at": "2026-07-15T19:56:05.973Z"
+    },
+    {
+      "id": 745,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:07.121Z",
+      "updated_at": "2026-07-15T19:56:07.121Z"
+    },
+    {
+      "id": 746,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:07.369Z",
+      "updated_at": "2026-07-15T19:56:07.369Z"
+    },
+    {
+      "id": 747,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:08.062Z",
+      "updated_at": "2026-07-15T19:56:08.062Z"
+    },
+    {
+      "id": 748,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:11.757Z",
+      "updated_at": "2026-07-15T19:56:11.757Z"
+    },
+    {
+      "id": 749,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:14:33.602Z",
+      "updated_at": "2026-07-17T10:14:33.602Z"
+    },
+    {
+      "id": 750,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:09.528Z",
+      "updated_at": "2026-07-15T19:56:09.528Z"
+    },
+    {
+      "id": 751,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:12.970Z",
+      "updated_at": "2026-07-15T19:56:12.970Z"
+    },
+    {
+      "id": 752,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:13.318Z",
+      "updated_at": "2026-07-15T19:56:13.318Z"
+    },
+    {
+      "id": 753,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:14.561Z",
+      "updated_at": "2026-07-15T19:56:14.561Z"
+    },
+    {
+      "id": 754,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:03:15.468Z",
+      "updated_at": "2026-07-20T19:03:15.468Z"
+    },
+    {
+      "id": 755,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:15.867Z",
+      "updated_at": "2026-07-15T19:56:15.867Z"
+    },
+    {
+      "id": 756,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:16.326Z",
+      "updated_at": "2026-07-15T19:56:16.326Z"
+    },
+    {
+      "id": 757,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:17.332Z",
+      "updated_at": "2026-07-15T19:56:17.332Z"
+    },
+    {
+      "id": 758,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:17.746Z",
+      "updated_at": "2026-07-15T19:56:17.746Z"
+    },
+    {
+      "id": 759,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:18.939Z",
+      "updated_at": "2026-07-15T19:56:18.939Z"
+    },
+    {
+      "id": 760,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 761,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:38.108Z",
+      "updated_at": "2026-07-15T19:56:38.108Z"
+    },
+    {
+      "id": 762,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:38.575Z",
+      "updated_at": "2026-07-15T19:56:38.575Z"
+    },
+    {
+      "id": 763,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:39.912Z",
+      "updated_at": "2026-07-15T19:56:39.912Z"
+    },
+    {
+      "id": 764,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:40.221Z",
+      "updated_at": "2026-07-15T19:56:40.221Z"
+    },
+    {
+      "id": 765,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:40.520Z",
+      "updated_at": "2026-07-15T19:56:40.520Z"
+    },
+    {
+      "id": 766,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:42.950Z",
+      "updated_at": "2026-07-15T19:56:42.950Z"
+    },
+    {
+      "id": 767,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 768,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:42.377Z",
+      "updated_at": "2026-07-15T19:56:42.377Z"
+    },
+    {
+      "id": 769,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:44.107Z",
+      "updated_at": "2026-07-15T19:56:44.107Z"
+    },
+    {
+      "id": 770,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 771,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:48.625Z",
+      "updated_at": "2026-07-15T19:56:48.625Z"
+    },
+    {
+      "id": 772,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:48.077Z",
+      "updated_at": "2026-07-15T19:56:48.077Z"
+    },
+    {
+      "id": 773,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:50.738Z",
+      "updated_at": "2026-07-15T19:56:50.738Z"
+    },
+    {
+      "id": 774,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:51.021Z",
+      "updated_at": "2026-07-15T19:56:51.021Z"
+    },
+    {
+      "id": 775,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:51.611Z",
+      "updated_at": "2026-07-15T19:56:51.611Z"
+    },
+    {
+      "id": 776,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:53.044Z",
+      "updated_at": "2026-07-15T19:56:53.044Z"
+    },
+    {
+      "id": 777,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:53.527Z",
+      "updated_at": "2026-07-15T19:56:53.527Z"
+    },
+    {
+      "id": 778,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:54.898Z",
+      "updated_at": "2026-07-15T19:56:54.898Z"
+    },
+    {
+      "id": 779,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:56:55.348Z",
+      "updated_at": "2026-07-15T19:56:55.966Z"
+    },
+    {
+      "id": 780,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 781,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:12.678Z",
+      "updated_at": "2026-07-15T19:57:12.678Z"
+    },
+    {
+      "id": 782,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:12.134Z",
+      "updated_at": "2026-07-15T19:57:12.134Z"
+    },
+    {
+      "id": 783,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:12.420Z",
+      "updated_at": "2026-07-15T19:57:12.420Z"
+    },
+    {
+      "id": 784,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:14.004Z",
+      "updated_at": "2026-07-15T19:57:14.004Z"
+    },
+    {
+      "id": 785,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:14.502Z",
+      "updated_at": "2026-07-15T19:57:14.502Z"
+    },
+    {
+      "id": 786,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 787,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:16.799Z",
+      "updated_at": "2026-07-15T19:57:16.799Z"
+    },
+    {
+      "id": 788,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:16.068Z",
+      "updated_at": "2026-07-15T19:57:16.068Z"
+    },
+    {
+      "id": 789,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:17.363Z",
+      "updated_at": "2026-07-15T19:57:17.363Z"
+    },
+    {
+      "id": 790,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 791,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:18.615Z",
+      "updated_at": "2026-07-17T10:14:52.902Z"
+    },
+    {
+      "id": 792,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:24.539Z",
+      "updated_at": "2026-07-15T19:57:24.539Z"
+    },
+    {
+      "id": 793,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:24.073Z",
+      "updated_at": "2026-07-15T19:57:24.073Z"
+    },
+    {
+      "id": 794,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:25.161Z",
+      "updated_at": "2026-07-15T19:57:25.161Z"
+    },
+    {
+      "id": 795,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:27.216Z",
+      "updated_at": "2026-07-15T19:57:27.216Z"
+    },
+    {
+      "id": 796,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:26.896Z",
+      "updated_at": "2026-07-15T19:57:26.896Z"
+    },
+    {
+      "id": 797,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:27.890Z",
+      "updated_at": "2026-07-15T19:57:27.890Z"
+    },
+    {
+      "id": 798,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:28.989Z",
+      "updated_at": "2026-07-15T19:57:28.989Z"
+    },
+    {
+      "id": 799,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:29.539Z",
+      "updated_at": "2026-07-15T19:57:29.539Z"
+    },
+    {
+      "id": 800,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:30.047Z",
+      "updated_at": "2026-07-15T19:57:30.047Z"
+    },
+    {
+      "id": 801,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:47.538Z",
+      "updated_at": "2026-07-15T19:57:47.538Z"
+    },
+    {
+      "id": 802,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:03.008Z",
+      "updated_at": "2026-07-17T10:15:03.008Z"
+    },
+    {
+      "id": 803,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:04.966Z",
+      "updated_at": "2026-07-17T10:15:04.966Z"
+    },
+    {
+      "id": 804,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:48.867Z",
+      "updated_at": "2026-07-15T19:57:48.867Z"
+    },
+    {
+      "id": 805,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:49.352Z",
+      "updated_at": "2026-07-15T19:57:49.352Z"
+    },
+    {
+      "id": 806,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:50.799Z",
+      "updated_at": "2026-07-15T19:57:50.799Z"
+    },
+    {
+      "id": 807,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:51.465Z",
+      "updated_at": "2026-07-15T19:57:51.465Z"
+    },
+    {
+      "id": 808,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:51.846Z",
+      "updated_at": "2026-07-15T19:57:51.846Z"
+    },
+    {
+      "id": 809,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:55.799Z",
+      "updated_at": "2026-07-15T19:57:55.799Z"
+    },
+    {
+      "id": 810,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:53.293Z",
+      "updated_at": "2026-07-15T19:57:53.293Z"
+    },
+    {
+      "id": 811,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:54.950Z",
+      "updated_at": "2026-07-15T19:58:00.850Z"
+    },
+    {
+      "id": 812,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:57:55.359Z",
+      "updated_at": "2026-07-17T10:15:07.432Z"
+    },
+    {
+      "id": 813,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:02.674Z",
+      "updated_at": "2026-07-15T19:58:02.674Z"
+    },
+    {
+      "id": 814,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:07.874Z",
+      "updated_at": "2026-07-15T19:58:07.874Z"
+    },
+    {
+      "id": 815,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:08.273Z",
+      "updated_at": "2026-07-15T19:58:08.273Z"
+    },
+    {
+      "id": 816,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 817,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:13.114Z",
+      "updated_at": "2026-07-15T19:58:13.114Z"
+    },
+    {
+      "id": 818,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:13.379Z",
+      "updated_at": "2026-07-15T19:58:13.379Z"
+    },
+    {
+      "id": 819,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:14.380Z",
+      "updated_at": "2026-07-15T19:58:14.380Z"
+    },
+    {
+      "id": 820,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:14.670Z",
+      "updated_at": "2026-07-15T19:58:14.670Z"
+    },
+    {
+      "id": 821,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-14T13:52:43.744Z",
+      "updated_at": "2026-07-14T13:52:43.744Z"
+    },
+    {
+      "id": 822,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-14T13:52:44.413Z",
+      "updated_at": "2026-07-14T13:52:44.413Z"
+    },
+    {
+      "id": 823,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-14T13:52:45.019Z",
+      "updated_at": "2026-07-14T13:52:45.019Z"
+    },
+    {
+      "id": 824,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:38.703Z",
+      "updated_at": "2026-07-15T19:58:38.703Z"
+    },
+    {
+      "id": 825,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:39.359Z",
+      "updated_at": "2026-07-15T19:58:39.359Z"
+    },
+    {
+      "id": 826,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:40.532Z",
+      "updated_at": "2026-07-15T19:58:40.532Z"
+    },
+    {
+      "id": 827,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:40.805Z",
+      "updated_at": "2026-07-15T19:58:40.805Z"
+    },
+    {
+      "id": 828,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:42.111Z",
+      "updated_at": "2026-07-15T19:58:42.111Z"
+    },
+    {
+      "id": 829,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:42.612Z",
+      "updated_at": "2026-07-15T19:58:42.612Z"
+    },
+    {
+      "id": 830,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:43.077Z",
+      "updated_at": "2026-07-15T19:58:43.077Z"
+    },
+    {
+      "id": 831,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:45.517Z",
+      "updated_at": "2026-07-15T19:58:45.517Z"
+    },
+    {
+      "id": 832,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:44.634Z",
+      "updated_at": "2026-07-15T19:58:44.634Z"
+    },
+    {
+      "id": 833,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:44.982Z",
+      "updated_at": "2026-07-15T19:58:44.982Z"
+    },
+    {
+      "id": 834,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:48.018Z",
+      "updated_at": "2026-07-15T19:58:48.018Z"
+    },
+    {
+      "id": 835,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:47.230Z",
+      "updated_at": "2026-07-15T19:58:47.230Z"
+    },
+    {
+      "id": 836,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:47.594Z",
+      "updated_at": "2026-07-15T19:58:47.594Z"
+    },
+    {
+      "id": 837,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:49.459Z",
+      "updated_at": "2026-07-15T19:58:49.459Z"
+    },
+    {
+      "id": 838,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:49.816Z",
+      "updated_at": "2026-07-15T19:58:49.816Z"
+    },
+    {
+      "id": 839,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:50.174Z",
+      "updated_at": "2026-07-15T19:58:50.174Z"
+    },
+    {
+      "id": 840,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:58:50.497Z",
+      "updated_at": "2026-07-15T19:58:50.497Z"
+    },
+    {
+      "id": 841,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:24.569Z",
+      "updated_at": "2026-07-17T10:15:24.569Z"
+    },
+    {
+      "id": 842,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:06.765Z",
+      "updated_at": "2026-07-15T19:59:06.765Z"
+    },
+    {
+      "id": 843,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:06.217Z",
+      "updated_at": "2026-07-15T19:59:06.217Z"
+    },
+    {
+      "id": 844,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:07.149Z",
+      "updated_at": "2026-07-15T19:59:07.149Z"
+    },
+    {
+      "id": 845,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:07.488Z",
+      "updated_at": "2026-07-15T19:59:07.488Z"
+    },
+    {
+      "id": 846,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:08.789Z",
+      "updated_at": "2026-07-15T19:59:08.789Z"
+    },
+    {
+      "id": 847,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 848,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:09.977Z",
+      "updated_at": "2026-07-15T19:59:09.977Z"
+    },
+    {
+      "id": 849,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:10.375Z",
+      "updated_at": "2026-07-15T19:59:10.375Z"
+    },
+    {
+      "id": 850,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:10.935Z",
+      "updated_at": "2026-07-15T19:59:10.935Z"
+    },
+    {
+      "id": 851,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:16.201Z",
+      "updated_at": "2026-07-15T19:59:16.201Z"
+    },
+    {
+      "id": 852,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:16.619Z",
+      "updated_at": "2026-07-15T19:59:16.619Z"
+    },
+    {
+      "id": 853,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 854,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:18.515Z",
+      "updated_at": "2026-07-15T19:59:18.515Z"
+    },
+    {
+      "id": 855,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:30.756Z",
+      "updated_at": "2026-07-17T10:15:30.756Z"
+    },
+    {
+      "id": 856,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:22.234Z",
+      "updated_at": "2026-07-15T19:59:22.234Z"
+    },
+    {
+      "id": 857,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:32.979Z",
+      "updated_at": "2026-07-17T10:15:32.979Z"
+    },
+    {
+      "id": 858,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:33.812Z",
+      "updated_at": "2026-07-17T10:15:33.812Z"
+    },
+    {
+      "id": 859,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:24.663Z",
+      "updated_at": "2026-07-15T19:59:24.663Z"
+    },
+    {
+      "id": 860,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:24.212Z",
+      "updated_at": "2026-07-15T19:59:24.212Z"
+    },
+    {
+      "id": 861,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:44.322Z",
+      "updated_at": "2026-07-15T19:59:44.322Z"
+    },
+    {
+      "id": 862,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:44.611Z",
+      "updated_at": "2026-07-15T19:59:44.611Z"
+    },
+    {
+      "id": 863,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:44.894Z",
+      "updated_at": "2026-07-15T19:59:44.894Z"
+    },
+    {
+      "id": 864,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:46.020Z",
+      "updated_at": "2026-07-15T19:59:46.020Z"
+    },
+    {
+      "id": 865,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:46.310Z",
+      "updated_at": "2026-07-15T19:59:46.310Z"
+    },
+    {
+      "id": 866,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:46.659Z",
+      "updated_at": "2026-07-15T19:59:46.659Z"
+    },
+    {
+      "id": 867,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:47.835Z",
+      "updated_at": "2026-07-15T19:59:47.835Z"
+    },
+    {
+      "id": 868,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:48.083Z",
+      "updated_at": "2026-07-15T19:59:48.083Z"
+    },
+    {
+      "id": 869,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:49.268Z",
+      "updated_at": "2026-07-15T19:59:49.268Z"
+    },
+    {
+      "id": 870,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:49.520Z",
+      "updated_at": "2026-07-15T19:59:49.520Z"
+    },
+    {
+      "id": 871,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:50.613Z",
+      "updated_at": "2026-07-15T19:59:50.613Z"
+    },
+    {
+      "id": 872,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 873,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:47.759Z",
+      "updated_at": "2026-07-17T10:15:47.759Z"
+    },
+    {
+      "id": 874,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:52.037Z",
+      "updated_at": "2026-07-15T19:59:52.037Z"
+    },
+    {
+      "id": 875,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:52.545Z",
+      "updated_at": "2026-07-15T19:59:52.545Z"
+    },
+    {
+      "id": 876,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:53.742Z",
+      "updated_at": "2026-07-15T19:59:53.742Z"
+    },
+    {
+      "id": 877,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:54.064Z",
+      "updated_at": "2026-07-15T19:59:54.064Z"
+    },
+    {
+      "id": 878,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:55.995Z",
+      "updated_at": "2026-07-15T19:59:55.995Z"
+    },
+    {
+      "id": 879,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:55.556Z",
+      "updated_at": "2026-07-15T19:59:55.556Z"
+    },
+    {
+      "id": 880,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T19:59:56.285Z",
+      "updated_at": "2026-07-15T19:59:56.285Z"
+    },
+    {
+      "id": 881,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:08.990Z",
+      "updated_at": "2026-07-15T20:00:08.990Z"
+    },
+    {
+      "id": 882,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:09.256Z",
+      "updated_at": "2026-07-15T20:00:09.256Z"
+    },
+    {
+      "id": 883,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:10.080Z",
+      "updated_at": "2026-07-15T20:00:10.080Z"
+    },
+    {
+      "id": 884,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:10.371Z",
+      "updated_at": "2026-07-15T20:00:10.371Z"
+    },
+    {
+      "id": 885,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:12.529Z",
+      "updated_at": "2026-07-15T20:00:12.529Z"
+    },
+    {
+      "id": 886,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:11.869Z",
+      "updated_at": "2026-07-15T20:00:11.869Z"
+    },
+    {
+      "id": 887,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:55.270Z",
+      "updated_at": "2026-07-17T10:15:55.270Z"
+    },
+    {
+      "id": 888,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:13.685Z",
+      "updated_at": "2026-07-15T20:00:13.685Z"
+    },
+    {
+      "id": 889,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:15:54.489Z",
+      "updated_at": "2026-07-17T10:15:54.489Z"
+    },
+    {
+      "id": 890,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:14.902Z",
+      "updated_at": "2026-07-15T20:00:14.902Z"
+    },
+    {
+      "id": 891,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 892,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:16.957Z",
+      "updated_at": "2026-07-15T20:00:16.957Z"
+    },
+    {
+      "id": 893,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:16.548Z",
+      "updated_at": "2026-07-15T20:00:16.548Z"
+    },
+    {
+      "id": 894,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:18.256Z",
+      "updated_at": "2026-07-15T20:00:18.256Z"
+    },
+    {
+      "id": 895,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:18.820Z",
+      "updated_at": "2026-07-15T20:00:18.820Z"
+    },
+    {
+      "id": 896,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:19.235Z",
+      "updated_at": "2026-07-15T20:00:19.235Z"
+    },
+    {
+      "id": 897,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:20.433Z",
+      "updated_at": "2026-07-15T20:00:20.433Z"
+    },
+    {
+      "id": 898,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:20.968Z",
+      "updated_at": "2026-07-15T20:00:20.968Z"
+    },
+    {
+      "id": 899,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:21.507Z",
+      "updated_at": "2026-07-15T20:00:21.507Z"
+    },
+    {
+      "id": 900,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:22.765Z",
+      "updated_at": "2026-07-15T20:00:22.765Z"
+    },
+    {
+      "id": 901,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 902,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:39.373Z",
+      "updated_at": "2026-07-15T20:00:39.373Z"
+    },
+    {
+      "id": 903,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:45.910Z",
+      "updated_at": "2026-07-15T20:00:45.910Z"
+    },
+    {
+      "id": 904,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:46.433Z",
+      "updated_at": "2026-07-15T20:00:46.433Z"
+    },
+    {
+      "id": 905,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 906,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 907,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:16:13.291Z",
+      "updated_at": "2026-07-17T10:16:13.291Z"
+    },
+    {
+      "id": 908,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 909,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:48.816Z",
+      "updated_at": "2026-07-15T20:00:48.816Z"
+    },
+    {
+      "id": 910,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:50.861Z",
+      "updated_at": "2026-07-15T20:00:50.861Z"
+    },
+    {
+      "id": 911,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:57.868Z",
+      "updated_at": "2026-07-15T20:00:57.868Z"
+    },
+    {
+      "id": 912,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:58.316Z",
+      "updated_at": "2026-07-15T20:00:58.316Z"
+    },
+    {
+      "id": 913,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:59.500Z",
+      "updated_at": "2026-07-15T20:00:59.500Z"
+    },
+    {
+      "id": 914,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:00:59.956Z",
+      "updated_at": "2026-07-15T20:00:59.956Z"
+    },
+    {
+      "id": 915,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:03:47.215Z",
+      "updated_at": "2026-07-20T19:03:47.215Z"
+    },
+    {
+      "id": 916,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:01.072Z",
+      "updated_at": "2026-07-15T20:01:01.072Z"
+    },
+    {
+      "id": 917,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-20T19:03:47.973Z",
+      "updated_at": "2026-07-20T19:03:47.973Z"
+    },
+    {
+      "id": 918,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:03.184Z",
+      "updated_at": "2026-07-15T20:01:03.184Z"
+    },
+    {
+      "id": 919,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:02.593Z",
+      "updated_at": "2026-07-15T20:01:02.593Z"
+    },
+    {
+      "id": 920,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:04.259Z",
+      "updated_at": "2026-07-15T20:01:04.259Z"
+    },
+    {
+      "id": 921,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:16.164Z",
+      "updated_at": "2026-07-15T20:01:16.164Z"
+    },
+    {
+      "id": 922,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:16.538Z",
+      "updated_at": "2026-07-15T20:01:16.538Z"
+    },
+    {
+      "id": 923,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:16.989Z",
+      "updated_at": "2026-07-15T20:01:16.989Z"
+    },
+    {
+      "id": 924,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:18.070Z",
+      "updated_at": "2026-07-15T20:01:18.070Z"
+    },
+    {
+      "id": 925,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:18.409Z",
+      "updated_at": "2026-07-15T20:01:18.409Z"
+    },
+    {
+      "id": 926,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:19.709Z",
+      "updated_at": "2026-07-15T20:01:19.709Z"
+    },
+    {
+      "id": 927,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:20.075Z",
+      "updated_at": "2026-07-15T20:01:25.118Z"
+    },
+    {
+      "id": 928,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:20.475Z",
+      "updated_at": "2026-07-15T20:01:20.475Z"
+    },
+    {
+      "id": 929,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:21.691Z",
+      "updated_at": "2026-07-15T20:01:21.691Z"
+    },
+    {
+      "id": 930,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:22.138Z",
+      "updated_at": "2026-07-15T20:01:22.138Z"
+    },
+    {
+      "id": 931,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:23.329Z",
+      "updated_at": "2026-07-15T20:01:23.329Z"
+    },
+    {
+      "id": 932,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:29.138Z",
+      "updated_at": "2026-07-15T20:01:29.138Z"
+    },
+    {
+      "id": 933,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:29.585Z",
+      "updated_at": "2026-07-15T20:01:29.585Z"
+    },
+    {
+      "id": 934,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:30.692Z",
+      "updated_at": "2026-07-15T20:01:30.692Z"
+    },
+    {
+      "id": 935,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:31.107Z",
+      "updated_at": "2026-07-15T20:01:31.107Z"
+    },
+    {
+      "id": 936,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:32.138Z",
+      "updated_at": "2026-07-15T20:01:32.138Z"
+    },
+    {
+      "id": 937,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:32.471Z",
+      "updated_at": "2026-07-15T20:01:32.471Z"
+    },
+    {
+      "id": 938,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:33.346Z",
+      "updated_at": "2026-07-15T20:01:33.346Z"
+    },
+    {
+      "id": 939,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:35.253Z",
+      "updated_at": "2026-07-15T20:01:35.253Z"
+    },
+    {
+      "id": 940,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 941,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:46.177Z",
+      "updated_at": "2026-07-15T20:01:46.177Z"
+    },
+    {
+      "id": 942,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:45.602Z",
+      "updated_at": "2026-07-15T20:01:45.602Z"
+    },
+    {
+      "id": 943,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 944,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:47.491Z",
+      "updated_at": "2026-07-15T20:01:47.491Z"
+    },
+    {
+      "id": 945,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 946,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:48.827Z",
+      "updated_at": "2026-07-15T20:01:48.827Z"
+    },
+    {
+      "id": 947,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:49.356Z",
+      "updated_at": "2026-07-15T20:01:49.356Z"
+    },
+    {
+      "id": 948,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:50.520Z",
+      "updated_at": "2026-07-15T20:01:50.520Z"
+    },
+    {
+      "id": 949,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:50.918Z",
+      "updated_at": "2026-07-15T20:01:50.918Z"
+    },
+    {
+      "id": 950,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:52.907Z",
+      "updated_at": "2026-07-15T20:01:52.907Z"
+    },
+    {
+      "id": 951,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:01:52.451Z",
+      "updated_at": "2026-07-15T20:01:52.451Z"
+    },
+    {
+      "id": 952,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:16:43.963Z",
+      "updated_at": "2026-07-17T10:16:43.963Z"
+    },
+    {
+      "id": 953,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 954,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:00.439Z",
+      "updated_at": "2026-07-15T20:02:00.439Z"
+    },
+    {
+      "id": 955,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 956,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:02.826Z",
+      "updated_at": "2026-07-15T20:02:02.826Z"
+    },
+    {
+      "id": 957,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:03.349Z",
+      "updated_at": "2026-07-15T20:02:03.349Z"
+    },
+    {
+      "id": 958,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:16:47.187Z",
+      "updated_at": "2026-07-17T10:16:47.187Z"
+    },
+    {
+      "id": 959,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 960,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:05.613Z",
+      "updated_at": "2026-07-15T20:02:05.613Z"
+    },
+    {
+      "id": 961,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:16.429Z",
+      "updated_at": "2026-07-15T20:02:16.429Z"
+    },
+    {
+      "id": 962,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:16.701Z",
+      "updated_at": "2026-07-15T20:02:16.701Z"
+    },
+    {
+      "id": 963,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:17.052Z",
+      "updated_at": "2026-07-15T20:02:17.052Z"
+    },
+    {
+      "id": 964,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:18.207Z",
+      "updated_at": "2026-07-15T20:02:18.207Z"
+    },
+    {
+      "id": 965,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:18.539Z",
+      "updated_at": "2026-07-15T20:02:18.539Z"
+    },
+    {
+      "id": 966,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:18.866Z",
+      "updated_at": "2026-07-15T20:02:18.866Z"
+    },
+    {
+      "id": 967,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:20.054Z",
+      "updated_at": "2026-07-15T20:02:20.054Z"
+    },
+    {
+      "id": 968,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:20.372Z",
+      "updated_at": "2026-07-15T20:02:20.372Z"
+    },
+    {
+      "id": 969,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:21.463Z",
+      "updated_at": "2026-07-15T20:02:21.463Z"
+    },
+    {
+      "id": 970,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-17T10:17:05.805Z",
+      "updated_at": "2026-07-17T10:17:05.805Z"
+    },
+    {
+      "id": 971,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 972,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 973,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:25.290Z",
+      "updated_at": "2026-07-15T20:02:25.290Z"
+    },
+    {
+      "id": 974,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 975,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:28.800Z",
+      "updated_at": "2026-07-15T20:02:28.800Z"
+    },
+    {
+      "id": 976,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 977,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:32.918Z",
+      "updated_at": "2026-07-15T20:02:32.918Z"
+    },
+    {
+      "id": 978,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:33.260Z",
+      "updated_at": "2026-07-15T20:02:33.260Z"
+    },
+    {
+      "id": 979,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:33.774Z",
+      "updated_at": "2026-07-15T20:02:33.774Z"
+    },
+    {
+      "id": 980,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:02:34.852Z",
+      "updated_at": "2026-07-15T20:02:34.852Z"
+    },
+    {
+      "id": 981,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:01.249Z",
+      "updated_at": "2026-07-15T21:31:48.038Z"
+    },
+    {
+      "id": 982,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:01.683Z",
+      "updated_at": "2026-07-15T21:31:48.811Z"
+    },
+    {
+      "id": 983,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:06.501Z",
+      "updated_at": "2026-07-15T21:31:58.594Z"
+    },
+    {
+      "id": 984,
+      "owned": 0,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": null,
+      "updated_at": null
+    },
+    {
+      "id": 985,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:07.916Z",
+      "updated_at": "2026-07-15T21:31:56.060Z"
+    },
+    {
+      "id": 986,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:08.414Z",
+      "updated_at": "2026-07-15T21:31:56.485Z"
+    },
+    {
+      "id": 987,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:09.497Z",
+      "updated_at": "2026-07-15T21:31:54.129Z"
+    },
+    {
+      "id": 988,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:09.954Z",
+      "updated_at": "2026-07-15T21:31:53.562Z"
+    },
+    {
+      "id": 989,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:10.979Z",
+      "updated_at": "2026-07-15T21:31:52.045Z"
+    },
+    {
+      "id": 990,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:11.444Z",
+      "updated_at": "2026-07-15T21:31:51.686Z"
+    },
+    {
+      "id": 991,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:12.425Z",
+      "updated_at": "2026-07-15T21:31:51.338Z"
+    },
+    {
+      "id": 992,
+      "owned": 1,
+      "duplicates": 0,
+      "notes": null,
+      "obtained_at": "2026-07-15T20:03:12.958Z",
+      "updated_at": "2026-07-15T20:03:12.958Z"
+    }
+  ]
+}
