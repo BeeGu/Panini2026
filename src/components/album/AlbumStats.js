@@ -1,7 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 
 import ProgressBar from "../common/ProgressBar";
 import StatusBadge from "./StatusBadge";
@@ -13,38 +14,25 @@ export default function AlbumStats({
     total,
     duplicates = 0,
 }) {
+    const { colors } = useTheme();
+
     const missing = total - owned;
     const percent = MathUtils.percentage(owned, total, 0);
 
     return (
         <View style={styles.container}>
           
-          {/*
-            <ProgressBar
-                value={owned}
-                max={total}
-                // height={12}
-            />
-            <Text style={styles.progress}>
-                {owned} / {total} • {percent}%
-            </Text>
-          */}
-
-          {/*
-            <View style={styles.badges}>
-          */}
-          
             {missing === 0 ? (
                 <StatusBadge
                     icon="checkmark-circle"
                     label="Completed"
-                    color={Colors.success}
+                    color={colors.success}
                 />
             ) : (
                 <StatusBadge
                     icon="alert-circle"
                     label={`${missing} Missing`}
-                    color={Colors.warning}
+                    color={colors.warning}
                 />
             )}
 
@@ -52,11 +40,9 @@ export default function AlbumStats({
                 <StatusBadge
                     icon="documents" // albums, layers, copy
                     label={`${duplicates} Duplicates`}
-                    color={Colors.primary}
+                    color={colors.primary}
                 />
             )}
-
-            {/* </View> */}
 
         </View>
     );
@@ -70,20 +56,6 @@ const styles = StyleSheet.create({
         flexWrap: "wrap",
         marginTop: 8,
         gap: 8,
-    },
-
-  
-    progress: {
-        marginTop: 8,
-        color: Colors.textSecondary,
-        fontSize: 13,
-    },
-
-  badges: {
-        flexDirection: "row",
-        flexWrap: "wrap",
-        marginTop: 8,
-    },
-    
+    }
 
 });

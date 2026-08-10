@@ -1,30 +1,59 @@
+
 import { View, Text, StyleSheet } from "react-native";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+
 import Spacing from "../../theme/spacing";
 
-export default function StickerNotesCard({ sticker }) {
+export default function StickerNotesCard({
+    sticker,
+}) {
+
+    const { colors } = useTheme();
+
+    const hasNotes =
+        sticker.notes?.trim();
 
     return (
 
-        <View style={styles.card}>
+        <View
+            style={[
+                styles.card,
+                {
+                    backgroundColor: colors.card,
+                    borderColor: colors.border,
+                },
+            ]}
+        >
 
-            <Text style={styles.title}>
+            <Text
+                style={[
+                    styles.title,
+                    {
+                        color: colors.text,
+                    },
+                ]}
+            >
                 Notes
             </Text>
 
-            <Text style={styles.notes}>
 
-                {sticker.notes?.trim()
-                    ? sticker.notes
-                    : "No notes"}
-
+            <Text
+                style={[
+                    styles.notes,
+                    {
+                        color: hasNotes
+                            ? colors.text
+                            : colors.textMuted,
+                    },
+                ]}
+            >
+                {hasNotes ? sticker.notes : "No notes"}
             </Text>
 
         </View>
 
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -34,7 +63,7 @@ const styles = StyleSheet.create({
         marginBottom: Spacing.lg,
         padding: Spacing.lg,
         borderRadius: 14,
-        backgroundColor: Colors.white,
+        borderWidth: 1,
         elevation: 2,
     },
 
@@ -45,7 +74,6 @@ const styles = StyleSheet.create({
     },
 
     notes: {
-        color: Colors.textSecondary,
         lineHeight: 22,
     },
 

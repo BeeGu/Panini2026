@@ -1,75 +1,42 @@
-/*
-import { View, StyleSheet } from "react-native";
-
-import PrimaryButton from "../common/PrimaryButton";
-
-import Spacing from "../../theme/spacing";
-
-export default function TradeExportButtons() {
-
-    return (
-        <View style={styles.container}>
-
-            <PrimaryButton
-                title="📋 Copy"
-                onPress={() => {}}
-            />
-
-            <PrimaryButton
-                title="📤 Share"
-                onPress={() => {}}
-            />
-
-            <PrimaryButton
-                title="📄 Export TXT"
-                onPress={() => {}}
-            />
-
-        </View>
-    );
-}
-
-const styles = StyleSheet.create({
-
-    container: {
-        padding: Spacing.lg,
-        gap: 12,
-    },
-
-});
-*/
 
 import { View, StyleSheet } from "react-native";
 
 import PrimaryButton from "../common/PrimaryButton";
+import Button from "../common/Button";
 
 import Spacing from "../../theme/spacing";
 
 export default function TradeExportButtons({
-
     onCopy,
     onShare,
     onExport,
-
 }) {
 
     return (
 
         <View style={styles.container}>
 
-            <PrimaryButton
-                title="📋 Copy"
+            <Button
+                // title="📋 Copy"              
+                title="Copy"
                 onPress={onCopy}
+                variant="primary"
+                disabled={false}
+                loading={false}
             />
 
-            <PrimaryButton
-                title="📤 Share"
+            <Button
+                // title="📤 Share"
+                title="Share"
                 onPress={onShare}
+                variant="secondary"
             />
 
-            <PrimaryButton
-                title="📄 Export TXT"
+            <Button
+                // title="📄 Export TXT"
+                title="Export TXT"
                 onPress={onExport}
+                variant="secondary"
             />
 
         </View>

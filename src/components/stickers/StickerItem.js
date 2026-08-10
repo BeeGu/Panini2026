@@ -1,8 +1,11 @@
 import { Pressable, View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+
+//import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
+
 import { formatStickerNumber } from "../../utils/formatters";
 import StickerStatus from "./StickerStatus";
 import StickerInfo from "./StickerInfo";
@@ -16,12 +19,17 @@ export default function StickerItem({
     onLongPress,
 }) {
     const navigation = useNavigation();
-  
+    const { colors } = useTheme();
+
     return (
 
         <Pressable
-            style={styles.container}
-            // onPress={() => onPress?.(sticker)}
+            style={[
+                styles.container,
+                {
+                    backgroundColor: colors.surface,
+                },
+            ]}
             onPress={() =>
               navigation.navigate("StickerDetails", {
                   stickerId: sticker.id,
@@ -51,7 +59,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         alignItems: "center",
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         marginHorizontal: Spacing.md,
         marginVertical: 6,
         padding: Spacing.md,

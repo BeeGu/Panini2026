@@ -1,31 +1,48 @@
 import { View, Text, StyleSheet } from "react-native";
+
+import useTheme from "../../hooks/useTheme";
+
 import Card from "../common/Card";
 import ProgressBar from "../common/ProgressBar";
+
 import MathUtils from "../../utils/MathUtils";
 
-export default function ProgressCard({
-  owned = 0,
-  total = 980,
-}) {
+export default function ProgressCard({ owned = 0, total = 980 }) {
+  const { colors } = useTheme();
+
   const percent = MathUtils.percentage(owned, total, 0);
 
   return (
-    <Card style={styles.card}>
-      <Text style={styles.title}>Album Progress</Text>
+    <Card
+      style={[
+        styles.card,
+        {
+          backgroundColor: colors.card,
+          borderColor: colors.border,
+        },
+      ]}
+    >
+      <Text
+        style={[
+          styles.title,
+          {
+            color: colors.text,
+          },
+        ]}
+      >
+        Album Progress
+      </Text>
 
-      {/*
-      <ProgressBar progress={percent} />
-      <ProgressBar progress={25} />
-      <ProgressBar progress={80} color="green" />
-      <ProgressBar progress={50} height={20} />
-      */}
-      <ProgressBar
-        value={owned}
-        max={total}
-        height={15}
-      />
+      <ProgressBar value={owned} max={total} height={15} />
 
-      <Text style={styles.progress}>
+      <Text
+        style={[
+          styles.progress,
+          {
+            color: colors.textSecondary,
+          },
+        ]}
+      >
         {owned} / {total} ({percent}%)
       </Text>
     </Card>
@@ -38,7 +55,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginTop: 20,
   },
-  
+
   title: {
     fontSize: 18,
     fontWeight: "bold",

@@ -1,12 +1,13 @@
 import { Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 
 export default function StickerStatus({
     owned,
     onPress,
 }) {
+    const { colors } = useTheme();
 
     return (
 
@@ -19,7 +20,7 @@ export default function StickerStatus({
             <Ionicons
                 name={owned ? "checkmark-circle" : "ellipse-outline"}
                 size={30}
-                color={owned ? Colors.success : "#9CA3AF"}
+                color={owned ? colors.success : "#9CA3AF"}
             />
 
         </Pressable>

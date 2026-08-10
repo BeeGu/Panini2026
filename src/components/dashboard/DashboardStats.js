@@ -2,69 +2,57 @@ import { View, StyleSheet } from "react-native";
 
 import StatisticCard from "./StatisticCard";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
-export default function DashboardStats({
-    stats,
-}) {
+export default function DashboardStats({ stats }) {
+  const { colors } = useTheme();
 
-    return (
+  return (
+    <View style={[styles.container]}>
+      <View style={styles.row}>
+        <StatisticCard
+          title="Owned"
+          value={stats.owned}
+          icon="checkmark-circle"
+          color={colors.success}
+        />
 
-        <View style={styles.container}>
+        <StatisticCard
+          title="Missing"
+          value={stats.missing}
+          icon="ellipse-outline"
+          color={colors.warning}
+        />
+      </View>
 
-            <View style={styles.row}>
+      <View style={styles.row}>
+        <StatisticCard
+          title="Duplicates"
+          value={stats.duplicates}
+          icon="copy-outline"
+          color={colors.primary}
+        />
 
-                <StatisticCard
-                    title="Owned"
-                    value={stats.owned}
-                    icon="checkmark-circle"
-                    color={Colors.success}
-                />
-
-                <StatisticCard
-                    title="Missing"
-                    value={stats.missing}
-                    icon="ellipse-outline"
-                    color={Colors.warning}
-                />
-
-            </View>
-
-            <View style={styles.row}>
-
-                <StatisticCard
-                    title="Duplicates"
-                    value={stats.duplicates}
-                    icon="copy-outline"
-                    color={Colors.primary}
-                />
-
-                <StatisticCard
-                    title="Completed"
-                    value={`${stats.completion}%`}
-                    icon="trophy-outline"
-                    color={Colors.primary}
-                />
-
-            </View>
-
-        </View>
-
-    );
-
+        <StatisticCard
+          title="Completed"
+          value={`${stats.completion}%`}
+          icon="trophy-outline"
+          color={colors.primary}
+        />
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    width: "90%",
+    marginTop: Spacing.lg,
+  },
 
-    container: {
-        width: "90%",
-        marginTop: Spacing.lg,
-    },
-
-    row: {
-        flexDirection: "row",
-        marginBottom: Spacing.sm,
-    },
-
+  row: {
+    flexDirection: "row",
+    marginBottom: Spacing.sm,
+  },
 });

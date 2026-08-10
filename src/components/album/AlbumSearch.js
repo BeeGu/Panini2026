@@ -2,17 +2,26 @@ import { View, StyleSheet } from "react-native";
 
 import SearchBar from "../common/SearchBar";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 
 export default function AlbumSearch({
     value,
     onChangeText,
 }) {
+    const { colors } = useTheme();
 
     return (
 
-        <View style={styles.container}>
+        <View
+          style={[
+              styles.container,
+              {
+                  backgroundColor: colors.surface,
+              },
+          ]}
+        >
 
             <SearchBar
                 value={value}
@@ -29,7 +38,7 @@ export default function AlbumSearch({
 const styles = StyleSheet.create({
 
     container: {
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         paddingHorizontal: Spacing.lg,
         paddingTop: Spacing.md,
     },

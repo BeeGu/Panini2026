@@ -3,8 +3,6 @@ import ToastContext from "../context/ToastContext";
 
 export default function useToast() {
 
-    return useContext(
-        ToastContext
-    );
+    return useContext(ToastContext);
 
 }

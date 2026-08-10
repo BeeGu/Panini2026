@@ -238,6 +238,54 @@ const StickerRepository = {
       `).total;
   
     },
+
+  // edit
+  getById(id) {
+  
+      return db.getFirstSync(
+          `
+          SELECT
+              s.*,
+              t.name AS team,
+              t.id AS team_id,
+              t.section_id,
+              sec.name AS section
+          FROM stickers s
+          LEFT JOIN teams t
+              ON t.id = s.team_id
+          LEFT JOIN sections sec
+              ON sec.id = t.section_id
+          WHERE s.id = ?
+          `,
+          [id]
+      );
+  
+  },
+
+    update(sticker) {
+        db.runSync(`
+            UPDATE stickers
+            SET
+                number = ?,
+                name = ?,
+                team_id = ?,
+                owned = ?,
+                duplicates = ?,
+                notes = ?,
+                updated_at = datetime('now')
+            WHERE id = ?
+            `,
+            [
+                sticker.number,
+                sticker.name,
+                sticker.team_id,
+                sticker.owned ? 1 : 0,
+                sticker.duplicates,
+                sticker.notes,
+                sticker.id,
+            ]
+        );
+    },
   
 };
 

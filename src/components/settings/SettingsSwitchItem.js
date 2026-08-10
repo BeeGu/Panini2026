@@ -1,7 +1,9 @@
 import { View, Text, Switch, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import SwitchField from "../../components/common/SwitchField";
+
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function SettingsSwitchItem({
@@ -11,6 +13,7 @@ export default function SettingsSwitchItem({
     value,
     onValueChange,
 }) {
+    const { colors } = useTheme();
 
     return (
         <View style={styles.container}>
@@ -19,16 +22,30 @@ export default function SettingsSwitchItem({
                 <Ionicons
                     name={icon}
                     size={22}
-                    color={Colors.primary}
+                    color={colors.primary}
                 />
 
                 <View style={styles.texts}>
-                    <Text style={styles.title}>
+                    <Text
+                      style={[
+                          styles.title,
+                          {
+                              color: colors.text,
+                          }
+                      ]}
+                    >
                         {title}
                     </Text>
 
                     {subtitle && (
-                        <Text style={styles.subtitle}>
+                        <Text
+                          style={[
+                              styles.subtitle,
+                              {
+                                  color: colors.textSecondary,
+                              }
+                          ]}
+                        >
                             {subtitle}
                         </Text>
                     )}
@@ -36,10 +53,18 @@ export default function SettingsSwitchItem({
                 </View>
             </View>
 
-            <Switch
+          <Switch
                 value={value}
                 onValueChange={onValueChange}
             />
+          {/*<SwitchField
+                label="Developer Mode"
+                description="Enable developer tools"
+                // value={developerMode}
+                // onValueChange={toggleDeveloperMode}
+                value={value}
+                onValueChange={onValueChange}
+            />*/}
 
         </View>
     );
@@ -71,7 +96,6 @@ const styles = StyleSheet.create({
     },
 
     subtitle: {
-        color: Colors.textSecondary,
         marginTop: 2,
     },
 

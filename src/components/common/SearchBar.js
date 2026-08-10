@@ -1,7 +1,8 @@
 import { View, TextInput, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 
 export default function SearchBar({
@@ -9,14 +10,23 @@ export default function SearchBar({
   onChangeText,
   placeholder = "Caută..."
 }) {
+  const { colors } = useTheme();
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+          styles.container,
+          {
+              backgroundColor: colors.card,
+              borderColor: colors.border,
+          },
+      ]}
+    >
 
       <Ionicons
         name="search"
         size={22}
-        color={Colors.textSecondary}
+        color={colors.textSecondary}
       />
 
       <TextInput
@@ -24,14 +34,14 @@ export default function SearchBar({
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={colors.textSecondary}
       />
 
       {value.length > 0 && (
         <Ionicons
           name="close-circle"
           size={22}
-          color={Colors.textSecondary}
+          color={colors.textSecondary}
           onPress={() => onChangeText("")}
         />
       )}
@@ -45,13 +55,13 @@ const styles = StyleSheet.create({
   container:{
     flexDirection:"row",
     alignItems:"center",
-    backgroundColor:Colors.white,
+    // backgroundColor:Colors.white,
     marginHorizontal:Spacing.lg,
     marginVertical:Spacing.md,
     paddingHorizontal:Spacing.md,
     borderRadius:12,
     borderWidth:1,
-    borderColor:Colors.border,
+    // borderColor:Colors.border,
   },
 
   input:{

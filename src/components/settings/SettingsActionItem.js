@@ -1,16 +1,18 @@
 import { Pressable, View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function SettingsActionItem({
     icon,
     title,
     subtitle,
-    color = Colors.primary,
+    color,
     onPress,
 }) {
+    const { colors } = useTheme();
+    const iconColor = color ?? colors.primary;
 
     return (
 
@@ -24,37 +26,46 @@ export default function SettingsActionItem({
                 <Ionicons
                     name={icon}
                     size={22}
-                    color={color}
+                    color={iconColor}
                 />
 
                 <View style={styles.textContainer}>
 
-                    <Text style={styles.title}>
+                    <Text
+                      style={[
+                          styles.title,
+                          {
+                              color: colors.text,
+                          }
+                      ]}
+                    >
                         {title}
                     </Text>
 
                     {subtitle && (
-
-                        <Text style={styles.subtitle}>
+                        <Text
+                          style={[
+                              styles.subtitle,
+                              {
+                                  color: colors.textSecondary,
+                              }
+                          ]}
+                        >
                             {subtitle}
                         </Text>
-
                     )}
 
                 </View>
-
             </View>
 
             <Ionicons
                 name="chevron-forward"
                 size={18}
-                color={Colors.textSecondary}
+                color={colors.icon}
             />
 
         </Pressable>
-
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -84,7 +95,6 @@ const styles = StyleSheet.create({
 
     subtitle: {
         marginTop: 2,
-        color: Colors.textSecondary,
         fontSize: 13,
     },
 

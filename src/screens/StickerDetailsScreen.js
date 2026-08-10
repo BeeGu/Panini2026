@@ -1,24 +1,30 @@
 import { useLayoutEffect } from "react";
-import { ScrollView, StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView, StyleSheet, View, } from "react-native";
+import { SafeAreaView, } from "react-native-safe-area-context";
 
+import useTheme from "../hooks/useTheme";
 import useAlbum from "../hooks/useAlbum";
+import useDeveloperMode from "../hooks/useDeveloperMode";
 
-import StickerHeader from "../components/stickerDetails/StickerHeader";
 import StickerHero from "../components/stickerDetails/StickerHero";
 import StickerCollectionCard from "../components/stickerDetails/StickerCollectionCard";
 import StickerInfoCard from "../components/stickerDetails/StickerInfoCard";
 import StickerNotesCard from "../components/stickerDetails/StickerNotesCard";
 
-import Colors from "../theme/colors";
+import Button from "../components/common/Button";
+
+import Typography from "../theme/typography";
 import Spacing from "../theme/spacing";
+
 
 export default function StickerDetailsScreen({
     navigation,
     route,
 }) {
 
+    const { colors } = useTheme();
     const { getSticker } = useAlbum();
+    const { enabled } = useDeveloperMode();
 
     const sticker = getSticker(
         route.params.stickerId
@@ -26,7 +32,8 @@ export default function StickerDetailsScreen({
 
     useLayoutEffect(() => {
 
-        if (!sticker) return;
+        if (!sticker)
+            return;
 
         navigation.setOptions({
             title: sticker.name,
@@ -38,34 +45,107 @@ export default function StickerDetailsScreen({
         return null;
     }
 
+    function handleEdit() {
+
+        navigation.navigate(
+            "EditSticker",
+            {
+                stickerId: sticker.id,
+            }
+        );
+
+    }
+
+    function handleCancel() {
+        navigation.goBack();
+    }
+
     return (
 
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView
+            edges={["bottom"]}
+            style={[
+                styles.container,
+                {
+                    backgroundColor: colors.background,
+                },
+            ]}
+        >
 
-          {/* <StickerHeader sticker={sticker} /> */}
-            <StickerHero sticker={sticker}/>
+            <ScrollView
+                contentContainerStyle={
+                    styles.scrollContent
+                }
+            >
 
-            <ScrollView>
+                <StickerHero
+                    sticker={sticker}
+                />
 
-                <StickerCollectionCard sticker={sticker} />
+                <StickerCollectionCard
+                    sticker={sticker}
+                />
 
-                <StickerInfoCard sticker={sticker} />
+                <StickerInfoCard
+                    sticker={sticker}
+                />
 
-                <StickerNotesCard sticker={sticker} />
+                <StickerNotesCard
+                    sticker={sticker}
+                />
+
+                {enabled && (
+
+                    <View style={styles.developerActions}>
+
+                        <View style={styles.actionButton}>
+                            <Button
+                                title="Edit Sticker"
+                                icon="create-outline"
+                                variant="primary"
+                                onPress={handleEdit}
+                            />
+                        </View>
+
+                        <View style={styles.actionButton}>
+                            <Button
+                                title="Cancel"
+                                icon="close-outline"
+                                variant="secondary"
+                                onPress={handleCancel}
+                            />
+                        </View>
+
+                    </View>
+
+                )}
 
             </ScrollView>
 
         </SafeAreaView>
 
     );
-
 }
 
 const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: Colors.background,
     },
 
+    scrollContent: {
+        paddingBottom: 24,
+    },
+
+    developerActions: {
+        flexDirection: "row",
+        gap: 10,
+        marginHorizontal: 16,
+        marginTop: 8,
+    },
+    
+    actionButton: {
+        flex: 1,
+    },
+  
 });

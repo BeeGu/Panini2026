@@ -1,19 +1,18 @@
 import db from "./db";
 
 export function initializeDatabase() {
-
-    db.execSync(`
+  db.execSync(`
         PRAGMA foreign_keys = ON;
     `);
 
-    db.execSync(`
+  db.execSync(`
         CREATE TABLE IF NOT EXISTS app_metadata (
             key TEXT PRIMARY KEY,
             value TEXT
         );
     `);
 
-    db.execSync(`
+  db.execSync(`
         CREATE TABLE IF NOT EXISTS sections (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL UNIQUE,
@@ -22,7 +21,7 @@ export function initializeDatabase() {
         );
     `);
 
-    db.execSync(`
+  db.execSync(`
         CREATE TABLE IF NOT EXISTS teams (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             section_id INTEGER NOT NULL,
@@ -37,8 +36,8 @@ export function initializeDatabase() {
         );
     `);
 
-            // team_id INTEGER NOT NULL,
-    db.execSync(`
+  // team_id INTEGER NOT NULL,
+  db.execSync(`
         CREATE TABLE IF NOT EXISTS stickers (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             team_id INTEGER NULL,
@@ -56,5 +55,4 @@ export function initializeDatabase() {
                 ON DELETE CASCADE
         );
     `);
-
 }

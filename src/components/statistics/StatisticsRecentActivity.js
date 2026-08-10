@@ -1,25 +1,28 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
+import { formatRelativeDate } from "../../utils/dateUtils";
+
 export default function StatisticsRecentActivity({
-
     activity,
-
 }) {
+    const { colors } = useTheme();
 
     return (
 
-        <View style={styles.card}>
-
-            <Text style={styles.title}>
-                Recent Activity
-            </Text>
-
+        <View
+          style={[
+              styles.card,
+              {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+              },
+          ]}
+        >
             {activity.map(item => (
-
                 <View
                     key={item.id}
                     style={styles.row}
@@ -28,17 +31,30 @@ export default function StatisticsRecentActivity({
                     <Ionicons
                         name="time-outline"
                         size={20}
-                        color={Colors.primary}
+                        color={colors.primary}
                     />
 
                     <View style={styles.info}>
 
-                        <Text>
+                        <Text
+                          style={[
+                              {
+                                  color: colors.text,
+                              },
+                          ]}
+                        >
                             {item.name}
                         </Text>
 
-                        <Text style={styles.date}>
-                            {item.updated_at}
+                        <Text
+                          style={[
+                              styles.date,
+                              {
+                                  color: colors.textSecondary,
+                              },
+                          ]}
+                        >
+                            {formatRelativeDate(item.updated_at)}
                         </Text>
 
                     </View>
@@ -56,17 +72,10 @@ export default function StatisticsRecentActivity({
 const styles = StyleSheet.create({
 
     card: {
-        margin: Spacing.md,
+        // margin: Spacing.md,
         padding: Spacing.lg,
         borderRadius: 16,
-        backgroundColor: Colors.white,
         elevation: 2,
-    },
-
-    title: {
-        fontSize: 18,
-        fontWeight: "700",
-        marginBottom: 16,
     },
 
     row: {
@@ -80,7 +89,6 @@ const styles = StyleSheet.create({
     },
 
     date: {
-        color: Colors.textSecondary,
         fontSize: 12,
     },
 

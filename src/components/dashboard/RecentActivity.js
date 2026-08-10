@@ -1,86 +1,92 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
-export default function RecentActivity({
-    stickers,
-}) {
+export default function RecentActivity({ stickers, color }) {
+  const { colors } = useTheme();
+  const iconColor = color ?? colors.primary;
 
-    return (
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.card,
+          borderColor: colors.border,
+        },
+      ]}
+    >
+      <Text
+        style={[
+          styles.title,
+          {
+            color: colors.text,
+          },
+        ]}
+      >
+        Recent activity
+      </Text>
 
-        <View style={styles.container}>
+      {stickers.length === 0 ? (
+        <Text
+          style={[
+            styles.empty,
+            {
+              color: colors.textSecondary,
+            },
+          ]}
+        >
+          No stickers collected yet.
+        </Text>
+      ) : (
+        stickers.map((sticker) => (
+          <View key={sticker.id} style={styles.item}>
+            <Ionicons name="checkmark-circle" size={18} color={iconColor} />
 
-            <Text style={styles.title}>
-                Recent activity
+            <Text
+              style={[
+                styles.text,
+                {
+                  color: colors.textSecondary,
+                },
+              ]}
+            >
+              #{sticker.number} {sticker.name}
             </Text>
-
-            {stickers.length === 0 ? (
-
-                <Text style={styles.empty}>
-                    No stickers collected yet.
-                </Text>
-
-            ) : (
-
-                stickers.map(sticker => (
-
-                    <View
-                        key={sticker.id}
-                        style={styles.item}
-                    >
-
-                        <Ionicons
-                            name="checkmark-circle"
-                            size={18}
-                            color={Colors.success}
-                        />
-
-                        <Text style={styles.text}>
-                            #{sticker.number} {sticker.name}
-                        </Text>
-
-                    </View>
-
-                ))
-
-            )}
-
-        </View>
-
-    );
-
+          </View>
+        ))
+      )}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    width: "90%",
+    marginTop: 24,
+    borderRadius: 16,
+    padding: Spacing.lg,
+  },
 
-    container: {
-        width: "90%",
-        marginTop: 24,
-        backgroundColor: Colors.white,
-        borderRadius: 16,
-        padding: Spacing.lg,
-    },
+  title: {
+    fontWeight: "bold",
+    fontSize: 18,
+    marginBottom: 12,
+  },
 
-    title: {
-        fontWeight: "bold",
-        fontSize: 18,
-        marginBottom: 12,
-    },
+  item: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 8,
+  },
 
-    item: {
-        flexDirection: "row",
-        alignItems: "center",
-        marginBottom: 8,
-    },
+  text: {
+    marginLeft: 10,
+  },
 
-    text: {
-        marginLeft: 10,
-    },
-
-    empty: {
-        color: Colors.textSecondary,
-    },
-
+  empty: {
+    //color: Colors.textSecondary,
+  },
 });

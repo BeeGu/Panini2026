@@ -1,58 +1,116 @@
-import { Button, View, Text, StyleSheet } from "react-native";
+
+import { View, Text, StyleSheet } from "react-native";
+
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
-import Spacing from "../../theme/spacing";
-import QuantitySelector from "../common/QuantitySelector";
+import useTheme from "../../hooks/useTheme";
 import useAlbum from "../../hooks/useAlbum";
 
-export default function StickerCollectionCard({ sticker }) {
+import Spacing from "../../theme/spacing";
+import QuantitySelector from "../common/QuantitySelector";
 
-  const {
-      addDuplicate,
-      removeDuplicate,
-  } = useAlbum();
-  
+
+export default function StickerCollectionCard({
+    sticker,
+}) {
+
+    const { colors } = useTheme();
+
+    const {
+        addDuplicate,
+        removeDuplicate,
+    } = useAlbum();
+
+    if (!sticker) {
+          return null;
+    }
+
     return (
 
-        <View style={styles.card}>
+        <View
+            style={[
+                styles.card,
+                {
+                    backgroundColor: colors.card,
+                    borderColor: colors.border,
+                },
+            ]}
+        >
 
-            <Text style={styles.title}>
+            <Text
+                style={[
+                    styles.title,
+                    {
+                        color: colors.text,
+                    },
+                ]}
+            >
                 Collection
             </Text>
 
+
             <View style={styles.row}>
 
-                <Text style={styles.label}>
+                <Text
+                    style={[
+                        styles.label,
+                        {
+                            color: colors.textSecondary,
+                        },
+                    ]}
+                >
                     Owned
                 </Text>
 
+
                 <Ionicons
-                    name={sticker.owned ? "checkmark-circle" : "ellipse-outline"}
+                    name={
+                        sticker.owned
+                            ? "checkmark-circle"
+                            : "ellipse-outline"
+                    }
                     size={24}
-                    color={sticker.owned ? Colors.success : Colors.textSecondary}
+                    color={
+                        sticker.owned
+                            ? colors.success
+                            : colors.textSecondary
+                    }
                 />
 
             </View>
 
+
             <View style={styles.row}>
-            
-                <Text style={styles.label}>
+
+                <Text
+                    style={[
+                        styles.label,
+                        {
+                            color: colors.textSecondary,
+                        },
+                    ]}
+                >
                     Duplicates
                 </Text>
-            
+
+
                 <QuantitySelector
                     value={sticker.duplicates}
-                    onIncrement={() => addDuplicate(sticker.id)}
-                    onDecrement={() => removeDuplicate(sticker.id)}
+                    // min={0}
+                    disabled={!sticker.owned}
+                    onIncrement={() =>
+                        addDuplicate(sticker.id)
+                    }
+                    onDecrement={() =>
+                        removeDuplicate(sticker.id)
+                    }
                 />
-            
+
             </View>
 
         </View>
 
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -61,7 +119,7 @@ const styles = StyleSheet.create({
         margin: Spacing.md,
         padding: Spacing.lg,
         borderRadius: 14,
-        backgroundColor: Colors.white,
+        borderWidth: 1,
         elevation: 2,
     },
 
@@ -80,12 +138,6 @@ const styles = StyleSheet.create({
 
     label: {
         fontSize: 16,
-        color: Colors.textSecondary,
-    },
-
-    value: {
-        fontSize: 16,
-        fontWeight: "700",
     },
 
 });

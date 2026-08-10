@@ -2,7 +2,8 @@ import { View, Text, StyleSheet } from "react-native";
 
 import ProgressBar from "../common/ProgressBar";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
@@ -12,15 +13,39 @@ export default function AlbumHeader({
     owned,
     total,
 }) {
+    const { colors } = useTheme();
+
     const percentage = MathUtils.percentage(owned, total, 0);
 
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>
+        <View
+          style={[
+              styles.container,
+              {
+                  backgroundColor: colors.surface,
+                  borderBottomColor: colors.border,
+              },
+          ]}
+        >
+            <Text
+              style={[
+                  styles.title,
+                  {
+                      color: colors.primary,
+                  },
+              ]}
+            >
                 Album
             </Text>
 
-            <Text style={styles.subtitle}>
+            <Text
+              style={[
+                  styles.subtitle,
+                  {
+                      color: colors.textSecondary,
+                  },
+              ]}
+            >
                 {owned} / {total} stickere ({percentage}%)
             </Text>
 
@@ -36,23 +61,19 @@ export default function AlbumHeader({
 const styles = StyleSheet.create({
 
     container: {
-        backgroundColor: Colors.white,
         paddingHorizontal: Spacing.lg,
         paddingVertical: Spacing.md,
         borderBottomWidth: 1,
-        borderBottomColor: Colors.border,
     },
 
     title: {
         fontSize: Typography.h1,
         fontWeight: "700",
-        color: Colors.primary,
     },
 
     subtitle: {
         marginTop: 4,
         fontSize: Typography.body,
-        color: Colors.textSecondary,
     },
 
 });

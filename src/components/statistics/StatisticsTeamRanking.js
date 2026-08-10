@@ -4,28 +4,40 @@ import Flag from "../common/Flag";
 
 import ProgressBar from "../common/ProgressBar";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function StatisticsTeamRanking({
-
     teams,
-
 }) {
+    const { colors } = useTheme();
 
     const ranking = [...teams]
-
         .sort((a, b) => b.percent - a.percent)
-
-        .slice(0, 10);
+        .slice(0, 50);
 
     return (
 
-        <View style={styles.card}>
+        <View
+          style={[
+              styles.card,
+              {
+                  backgroundColor: colors.surface,
+                  borderColor: colors.border,
+              },
+          ]}
+        >
 
-            <Text style={styles.title}>
+          {/*<Text
+              style={[
+                  styles.title,
+                  {
+                      color: colors.text,
+                  },
+              ]}
+            >
                 Top Teams
-            </Text>
+            </Text>*/}
 
             {ranking.map(team => (
 
@@ -41,7 +53,14 @@ export default function StatisticsTeamRanking({
 
                     <View style={styles.info}>
 
-                        <Text>
+                        <Text
+                            style={[
+                                styles.label,
+                                {
+                                    color: colors.text,
+                                },
+                            ]}
+                        >
                             {team.name}
                         </Text>
 
@@ -52,7 +71,14 @@ export default function StatisticsTeamRanking({
 
                     </View>
 
-                    <Text style={styles.percent}>
+                    <Text
+                      style={[
+                          styles.percent,
+                          {
+                              color: colors.textSecondary,
+                          },
+                      ]}
+                    >
                         {team.percent}%
                     </Text>
 
@@ -69,18 +95,17 @@ export default function StatisticsTeamRanking({
 const styles = StyleSheet.create({
 
     card: {
-        margin: Spacing.md,
+       // margin: Spacing.md,
         padding: Spacing.lg,
         borderRadius: 16,
-        backgroundColor: Colors.white,
         elevation: 2,
     },
 
-    title: {
-        fontWeight: "700",
-        fontSize: 18,
-        marginBottom: 14,
-    },
+    // title: {
+    //     fontWeight: "700",
+    //     fontSize: 18,
+    //     marginBottom: 14,
+    // },
 
     row: {
         flexDirection: "row",
@@ -93,6 +118,11 @@ const styles = StyleSheet.create({
         marginHorizontal: 12,
     },
 
+    label: {
+        // marginBottom: 6,
+        fontWeight: "600",
+    },
+  
     percent: {
         fontWeight: "700",
     },

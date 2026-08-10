@@ -8,8 +8,11 @@ export default function SettingsSection({
 
     return (
         <>
-            <SectionTitle>
-                {title}
+            <SectionTitle
+              title={title}
+              // icon=""
+              // right=""
+            >
             </SectionTitle>
 
             <Card>

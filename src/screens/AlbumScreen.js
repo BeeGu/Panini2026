@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useState } from "react";
-import { FlatList, View, Text, StyleSheet } from "react-native";
+import { FlatList, View, Text, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import StickerItem from "../components/stickers/StickerItem";
 
-import Colors from "../theme/colors";
+import useTheme from "../hooks/useTheme";
 import Spacing from "../theme/spacing";
 import Typography from "../theme/typography";
 
+import ScreenHeader from "../components/common/ScreenHeader";
 import SearchBar from "../components/common/SearchBar";
 
 import { FILTERS } from "../constants/filters";
-import { ScrollView } from "react-native";
+
 import FilterChip from "../components/common/FilterChip";
 import useAlbum from "../hooks/useAlbum";
 import SectionHeader from "../components/album/SectionHeader";
@@ -26,6 +27,8 @@ import SectionList from "../components/album/SectionList";
 
 export default function AlbumScreen() {
 
+  const { colors } = useTheme();
+  
   const {
     filteredStickers,
     toggleSticker,
@@ -38,7 +41,6 @@ export default function AlbumScreen() {
     groupedTeams,
     groupedAlbum,
   } = useAlbum();
-  // const album = useAlbum();
   
   const filters = [
       {
@@ -60,9 +62,24 @@ export default function AlbumScreen() {
   ];
   
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+        edges={["top"]}
+        style={[
+            styles.container,
+            {
+                backgroundColor: colors.background,
+            },
+        ]}
+    >
 
-      <AlbumHeader
+      {/*<AlbumHeader
+          owned={stats.owned}
+          total={stats.total}
+      /> */}
+
+      <ScreenHeader
+          title="Album"
+          icon="book-outline"
           owned={stats.owned}
           total={stats.total}
       />
@@ -78,18 +95,6 @@ export default function AlbumScreen() {
           stats={stats}
       />
 
-      {/*<StickerList
-          stickers={filteredStickers}
-          onToggle={toggleSticker}
-          onPress={(sticker) => console.log(sticker)}
-          onLongPress={(sticker) => console.log("Edit", sticker)}
-      /> */}
-
-      {/* <TeamList
-          teams={groupedTeams}
-          onToggle={toggleSticker}
-      /> */}
-
       <SectionList
           sections={groupedAlbum}
           onToggle={toggleSticker}
@@ -103,27 +108,22 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: Colors.background,
   },
 
   header: {
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.md,
-    backgroundColor: Colors.white,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.border,
   },
 
   title: {
     fontSize: Typography.h1,
     fontWeight: "bold",
-    color: Colors.primary,
   },
 
   subtitle: {
     marginTop: 4,
     fontSize: Typography.body,
-    color: Colors.textSecondary,
   },
 
   list: {

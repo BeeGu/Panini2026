@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, Text } from "react-native";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 
 export default function FilterChip({
@@ -8,18 +9,24 @@ export default function FilterChip({
     selected,
     onPress,
 }) {
+    const { colors } = useTheme();
 
     return (
 
         <Pressable
-            // style={[
-            //     styles.container,
-            //     selected && styles.selected,
-            // ]}
             style={({ pressed }) => [
                 styles.container,
-                selected && styles.selected,
-                pressed && { opacity: 0.7 },
+                {
+                    borderColor: colors.border,
+                    backgroundColor: colors.surface,
+                },
+
+                selected && {
+                    backgroundColor: colors.primary,
+                    borderColor: colors.primary,
+                },
+
+                pressed && styles.pressed,
             ]}
             onPress={onPress}
         >
@@ -27,7 +34,9 @@ export default function FilterChip({
             <Text
                 style={[
                     styles.text,
-                    selected && styles.selectedText,
+                    {
+                        color: selected ? "#FFFFFF" : colors.text,
+                    },
                 ]}
             >
                 {title}
@@ -43,47 +52,30 @@ const styles = StyleSheet.create({
 
     container: {
         minWidth: 90,
-    height: 40,
+        height: 40,
         alignItems: "center",
         paddingHorizontal: 16,
         paddingVertical: 8,
         borderRadius: 20,
         borderWidth: 1,
-        borderColor: Colors.border,
-        backgroundColor: Colors.white,
+        // borderColor: Colors.border,
+        // backgroundColor: Colors.white,
         marginRight: Spacing.sm,
     },
 
-  containerY: {
-    minWidth: 90,
-    height: 40,
-
-    justifyContent: "center",
-    alignItems: "center",
-
-    borderWidth: 1,
-    borderColor: "red",
-
-    paddingHorizontal: 16,
-
-    marginRight: 8,
-
-    backgroundColor: "white",
-},
-
     selected: {
-        backgroundColor: Colors.primary,
-        borderColor: Colors.primary,
+        // backgroundColor: Colors.primary,
+        // borderColor: Colors.primary,
     },
 
     text: {
-        color: Colors.text,
+        // color: Colors.text,
         fontWeight: "600",
         fontSize: 15,
     },
     
     selectedText: {
-        color: Colors.white,
+        // color: Colors.white,
         fontWeight: "600",
         fontSize: 15,
     },

@@ -1,19 +1,40 @@
+
 import { View, Text, StyleSheet } from "react-native";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
-function Row({ label, value }) {
+
+function Row({
+    label,
+    value,
+}) {
+
+    const { colors } = useTheme();
 
     return (
 
         <View style={styles.row}>
 
-            <Text style={styles.label}>
+            <Text
+                style={[
+                    styles.label,
+                    {
+                        color: colors.textSecondary,
+                    },
+                ]}
+            >
                 {label}
             </Text>
 
-            <Text style={styles.value}>
+            <Text
+                style={[
+                    styles.value,
+                    {
+                        color: colors.text,
+                    },
+                ]}
+            >
                 {value ?? "-"}
             </Text>
 
@@ -23,15 +44,36 @@ function Row({ label, value }) {
 
 }
 
-export default function StickerInfoCard({ sticker }) {
+
+export default function StickerInfoCard({
+    sticker,
+}) {
+
+    const { colors } = useTheme();
 
     return (
 
-        <View style={styles.card}>
+        <View
+            style={[
+                styles.card,
+                {
+                    backgroundColor: colors.card,
+                    borderColor: colors.border,
+                },
+            ]}
+        >
 
-            <Text style={styles.title}>
+            <Text
+                style={[
+                    styles.title,
+                    {
+                        color: colors.text,
+                    },
+                ]}
+            >
                 Sticker Information
             </Text>
+
 
             <Row
                 label="Code"
@@ -59,6 +101,7 @@ export default function StickerInfoCard({ sticker }) {
 
 }
 
+
 const styles = StyleSheet.create({
 
     card: {
@@ -66,7 +109,7 @@ const styles = StyleSheet.create({
         marginBottom: Spacing.md,
         padding: Spacing.lg,
         borderRadius: 14,
-        backgroundColor: Colors.white,
+        borderWidth: 1,
         elevation: 2,
     },
 
@@ -79,14 +122,18 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: "row",
         justifyContent: "space-between",
+        alignItems: "center",
         paddingVertical: 6,
     },
 
     label: {
-        color: Colors.textSecondary,
+        fontSize: 14,
     },
 
     value: {
+        flex: 1,
+        marginLeft: Spacing.md,
+        textAlign: "right",
         fontWeight: "600",
     },
 

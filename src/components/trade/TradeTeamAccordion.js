@@ -9,90 +9,66 @@ import Flag from "../common/Flag";
 
 import TradeStickerList from "./TradeStickerList";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 
-export default function TradeTeamAccordion({
-    team,
-    type,
-}) {
+export default function TradeTeamAccordion({ team, type }) {
+  const { colors } = useTheme();
+  const [expanded, setExpanded] = useState(false);
 
-    const [expanded, setExpanded] = useState(false);
+  return (
+    <>
+      <Pressable onPress={() => setExpanded(!expanded)}>
+        <Card>
+          <Row>
+            <Row justify="flex-start" gap={10}>
+              <Flag iso2={team.iso2} size={28} />
 
-    return (
+              <Text
+                style={[
+                  styles.title,
+                  {
+                    color: colors.text,
+                  },
+                ]}
+              >
+                {team.name}
+              </Text>
+            </Row>
 
-        <>
+            <Ionicons
+              name={expanded ? "chevron-up" : "chevron-down"}
+              size={22}
+              color={colors.icon}
+            />
+          </Row>
 
-            <Pressable
-                onPress={() => setExpanded(!expanded)}
-            >
-                <Card>
-                    <Row>
-                        <Row
-                            justify="flex-start"
-                            gap={10}
-                        >
+          <Text
+            style={[
+              styles.subtitle,
+              {
+                color: colors.textSecondary,
+              },
+            ]}
+          >
+            {type === "duplicate"
+              ? `${team.duplicates} duplicates`
+              : `${team.missing} missing`}
+          </Text>
+        </Card>
+      </Pressable>
 
-                            <Flag
-                                iso2={team.iso2}
-                                size={28}
-                            />
-
-                            <Text style={styles.title}>
-                                {team.name}
-                            </Text>
-
-                        </Row>
-
-                        <Ionicons
-                            name={
-                                expanded
-                                    ? "chevron-up"
-                                    : "chevron-down"
-                            }
-                            size={22}
-                        />
-
-                    </Row>
-
-                  {/* <ProgressBar
-                        value={team.owned}
-                        max={team.total}
-                    /> */}
-
-                    <Text style={styles.subtitle}>
-                        {type === "duplicate"
-                            ? `${team.duplicates} duplicates`
-                            : `${team.missing} missing`
-                        }
-                    </Text>
-
-                </Card>
-
-            </Pressable>
-
-            {expanded && (
-                <TradeStickerList
-                    stickers={team.stickers}
-                    type={type}
-                />
-            )}
-
-        </>
-
-    );
-
+      {expanded && <TradeStickerList stickers={team.stickers} type={type} />}
+    </>
+  );
 }
 
 const styles = StyleSheet.create({
+  title: {
+    fontSize: 17,
+    fontWeight: "700",
+  },
 
-    title: {
-        fontSize: 17,
-        fontWeight: "700",
-    },
-
-    subtitle: {
-        marginTop: 8,
-        color: Colors.textSecondary,
-    },
-
+  subtitle: {
+    marginTop: 8,
+  },
 });

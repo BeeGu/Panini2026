@@ -5,7 +5,8 @@ import Flag from "../common/Flag";
 import TeamStats from "./TeamStats";
 import AlbumStats from "./AlbumStats";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Typography from "../../theme/typography";
 import Spacing from "../../theme/spacing";
 
@@ -13,6 +14,7 @@ export default function TeamHeader({
     team,
     expanded,
 }) {
+    const { colors } = useTheme();
 
     return (
         <View style={styles.container}>
@@ -22,7 +24,14 @@ export default function TeamHeader({
                         iso2={team.iso2}
                         size={34}
                     />
-                    <Text style={styles.name}>
+                    <Text
+                      style={[
+                          styles.name,
+                          {
+                              color: colors.text,
+                          },
+                      ]}
+                    >
                         {team.name}
                     </Text>
                 </View>
@@ -30,7 +39,7 @@ export default function TeamHeader({
                 <Ionicons
                     name={expanded ? "chevron-up" : "chevron-down"}
                     size={22}
-                    color={Colors.textSecondary}
+                    color={colors.textSecondary}
                 />
             </View>
 
@@ -71,7 +80,7 @@ const styles = StyleSheet.create({
         // fontSize: 18,
         fontSize: Typography.bodyLarge,
         fontWeight: "700",
-        color: Colors.text,
+        // color: Colors.text,
     },
 
 });

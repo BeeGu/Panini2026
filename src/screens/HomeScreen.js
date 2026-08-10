@@ -1,57 +1,57 @@
 import { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { View, Text, StyleSheet } from "react-native";
-import { ScrollView } from "react-native";
-import MenuCard from "../components/common/MenuCard";
-import ProgressCard from "../components/dashboard/ProgressCard";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+import {
+  SafeAreaView,
+  useSafeAreaInsets,
+} from "react-native-safe-area-context";
+
+import useTheme from "../hooks/useTheme";
 import useAlbum from "../hooks/useAlbum";
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import DashboardStats from "../components/dashboard/DashboardStats";
-import Colors from "../theme/colors";
+
+import Typography from "../theme/typography";
 import Spacing from "../theme/spacing";
+
+import ScreenHeader from "../components/common/ScreenHeader";
+import ProgressCard from "../components/dashboard/ProgressCard";
+import DashboardStats from "../components/dashboard/DashboardStats";
+
 import QuickActions from "../components/dashboard/QuickActions";
-import DashboardHeader from "../components/dashboard/DashboardHeader";
 import RecentActivity from "../components/dashboard/RecentActivity";
+
+import AchievementsCard from "../components/achievements/AchievementsCard";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
+  const { colors } = useTheme();
   const { stats, recentActivity } = useAlbum();
-  // console.log("🔰 HomeScreen useAlbum hook", { stats });
 
   return (
     <SafeAreaView
-      style={styles.container}
+      edges={["top"]}
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.background,
+        },
+      ]}
     >
+      <ScreenHeader title="🏆 Panini Tracker" subtitle="FIFA World Cup 2026" />
 
-        <ScrollView
-            contentContainerStyle={styles.content}
-            showsVerticalScrollIndicator={false}
-        >
+      <ScrollView
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
+        <ProgressCard owned={stats.owned} total={stats.total} />
 
-            <DashboardHeader
-                title="🏆 Panini Tracker"
-                subtitle="FIFA World Cup 2026"
-                // subtitle="UEFA Euro 2028"
-            />
+        <DashboardStats stats={stats} />
 
-            <ProgressCard
-                owned={stats.owned}
-                total={stats.total}
-            />
-      
-            <DashboardStats
-                stats={stats}
-            />
+        <AchievementsCard owned={stats.owned} total={stats.total} />
 
-            <QuickActions
-                navigation={navigation}
-            />
+        <QuickActions navigation={navigation} />
 
-            <RecentActivity
-              stickers={recentActivity}
-            />
-          
-        </ScrollView>
+        <RecentActivity stickers={recentActivity} />
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -59,29 +59,11 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.background,
   },
-  
+
   content: {
-      paddingVertical: 24,
-      alignItems: "center",
-      paddingBottom: 40,
-  },
-
-  title: {
-    fontSize: 30,
-    fontWeight: "bold",
-    color: "#0057B8",
-  },
-
-  subtitle: {
-    marginTop: 10,
-    fontSize: 18,
-  },
-
-  row: {
-    flexDirection: "row",
-    width: "90%",
-    marginBottom: 16,
+    paddingVertical: 24,
+    alignItems: "center",
+    paddingBottom: 40,
   },
 });

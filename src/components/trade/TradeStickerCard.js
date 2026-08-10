@@ -137,7 +137,8 @@ import Card from "../common/Card";
 import Flag from "../common/Flag";
 import Badge from "../common/Badge";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Typography from "../../theme/typography";
 
 export default function TradeStickerCard({
@@ -145,6 +146,7 @@ export default function TradeStickerCard({
     type = "duplicate",
     onPress,
 }) {
+    const { colors } = useTheme();
 
     return (
 
@@ -161,12 +163,24 @@ export default function TradeStickerCard({
                             size={28}
                         />
 
-                        <Text style={styles.number}>
+                        <Text
+                          style={[
+                              styles.number,
+                              {
+                                  color: colors.primary,
+                              },
+                          ]}
+                        >
                             #{sticker.number}
                         </Text>
 
                         <Text
-                            style={styles.name}
+                            style={[
+                                styles.name,
+                                {
+                                    color: colors.text,
+                                },
+                            ]}
                             numberOfLines={1}
                         >
                             {sticker.name}
@@ -175,23 +189,18 @@ export default function TradeStickerCard({
                     </View>
 
                     {type === "duplicate" ? (
-
                         <Badge
                             icon="gift"
                             text={`x${sticker.duplicates}`}
-                            color={Colors.warning}
+                            color={colors.warning}
                         />
-
                     ) : (
-
                         <Badge
                             icon="alert-circle"
                             // text="Missing"
-                            color={Colors.danger}
+                            color={colors.danger}
                         />
-
                     )}
-
                 </View>
 
             </Card>
@@ -213,14 +222,14 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         alignItems: "center",
-      marginRight: 12,
+        marginRight: 12,
     },
 
     number: {
         width: 42,
         marginLeft: 10,
         fontWeight: "700",
-        color: Colors.primary,
+        // color: Colors.primary,
     },
 
     name: {

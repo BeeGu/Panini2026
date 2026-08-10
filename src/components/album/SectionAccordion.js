@@ -7,7 +7,8 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
@@ -20,22 +21,45 @@ export default function SectionAccordion({
     onToggle,
     defaultExpanded = false,
 }) {
+    const { colors } = useTheme();
+
     const [expanded, setExpanded] = useState(defaultExpanded);
 
     return (
 
-        <View style={styles.container}>
+        <View
+          style={[
+              styles.container,
+              {
+                  backgroundColor: colors.surface,
+              },
+          ]}
+        >
             <Pressable
                 style={styles.header}
                 onPress={() => setExpanded(!expanded)}
             >
 
                 <View style={styles.left}>
-                    <Text style={styles.title}>
+                    <Text
+                      style={[
+                          styles.title,
+                          {
+                              color: colors.text,
+                          },
+                      ]}
+                    >
                         {section.name}
                     </Text>
 
-                    <Text style={styles.subtitle}>
+                    <Text
+                      style={[
+                          styles.subtitle,
+                          {
+                              color: colors.textSecondary,
+                          },
+                      ]}
+                    >
                         {section.owned} / {section.total}
                     </Text>
 
@@ -58,7 +82,7 @@ export default function SectionAccordion({
                             : "chevron-forward"
                     }
                     size={22}
-                    color={Colors.textSecondary}
+                    color={colors.textSecondary}
                 />
 
             </Pressable>
@@ -87,7 +111,7 @@ const styles = StyleSheet.create({
     container: {
         marginHorizontal: Spacing.md,
         marginVertical: 8,
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         borderRadius: 16,
         elevation: 2,
         overflow: "hidden",
@@ -107,12 +131,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: Typography.h3 ?? 20,
         fontWeight: "700",
-        color: Colors.text,
+        // color: Colors.text,
     },
 
     subtitle: {
         marginTop: 4,
-        color: Colors.textSecondary,
+        // color: Colors.textSecondary,
         fontSize: Typography.body,
         // marginBottom: 6,
     },

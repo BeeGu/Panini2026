@@ -7,7 +7,8 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
@@ -22,6 +23,7 @@ export default function TeamAccordion({
     onToggle,
     defaultExpanded = false,
 }) {
+    const { colors } = useTheme();
     const [expanded, setExpanded] = useState(defaultExpanded);
 
     function toggleExpanded() {
@@ -29,7 +31,15 @@ export default function TeamAccordion({
     }
   
     return (
-        <View style={styles.container}>
+        <View
+          style={[
+              styles.container,
+              {
+                  // backgroundColor: colors.surface,
+                  backgroundColor: colors.background,
+              },
+          ]}
+        >
             <Pressable onPress={toggleExpanded}>
                 <TeamHeader
                     team={team}
@@ -58,7 +68,7 @@ const styles = StyleSheet.create({
         overflow: "hidden",
     },
 
-    header: {
+    /* header: {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
@@ -79,14 +89,14 @@ const styles = StyleSheet.create({
     name: {
         fontSize: 17,
         fontWeight: "700",
-        color: Colors.text,
+        // color: Colors.text,
     },
 
     progress: {
         marginTop: 2,
-        color: Colors.textSecondary,
+        // color: Colors.textSecondary,
         fontSize: Typography.body,
         marginBottom: 6,
-    },
+    }, */
 
 });

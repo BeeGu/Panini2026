@@ -1,7 +1,15 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+
+import {
+    Pressable,
+    StyleSheet,
+    Text,
+    View,
+} from "react-native";
+
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
@@ -11,14 +19,26 @@ export default function QuantitySelector({
     max = Number.MAX_SAFE_INTEGER,
     onIncrement,
     onDecrement,
+    disabled = false,
 }) {
 
-    const canDecrease = value > min;
-    const canIncrease = value < max;
+    const { colors } = useTheme();
+
+    const canDecrease = !disabled && value > min;
+    const canIncrease = !disabled && value < max;
 
     return (
 
-        <View style={styles.container}>
+        <View
+            style={[
+                styles.container,
+                {
+                    backgroundColor: colors.background,
+                    borderColor: colors.border,
+                },
+                disabled && styles.disabledContainer,
+            ]}
+        >
 
             <Pressable
                 disabled={!canDecrease}
@@ -28,16 +48,33 @@ export default function QuantitySelector({
                     !canDecrease && styles.disabled,
                 ]}
             >
+
                 <Ionicons
                     name="remove"
                     size={20}
-                    color={canDecrease ? Colors.primary : "#BDBDBD"}
+                    color={
+                        canDecrease ? colors.primary : colors.textMuted
+                    }
                 />
+
             </Pressable>
 
-            <Text style={styles.value}>
+
+            <Text
+                style={[
+                    styles.value,
+                    {
+                        color: colors.text,
+                    },
+
+                    disabled && {
+                        color: colors.textMuted,
+                    },
+                ]}
+            >
                 {value}
             </Text>
+
 
             <Pressable
                 disabled={!canIncrease}
@@ -47,17 +84,18 @@ export default function QuantitySelector({
                     !canIncrease && styles.disabled,
                 ]}
             >
+
                 <Ionicons
                     name="add"
                     size={20}
-                    color={canIncrease ? Colors.primary : "#BDBDBD"}
+                    color={
+                        canIncrease ? colors.primary : colors.textMuted
+                    }
                 />
+
             </Pressable>
-
         </View>
-
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -65,11 +103,9 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         alignItems: "center",
-        backgroundColor: Colors.background,
         borderRadius: 14,
         overflow: "hidden",
         borderWidth: 1,
-        borderColor: Colors.border,
     },
 
     button: {
@@ -83,12 +119,15 @@ const styles = StyleSheet.create({
         opacity: 0.45,
     },
 
+    disabledContainer: {
+        opacity: 0.65,
+    },
+
     value: {
         minWidth: 42,
         textAlign: "center",
         fontSize: Typography.body,
         fontWeight: "700",
-        color: Colors.text,
     },
 
 });

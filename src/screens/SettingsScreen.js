@@ -1,230 +1,163 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+
 import { ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import Constants from "expo-constants";
+
+import useTheme from "../hooks/useTheme";
+import useSettings from "../hooks/useSettings";
+import useAlbum from "../hooks/useAlbum";
+
+import ScreenHeader from "../components/common/ScreenHeader";
 
 import SettingsSection from "../components/settings/SettingsSection";
 import SettingsSwitchItem from "../components/settings/SettingsSwitchItem";
 import SettingsInfoItem from "../components/settings/SettingsInfoItem";
 import SettingsActionItem from "../components/settings/SettingsActionItem";
-
-import useSettings from "../hooks/useSettings";
-import useAlbum from "../hooks/useAlbum";
-
-import Constants from "expo-constants";
-
-import Colors from "../theme/colors";
-
-import BackupService from "../services/BackupService";
-import RestoreBackupDialog from "../components/settings/RestoreBackupDialog";
-import Toast from "../components/common/Toast";
+import AppearanceSelector from "../components/settings/AppearanceSelector";
 
 export default function SettingsScreen() {
+  const navigation = useNavigation();
+  const { appearance, setAppearance, colors } = useTheme();
+  const { developerMode, toggleDeveloperMode } = useSettings();
+  const { generalStats, reload } = useAlbum();
 
-    const {
-        developerMode,
-        toggleDeveloperMode,
-    } = useSettings();
-
-    const {
-        generalStats,
-        reload,
-    } = useAlbum();
-
-    const [backupToRestore, setBackupToRestore] = useState(null);
-
-    /*async function handleRestore() {
-    
-        try {
-            await BackupService.restoreBackup();
-    
-            reload();
-    
-            Toast.success("Backup restored successfully.");
-        } catch (e) {
-            Toast.error(e.message);
-        }
-    } */
-
-    async function handleRestore() {
-        try {
-            const backup = await BackupService.loadBackup();
-            // console.log ("💎 handleRestore", {backup})
-
-            if (!backup)
-                return;
-
-            setBackupToRestore(backup);
-        } catch (e) {
-            Toast.error(e.message);
-        }
-    }
-
-    async function confirmRestore() {
-      try {
-          await BackupService.restoreBackup(backupToRestore);
-  
-          setBackupToRestore(null);
-  
-          reload();
-  
-          Toast.success("Backup restored successfully.");
-      } catch (e) {
-          Toast.error(e.message);
-      }
-    }
-
-    return (
-      <>
-        <SafeAreaView
-            style={{
-                flex: 1,
-                backgroundColor: Colors.background,
-            }}
-        >
-
-            <ScrollView>
-
-                <SettingsSection title="General">
-
-                    <SettingsInfoItem
-                        icon="albums-outline"
-                        title="Album"
-                        value="Panini FIFA World Cup 2026"
-                    />
-                  
-                    <SettingsInfoItem
-                        icon="phone-portrait-outline"
-                        title="App Version"
-                        value={generalStats.version}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="server-outline"
-                        title="Database Version"
-                        value={generalStats.databaseVersion}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="layers-outline"
-                        title="Sections"
-                        value={generalStats.sections}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="flag-outline"
-                        title="Teams"
-                        value={generalStats.teams}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="albums-outline"
-                        title="Stickers"
-                        value={generalStats.total}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="checkmark-circle-outline"
-                        title="Owned"
-                        value={generalStats.owned}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="alert-circle-outline"
-                        title="Missing"
-                        value={generalStats.missing}
-                    />
-                
-                    <SettingsInfoItem
-                        icon="gift-outline"
-                        title="Duplicates"
-                        value={generalStats.duplicates}
-                    />
-                
-                </SettingsSection>
-                              
-              {/* todo */}
-              {/* <SettingsSection title="Collection">
-                
-                    <SettingsActionItem
-                        icon="refresh-outline"
-                        title="Reset Collection"
-                        subtitle="Remove owned stickers and duplicates"
-                        // onPress={resetCollection}
-                    />
-                
-                    <SettingsActionItem
-                        icon="construct-outline"
-                        title="Rebuild Database"
-                        subtitle="Recreate SQLite database"
-                        // onPress={rebuildDatabase}
-                    />
-                
-                </SettingsSection> */}
-                
-                <SettingsSection title="Backup">
-                
-                    <SettingsActionItem
-                        icon="download-outline"
-                        title="Export Backup"
-                        subtitle="Save your collection"
-                        onPress={BackupService.exportBackup}
-                    />
-
-                  {/* todo *}
-                  {/* <SettingsActionItem
-                        // icon="download-outline"
-                        icon="cloud-upload-outline"
-                        // icon="folder-open-outline"
-                        title="Restore Backup"
-                        subtitle="Restore your collection"
-                        onPress={handleRestore}
-                    /> */}
-                  
-                </SettingsSection>
-                              
-              {/* <SettingsSection title="Trade">
-                
-                    <SettingsActionItem
-                        icon="copy-outline"
-                        title="Copy Trade List"
-                    />
-                
-                    <SettingsActionItem
-                        icon="share-social-outline"
-                        title="Share Trade List"
-                    />
-                
-                    <SettingsActionItem
-                        icon="document-text-outline"
-                        title="Export TXT"
-                    />
-                
-                </SettingsSection> */}
-
-                <SettingsSection title="Developer">
-
-                    <SettingsSwitchItem
-                        icon="code-slash-outline"
-                        title="Developer mode"
-                        subtitle="Enable developer tools"
-                        value={developerMode}
-                        onValueChange={toggleDeveloperMode}
-                    />
-
-                </SettingsSection>
-              
-            </ScrollView>
-
-        </SafeAreaView>
-
-        <RestoreBackupDialog
-            visible={!!backupToRestore}
-            backup={backupToRestore}
-            onCancel={() => setBackupToRestore(null)}
-            onRestore={confirmRestore}
+  return (
+    <>
+      <SafeAreaView
+        edges={["top"]}
+        style={{
+          flex: 1,
+          backgroundColor: colors.background,
+        }}
+      >
+        <ScreenHeader
+          title="Settings"
+          icon="settings-outline"
+          subtitle="Application preferences"
         />
-  
-      </>
-    );
 
+        <ScrollView
+          contentContainerStyle={{
+            paddingVertical: 16,
+            paddingBottom: 32,
+          }}
+        >
+          {/* General */}
+          <SettingsSection title="General">
+            <SettingsInfoItem
+              icon="phone-portrait-outline"
+              title="App Version"
+              value={generalStats.version}
+            />
+
+            <SettingsInfoItem
+              icon="server-outline"
+              title="Database Version"
+              value={generalStats.databaseVersion}
+            />
+          </SettingsSection>
+
+          {/* Collection */}
+          <SettingsSection title="Collection">
+            <SettingsInfoItem
+              icon="layers-outline"
+              title="Sections"
+              value={generalStats.sections}
+            />
+
+            <SettingsInfoItem
+              icon="flag-outline"
+              title="Teams"
+              value={generalStats.teams}
+            />
+
+            <SettingsInfoItem
+              icon="albums-outline"
+              title="Stickers"
+              value={generalStats.total}
+            />
+
+            <SettingsInfoItem
+              icon="checkmark-circle-outline"
+              title="Owned"
+              value={generalStats.owned}
+            />
+
+            <SettingsInfoItem
+              icon="alert-circle-outline"
+              title="Missing"
+              value={generalStats.missing}
+            />
+
+            <SettingsInfoItem
+              icon="gift-outline"
+              title="Duplicates"
+              value={generalStats.duplicates}
+            />
+          </SettingsSection>
+
+          {/* Developer */}
+          <SettingsSection title="Developer">
+            <SettingsSwitchItem
+              icon="code-slash-outline"
+              title="Developer mode"
+              subtitle="Enable developer tools"
+              value={developerMode}
+              onValueChange={toggleDeveloperMode}
+            />
+          </SettingsSection>
+
+          {/* Appearance */}
+          <SettingsSection title="Appearance">
+            <AppearanceSelector value={appearance} onChange={setAppearance} />
+          </SettingsSection>
+
+          {/* Collection actions */}
+          <SettingsSection title="Collection">
+            <SettingsActionItem
+              icon="refresh-outline"
+              title="Reset Collection"
+              subtitle="Remove owned stickers and duplicates"
+            />
+
+            <SettingsActionItem
+              icon="construct-outline"
+              title="Rebuild Database"
+              subtitle="Recreate SQLite database"
+            />
+          </SettingsSection>
+
+          {/* Backup */}
+          <SettingsSection title="Backup">
+            <SettingsActionItem
+              icon="cloud-outline"
+              title="Backup Manager"
+              subtitle="Manage local backups"
+              onPress={() => navigation.navigate("Backup")}
+            />
+          </SettingsSection>
+
+          {/* About */}
+          <SettingsSection title="About">
+            <SettingsInfoItem
+              icon="information-circle-outline"
+              title="Version"
+              value={Constants.expoConfig?.version}
+            />
+
+            <SettingsInfoItem
+              icon="albums-outline"
+              title="Album"
+              value="Panini FIFA World Cup 2026"
+              // value={Constants.expoConfig?.name}
+            />
+          </SettingsSection>
+        </ScrollView>
+      </SafeAreaView>
+      
+    </>
+  );
 }

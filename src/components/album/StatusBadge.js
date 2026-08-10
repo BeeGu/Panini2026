@@ -1,41 +1,46 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 
 export default function StatusBadge({
     icon,
     label,
-    color = Colors.primary,
+    color,
+    // color = Colors.primary,
     // textColor = Colors.white,
 }) {
+    const { colors } = useTheme();
+
+    const badgeColor = color ?? colors.primary;
+    const badgeTextColor = color ?? colors.white;
 
     return (
 
         <View
             style={[
                 styles.badge,
-                { backgroundColor: `${color}20` },
+                { backgroundColor: `${badgeColor}20` },
             ]}
         >
 
             {icon && (
-
                 <Ionicons
                     name={icon}
                     size={14}
-                    color={color}
+                    // color={color}
+                    color={badgeColor}
                     style={styles.icon}
                 />
-
             )}
 
             <Text
                 style={[
                     styles.text,
                     { color },
-                    // { color: textColor },
+                    // { color: badgeTextColor },
                 ]}
             >
                 {label}

@@ -4,7 +4,8 @@ import FilterChip from "../common/FilterChip";
 
 import { FILTERS } from "../../constants/filters";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
+// import Colors from "../../theme/colors";
 import Spacing from "../../theme/spacing";
 
 export default function AlbumFilters({
@@ -12,6 +13,7 @@ export default function AlbumFilters({
     setFilter,
     stats,
 }) {
+    const { colors } = useTheme();
 
     const filters = [
         {
@@ -37,7 +39,12 @@ export default function AlbumFilters({
         <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.container}
+            contentContainerStyle={[
+                styles.container,
+                {
+                    backgroundColor: colors.surface,
+                },
+            ]}
         >
 
             {filters.map(item => (
@@ -60,7 +67,7 @@ export default function AlbumFilters({
 const styles = StyleSheet.create({
 
     container: {
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         paddingHorizontal: Spacing.lg,
         paddingVertical: Spacing.md,
 

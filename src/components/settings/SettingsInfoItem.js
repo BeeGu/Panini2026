@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function SettingsInfoItem({
@@ -9,6 +9,7 @@ export default function SettingsInfoItem({
     title,
     value,
 }) {
+    const { colors } = useTheme();
 
     return (
         <View style={styles.container}>
@@ -16,15 +17,29 @@ export default function SettingsInfoItem({
                 <Ionicons
                     name={icon}
                     size={22}
-                    color={Colors.primary}
+                    color={colors.primary}
                 />
 
-                <Text style={styles.title}>
+                <Text
+                  style={[
+                      styles.title,
+                      {
+                          color: colors.text,
+                      }
+                  ]}
+                >
                     {title}
                 </Text>
             </View>
 
-            <Text style={styles.value}>
+            <Text
+              style={[
+                  styles.value,
+                  {
+                      color: colors.textSecondary,
+                  }
+              ]}
+            >
                 {value}
             </Text>
 
@@ -52,7 +67,7 @@ const styles = StyleSheet.create({
     },
 
     value: {
-        color: Colors.textSecondary,
+        // color: Colors.textSecondary,
     },
 
 });

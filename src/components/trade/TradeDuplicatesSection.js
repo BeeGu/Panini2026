@@ -6,9 +6,7 @@ import SectionTitle from "../common/SectionTitle";
 import Spacing from "../../theme/spacing";
 
 export default function TradeDuplicatesSection({
-
     stickers,
-
 }) {
 
     return (

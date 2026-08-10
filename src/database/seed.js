@@ -4,8 +4,7 @@ import teams from "../data/teams.json";
 import album from "../data/album.json";
 
 function seedSections() {
-
-    const stmt = db.prepareSync(`
+  const stmt = db.prepareSync(`
         INSERT INTO sections(
             code,
             name,
@@ -14,34 +13,28 @@ function seedSections() {
         VALUES (?, ?, ?)
     `);
 
-    try {
-        sections.forEach(section => {
-            stmt.executeSync([
-                section.code,
-                section.name,
-                section.sort_order,
-            ]);
-        });
-    } finally {
-        stmt.finalizeSync();
-    }
+  try {
+    sections.forEach((section) => {
+      stmt.executeSync([section.code, section.name, section.sort_order]);
+    });
+  } finally {
+    stmt.finalizeSync();
+  }
 }
 
 function seedTeams() {
+  const sectionMap = new Map();
 
-    const sectionMap = new Map();
-
-    db.getAllSync(`
+  db.getAllSync(
+    `
         SELECT id, code
         FROM sections
-    `).forEach(section => {
-        sectionMap.set(
-            section.code,
-            section.id
-        );
-    });
+    `,
+  ).forEach((section) => {
+    sectionMap.set(section.code, section.id);
+  });
 
-    const stmt = db.prepareSync(`
+  const stmt = db.prepareSync(`
         INSERT INTO teams(
             section_id,
             code,
@@ -52,41 +45,35 @@ function seedTeams() {
         VALUES (?, ?, ?, ?, ?)
     `);
 
-    try {
-        teams.forEach(team => {
-            stmt.executeSync([
-                sectionMap.get(
-                    team.section_code
-                ),
+  try {
+    teams.forEach((team) => {
+      stmt.executeSync([
+        sectionMap.get(team.section_code),
 
-                team.code,
-                team.iso2,
-                team.name,
-                team.sort_order,
-            ]);
-        });
-    } finally {
-        stmt.finalizeSync();
-    }
+        team.code,
+        team.iso2,
+        team.name,
+        team.sort_order,
+      ]);
+    });
+  } finally {
+    stmt.finalizeSync();
+  }
 }
 
 function seedStickers() {
+  const teamMap = new Map();
 
-    const teamMap = new Map();
-
-    db.getAllSync(`
+  db.getAllSync(
+    `
         SELECT id, code
         FROM teams
-    `).forEach(team => {
+    `,
+  ).forEach((team) => {
+    teamMap.set(team.code, team.id);
+  });
 
-        teamMap.set(
-            team.code,
-            team.id
-        );
-
-    });
-
-    const stmt = db.prepareSync(`
+  const stmt = db.prepareSync(`
         INSERT INTO stickers(
             team_id,
             code,
@@ -96,39 +83,31 @@ function seedStickers() {
         VALUES (?, ?, ?, ?)
     `);
 
-    try {
-        album.forEach(sticker => {
-            stmt.executeSync([
-                sticker.team_code
-                    ? teamMap.get(sticker.team_code)
-                    : null,
-                sticker.code,
-                sticker.number,
-                sticker.name,
-            ]);
-        });
-    } finally {
-        stmt.finalizeSync();
-    }
+  try {
+    album.forEach((sticker) => {
+      stmt.executeSync([
+        sticker.team_code ? teamMap.get(sticker.team_code) : null,
+        sticker.code,
+        sticker.number,
+        sticker.name,
+      ]);
+    });
+  } finally {
+    stmt.finalizeSync();
+  }
 }
 
 export function seedDatabase() {
+  db.execSync("BEGIN TRANSACTION");
 
-    console.log("🌱 Seeding database...");
-    db.execSync("BEGIN TRANSACTION");
+  try {
+    seedSections();
+    seedTeams();
+    seedStickers();
 
-    try {
-        seedSections();
-        seedTeams();
-        seedStickers();
-
-        db.execSync("COMMIT");
-
-        console.log("✅ Database seeded");
-
-    } catch (error) {
-        db.execSync("ROLLBACK");
-        throw error;
-    }
-
+    db.execSync("COMMIT");
+  } catch (error) {
+    db.execSync("ROLLBACK");
+    throw error;
+  }
 }

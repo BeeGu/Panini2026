@@ -89,10 +89,12 @@ npx expo-doctor
 npx expo-doctor --verbose
 
 
-export EAS_SKIP_AUTO_FINGERPRINT=1
-
 ⚠️ Build. Din Termux:
+export EAS_SKIP_AUTO_FINGERPRINT=1
 eas build -p android --profile preview
+
+// export EAS_SKIP_AUTO_FINGERPRINT=1
+// eas build --platform android --profile preview
 
 ⚠️ Dacă vrei versiunea finală pentru Google Play atunci:
 eas build --platform android --profile production
@@ -119,3 +121,30 @@ du -sh node_modules
 ⚠️
 npx expo config --type public
 
+⚠️ Verifică exact ce va modifica
+npx expo install --check
+
+⚠️ Ai în eas.json:
+"cli": {
+    "appVersionSource": "remote"
+}
+
+Asta înseamnă că Expo gestionează automat versionCode.
+
+Practic poți chiar șterge:
+
+"android": {
+    "versionCode": 2
+}
+
+din app.json.
+
+⚠️ Curăță proiectul
+npx expo-doctor
+
+Trebuie să fie totul verde.
+
+Apoi:
+npx expo install --fix
+
+dacă îți recomandă ceva.

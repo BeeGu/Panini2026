@@ -1,3 +1,4 @@
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -7,18 +8,39 @@ import TradeScreen from "../screens/TradeScreen";
 import StatisticsScreen from "../screens/StatisticsScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 
-import Colors from "../theme/colors";
+import useTheme from "../hooks/useTheme";
 import tabIcons from "../constants/tabIcons";
 
 const Tab = createBottomTabNavigator();
-/*
+
 export default function BottomTabs() {
+
+    const { colors } = useTheme();
+
     return (
+
         <Tab.Navigator
             screenOptions={({ route }) => ({
                 headerShown: false,
-                tabBarActiveTintColor: Colors.primary,
-                tabBarInactiveTintColor: "#999",
+
+                // Active tab
+                tabBarActiveTintColor: colors.primary,
+
+                // Inactive tabs
+                tabBarInactiveTintColor: colors.textSecondary,
+
+                // Bottom tab bar
+                tabBarStyle: {
+                    backgroundColor: colors.card,
+                    // backgroundColor: colors.surface,
+                    borderTopColor: colors.border,
+                },
+
+                // Text
+                tabBarLabelStyle: {
+                    fontWeight: "600",
+                },
+
                 tabBarIcon: ({ color, size }) => (
                     <Ionicons
                         name={tabIcons[route.name]}
@@ -26,54 +48,7 @@ export default function BottomTabs() {
                         color={color}
                     />
                 ),
-            })}
-        >
-            <Tab.Screen
-                name="Home"
-                component={HomeScreen}
-                options={{
-                    headerShown: false,
-                }}
-            />
 
-            <Tab.Screen
-                name="Album"
-                component={AlbumScreen}
-                options={{
-                    headerShown: false,
-                }}
-            />
-
-            <Tab.Screen
-                name="Settings"
-                component={SettingsScreen}
-                options={{
-                    headerShown: false,
-                }}
-            />
-        </Tab.Navigator>
-    );
-}
-*/
-
-export default function BottomTabs() {
-
-    return (
-
-        <Tab.Navigator
-            screenOptions={({ route }) => ({
-                headerShown: false,
-                tabBarActiveTintColor: Colors.primary,
-                tabBarInactiveTintColor: "#999",
-                tabBarIcon: ({ color, size }) => (
-
-                    <Ionicons
-                        name={tabIcons[route.name]}
-                        size={size}
-                        color={color}
-                    />
-
-                ),
             })}
         >
 

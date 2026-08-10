@@ -1,14 +1,18 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import Colors from "../../theme/colors";
+import useTheme from "../../hooks/useTheme";
 
 export default function Badge({
     icon,
     text,
-    color = Colors.primary,
+    color,
     backgroundColor,
 }) {
+
+    const { colors } = useTheme();
+
+    const badgeColor = color ?? colors.primary;
 
     return (
 
@@ -17,38 +21,35 @@ export default function Badge({
                 styles.container,
                 {
                     backgroundColor:
-                        backgroundColor ?? `${color}20`,
+                        backgroundColor ??
+                        `${badgeColor}20`,
                 },
             ]}
         >
 
             {icon && (
-
                 <Ionicons
                     name={icon}
                     size={14}
-                    color={color}
+                    color={badgeColor}
                 />
-
             )}
 
             {text && (
-
                 <Text
                     style={[
                         styles.text,
-                        { color },
+                        {
+                            color: badgeColor,
+                        },
                     ]}
                 >
                     {text}
                 </Text>
-
             )}
 
         </View>
-
     );
-
 }
 
 const styles = StyleSheet.create({
