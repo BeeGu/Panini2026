@@ -10,6 +10,8 @@ export default {
   text: "#111827",
   textSecondary: "#6B7280",
   textMuted: "#9CA3AF",
+  textOnPrimary: "#FFFFFF",
+  textOnDanger: "#FFFFFF",
 
   primary: "#2563EB",
   info: "#0EA5E9",

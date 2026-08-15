@@ -1,596 +1,202 @@
-/*
-import { View, Text, StyleSheet } from "react-native";
-
-import useTheme from "../../hooks/useTheme";
-
-import ProgressBar from "../common/ProgressBar";
-
-import Typography from "../../theme/typography";
-import Spacing from "../../theme/spacing";
-
-export default function ProgressItem({
-    label,
-    value,
-    max,
-    percentage,
-    color,
-}) {
-
-    const { colors } = useTheme();
-
-    const percent = percentage ?? (
-        max > 0
-            ? (value / max) * 100
-            : 0
-    );
-
-    return (
-
-        <View style={styles.container}>
-
-            <View style={styles.header}>
-
-                <Text
-                    style={[
-                        styles.label,
-                        {
-                            color: colors.text,
-                        },
-                    ]}
-                    numberOfLines={1}
-                >
-                    {label}
-                </Text>
-
-                <Text
-                    style={[
-                        styles.value,
-                        {
-                            color: colors.textSecondary,
-                        },
-                    ]}
-                >
-                    {value} / {max}
-                </Text>
-
-                <Text
-                    style={[
-                        styles.percentage,
-                        {
-                            color:
-                                color ??
-                                colors.primary,
-                        },
-                    ]}
-                >
-                    {percent.toFixed(1)}%
-                </Text>
-
-            </View>
-
-            <ProgressBar
-                value={value}
-                max={max}
-                color={color}
-            />
-
-        </View>
-
-    );
-
-}
-
-const styles = StyleSheet.create({
-
-    container: {
-        marginBottom: Spacing.md,
-    },
-
-    header: {
-        flexDirection: "row",
-        alignItems: "center",
-        marginBottom: 6,
-    },
-
-    label: {
-        flex: 1,
-        fontSize: Typography.body,
-        fontWeight: "600",
-    },
-
-    value: {
-        marginLeft: Spacing.sm,
-        fontSize: Typography.caption,
-    },
-
-    percentage: {
-        minWidth: 48,
-        marginLeft: Spacing.sm,
-        textAlign: "right",
-        fontSize: Typography.caption,
-        fontWeight: "700",
-    },
-
-});
-*/
-
-/*
-import { View, Text, StyleSheet } from "react-native";
-
-import useTheme from "../../hooks/useTheme";
-
-import ProgressBar from "../common/ProgressBar";
-
-import Typography from "../../theme/typography";
-import Spacing from "../../theme/spacing";
-
-export default function ProgressItem({
-    title,
-    owned,
-    total,
-    subtitle,
-}) {
-
-    const { colors } = useTheme();
-
-    const missing = Math.max(
-        total - owned,
-        0
-    );
-
-    const percentage = total > 0
-        ? Math.round((owned / total) * 100)
-        : 0;
-
-    return (
-
-        <View
-            style={[
-                styles.container,
-                {
-                    backgroundColor: colors.card,
-                    borderColor: colors.border,
-                },
-            ]}
-        >
-
-            <View style={styles.header}>
-
-                <View style={styles.titleContainer}>
-
-                    <Text
-                        style={[
-                            styles.title,
-                            {
-                                color: colors.text,
-                            },
-                        ]}
-                    >
-                        {title}
-                    </Text>
-
-                    {subtitle && (
-                        <Text
-                            style={[
-                                styles.subtitle,
-                                {
-                                    color: colors.textSecondary,
-                                },
-                            ]}
-                        >
-                            {subtitle}
-                        </Text>
-                    )}
-
-                </View>
-
-                <Text
-                    style={[
-                        styles.percentage,
-                        {
-                            color: colors.primary,
-                        },
-                    ]}
-                >
-                    {percentage}%
-                </Text>
-
-            </View>
-
-            <ProgressBar
-                value={owned}
-                max={total}
-            />
-
-            <View style={styles.footer}>
-
-                <Text
-                    style={[
-                        styles.stat,
-                        {
-                            color: colors.success,
-                        },
-                    ]}
-                >
-                    {owned} owned
-                </Text>
-
-                <Text
-                    style={[
-                        styles.stat,
-                        {
-                            color: colors.textSecondary,
-                        },
-                    ]}
-                >
-                    {total} total
-                </Text>
-
-                <Text
-                    style={[
-                        styles.stat,
-                        {
-                            color: colors.danger,
-                        },
-                    ]}
-                >
-                    {missing} missing
-                </Text>
-
-            </View>
-
-        </View>
-
-    );
-}
-
-const styles = StyleSheet.create({
-
-    container: {
-        padding: Spacing.md,
-
-        borderWidth: 1,
-        borderRadius: 14,
-
-        marginBottom: Spacing.md,
-    },
-
-    header: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-
-        marginBottom: Spacing.sm,
-    },
-
-    titleContainer: {
-        flex: 1,
-    },
-
-    title: {
-        fontSize: Typography.body,
-        fontWeight: "700",
-    },
-
-    subtitle: {
-        marginTop: 2,
-        fontSize: Typography.caption,
-    },
-
-    percentage: {
-        marginLeft: Spacing.md,
-        fontSize: Typography.body,
-        fontWeight: "700",
-    },
-
-    footer: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-
-        marginTop: Spacing.sm,
-    },
-
-    stat: {
-        fontSize: Typography.caption,
-        fontWeight: "600",
-    },
-
-});
-*/
-
 import { useState } from "react";
-import {
-    Pressable,
-    StyleSheet,
-    Text,
-    View,
-} from "react-native";
-
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import useTheme from "../../hooks/useTheme";
 
 import ProgressBar from "../common/ProgressBar";
 
+// import StatisticsService from "../../services/StatisticsService";
+
 import Typography from "../../theme/typography";
 import Spacing from "../../theme/spacing";
 
 export default function ProgressItem({
-    title,
-    owned,
-    total,
-    subtitle,
-    initiallyExpanded = false,
+  title,
+  owned = 0,
+  total = 0,
+  subtitle,
+  initiallyExpanded = false,
 }) {
+  const { colors } = useTheme();
 
-    const { colors } = useTheme();
+  const [expanded, setExpanded] = useState(initiallyExpanded);
 
-    const [expanded, setExpanded] = useState(
-        initiallyExpanded
-    );
+  const safeOwned = Math.max(0, owned);
+  const safeTotal = Math.max(0, total);
 
-    const missing = Math.max(
-        total - owned,
-        0
-    );
+  const missing = Math.max(safeTotal - safeOwned, 0);
 
-    const percentage = total > 0
-        ? Math.round((owned / total) * 100)
-        : 0;
+  // const percentage = StatisticsService.calculateProgress(safeTotal, safeOwned);
 
-    return (
+  const percentage =
+    safeTotal > 0 ? Number(((safeOwned / safeTotal) * 100).toFixed(1)) : 0;
 
-        <View
-            style={[
-                styles.container,
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.card,
+          borderColor: colors.border,
+        },
+      ]}
+    >
+      <Pressable
+        onPress={() => setExpanded((value) => !value)}
+        style={({ pressed }) => [styles.header, pressed && styles.pressed]}
+      >
+        <View style={styles.titleContainer}>
+          <View style={styles.titleRow}>
+            <Text
+              style={[
+                styles.title,
                 {
-                    backgroundColor: colors.card,
-                    borderColor: colors.border,
+                  color: colors.text,
                 },
-            ]}
-        >
-
-            <Pressable
-                onPress={() => setExpanded(value => !value)}
-                style={({ pressed }) => [
-                    styles.header,
-                    pressed && styles.pressed,
-                ]}
+              ]}
+              numberOfLines={1}
             >
+              {title}
+            </Text>
 
-                <View style={styles.titleContainer}>
-
-                    <View style={styles.titleRow}>
-
-                        <Text
-                            style={[
-                                styles.title,
-                                {
-                                    color: colors.text,
-                                },
-                            ]}
-                            numberOfLines={1}
-                        >
-                            {title}
-                        </Text>
-
-                        <Ionicons
-                            name={
-                                expanded
-                                    ? "chevron-up"
-                                    : "chevron-down"
-                            }
-                            size={20}
-                            color={colors.icon}
-                        />
-
-                    </View>
-
-                    {subtitle && (
-                        <Text
-                            style={[
-                                styles.subtitle,
-                                {
-                                    color: colors.textSecondary,
-                                },
-                            ]}
-                        >
-                            {subtitle}
-                        </Text>
-                    )}
-
-                </View>
-
-                <Text
-                    style={[
-                        styles.percentage,
-                        {
-                            color: colors.primary,
-                        },
-                    ]}
-                >
-                    {percentage}%
-                </Text>
-
-            </Pressable>
-
-
-            <ProgressBar
-                value={owned}
-                max={total}
+            <Ionicons
+              name={expanded ? "chevron-up" : "chevron-down"}
+              size={20}
+              color={colors.icon}
             />
+          </View>
 
-
-            {expanded && (
-
-                <View
-                    style={[
-                        styles.details,
-                        {
-                            borderTopColor: colors.border,
-                        },
-                    ]}
-                >
-
-                    <View style={styles.statRow}>
-
-                        <Text
-                            style={[
-                                styles.statLabel,
-                                {
-                                    color: colors.textSecondary,
-                                },
-                            ]}
-                        >
-                            Owned
-                        </Text>
-
-                        <Text
-                            style={[
-                                styles.statValue,
-                                {
-                                    color: colors.success,
-                                },
-                            ]}
-                        >
-                            {owned}
-                        </Text>
-
-                    </View>
-
-
-                    <View style={styles.statRow}>
-
-                        <Text
-                            style={[
-                                styles.statLabel,
-                                {
-                                    color: colors.textSecondary,
-                                },
-                            ]}
-                        >
-                            Missing
-                        </Text>
-
-                        <Text
-                            style={[
-                                styles.statValue,
-                                {
-                                    color: colors.danger,
-                                },
-                            ]}
-                        >
-                            {missing}
-                        </Text>
-
-                    </View>
-
-
-                    <View style={styles.statRow}>
-
-                        <Text
-                            style={[
-                                styles.statLabel,
-                                {
-                                    color: colors.textSecondary,
-                                },
-                            ]}
-                        >
-                            Total
-                        </Text>
-
-                        <Text
-                            style={[
-                                styles.statValue,
-                                {
-                                    color: colors.text,
-                                },
-                            ]}
-                        >
-                            {total}
-                        </Text>
-
-                    </View>
-
-                </View>
-
-            )}
-
+          {subtitle && (
+            <Text
+              style={[
+                styles.subtitle,
+                {
+                  color: colors.textSecondary,
+                },
+              ]}
+            >
+              {subtitle}
+            </Text>
+          )}
         </View>
 
-    );
+        <Text
+          style={[
+            styles.percentage,
+            {
+              color: colors.primary,
+            },
+          ]}
+        >
+          {percentage}%
+        </Text>
+      </Pressable>
+
+      <ProgressBar value={safeOwned} max={safeTotal} />
+
+      {expanded && (
+        <View
+          style={[
+            styles.details,
+            {
+              borderTopColor: colors.border,
+            },
+          ]}
+        >
+          <StatRow label="Owned" value={safeOwned} color={colors.success} />
+
+          <StatRow label="Missing" value={missing} color={colors.danger} />
+
+          <StatRow label="Total" value={safeTotal} color={colors.text} />
+        </View>
+      )}
+    </View>
+  );
+}
+
+function StatRow({ label, value, color }) {
+  return (
+    <View style={styles.statRow}>
+      <Text style={styles.statLabel}>{label}</Text>
+
+      <Text
+        style={[
+          styles.statValue,
+          {
+            color,
+          },
+        ]}
+      >
+        {value}
+      </Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    padding: Spacing.md,
+    borderWidth: 1,
+    borderRadius: 14,
+    marginBottom: Spacing.md,
+  },
 
-    container: {
-        padding: Spacing.md,
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: Spacing.sm,
+  },
 
-        borderWidth: 1,
-        borderRadius: 14,
+  titleContainer: {
+    flex: 1,
+    marginRight: Spacing.md,
+  },
 
-        marginBottom: Spacing.md,
-    },
+  titleRow: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
 
-    header: {
-        flexDirection: "row",
-        alignItems: "center",
+  title: {
+    flex: 1,
+    fontSize: Typography.body,
+    fontWeight: "700",
+  },
 
-        marginBottom: Spacing.sm,
-    },
+  subtitle: {
+    marginTop: 3,
+    fontSize: Typography.caption,
+  },
 
-    titleContainer: {
-        flex: 1,
-        marginRight: Spacing.md,
-    },
+  percentage: {
+    fontSize: Typography.body,
+    fontWeight: "700",
+  },
 
-    titleRow: {
-        flexDirection: "row",
-        alignItems: "center",
-    },
+  pressed: {
+    opacity: 0.7,
+  },
 
-    title: {
-        flex: 1,
-        fontSize: Typography.body,
-        fontWeight: "700",
-    },
+  details: {
+    marginTop: Spacing.md,
+    paddingTop: Spacing.md,
+    borderTopWidth: 1,
+  },
 
-    subtitle: {
-        marginTop: 3,
-        fontSize: Typography.caption,
-    },
+  statRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingVertical: 5,
+  },
 
-    percentage: {
-        fontSize: Typography.body,
-        fontWeight: "700",
-    },
+  statLabel: {
+    fontSize: Typography.caption,
+  },
 
-    pressed: {
-        opacity: 0.7,
-    },
-
-    details: {
-        marginTop: Spacing.md,
-        paddingTop: Spacing.md,
-
-        borderTopWidth: 1,
-    },
-
-    statRow: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-
-        paddingVertical: 5,
-    },
-
-    statLabel: {
-        fontSize: Typography.caption,
-    },
-
-    statValue: {
-        fontSize: Typography.caption,
-        fontWeight: "700",
-    },
-
+  statValue: {
+    fontSize: Typography.caption,
+    fontWeight: "700",
+  },
 });

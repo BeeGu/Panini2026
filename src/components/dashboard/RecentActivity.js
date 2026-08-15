@@ -86,7 +86,5 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
 
-  empty: {
-    //color: Colors.textSecondary,
-  },
+  empty: {},
 });

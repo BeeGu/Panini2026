@@ -111,12 +111,6 @@ export default function AlbumProvider({ children }) {
     });
   }, [filteredStickers]);
 
-  // const groupedAlbum = useMemo(() => {
-
-  //     return groupAlbum(filteredStickers);
-
-  // }, [filteredStickers]);
-
   // trade
   const duplicateStickers = useMemo(() => {
     return stickers
@@ -169,32 +163,53 @@ export default function AlbumProvider({ children }) {
     });
   }, [stats, teamProgress, sectionProgress]);
 
-  const teamCompletion = useMemo(() => {
-    return StatisticsService.getCompletionByTeam(stickers);
-  }, [stickers]);
-
-  const sectionCompletion = useMemo(() => {
-    return StatisticsService.getCompletionBySection(stickers);
-  }, [stickers]);
-
-  // const achievements = useMemo(() => {
-
-  //     return StatisticsService.getAchievements(
-  //         stickers
-  //     );
-
+  // const teamCompletion = useMemo(() => {
+  //   return StatisticsService.getCompletionByTeam(stickers);
   // }, [stickers]);
 
-  const chartData = useMemo(
-    () => ({
+  // const sectionCompletion = useMemo(() => {
+  //   return StatisticsService.getCompletionBySection(stickers);
+  // }, [stickers]);
+
+  // const chartData = useMemo(
+  //   () => ({
+  //     completion: StatisticsService.getCompletionDistribution(stickers),
+  //     duplicates: StatisticsService.getDuplicateDistribution(stickers),
+  //     topTeams: StatisticsService.getTopTeams(teamProgress),
+  //     worstTeams: StatisticsService.getWorstTeams(teamProgress),
+  //     sections: StatisticsService.getSectionChart(sectionProgress),
+  //   }),
+  //   [stickers, teamProgress, sectionProgress],
+  // );
+
+  // const chartData = useMemo(() => {
+  //   const teams = StatisticsService.getCompletionByTeam(stickers);
+  //   const sections = StatisticsService.getCompletionBySection(stickers);
+
+  //   return {
+  //     completion: StatisticsService.getCompletionDistribution(stickers),
+
+  //     duplicates: StatisticsService.getDuplicateDistribution(stickers),
+
+  //     topTeams: StatisticsService.getTopTeams(teams),
+
+  //     worstTeams: StatisticsService.getWorstTeams(teams),
+
+  //     sections: StatisticsService.getSectionChart(sections),
+  //   };
+  // }, [stickers]);
+
+  const chartData = useMemo(() => {
+    const topTeams = StatisticsService.getTopTeams(teamProgress);
+
+    return {
       completion: StatisticsService.getCompletionDistribution(stickers),
       duplicates: StatisticsService.getDuplicateDistribution(stickers),
-      topTeams: StatisticsService.getTopTeams(teamProgress),
+      topTeams,
       worstTeams: StatisticsService.getWorstTeams(teamProgress),
       sections: StatisticsService.getSectionChart(sectionProgress),
-    }),
-    [stickers, teamProgress, sectionProgress],
-  );
+    };
+  }, [stickers, teamProgress, sectionProgress]);
 
   return (
     <AlbumContext.Provider
@@ -252,8 +267,8 @@ export default function AlbumProvider({ children }) {
         generalStats,
 
         // statistics
-        teamCompletion,
-        sectionCompletion,
+        // teamCompletion,
+        // sectionCompletion,
         achievements,
         chartData,
       }}

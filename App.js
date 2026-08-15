@@ -8,8 +8,8 @@ import SettingsProvider from "./src/context/SettingsProvider";
 import AlbumProvider from "./src/context/AlbumProvider";
 import ThemeProvider from "./src/context/ThemeProvider";
 
-import AppNavigator from "./src/navigation/AppNavigator";
 import AppSystemBars from "./src/components/common/AppSystemBars";
+import AppNavigator from "./src/navigation/AppNavigator";
 
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -34,16 +34,16 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <ToastProvider>
-        <SettingsProvider>
-          <AlbumProvider>
-            <ThemeProvider>
+      <SettingsProvider>
+        <AlbumProvider>
+          <ThemeProvider>
+            <ToastProvider>
               <AppSystemBars />
               <AppNavigator />
-            </ThemeProvider>
-          </AlbumProvider>
-        </SettingsProvider>
-      </ToastProvider>
+            </ToastProvider>
+          </ThemeProvider>
+        </AlbumProvider>
+      </SettingsProvider>
     </SafeAreaProvider>
   );
 }

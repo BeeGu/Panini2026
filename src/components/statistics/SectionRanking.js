@@ -1,28 +1,30 @@
-// ⭐️ Refactored
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-import Flag from "../common/Flag";
 import ProgressBar from "../common/ProgressBar";
 
 import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
-export default function StatisticsTeamRanking({ teams = [] }) {
+export default function SectionRanking({ sections = [], limit = 10 }) {
   const { colors } = useTheme();
 
-  const ranking = [...teams].sort((a, b) => b.percent - a.percent).slice(0, 50);
-
-  const ranking2 = [...teams]
+  const ranking = [...sections]
     .sort((a, b) => b.completion - a.completion)
-    .slice(0, 50);
+    .slice(0, limit);
 
   return (
-    <View style={styles.container}>
-      {ranking.map((team) => (
-        <View key={team.id} style={styles.row}>
-          <Flag iso2={team.iso2} size={24} />
-
+    <View
+      style={[
+        styles.card,
+        {
+          backgroundColor: colors.surface,
+          borderColor: colors.border,
+        },
+      ]}
+    >
+      {ranking.map((section) => (
+        <View key={section.id} style={styles.row}>
           <View style={styles.info}>
             <Text
               style={[
@@ -33,10 +35,10 @@ export default function StatisticsTeamRanking({ teams = [] }) {
               ]}
               numberOfLines={1}
             >
-              {team.name}
+              {section.name}
             </Text>
 
-            <ProgressBar value={team.owned} max={team.total} />
+            <ProgressBar value={section.owned} max={section.total} />
           </View>
 
           <Text
@@ -47,8 +49,7 @@ export default function StatisticsTeamRanking({ teams = [] }) {
               },
             ]}
           >
-            {/*{team.completion}%*/}
-            {team.percent}%
+            {section.completion}%
           </Text>
         </View>
       ))}
@@ -57,29 +58,32 @@ export default function StatisticsTeamRanking({ teams = [] }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    width: "100%",
+  card: {
+    padding: Spacing.lg,
+    borderRadius: 16,
+    borderWidth: 1,
+    elevation: 2,
   },
 
   row: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: Spacing.md,
+    marginBottom: 12,
   },
 
   info: {
     flex: 1,
-    marginHorizontal: Spacing.md,
+    marginRight: 12,
   },
 
   label: {
     fontSize: Typography.body,
     fontWeight: "600",
-    marginBottom: Spacing.xs,
+    marginBottom: 5,
   },
 
   percent: {
-    fontSize: Typography.caption,
+    fontSize: Typography.body,
     fontWeight: "700",
   },
 });

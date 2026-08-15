@@ -1,24 +1,6 @@
-/*
-În loc de
-
-<View style={styles.card}>
-
-    ...
-
-</View>
-
-vom scrie pur și simplu
-
-<Card>
-
-    ...
-
-</Card>
-*/
-
+// ⭐️ Refactored
 import { View, StyleSheet } from "react-native";
 import useTheme from "../../hooks/useTheme";
-
 import Spacing from "../../theme/spacing";
 
 export default function Card({ children, style }) {

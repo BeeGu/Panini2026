@@ -1,324 +1,91 @@
-/*
-import { useState, useRef } from "react";
-import ToastContext from "./ToastContext";
-import Toast from "../components/common/Toast";
-
-export default function ToastProvider({ children }) {
-
-    const [toast, setToast] = useState(null);
-
-    const timer = useRef(null);
-
-    function show({
-
-        message,
-        type = "success",
-        duration = 2500,
-
-    }) {
-
-        clearTimeout(timer.current);
-
-        setToast({
-            message,
-            type,
-        });
-
-        timer.current = setTimeout(() => {
-
-            setToast(null);
-
-        }, duration);
-
-    }
-
-    return (
-
-        <ToastContext.Provider
-            value={{ show }}
-        >
-
-            {children}
-
-            <Toast
-                visible={!!toast}
-                message={toast?.message}
-                type={toast?.type}
-            />
-
-        </ToastContext.Provider>
-
-    );
-
-}
-*/
-/*
-import { useState, useRef } from "react";
-
-import ToastContext from "./ToastContext";
-import Toast from "../components/common/Toast";
-
-export default function ToastProvider({ children }) {
-
-    const [toast, setToast] = useState(null);
-
-    const timer = useRef(null);
-
-    function hide() {
-
-        clearTimeout(timer.current);
-
-        setToast(null);
-
-    }
-
-    function show({
-        message,
-        type = "success",
-        duration = 2500,
-    }) {
-
-        clearTimeout(timer.current);
-
-        setToast({
-            message,
-            type,
-        });
-
-        timer.current = setTimeout(
-            hide,
-            duration
-        );
-
-    }
-
-    function success(message, duration) {
-
-        show({
-            message,
-            type: "success",
-            duration,
-        });
-
-    }
-
-    function error(message, duration) {
-
-        show({
-            message,
-            type: "error",
-            duration,
-        });
-
-    }
-
-    function info(message, duration) {
-
-        show({
-            message,
-            type: "info",
-            duration,
-        });
-
-    }
-
-    return (
-
-        <ToastContext.Provider
-            value={{
-                show,
-                success,
-                error,
-                info,
-                hide,
-            }}
-        >
-
-            {children}
-
-            <Toast
-                visible={!!toast}
-                message={toast?.message}
-                type={toast?.type}
-            />
-
-        </ToastContext.Provider>
-
-    );
-
-}
-*/
-
 import { useRef, useState } from "react";
 
 import ToastContext from "./ToastContext";
 
 import Toast from "../components/common/Toast";
 
-export default function ToastProvider({
-    children,
-}) {
+export default function ToastProvider({ children }) {
+  const [toast, setToast] = useState(null);
+  const [toasts, setToasts] = useState([]);
 
-    const [toast, setToast] =useState(null);
-    const [toasts, setToasts] = useState([]);
+  const timer = useRef(null);
 
-    const timer = useRef(null);
+  function hide() {
+    clearTimeout(timer.current);
+    setToast(null);
+  }
 
-    function hide() {
-        clearTimeout(timer.current);
-        setToast(null);
-    }
-
-    // function show({
-    //     message,
-    //     type = "success",
-    //     duration = 2500,
-    // }) {
-
-    //     clearTimeout(timer.current);
-
-    //     setToast({
-    //         message,
-    //         type,
-    //     });
-
-    //     timer.current =
-    //         setTimeout(
-    //             hide,
-    //             duration
-    //         );
-
-    // }
-
-function show({
-    message,
-    type = "success",
-    duration = 2500,
-}) {
-
+  function show({ message, type = "success", duration = 2500 }) {
     const id = Date.now() + Math.random();
 
-    setToasts(current => [
-        {
-            id,
-            message,
-            type,
-        },
-        ...current, // cel mai nou primul
+    setToasts((current) => [
+      {
+        id,
+        message,
+        type,
+      },
+      ...current, // cel mai nou primul
     ]);
 
     setTimeout(() => {
-
-        setToasts(current =>
-            current.filter(t => t.id !== id)
-        );
-
+      setToasts((current) => current.filter((t) => t.id !== id));
     }, duration);
+  }
 
-}
-  
-    function success(
-        message,
-        duration,
-    ) {
+  function success(message, duration) {
+    show({
+      message,
+      type: "success",
+      duration,
+    });
+  }
 
-        show({
-            message,
-            type: "success",
-            duration,
-        });
+  function error(message, duration) {
+    show({
+      message,
+      type: "error",
+      duration,
+    });
+  }
 
-    }
+  function warning(message, duration) {
+    show({
+      message,
+      type: "warning",
+      duration,
+    });
+  }
 
-    function error(
-        message,
-        duration,
-    ) {
+  function info(message, duration) {
+    show({
+      message,
+      type: "info",
+      duration,
+    });
+  }
 
-        show({
-            message,
-            type: "error",
-            duration,
-        });
-
-    }
-
-    function warning(
-        message,
-        duration,
-    ) {
-
-        show({
-            message,
-            type: "warning",
-            duration,
-        });
-
-    }
-
-    function info(
-        message,
-        duration,
-    ) {
-
-        show({
-            message,
-            type: "info",
-            duration,
-        });
-
-    }
-
-    return (
-
-        // <ToastContext.Provider
-        //     value={{
-        //         show,
-        //         hide,
-        //         success,
-        //         error,
-        //         warning,
-        //         info,
-        //     }}
-        // >
-
-        //     {children}
-
-        //     <Toast
-        //         visible={!!toast}
-        //         message={toast?.message}
-        //         type={toast?.type}
-        //     />
-
-        // </ToastContext.Provider>
-
-<ToastContext.Provider
-    value={{
+  return (
+    <ToastContext.Provider
+      value={{
         show,
         hide,
         success,
         error,
         warning,
         info,
-    }}
-  >
+      }}
+    >
+      {children}
 
-    {children}
-
-    {toasts.map((toast, index) => (
-
+      {toasts.map((toast, index) => (
         <Toast
-            key={toast.id}
-            visible
-            message={toast.message}
-            type={toast.type}
-            index={index}
+          key={toast.id}
+          visible
+          message={toast.message}
+          type={toast.type}
+          index={index}
         />
-
-    ))}
-
-</ToastContext.Provider>
-      
-    );
-
+      ))}
+    </ToastContext.Provider>
+  );
 }

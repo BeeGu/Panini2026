@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
@@ -7,34 +6,15 @@ import { NavigationBar } from "expo-navigation-bar";
 import useTheme from "../../hooks/useTheme";
 
 export default function AppSystemBars() {
+  const { theme, colors } = useTheme();
 
-    const { theme, colors } = useTheme();
+  useEffect(() => {
+    if (Platform.OS !== "android") return;
 
-    useEffect(() => {
+    NavigationBar.setStyle(theme === "dark" ? "light" : "dark");
+  }, [theme]);
 
-        if (Platform.OS !== "android")
-            return;
-
-        NavigationBar.setStyle(
-            theme === "dark"
-                ? "light"
-                : "dark"
-        );
-
-    }, [theme]);
-
-    return (
-
-        <StatusBar
-            style={
-                theme === "dark"
-                    ? "light"
-                    : "dark"
-            }
-        />
-
-    );
-
+  return <StatusBar style={theme === "dark" ? "light" : "dark"} />;
 }
 
 /*

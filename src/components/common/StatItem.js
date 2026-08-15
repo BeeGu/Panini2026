@@ -1,3 +1,4 @@
+// ⭐️ Refactored
 import { Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -5,7 +6,7 @@ import Row from "./Row";
 
 import useTheme from "../../hooks/useTheme";
 
-export default function StatItem({ icon, value, label }) {
+export default function StatItem({ icon, iconColor, value, label }) {
   const { colors } = useTheme();
 
   return (

@@ -1,3 +1,4 @@
+// ⭐️ Refactored
 import { Pressable, Text, StyleSheet, ActivityIndicator } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -19,34 +20,30 @@ export default function Button({
   const { colors } = useTheme();
   const isDisabled = disabled || loading;
 
-  function getVariantStyles() {
-    switch (variant) {
-      case "secondary":
-        return {
-          backgroundColor: colors.surface,
-          borderColor: colors.border,
-          textColor: colors.text,
-          iconColor: colors.icon,
-        };
-      case "danger":
-        return {
-          backgroundColor: colors.danger,
-          borderColor: colors.danger,
-          textColor: "#FFFFFF",
-          iconColor: "#FFFFFF",
-        };
-      case "primary":
-      default:
-        return {
-          backgroundColor: colors.primary,
-          borderColor: colors.primary,
-          textColor: "#FFFFFF",
-          iconColor: "#FFFFFF",
-        };
-    }
-  }
+  const variants = {
+    primary: {
+      backgroundColor: colors.primary,
+      borderColor: colors.primary,
+      textColor: colors.textOnPrimary,
+      iconColor: colors.textOnPrimary,
+    },
 
-  const variantStyles = getVariantStyles();
+    secondary: {
+      backgroundColor: colors.surface,
+      borderColor: colors.border,
+      textColor: colors.text,
+      iconColor: colors.icon,
+    },
+
+    danger: {
+      backgroundColor: colors.danger,
+      borderColor: colors.danger,
+      textColor: colors.textOnDanger,
+      iconColor: colors.textOnDanger,
+    },
+  };
+
+  const variantStyles = variants[variant] ?? variants.primary;
 
   const sizeStyle = size === "small" ? styles.small : styles.normal;
 

@@ -1,4 +1,3 @@
-
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -14,87 +13,66 @@ import tabIcons from "../constants/tabIcons";
 const Tab = createBottomTabNavigator();
 
 export default function BottomTabs() {
+  const { colors } = useTheme();
 
-    const { colors } = useTheme();
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        headerShown: false,
 
-    return (
+        // Active tab
+        tabBarActiveTintColor: colors.primary,
 
-        <Tab.Navigator
-            screenOptions={({ route }) => ({
-                headerShown: false,
+        // Inactive tabs
+        tabBarInactiveTintColor: colors.textSecondary,
 
-                // Active tab
-                tabBarActiveTintColor: colors.primary,
+        // Bottom tab bar
+        tabBarStyle: {
+          backgroundColor: colors.card,
+          // backgroundColor: colors.surface,
+          borderTopColor: colors.border,
+        },
 
-                // Inactive tabs
-                tabBarInactiveTintColor: colors.textSecondary,
+        // Text
+        tabBarLabelStyle: {
+          fontWeight: "600",
+        },
 
-                // Bottom tab bar
-                tabBarStyle: {
-                    backgroundColor: colors.card,
-                    // backgroundColor: colors.surface,
-                    borderTopColor: colors.border,
-                },
+        tabBarIcon: ({ color, size }) => (
+          <Ionicons name={tabIcons[route.name]} size={size} color={color} />
+        ),
+      })}
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
 
-                // Text
-                tabBarLabelStyle: {
-                    fontWeight: "600",
-                },
+      <Tab.Screen name="Album" component={AlbumScreen} />
 
-                tabBarIcon: ({ color, size }) => (
-                    <Ionicons
-                        name={tabIcons[route.name]}
-                        size={size}
-                        color={color}
-                    />
-                ),
+      <Tab.Screen
+        name="Trade"
+        component={TradeScreen}
+        options={{
+          title: "Trade Center",
+        }}
+      />
 
-            })}
-        >
+      <Tab.Screen
+        name="Statistics"
+        component={StatisticsScreen}
+        options={{
+          title: "Statistics",
+        }}
+      />
 
-            <Tab.Screen
-                name="Home"
-                component={HomeScreen}
-            />
-
-            <Tab.Screen
-                name="Album"
-                component={AlbumScreen}
-            />
-
-            <Tab.Screen
-                name="Trade"
-                component={TradeScreen}
-                options={{
-                    title: "Trade Center",
-                }}
-            />
-
-            <Tab.Screen
-                name="Statistics"
-                component={StatisticsScreen}
-                options={{
-                    title: "Statistics",
-                }}
-            />
-
-            <Tab.Screen
-                name="Settings"
-                component={SettingsScreen}
-                options={{
-                    title: "Settings",
-                    tabBarIcon: ({ color, size }) => (
-                        <Ionicons
-                            name="settings-outline"
-                            color={color}
-                            size={size}
-                        />
-                    ),
-                }}
-            />
-
-        </Tab.Navigator>
-
-    );
-
+      <Tab.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings-outline" color={color} size={size} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
+  );
 }

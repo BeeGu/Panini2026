@@ -1,95 +1,77 @@
-import { View, Text, StyleSheet } from "react-native";
+// ⭐️ Refactored
+
+import { StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import useTheme from "../../hooks/useTheme";
+
 import Spacing from "../../theme/spacing";
+import Typography from "../../theme/typography";
 
 import { formatRelativeDate } from "../../utils/dateUtils";
 
-export default function StatisticsRecentActivity({
-    activity,
-}) {
-    const { colors } = useTheme();
+export default function StatisticsRecentActivity({ activity = [] }) {
+  const { colors } = useTheme();
 
-    return (
+  return (
+    <View style={styles.container}>
+      {activity.map((item) => (
+        <View key={item.id} style={styles.row}>
+          <Ionicons name="time-outline" size={20} color={colors.primary} />
 
-        <View
-          style={[
-              styles.card,
-              {
-                  backgroundColor: colors.surface,
-                  borderColor: colors.border,
-              },
-          ]}
-        >
-            {activity.map(item => (
-                <View
-                    key={item.id}
-                    style={styles.row}
-                >
+          <View style={styles.info}>
+            <Text
+              style={[
+                styles.name,
+                {
+                  color: colors.text,
+                },
+              ]}
+              numberOfLines={1}
+            >
+              {item.name}
+            </Text>
 
-                    <Ionicons
-                        name="time-outline"
-                        size={20}
-                        color={colors.primary}
-                    />
-
-                    <View style={styles.info}>
-
-                        <Text
-                          style={[
-                              {
-                                  color: colors.text,
-                              },
-                          ]}
-                        >
-                            {item.name}
-                        </Text>
-
-                        <Text
-                          style={[
-                              styles.date,
-                              {
-                                  color: colors.textSecondary,
-                              },
-                          ]}
-                        >
-                            {formatRelativeDate(item.updated_at)}
-                        </Text>
-
-                    </View>
-
-                </View>
-
-            ))}
-
+            <Text
+              style={[
+                styles.date,
+                {
+                  color: colors.textSecondary,
+                },
+              ]}
+            >
+              {formatRelativeDate(item.updated_at)}
+            </Text>
+          </View>
         </View>
-
-    );
-
+      ))}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+  },
 
-    card: {
-        // margin: Spacing.md,
-        padding: Spacing.lg,
-        borderRadius: 16,
-        elevation: 2,
-    },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: Spacing.md,
+  },
 
-    row: {
-        flexDirection: "row",
-        alignItems: "center",
-        marginBottom: 12,
-    },
+  info: {
+    flex: 1,
+    marginLeft: Spacing.md,
+  },
 
-    info: {
-        marginLeft: 12,
-    },
+  name: {
+    fontSize: Typography.body,
+    fontWeight: "600",
+  },
 
-    date: {
-        fontSize: 12,
-    },
-
+  date: {
+    marginTop: Spacing.xs,
+    fontSize: Typography.caption,
+  },
 });

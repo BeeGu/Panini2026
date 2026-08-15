@@ -1,67 +1,116 @@
-import { View, Text } from "react-native";
+// ⭐️ Refactored
 
-import Card from "../../common/Card";
+import { StyleSheet, Text, View } from "react-native";
+
 import useTheme from "../../../hooks/useTheme";
 
-export default function DuplicatesBarChart({
-    data,
-}) {
+import StatisticsChartCard from "./StatisticsChartCard";
 
-    const { colors } = useTheme();
+import Spacing from "../../../theme/spacing";
+import Typography from "../../../theme/typography";
 
-    const max =
-        Math.max(...data.map(x => x.value), 1);
+export default function DuplicatesBarChart({ data = [] }) {
+  const { colors } = useTheme();
 
-    return (
+  const max = Math.max(...data.map((item) => item.value), 1);
 
-        <Card title="Duplicates">
+  return (
+    <StatisticsChartCard
+      title="Duplicates"
+      subtitle="Duplicate stickers by category"
+    >
+      <View style={styles.container}>
+        {data.map((item) => {
+          const percentage = (item.value / max) * 100;
 
-            {data.map(item => (
-
-                <View
-                    key={item.label}
-                    style={{
-                        marginBottom: 12,
-                    }}
+          return (
+            <View key={item.label} style={styles.item}>
+              <View style={styles.labelRow}>
+                <Text
+                  style={[
+                    styles.label,
+                    {
+                      color: colors.text,
+                    },
+                  ]}
+                  numberOfLines={1}
                 >
+                  {item.label}
+                </Text>
 
-                    <Text
-                        style={{
-                            color: colors.text,
-                            marginBottom: 4,
-                        }}
-                    >
-                        {item.label}
-                    </Text>
+                <Text
+                  style={[
+                    styles.value,
+                    {
+                      color: colors.textSecondary,
+                    },
+                  ]}
+                >
+                  {item.value}
+                </Text>
+              </View>
 
-                    <View
-                        style={{
-                            height: 12,
-                            backgroundColor:
-                                colors.border,
-                            borderRadius: 6,
-                        }}
-                    >
-
-                        <View
-                            style={{
-                                width:
-                                    `${item.value / max * 100}%`,
-                                height: 12,
-                                borderRadius: 6,
-                                backgroundColor:
-                                    colors.primary,
-                            }}
-                        />
-
-                    </View>
-
-                </View>
-
-            ))}
-
-        </Card>
-
-    );
-
+              <View
+                style={[
+                  styles.track,
+                  {
+                    backgroundColor: colors.border,
+                  },
+                ]}
+              >
+                <View
+                  style={[
+                    styles.bar,
+                    {
+                      width: `${percentage}%`,
+                      backgroundColor: colors.primary,
+                    },
+                  ]}
+                />
+              </View>
+            </View>
+          );
+        })}
+      </View>
+    </StatisticsChartCard>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+  },
+
+  item: {
+    marginBottom: Spacing.md,
+  },
+
+  labelRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: Spacing.xs,
+  },
+
+  label: {
+    flex: 1,
+    marginRight: Spacing.md,
+    fontSize: Typography.caption,
+  },
+
+  value: {
+    fontSize: Typography.caption,
+    fontWeight: "700",
+  },
+
+  track: {
+    height: 12,
+    borderRadius: 6,
+    overflow: "hidden",
+  },
+
+  bar: {
+    height: "100%",
+    borderRadius: 6,
+  },
+});

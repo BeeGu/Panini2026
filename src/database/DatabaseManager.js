@@ -19,12 +19,11 @@ export function initializeAppDatabase() {
     seedDatabase();
 
     db.runSync(`
-            INSERT INTO app_metadata(key,value)
-            VALUES('seeded','1')
-        `);
+        INSERT INTO app_metadata(key,value)
+        VALUES('seeded','1')
+    `);
     // ⚠️ dacă mai târziu vrei să schimbi seed-ul:
     // INSERT INTO app_metadata(key,value)
     // VALUES('seed_version','2')
-    console.log("✅ Database seeded");
   }
 }

@@ -4,37 +4,31 @@ import SettingsContext from "./SettingsContext";
 
 import SettingsService from "../services/SettingsService";
 
-export default function SettingsProvider({
-    children,
-}) {
+export default function SettingsProvider({ children }) {
+  const [developerMode, setDeveloperMode] = useState(false);
 
-    const [developerMode, setDeveloperMode] = useState(false);
+  useEffect(() => {
+    reload();
+  }, []);
 
-    useEffect(() => {
-        reload();
-    }, []);
+  function reload() {
+    setDeveloperMode(SettingsService.isDeveloperMode());
+  }
 
-    function reload() {
-        setDeveloperMode(
-            SettingsService.isDeveloperMode()
-        );
-    }
+  function toggleDeveloperMode() {
+    SettingsService.toggleDeveloperMode();
 
-    function toggleDeveloperMode() {
-        SettingsService.toggleDeveloperMode();
+    reload();
+  }
 
-        reload();
-    }
-
-    return (
-        <SettingsContext.Provider
-            value={{
-                developerMode,
-                toggleDeveloperMode,
-            }}
-        >
-            {children}
-        </SettingsContext.Provider>
-    );
-
+  return (
+    <SettingsContext.Provider
+      value={{
+        developerMode,
+        toggleDeveloperMode,
+      }}
+    >
+      {children}
+    </SettingsContext.Provider>
+  );
 }

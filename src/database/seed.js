@@ -29,7 +29,7 @@ function seedTeams() {
     `
         SELECT id, code
         FROM sections
-    `,
+  `,
   ).forEach((section) => {
     sectionMap.set(section.code, section.id);
   });
@@ -49,7 +49,6 @@ function seedTeams() {
     teams.forEach((team) => {
       stmt.executeSync([
         sectionMap.get(team.section_code),
-
         team.code,
         team.iso2,
         team.name,

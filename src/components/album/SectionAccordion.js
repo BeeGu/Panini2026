@@ -1,148 +1,125 @@
+// ⭐️ Refactored
 import { useState } from "react";
-import {
-    View,
-    Text,
-    Pressable,
-    StyleSheet,
-} from "react-native";
+import { View, Text, Pressable, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import useTheme from "../../hooks/useTheme";
-
 import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
-import TeamAccordion from "./TeamAccordion";
-import AlbumStats from "./AlbumStats";
 import ProgressBar from "../common/ProgressBar";
+import AlbumStats from "./AlbumStats";
+import TeamAccordion from "./TeamAccordion";
 
 export default function SectionAccordion({
-    section,
-    onToggle,
-    defaultExpanded = false,
+  section,
+  onToggle,
+  defaultExpanded = false,
 }) {
-    const { colors } = useTheme();
+  const { colors } = useTheme();
 
-    const [expanded, setExpanded] = useState(defaultExpanded);
+  const [expanded, setExpanded] = useState(defaultExpanded);
 
-    return (
+  function handleToggle() {
+    setExpanded((prev) => !prev);
+  }
 
-        <View
-          style={[
-              styles.container,
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.surface,
+        },
+      ]}
+    >
+      <Pressable style={styles.header} onPress={handleToggle}>
+        <View style={styles.left}>
+          <Text
+            style={[
+              styles.title,
               {
-                  backgroundColor: colors.surface,
+                color: colors.text,
               },
-          ]}
-        >
-            <Pressable
-                style={styles.header}
-                onPress={() => setExpanded(!expanded)}
-            >
+            ]}
+          >
+            {section.name}
+          </Text>
 
-                <View style={styles.left}>
-                    <Text
-                      style={[
-                          styles.title,
-                          {
-                              color: colors.text,
-                          },
-                      ]}
-                    >
-                        {section.name}
-                    </Text>
+          <Text
+            style={[
+              styles.subtitle,
+              {
+                color: colors.textSecondary,
+              },
+            ]}
+          >
+            {section.owned} / {section.total}
+          </Text>
 
-                    <Text
-                      style={[
-                          styles.subtitle,
-                          {
-                              color: colors.textSecondary,
-                          },
-                      ]}
-                    >
-                        {section.owned} / {section.total}
-                    </Text>
+          <ProgressBar value={section.owned} max={section.total} />
 
-                    <ProgressBar
-                        value={section.owned}
-                        max={section.total}
-                    />
-
-                    <AlbumStats
-                        owned={section.owned}
-                        total={section.total}
-                        duplicates={section.duplicates}
-                    />
-                </View>
-
-                <Ionicons
-                    name={
-                        expanded
-                            ? "chevron-down"
-                            : "chevron-forward"
-                    }
-                    size={22}
-                    color={colors.textSecondary}
-                />
-
-            </Pressable>
-
-            {expanded && (
-                <View style={styles.content}>
-                    {section.teams.map((team, index) => (
-                        <TeamAccordion
-                            key={team.id}
-                            team={team}
-                            onToggle={onToggle}
-                            defaultExpanded={index === 0}
-                        />
-                    ))}
-                </View>
-            )}
-
+          <AlbumStats
+            owned={section.owned}
+            total={section.total}
+            duplicates={section.duplicates}
+          />
         </View>
 
-    );
+        <Ionicons
+          name={expanded ? "chevron-down" : "chevron-forward"}
+          size={22}
+          color={colors.textSecondary}
+        />
+      </Pressable>
 
+      {expanded && (
+        <View style={styles.content}>
+          {section.teams.map((team, index) => (
+            <TeamAccordion
+              key={team.id}
+              team={team}
+              onToggle={onToggle}
+              defaultExpanded={index === 0}
+            />
+          ))}
+        </View>
+      )}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    marginHorizontal: Spacing.md,
+    marginVertical: 8,
+    borderRadius: 16,
+    elevation: 2,
+    overflow: "hidden",
+  },
 
-    container: {
-        marginHorizontal: Spacing.md,
-        marginVertical: 8,
-        // backgroundColor: Colors.white,
-        borderRadius: 16,
-        elevation: 2,
-        overflow: "hidden",
-    },
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: Spacing.lg,
+  },
 
-    header: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: Spacing.lg,
-    },
+  left: {
+    flex: 1,
+  },
 
-    left: {
-        flex: 1,
-    },
+  title: {
+    fontSize: Typography.h3 ?? 20,
+    fontWeight: "700",
+  },
 
-    title: {
-        fontSize: Typography.h3 ?? 20,
-        fontWeight: "700",
-        // color: Colors.text,
-    },
+  subtitle: {
+    marginTop: 4,
+    fontSize: Typography.body,
+  },
 
-    subtitle: {
-        marginTop: 4,
-        // color: Colors.textSecondary,
-        fontSize: Typography.body,
-        // marginBottom: 6,
-    },
-
-    content: {
-        paddingBottom: Spacing.sm,
-    },
-
+  content: {
+    paddingBottom: Spacing.sm,
+  },
 });

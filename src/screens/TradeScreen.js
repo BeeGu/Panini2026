@@ -1,131 +1,146 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+// ⭐️ Refactored
+// TradeScreen
+//  ├── ScreenHeader
+//  ├── TradeSummaryCard
+//  ├── SectionTitle
+//  ├── TradeSectionAccordion
+//  │    └── TradeTeamAccordion
+//  │         └── TradeStickerList/Card
+//  ├── SectionTitle
+//  └── TradeExportButtons
+// ⭐️ Refactored
+
+import { useState } from "react";
+import { ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import useTheme from "../hooks/useTheme";
 import useAlbum from "../hooks/useAlbum";
 import useToast from "../hooks/useToast";
 
-import Spacing from "../theme/spacing";
-import Typography from "../theme/typography";
-
 import groupTrade from "../utils/groupTrade";
 
 import ScreenHeader from "../components/common/ScreenHeader";
+import ExpandableCard from "../components/common/ExpandableCard";
 
 import TradeSummaryCard from "../components/trade/TradeSummaryCard";
 import TradeSectionAccordion from "../components/trade/TradeSectionAccordion";
-import SectionTitle from "../components/common/SectionTitle";
-import TradeExportButtons from "../components/trade/TradeExportButtons";
+import TradeExportButtons, {
+  TRADE_MODES,
+} from "../components/trade/TradeExportButtons";
 
 import TradeExportService from "../services/TradeExportService";
 
 export default function TradeScreen() {
   const { colors } = useTheme();
+
   const { stickers, duplicateStickers, missingStickers, tradeSummary } =
     useAlbum();
 
-  const duplicates = stickers.filter((sticker) => sticker.duplicates > 0);
-
-  const missing = stickers.filter((sticker) => !sticker.owned);
-
   const duplicateSections = groupTrade(duplicateStickers);
-
-  const missingSections = groupTrade(missing);
+  const missingSections = groupTrade(missingStickers);
 
   const toast = useToast();
 
-  async function handleCopy() {
-    await TradeExportService.copy(stickers);
+  const [tradeMode, setTradeMode] = useState(TRADE_MODES.BOTH);
 
-    toast.show({
-      type: "success",
-      message: "Trade list copied to clipboard.",
-    });
+  const subtitle =
+    tradeMode === TRADE_MODES.DUPLICATES
+      ? `${tradeSummary.duplicates} duplicates available`
+      : tradeMode === TRADE_MODES.MISSING
+        ? `${tradeSummary.missing} stickers missing`
+        : `${tradeSummary.duplicates} duplicates • ${tradeSummary.missing} missing`;
+
+  async function handleCopy() {
+    try {
+      await TradeExportService.copy(stickers, tradeMode);
+
+      toast.show({
+        type: "success",
+        message: "Trade list copied to clipboard.",
+      });
+    } catch (error) {
+      console.error("Trade copy error:", error);
+
+      toast.show({
+        type: "error",
+        message: "Could not copy trade list.",
+      });
+    }
   }
 
   async function handleShare() {
-    await TradeExportService.share(stickers);
+    try {
+      await TradeExportService.share(stickers, tradeMode);
 
-    toast.show({
-      type: "success",
-      message: "Trade list shared.",
-    });
-  }
+      toast.show({
+        type: "success",
+        message: "Trade list shared.",
+      });
+    } catch (error) {
+      console.error("Trade share error:", error);
 
-  function handleExport() {
-    // TODO
+      toast.show({
+        type: "error",
+        message: "Could not share trade list.",
+      });
+    }
   }
 
   return (
     <SafeAreaView
       edges={["top"]}
-      style={[
-        // styles.container,
-        {
-          backgroundColor: colors.background,
-          flex: 1,
-        },
-      ]}
+      style={{
+        flex: 1,
+        backgroundColor: colors.background,
+      }}
     >
       <ScreenHeader
         title="Trade Center"
         icon="swap-horizontal-outline"
-        subtitle={`${tradeSummary.duplicates} duplicates available`}
+        subtitle={subtitle}
       />
 
       <ScrollView>
         <TradeSummaryCard summary={tradeSummary} />
 
-        <SectionTitle
-          icon="gift"
+        <ExpandableCard
           title={`Duplicates (${tradeSummary.duplicates})`}
-        />
+          icon="gift"
+          initiallyExpanded={false}
+          contentPadding={false}
+        >
+          {duplicateSections.map((section) => (
+            <TradeSectionAccordion
+              key={section.id}
+              section={section}
+              type="duplicate"
+            />
+          ))}
+        </ExpandableCard>
 
-        {duplicateSections.map((section) => (
-          <TradeSectionAccordion
-            key={section.id}
-            section={section}
-            type="duplicate"
-          />
-        ))}
-
-        <SectionTitle
-          icon="alert-circle"
+        <ExpandableCard
           title={`Missing (${tradeSummary.missing})`}
-        />
-
-        {missingSections.map((section) => (
-          <TradeSectionAccordion
-            key={section.id}
-            section={section}
-            type="missing"
-          />
-        ))}
+          icon="alert-circle"
+          initiallyExpanded={false}
+          contentPadding={false}
+        >
+          {missingSections.map((section) => (
+            <TradeSectionAccordion
+              key={section.id}
+              section={section}
+              type="missing"
+            />
+          ))}
+        </ExpandableCard>
 
         <TradeExportButtons
+          mode={tradeMode}
+          onModeChange={setTradeMode}
           onCopy={handleCopy}
           onShare={handleShare}
-          onExport={handleExport}
         />
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
-  },
-
-  title: {
-    fontSize: Typography.h1,
-    fontWeight: "700",
-  },
-
-  subtitle: {
-    marginTop: 4,
-    fontSize: Typography.body,
-  },
-});
