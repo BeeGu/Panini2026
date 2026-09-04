@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { BarChart } from "react-native-gifted-charts";
 
 import useTheme from "../../../hooks/useTheme";
@@ -5,6 +6,7 @@ import useTheme from "../../../hooks/useTheme";
 import StatisticsChartCard from "./StatisticsChartCard";
 
 export default function TeamBarChart({ data }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const chartData = data.map((team) => ({
@@ -14,7 +16,10 @@ export default function TeamBarChart({ data }) {
   }));
 
   return (
-    <StatisticsChartCard title="Top Teams" subtitle="Best completed teams">
+    <StatisticsChartCard
+      title={t("statistics.topTeams")}
+      subtitle={t("statistics.bestCompletedTeams")}
+    >
       <BarChart
         // data={data}
         data={chartData}

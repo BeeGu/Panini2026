@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 import flags from "../../constants/flags";
 import { Ionicons } from "@expo/vector-icons";
 

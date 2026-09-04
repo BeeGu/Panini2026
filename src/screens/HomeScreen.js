@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
+import { useTranslation } from "react-i18next";
+
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import {
   SafeAreaView,
@@ -23,6 +25,8 @@ import AchievementsCard from "../components/achievements/AchievementsCard";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
+  const { t } = useTranslation();
+
   const { colors } = useTheme();
   const { stats, recentActivity } = useAlbum();
 
@@ -36,17 +40,26 @@ export default function HomeScreen() {
         },
       ]}
     >
-      <ScreenHeader title="🏆 Panini Tracker" subtitle="FIFA World Cup 2026" />
+      <ScreenHeader title={t("home.title")} subtitle={t("home.subtitle")} />
 
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <ProgressCard owned={stats.owned} total={stats.total} />
+        <ProgressCard
+          title={t("home.albumProgress")}
+          owned={stats.owned}
+          total={stats.total}
+        />
 
         <DashboardStats stats={stats} />
 
-        <AchievementsCard owned={stats.owned} total={stats.total} />
+        <AchievementsCard
+          title={t("achievements.title")}
+          subTitle={t("achievements.subtitle")}
+          owned={stats.owned}
+          total={stats.total}
+        />
 
         <QuickActions navigation={navigation} />
 

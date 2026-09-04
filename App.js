@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { initializeAppDatabase } from "./src/database/DatabaseManager";
+import { initializeI18n } from "./src/i18n";
 
-import ToastProvider from "./src/context/ToastProvider";
 import SettingsProvider from "./src/context/SettingsProvider";
+import LanguageProvider from "./src/context/LanguageProvider";
 import AlbumProvider from "./src/context/AlbumProvider";
 import ThemeProvider from "./src/context/ThemeProvider";
+import ToastProvider from "./src/context/ToastProvider";
 
 import AppSystemBars from "./src/components/common/AppSystemBars";
 import AppNavigator from "./src/navigation/AppNavigator";
@@ -20,9 +22,14 @@ export default function App() {
 
   useEffect(() => {
     async function init() {
-      await initializeAppDatabase();
+      try {
+        await initializeAppDatabase();
+        await initializeI18n();
 
-      setReady(true);
+        setReady(true);
+      } catch (error) {
+        console.error("Failed to initialize app:", error);
+      }
     }
 
     init();
@@ -35,14 +42,16 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SettingsProvider>
-        <AlbumProvider>
-          <ThemeProvider>
-            <ToastProvider>
-              <AppSystemBars />
-              <AppNavigator />
-            </ToastProvider>
-          </ThemeProvider>
-        </AlbumProvider>
+        <LanguageProvider>
+          <AlbumProvider>
+            <ThemeProvider>
+              <ToastProvider>
+                <AppSystemBars />
+                <AppNavigator />
+              </ToastProvider>
+            </ThemeProvider>
+          </AlbumProvider>
+        </LanguageProvider>
       </SettingsProvider>
     </SafeAreaProvider>
   );

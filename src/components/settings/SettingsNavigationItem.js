@@ -2,7 +2,5 @@
 import SettingsActionItem from "./SettingsActionItem";
 
 export default function SettingsNavigationItem(props) {
-    return (
-        <SettingsActionItem {...props} />
-    );
+  return <SettingsActionItem {...props} />;
 }

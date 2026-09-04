@@ -1,5 +1,4 @@
-// ⭐️ Refactored
-
+import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View } from "react-native";
 
 import useTheme from "../../../hooks/useTheme";
@@ -10,18 +9,22 @@ import Spacing from "../../../theme/spacing";
 import Typography from "../../../theme/typography";
 
 export default function DuplicatesBarChart({ data = [] }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const max = Math.max(...data.map((item) => item.value), 1);
 
   return (
     <StatisticsChartCard
-      title="Duplicates"
-      subtitle="Duplicate stickers by category"
+      title={t("statistics.duplicates")}
+      subtitle={t("statistics.duplicatesByCategory")}
     >
       <View style={styles.container}>
         {data.map((item) => {
           const percentage = (item.value / max) * 100;
+
+          const label =
+            item.label === "None" ? t("statistics.none") : item.label;
 
           return (
             <View key={item.label} style={styles.item}>
@@ -35,7 +38,7 @@ export default function DuplicatesBarChart({ data = [] }) {
                   ]}
                   numberOfLines={1}
                 >
-                  {item.label}
+                  {label}
                 </Text>
 
                 <Text

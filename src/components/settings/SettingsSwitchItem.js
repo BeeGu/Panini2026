@@ -7,57 +7,48 @@ import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function SettingsSwitchItem({
-    icon,
-    title,
-    subtitle,
-    value,
-    onValueChange,
+  icon,
+  title,
+  subtitle,
+  value,
+  onValueChange,
 }) {
-    const { colors } = useTheme();
+  const { colors } = useTheme();
 
-    return (
-        <View style={styles.container}>
-            <View style={styles.left}>
+  return (
+    <View style={styles.container}>
+      <View style={styles.left}>
+        <Ionicons name={icon} size={22} color={colors.primary} />
 
-                <Ionicons
-                    name={icon}
-                    size={22}
-                    color={colors.primary}
-                />
+        <View style={styles.texts}>
+          <Text
+            style={[
+              styles.title,
+              {
+                color: colors.text,
+              },
+            ]}
+          >
+            {title}
+          </Text>
 
-                <View style={styles.texts}>
-                    <Text
-                      style={[
-                          styles.title,
-                          {
-                              color: colors.text,
-                          }
-                      ]}
-                    >
-                        {title}
-                    </Text>
+          {subtitle && (
+            <Text
+              style={[
+                styles.subtitle,
+                {
+                  color: colors.textSecondary,
+                },
+              ]}
+            >
+              {subtitle}
+            </Text>
+          )}
+        </View>
+      </View>
 
-                    {subtitle && (
-                        <Text
-                          style={[
-                              styles.subtitle,
-                              {
-                                  color: colors.textSecondary,
-                              }
-                          ]}
-                        >
-                            {subtitle}
-                        </Text>
-                    )}
-
-                </View>
-            </View>
-
-          <Switch
-                value={value}
-                onValueChange={onValueChange}
-            />
-          {/*<SwitchField
+      <Switch value={value} onValueChange={onValueChange} />
+      {/*<SwitchField
                 label="Developer Mode"
                 description="Enable developer tools"
                 // value={developerMode}
@@ -65,38 +56,35 @@ export default function SettingsSwitchItem({
                 value={value}
                 onValueChange={onValueChange}
             />*/}
-
-        </View>
-    );
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: Spacing.md,
+  },
 
-    container: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-        paddingVertical: Spacing.md,
-    },
+  left: {
+    flexDirection: "row",
+    alignItems: "center",
+    flex: 1,
+  },
 
-    left: {
-        flexDirection: "row",
-        alignItems: "center",
-        flex: 1,
-    },
+  texts: {
+    marginLeft: 12,
+    flex: 1,
+  },
 
-    texts: {
-        marginLeft: 12,
-        flex: 1,
-    },
+  title: {
+    fontSize: 16,
+    fontWeight: "600",
+  },
 
-    title: {
-        fontSize: 16,
-        fontWeight: "600",
-    },
-
-    subtitle: {
-        marginTop: 2,
-    },
-
+  subtitle: {
+    marginTop: 2,
+  },
 });

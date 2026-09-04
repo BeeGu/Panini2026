@@ -1,20 +1,4 @@
-// ⭐️ Refactored
-// AlbumScreen
-//  ├── ScreenHeader
-//  ├── AlbumSearch
-//  ├── AlbumFilters
-//  └── SectionList
-//       └── SectionAccordion
-//            └── TeamAccordion
-//                 ├── TeamHeader
-//                 │    └── AlbumStats
-//                 └── StickerList
-//                      └── StickerItem
-//                           ├── StickerStatus
-//                           └── StickerInfo
-//                                ├── Flag
-//                                └── Badge
-// ⭐️ Refactored
+import { useTranslation } from "react-i18next";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, View } from "react-native";
 
@@ -28,6 +12,7 @@ import AlbumFilters from "../components/album/AlbumFilters";
 import SectionList from "../components/album/SectionList";
 
 export default function AlbumScreen() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const {
@@ -37,6 +22,7 @@ export default function AlbumScreen() {
     setFilter,
     stats,
     groupedAlbum,
+    extraStickers,
     toggleSticker,
   } = useAlbum();
 
@@ -51,7 +37,7 @@ export default function AlbumScreen() {
       ]}
     >
       <ScreenHeader
-        title="Album"
+        title={t("album.title")}
         icon="book-outline"
         owned={stats.owned}
         total={stats.total}
@@ -63,7 +49,11 @@ export default function AlbumScreen() {
         <AlbumFilters filter={filter} setFilter={setFilter} stats={stats} />
       </View>
 
-      <SectionList sections={groupedAlbum} onToggle={toggleSticker} />
+      <SectionList
+        sections={groupedAlbum}
+        extraStickers={extraStickers}
+        onToggle={toggleSticker}
+      />
     </SafeAreaView>
   );
 }

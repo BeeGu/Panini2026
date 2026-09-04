@@ -1,5 +1,3 @@
-// ⭐️ Refactored
-
 const AchievementService = {
   createAchievement(data) {
     const completion =
@@ -14,11 +12,11 @@ const AchievementService = {
 
   getAchievements({ stats, teams, sections }) {
     const completedTeams = teams.filter(
-      (team) => team.completion === 100,
+      (team) => team.total > 0 && team.owned >= team.total,
     ).length;
 
     const completedSections = sections.filter(
-      (section) => section.completion === 100,
+      (section) => section.total > 0 && section.owned >= section.total,
     ).length;
 
     return [

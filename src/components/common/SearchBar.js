@@ -9,7 +9,7 @@ import Typography from "../../theme/typography";
 export default function SearchBar({
   value,
   onChangeText,
-  placeholder = "Caută...",
+  placeholder = "Search...",
 }) {
   const { colors } = useTheme();
 

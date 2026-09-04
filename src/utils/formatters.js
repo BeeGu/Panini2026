@@ -1,5 +1,3 @@
-export function formatStickerNumber(number){
-
-    return "#" + number;
-
+export function formatStickerNumber(number) {
+  return "#" + number;
 }

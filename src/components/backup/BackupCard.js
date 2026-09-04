@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -13,6 +14,7 @@ import Typography from "../../theme/typography";
 import Button from "../common/Button";
 
 export default function BackupCard({ backup, onRestore, onShare, onDelete }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const { createdAt, stats, size } = backup;
@@ -39,7 +41,7 @@ export default function BackupCard({ backup, onRestore, onShare, onDelete }) {
               },
             ]}
           >
-            Backup
+            {t("backup.title")}
           </Text>
 
           <Text
@@ -47,7 +49,7 @@ export default function BackupCard({ backup, onRestore, onShare, onDelete }) {
               color: colors.textSecondary,
             }}
           >
-            {formatRelativeDate(createdAt)}
+            {formatRelativeDate(createdAt, t)}
           </Text>
         </View>
       </View>
@@ -76,7 +78,9 @@ export default function BackupCard({ backup, onRestore, onShare, onDelete }) {
             <Ionicons name="gift-outline" size={18} color={colors.warning} />
 
             <Text style={{ color: colors.text }}>
-              {stats.duplicates} duplicates
+              {t("backup.duplicatesCount", {
+                count: stats.duplicates,
+              })}
             </Text>
           </View>
 

@@ -45,7 +45,6 @@ export default function BackupScreen() {
         backgroundColor: colors.background,
       }}
     >
-
       <BackupStats backups={backups} />
 
       <BackupToolbar

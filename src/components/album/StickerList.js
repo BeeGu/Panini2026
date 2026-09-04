@@ -1,10 +1,11 @@
-// ⭐️ Refactored
+import { useTranslation } from "react-i18next";
 import { FlatList } from "react-native";
 
 import StickerItem from "../stickers/StickerItem";
 import EmptyState from "../common/EmptyState";
 
 export default function StickerList({ stickers, onToggle, onLongPress }) {
+  const { t } = useTranslation();
   return (
     <FlatList
       data={stickers}
@@ -20,7 +21,7 @@ export default function StickerList({ stickers, onToggle, onLongPress }) {
         paddingBottom: 24,
         flexGrow: stickers.length === 0 ? 1 : undefined,
       }}
-      ListEmptyComponent={<EmptyState text="Nu s-au găsit stickere." />}
+      ListEmptyComponent={<EmptyState text={t("album.stickerList.empty")} />}
     />
   );
 }

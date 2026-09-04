@@ -1,6 +1,8 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+import { useTranslation } from "react-i18next";
+
 import useTheme from "../hooks/useTheme";
 
 import BottomTabs from "./BottomTabs";
@@ -9,10 +11,12 @@ import StickerDetailsScreen from "../screens/StickerDetailsScreen";
 import StatisticsScreen from "../screens/StatisticsScreen";
 import EditStickerScreen from "../screens/EditStickerScreen";
 import BackupScreen from "../screens/BackupScreen";
+import DatabaseInspectorScreen from "../screens/DatabaseInspectorScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   return (
@@ -46,7 +50,7 @@ export default function AppNavigator() {
           name="Search"
           component={SearchScreen}
           options={{
-            title: "Search",
+            title: t("navigation.search"),
           }}
         />
 
@@ -54,23 +58,15 @@ export default function AppNavigator() {
           name="StickerDetails"
           component={StickerDetailsScreen}
           options={{
-            title: "Sticker",
+            title: t("navigation.sticker"),
           }}
         />
-
-        {/* <Stack.Screen
-            name="Statistics"
-            component={StatisticsScreen}
-            options={{
-                title: "Statistics",
-            }}
-        /> */}
 
         <Stack.Screen
           name="EditSticker"
           component={EditStickerScreen}
           options={{
-            title: "Edit Sticker",
+            title: t("navigation.editSticker"),
           }}
         />
 
@@ -78,7 +74,16 @@ export default function AppNavigator() {
           name="Backup"
           component={BackupScreen}
           options={{
-            title: "Backups",
+            title: t("navigation.backups"),
+            // headerShown: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="DatabaseInspector"
+          component={DatabaseInspectorScreen}
+          options={{
+            title: t("navigation.databaseInspector"),
             // headerShown: false,
           }}
         />

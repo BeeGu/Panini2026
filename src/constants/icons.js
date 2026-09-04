@@ -1,9 +1,5 @@
-export default{
-
-    owned:"checkmark-circle",
-
-    missing:"ellipse-outline",
-
-    duplicate:"copy",
-
-}
+export default {
+  owned: "checkmark-circle",
+  missing: "ellipse-outline",
+  duplicate: "copy",
+};

@@ -5,5 +5,5 @@ import { useContext } from "react";
 import AlbumContext from "../context/AlbumContext";
 
 export default function useAlbum() {
-    return useContext(AlbumContext);
+  return useContext(AlbumContext);
 }

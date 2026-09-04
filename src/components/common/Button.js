@@ -1,4 +1,4 @@
-// ⭐️ Refactored
+// src/components/common/Button.js
 import { Pressable, Text, StyleSheet, ActivityIndicator } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";

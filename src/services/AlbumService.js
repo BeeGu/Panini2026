@@ -4,258 +4,122 @@ import TeamRepository from "../database/repositories/TeamRepository";
 import SectionRepository from "../database/repositories/SectionRepository";
 import AlbumRepository from "../database/repositories/AlbumRepository";
 
-const AlbumService1 = {
+const AlbumService = {
+  // Album
+  load() {
+    return StickerRepository.findAll();
+  },
 
-    load() {
-        return StickerRepository.findAll();
-    },
+  getStatistics() {
+    return AlbumRepository.getStatistics();
+  },
 
-    toggleSticker(id) {
-
-        const sticker = StickerRepository.findById(id);
-
-        StickerRepository.updateOwned(
-            id,
-            !sticker.owned
-        );
-
-    },
-
-    getSticker(id) {
-      return StickerRepository.findById(id);
-    },
-
-    getRecentActivity() {
-        return AlbumRepository.findRecent();
-    },
-
-    getTeamProgress() {
-        return AlbumRepository.getTeamProgress();
-    },
-/*
-// ⚠️ folosim: src/utils/filterStickers.js
-    filter(stickers, search, filter) {
-
-        let result = [...stickers];
-
-        switch (filter) {
-
-            case "missing":
-                result = result.filter(s => !s.owned);
-                break;
-
-            case "owned":
-                result = result.filter(s => s.owned);
-                break;
-
-            case "duplicates":
-                result = result.filter(s => s.duplicates > 0);
-                break;
-
-        }
-
-        if (search.trim()) {
-
-            if (/^\d+$/.test(search)) {
-
-                result = result.filter(
-                    s => s.number === Number(search)
-                );
-
-            } else {
-
-                const term = search.toLowerCase();
-
-                result = result.filter(s =>
-
-                    s.name?.toLowerCase().includes(term)
-
-                    ||
-
-                    s.team?.toLowerCase().includes(term)
-
-                );
-
-            }
-
-        }
-
-        return result;
-
-    },
-*/
+  getRecentActivity() {
+    return AlbumRepository.findRecent();
+  },
 
   getTeamProgress() {
+    const teams = TeamRepository.findAll();
 
-        const teams = TeamRepository.findAll();
+    return teams.map((team) => {
+      const stickers = StickerRepository.findByTeam(team.id).filter(
+        (sticker) => sticker.section_code !== "EXTRA",
+      );
 
-        return teams.map(team => {
+      const total = stickers.length;
+      const owned = stickers.filter((s) => s.owned).length;
 
-            const stickers = StickerRepository.findByTeam(team.id);
+      const duplicates = stickers.reduce(
+        (sum, sticker) => sum + sticker.duplicates,
+        0,
+      );
 
-            const total = stickers.length;
-            const owned = stickers.filter(s => s.owned).length;
+      return {
+        id: team.id,
+        name: team.name,
+        code: team.code,
+        iso2: team.iso2,
 
-            return {
-                id: team.id,
-                name: team.name,
-                code: team.code,
-                total,
-                owned,
-                percent: total === 0
-                    ? 0
-                    : Math.round((owned / total) * 100),
-            };
+        total,
+        owned,
+        duplicates: duplicates,
 
-        });
+        percent: total === 0 ? 0 : Math.round((owned / total) * 100),
+      };
+    });
+  },
 
-    },
-};
+  getSectionProgress() {
+    const sections = SectionRepository.findAll().filter(
+      (section) => section.code !== "EXTRA",
+    );
 
-const AlbumService = {
+    return sections.map((section) => {
+      const stickers = StickerRepository.findBySection(section.id);
 
-    // Album
-    load() {
-        return StickerRepository.findAll();
-    },
+      const total = stickers.length;
 
-    getStatistics() {
-        return AlbumRepository.getStatistics();
-    },
+      const owned = stickers.filter((s) => s.owned).length;
 
-    getRecentActivity() {
-        // return AlbumRepository.getRecentActivity();
-        return AlbumRepository.findRecent();
-    },
+      const duplicates = stickers.reduce((sum, s) => sum + s.duplicates, 0);
 
-  // ⚠️ todo
-    // getTeamProgress() {
-    //     return AlbumRepository.getTeamProgress();
-    // },
+      return {
+        id: section.id,
+        code: section.code,
+        name: section.name,
 
-    getTeamProgress() {
-        const teams = TeamRepository.findAll();
+        owned,
+        total,
+        duplicates,
 
-        return teams.map(team => {
-          const stickers = StickerRepository.findByTeam(team.id);
-          const total = stickers.length;
-          const owned = stickers.filter(s => s.owned).length;
+        missing: total - owned,
 
-          const duplicates = stickers.reduce(
-              (sum, sticker) => sum + sticker.duplicates,
-              0
-          );
+        percent: total === 0 ? 0 : Math.round((owned / total) * 100),
+      };
+    });
+  },
 
-          return {
-              id: team.id,
-              name: team.name,
-              code: team.code,
-              iso2: team.iso2,
-          
-              total,
-              owned,
-              duplicates: duplicates,
-          
-              percent:
-                  total === 0
-                      ? 0
-                      : Math.round((owned / total) * 100),
-          };
+  // Sticker
+  updateSticker(data) {
+    StickerRepository.update(data);
+  },
 
-        });
+  toggleSticker(id) {
+    const sticker = StickerRepository.findById(id);
 
-    },
+    StickerRepository.updateOwned(id, sticker.owned ? 0 : 1);
+  },
 
-    getSectionProgress() {
-    
-        const sections = SectionRepository.findAll();
-    
-        return sections.map(section => {
-    
-            const stickers =
-                StickerRepository.findBySection(section.id);
-    
-            const total = stickers.length;
-    
-            const owned = stickers.filter(
-                s => s.owned
-            ).length;
-    
-            const duplicates = stickers.reduce(
-                (sum, s) => sum + s.duplicates,
-                0
-            );
-    
-            return {
-    
-                id: section.id,
-                code: section.code,
-                name: section.name,
-    
-                owned,
-                total,
-                duplicates,
-    
-                missing: total - owned,
-    
-                percent:
-                    total === 0
-                        ? 0
-                        : Math.round(
-                            owned / total * 100
-                        ),
-    
-            };
-    
-        });
-    
-    },
-  
-    // Sticker
-    updateSticker(data) {
-        StickerRepository.update(data);
-    },
+  updateDuplicates(id, duplicates) {
+    StickerRepository.setDuplicates(id, duplicates);
+  },
 
-    toggleSticker(id) {
-        const sticker = StickerRepository.findById(id);
+  addDuplicate(id) {
+    StickerRepository.incrementDuplicates(id);
+  },
 
-        StickerRepository.updateOwned(
-            id,
-            sticker.owned ? 0 : 1
-        );
+  removeDuplicate(id) {
+    StickerRepository.decrementDuplicates(id);
+  },
 
-    },
+  updateNotes(id, notes) {
+    StickerRepository.updateNotes(id, notes);
+  },
 
-    updateDuplicates(id, duplicates) {
-        StickerRepository.setDuplicates(id, duplicates);
-    },
+  // Reset
+  resetCollection() {
+    StickerRepository.resetCollection();
+  },
 
-    addDuplicate(id) {
-        StickerRepository.incrementDuplicates(id);
-    },
+  // Teams
+  getTeams() {
+    return TeamRepository.findAll();
+  },
 
-    removeDuplicate(id) {
-        StickerRepository.decrementDuplicates(id);
-    },
-  
-    updateNotes(id, notes) {
-        StickerRepository.updateNotes(id, notes);
-    },
-
-    // Reset
-    resetCollection() {
-        StickerRepository.resetCollection();
-    },
-
-    // Teams
-    getTeams() {
-        return TeamRepository.findAll();
-    },
-
-    // Sections
-    getSections() {
-        return SectionRepository.findAll();
-    }
+  // Sections
+  getSections() {
+    return SectionRepository.findAll();
+  },
 };
 
 export default AlbumService;

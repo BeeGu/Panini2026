@@ -1,6 +1,4 @@
-// ⭐️ Refactored
 import { View, Text, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 
 import Flag from "../common/Flag";
 import AlbumStats from "./AlbumStats";
@@ -9,7 +7,7 @@ import useTheme from "../../hooks/useTheme";
 import Typography from "../../theme/typography";
 import Spacing from "../../theme/spacing";
 
-export default function TeamHeader({ team, expanded }) {
+export default function TeamHeader({ team }) {
   const { colors } = useTheme();
 
   return (
@@ -25,16 +23,11 @@ export default function TeamHeader({ team, expanded }) {
                 color: colors.text,
               },
             ]}
+            numberOfLines={1}
           >
             {team.name}
           </Text>
         </View>
-
-        <Ionicons
-          name={expanded ? "chevron-up" : "chevron-down"}
-          size={22}
-          color={colors.textSecondary}
-        />
       </View>
 
       <AlbumStats
@@ -48,12 +41,11 @@ export default function TeamHeader({ team, expanded }) {
 
 const styles = StyleSheet.create({
   container: {
-    padding: Spacing.md,
+    width: "100%",
   },
 
   topRow: {
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
   },
 

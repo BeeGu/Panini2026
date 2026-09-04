@@ -1,6 +1,7 @@
 import { useLayoutEffect } from "react";
-import { ScrollView, StyleSheet, View, } from "react-native";
-import { SafeAreaView, } from "react-native-safe-area-context";
+import { useTranslation } from "react-i18next";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import useTheme from "../hooks/useTheme";
 import useAlbum from "../hooks/useAlbum";
@@ -16,136 +17,98 @@ import Button from "../components/common/Button";
 import Typography from "../theme/typography";
 import Spacing from "../theme/spacing";
 
+export default function StickerDetailsScreen({ navigation, route }) {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
+  const { getSticker } = useAlbum();
+  const { enabled } = useDeveloperMode();
 
-export default function StickerDetailsScreen({
-    navigation,
-    route,
-}) {
+  const sticker = getSticker(route.params.stickerId);
 
-    const { colors } = useTheme();
-    const { getSticker } = useAlbum();
-    const { enabled } = useDeveloperMode();
+  useLayoutEffect(() => {
+    if (!sticker) return;
 
-    const sticker = getSticker(
-        route.params.stickerId
-    );
+    navigation.setOptions({
+      title: sticker.name,
+    });
+  }, [navigation, sticker]);
 
-    useLayoutEffect(() => {
+  if (!sticker) {
+    return null;
+  }
 
-        if (!sticker)
-            return;
+  function handleEdit() {
+    navigation.navigate("EditSticker", {
+      stickerId: sticker.id,
+    });
+  }
 
-        navigation.setOptions({
-            title: sticker.name,
-        });
+  function handleCancel() {
+    navigation.goBack();
+  }
 
-    }, [navigation, sticker]);
+  return (
+    <SafeAreaView
+      edges={["bottom"]}
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.background,
+        },
+      ]}
+    >
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <StickerHero sticker={sticker} />
 
-    if (!sticker) {
-        return null;
-    }
+        <StickerCollectionCard sticker={sticker} />
 
-    function handleEdit() {
+        <StickerInfoCard sticker={sticker} />
 
-        navigation.navigate(
-            "EditSticker",
-            {
-                stickerId: sticker.id,
-            }
-        );
+        <StickerNotesCard sticker={sticker} />
 
-    }
+        {enabled && (
+          <View style={styles.developerActions}>
+            <View style={styles.actionButton}>
+              <Button
+                title={t("common.edit")}
+                icon="create-outline"
+                variant="primary"
+                onPress={handleEdit}
+              />
+            </View>
 
-    function handleCancel() {
-        navigation.goBack();
-    }
-
-    return (
-
-        <SafeAreaView
-            edges={["bottom"]}
-            style={[
-                styles.container,
-                {
-                    backgroundColor: colors.background,
-                },
-            ]}
-        >
-
-            <ScrollView
-                contentContainerStyle={
-                    styles.scrollContent
-                }
-            >
-
-                <StickerHero
-                    sticker={sticker}
-                />
-
-                <StickerCollectionCard
-                    sticker={sticker}
-                />
-
-                <StickerInfoCard
-                    sticker={sticker}
-                />
-
-                <StickerNotesCard
-                    sticker={sticker}
-                />
-
-                {enabled && (
-
-                    <View style={styles.developerActions}>
-
-                        <View style={styles.actionButton}>
-                            <Button
-                                title="Edit Sticker"
-                                icon="create-outline"
-                                variant="primary"
-                                onPress={handleEdit}
-                            />
-                        </View>
-
-                        <View style={styles.actionButton}>
-                            <Button
-                                title="Cancel"
-                                icon="close-outline"
-                                variant="secondary"
-                                onPress={handleCancel}
-                            />
-                        </View>
-
-                    </View>
-
-                )}
-
-            </ScrollView>
-
-        </SafeAreaView>
-
-    );
+            <View style={styles.actionButton}>
+              <Button
+                title={t("common.cancel")}
+                icon="close-outline"
+                variant="secondary"
+                onPress={handleCancel}
+              />
+            </View>
+          </View>
+        )}
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
 
-    container: {
-        flex: 1,
-    },
+  scrollContent: {
+    paddingBottom: 24,
+  },
 
-    scrollContent: {
-        paddingBottom: 24,
-    },
+  developerActions: {
+    flexDirection: "row",
+    gap: 10,
+    marginHorizontal: 16,
+    marginTop: 8,
+  },
 
-    developerActions: {
-        flexDirection: "row",
-        gap: 10,
-        marginHorizontal: 16,
-        marginTop: 8,
-    },
-    
-    actionButton: {
-        flex: 1,
-    },
-  
+  actionButton: {
+    flex: 1,
+  },
 });

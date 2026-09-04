@@ -5,74 +5,61 @@ import useTheme from "../../hooks/useTheme";
 import Typography from "../../theme/typography";
 import Spacing from "../../theme/spacing";
 
-export default function StatisticsHeader({
-    title,
-    subtitle,
-}) {
+export default function StatisticsHeader({ title, subtitle }) {
+  const { colors } = useTheme();
 
-    const { colors } = useTheme();
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.surface,
+          borderBottomColor: colors.border,
+        },
+      ]}
+    >
+      <Text
+        style={[
+          styles.title,
+          {
+            color: colors.primary,
+          },
+        ]}
+      >
+        {title}
+      </Text>
 
-    return (
-
-        <View
+      {!!subtitle && (
+        <Text
           style={[
-              styles.container,
-              {
-                  backgroundColor: colors.surface,
-                  borderBottomColor: colors.border,
-              },
+            styles.subtitle,
+            {
+              color: colors.textSecondary,
+            },
           ]}
         >
-
-            <Text
-                style={[
-                    styles.title,
-                    {
-                        color: colors.primary,
-                    },
-                ]}
-            >
-                {title}
-            </Text>
-
-            {!!subtitle && (
-
-                <Text
-                    style={[
-                        styles.subtitle,
-                        {
-                            color: colors.textSecondary,
-                        },
-                    ]}
-                >
-                    {subtitle}
-                </Text>
-
-            )}
-
-        </View>
-
-    );
-
+          {subtitle}
+        </Text>
+      )}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: Spacing.lg,
+    paddingTop: Spacing.lg,
+    // paddingBottom: Spacing.md,
+    borderBottomWidth: 1,
+  },
 
-    container: {
-        paddingHorizontal: Spacing.lg,
-        paddingTop: Spacing.lg,
-        // paddingBottom: Spacing.md,
-        borderBottomWidth: 1,
-    },
+  title: {
+    fontSize: Typography.h1,
+    fontWeight: "700",
+  },
 
-    title: {
-        fontSize: Typography.h1,
-        fontWeight: "700",
-    },
-
-    subtitle: {
-        marginTop: 4,
-        fontSize: Typography.body,
-    },
-
+  subtitle: {
+    marginTop: 4,
+    fontSize: Typography.body,
+  },
 });

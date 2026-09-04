@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 import { Pressable, Text, View, StyleSheet } from "react-native";
 
 import Card from "../common/Card";

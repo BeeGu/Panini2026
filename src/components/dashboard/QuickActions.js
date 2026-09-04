@@ -1,19 +1,22 @@
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
 
 import MenuCard from "../common/MenuCard";
 
 export default function QuickActions({ navigation }) {
+  const { t } = useTranslation();
+
   return (
     <View style={styles.container}>
       <View style={styles.row}>
         <MenuCard
-          title="Album"
+          title={t("home.album")}
           icon="book-outline"
           onPress={() => navigation.navigate("Album")}
         />
 
         <MenuCard
-          title="Search"
+          title={t("home.search")}
           icon="search-outline"
           onPress={() => navigation.navigate("Search")}
         />
@@ -21,13 +24,13 @@ export default function QuickActions({ navigation }) {
 
       <View style={styles.row}>
         <MenuCard
-          title="Statistics"
+          title={t("home.statistics")}
           icon="stats-chart-outline"
           onPress={() => navigation.navigate("Statistics")}
         />
 
         <MenuCard
-          title="Settings"
+          title={t("home.settings")}
           icon="settings-outline"
           onPress={() => navigation.navigate("Settings")}
         />

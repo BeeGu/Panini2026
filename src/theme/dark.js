@@ -32,6 +32,35 @@ export default {
   icon: "#9CA3AF",
   overlay: "rgba(0, 0, 0, 0.65)",
 
+  // Extra stickers
+  extraRegular: {
+    background: "#1E3A5F",
+    border: "#60A5FA",
+    text: "#93C5FD",
+    selected: "#2563EB",
+  },
+
+  extraBronze: {
+    background: "#4A3422",
+    border: "#CD7F32",
+    text: "#E6A15A",
+    selected: "#CD7F32",
+  },
+
+  extraSilver: {
+    background: "#374151",
+    border: "#9CA3AF",
+    text: "#D1D5DB",
+    selected: "#9CA3AF",
+  },
+
+  extraGold: {
+    background: "#4A401F",
+    border: "#D4AF37",
+    text: "#FDE68A",
+    selected: "#D4AF37",
+  },
+
   // System UI
   statusBar: "#111827",
   navigationBar: "#111827",

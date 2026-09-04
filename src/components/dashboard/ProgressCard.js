@@ -7,7 +7,7 @@ import ProgressBar from "../common/ProgressBar";
 
 import MathUtils from "../../utils/MathUtils";
 
-export default function ProgressCard({ owned = 0, total = 980 }) {
+export default function ProgressCard({ title, owned = 0, total = 980 }) {
   const { colors } = useTheme();
 
   const percent = MathUtils.percentage(owned, total, 0);
@@ -30,7 +30,7 @@ export default function ProgressCard({ owned = 0, total = 980 }) {
           },
         ]}
       >
-        Album Progress
+        {title}
       </Text>
 
       <ProgressBar value={owned} max={total} height={15} />

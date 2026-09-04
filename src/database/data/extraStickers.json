@@ -1,0 +1,102 @@
+[
+    {
+        "number": 1,
+        "team_code": "ARG",
+        "name": "Lionel Messi"
+    },
+    {
+        "number": 2,
+        "team_code": "BEL",
+        "name": "Jérémy Doku"
+    },
+    {
+        "number": 3,
+        "team_code": "BRA",
+        "name": "Vinícius Júnior"
+    },
+    {
+        "number": 4,
+        "team_code": "CAN",
+        "name": "Alphonso Davies"
+    },
+    {
+        "number": 5,
+        "team_code": "COL",
+        "name": "Luis Díaz"
+    },
+    {
+        "number": 6,
+        "team_code": "CRO",
+        "name": "Luka Modrić"
+    },
+    {
+        "number": 7,
+        "team_code": "ECU",
+        "name": "Moisés Caicedo"
+    },
+    {
+        "number": 8,
+        "team_code": "EGY",
+        "name": "Mohamed Salah"
+    },
+    {
+        "number": 9,
+        "team_code": "ENG",
+        "name": "Jude Bellingham"
+    },
+    {
+        "number": 10,
+        "team_code": "FRA",
+        "name": "Kylian Mbappé"
+    },
+    {
+        "number": 11,
+        "team_code": "GER",
+        "name": "Florian Wirtz"
+    },
+    {
+        "number": 12,
+        "team_code": "KOR",
+        "name": "Heungmin Son"
+    },
+    {
+        "number": 13,
+        "team_code": "MEX",
+        "name": "Raúl Jiménez"
+    },
+    {
+        "number": 14,
+        "team_code": "MAR",
+        "name": "Achraf Hakimi"
+    },
+    {
+        "number": 15,
+        "team_code": "NED",
+        "name": "Cody Gakpo"
+    },
+    {
+        "number": 16,
+        "team_code": "NOR",
+        "name": "Erling Haaland"
+    },
+    {
+        "number": 17,
+        "team_code": "POR",
+        "name": "Cristiano Ronaldo"
+    },
+    {
+        "number": 18,
+        "team_code": "ESP",
+        "name": "Lamine Yamal"
+    },
+    {
+        "number": 19,
+        "team_code": "URU",
+        "name": "Federico Valverde"
+    },
+    {
+        "number": 20,
+        "team_code": "USA",
+        "name": "Christian Pulisic"
+    }
+]

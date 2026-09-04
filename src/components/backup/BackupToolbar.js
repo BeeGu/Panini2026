@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
 
 import Button from "../common/Button";
@@ -10,11 +11,13 @@ export default function BackupToolbar({
   creating = false,
   importing = false,
 }) {
+  const { t } = useTranslation();
+
   return (
     <View style={styles.container}>
       <View style={styles.button}>
         <Button
-          title="Create"
+          title={t("backup.create")}
           icon="add-outline"
           onPress={onCreate}
           loading={creating}
@@ -23,7 +26,7 @@ export default function BackupToolbar({
 
       <View style={styles.button}>
         <Button
-          title="Import"
+          title={t("backup.import")}
           icon="cloud-upload-outline"
           variant="secondary"
           onPress={onImport}

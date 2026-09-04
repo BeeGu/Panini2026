@@ -1,23 +1,13 @@
 import FormField from "./FormField";
 
 export default function NumberField(props) {
+  function handleChange(text) {
+    const value = text.replace(/[^0-9]/g, "");
 
-    function handleChange(text) {
+    props.onChange?.(value);
+  }
 
-        const value = text.replace(/[^0-9]/g, "");
-
-        props.onChange?.(value);
-
-    }
-
-    return (
-
-        <FormField
-            {...props}
-            keyboardType="numeric"
-            onChange={handleChange}
-        />
-
-    );
-
+  return (
+    <FormField {...props} keyboardType="numeric" onChange={handleChange} />
+  );
 }

@@ -1,5 +1,4 @@
-// ⭐️ Refactored
-
+import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View } from "react-native";
 import { PieChart } from "react-native-gifted-charts";
 
@@ -11,6 +10,7 @@ import StatisticsService from "../../../services/StatisticsService";
 import StatisticsChartCard from "./StatisticsChartCard";
 
 export default function AlbumPieChart() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
   const { stats } = useAlbum();
 
@@ -18,8 +18,10 @@ export default function AlbumPieChart() {
 
   return (
     <StatisticsChartCard
-      title="Album Completion"
-      subtitle={`${stats.completion}% completed`}
+      title={t("statistics.albumCompletion")}
+      subtitle={t("statistics.completedPercentage", {
+        percentage: stats.completion,
+      })}
       legend={data}
     >
       <PieChart

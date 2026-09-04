@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { ScrollView, StyleSheet, View } from "react-native";
 
@@ -25,6 +26,7 @@ import StickerRepository from "../database/repositories/StickerRepository";
 import Spacing from "../theme/spacing";
 
 export default function EditStickerScreen({ route, navigation }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const { stickerId } = route.params;
@@ -60,7 +62,7 @@ export default function EditStickerScreen({ route, navigation }) {
    * Load sticker
    */
   useEffect(() => {
-    const s = StickerRepository.getById(stickerId);
+    const s = StickerRepository.getByIdForEdit(stickerId);
 
     if (!s) {
       navigation.goBack();
@@ -144,7 +146,7 @@ export default function EditStickerScreen({ route, navigation }) {
       >
         <Card>
           <FormField
-            label="Sticker Number"
+            label={t("sticker.number")}
             value={number}
             onChangeText={setNumber}
             keyboardType="numeric"
@@ -152,7 +154,7 @@ export default function EditStickerScreen({ route, navigation }) {
           />
 
           <FormField
-            label="Sticker Name"
+            label={t("sticker.name")}
             value={name}
             onChangeText={setName}
             editable={!saving}
@@ -172,29 +174,28 @@ export default function EditStickerScreen({ route, navigation }) {
           />
 
           <NumberField
-            label="Duplicates"
+            label={t("sticker.duplicates")}
             value={duplicates}
             onChange={setDuplicates}
             disabled={saving}
           />
 
           <TextAreaField
-            label="Notes"
+            label={t("sticker.notes")}
             value={notes}
             onChange={setNotes}
             editable={!saving}
           />
 
           <SwitchField
-            label="Owned"
+            label={t("sticker.owned")}
             value={owned}
             onChange={setOwned}
             disabled={saving}
           />
 
-          {/* TEST / DEBUG */}
           <DateField
-            label="Performed Date"
+            label={t("sticker.performedDate")}
             value={performedDate}
             onChange={setPerformedDate}
             disabled={saving}
@@ -205,7 +206,7 @@ export default function EditStickerScreen({ route, navigation }) {
         <View style={styles.actions}>
           <View style={styles.buttonWrapper}>
             <Button
-              title="Cancel"
+              title={t("common.cancel")}
               icon="close-outline"
               variant="secondary"
               onPress={handleCancel}
@@ -215,7 +216,7 @@ export default function EditStickerScreen({ route, navigation }) {
 
           <View style={styles.buttonWrapper}>
             <Button
-              title="Save"
+              title={t("common.save")}
               icon="checkmark-outline"
               variant="primary"
               onPress={handleSave}

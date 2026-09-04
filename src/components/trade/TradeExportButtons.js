@@ -1,4 +1,4 @@
-// ⭐️ Refactored
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
 
 import FilterChip from "../common/FilterChip";
@@ -17,19 +17,22 @@ export default function TradeExportButtons({
   onModeChange,
   onCopy,
   onShare,
+  onShareJson,
+  onImport,
 }) {
+  const { t } = useTranslation();
   const modes = [
     {
       key: TRADE_MODES.BOTH,
-      title: "Both",
+      title: t("trade.both"),
     },
     {
       key: TRADE_MODES.DUPLICATES,
-      title: "Duplicates",
+      title: t("trade.duplicates"),
     },
     {
       key: TRADE_MODES.MISSING,
-      title: "Missing",
+      title: t("trade.missing"),
     },
   ];
 
@@ -48,7 +51,7 @@ export default function TradeExportButtons({
 
       <View style={styles.actions}>
         <Button
-          title="Copy"
+          title={t("trade.copy")}
           icon="copy-outline"
           onPress={onCopy}
           variant="primary"
@@ -56,11 +59,29 @@ export default function TradeExportButtons({
         />
 
         <Button
-          title="Share"
+          title={t("trade.share")}
           icon="share-outline"
           onPress={onShare}
           variant="secondary"
           style={styles.actionButton}
+        />
+      </View>
+
+      <View style={styles.tradeActions}>
+        <Button
+          title={t("trade.shareJson")}
+          icon="document-text-outline"
+          onPress={onShareJson}
+          variant="primary"
+          style={styles.fullButton}
+        />
+
+        <Button
+          title={t("trade.importJson")}
+          icon="download-outline"
+          onPress={onImport}
+          variant="secondary"
+          style={styles.fullButton}
         />
       </View>
     </View>
@@ -82,9 +103,18 @@ const styles = StyleSheet.create({
   actions: {
     flexDirection: "row",
     gap: 12,
+    marginBottom: Spacing.md,
   },
 
   actionButton: {
     flex: 1,
+  },
+
+  tradeActions: {
+    gap: 12,
+  },
+
+  fullButton: {
+    width: "100%",
   },
 });

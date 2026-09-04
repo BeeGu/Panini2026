@@ -1,62 +1,48 @@
 import { FILTERS } from "../constants/filters";
 
 export default function filterStickers(
-    stickers,
-    search = "",
-    filter = FILTERS.ALL,
+  stickers,
+  search = "",
+  filter = FILTERS.ALL,
 ) {
+  let result = [...stickers];
 
-    let result = [...stickers];
+  switch (filter) {
+    case FILTERS.MISSING:
+      result = result.filter((sticker) => !sticker.owned);
+      break;
 
-    switch (filter) {
+    case FILTERS.OWNED:
+      result = result.filter((sticker) => sticker.owned);
+      break;
 
-        case FILTERS.MISSING:
-            result = result.filter(sticker => !sticker.owned);
-            break;
+    case FILTERS.DUPLICATES:
+      result = result.filter((sticker) => sticker.duplicates > 0);
+      break;
 
-        case FILTERS.OWNED:
-            result = result.filter(sticker => sticker.owned);
-            break;
+    default:
+      break;
+  }
 
-        case FILTERS.DUPLICATES:
-            result = result.filter(sticker => sticker.duplicates > 0);
-            break;
+  const term = search.trim().toLowerCase();
 
-        default:
-            break;
-    }
+  if (!term) {
+    return result;
+  }
 
-    const term = search.trim().toLowerCase();
-
-    if (!term) {
-        return result;
-    }
-
-    // Search by sticker number
-    if (/^\d+$/.test(term)) {
-
-        return result.filter(
-            sticker =>
-                sticker.number === Number(term)
-                ||
-                sticker.code?.toLowerCase() === term
-        );
-
-    }
-
-    // Search by name/team/code
-    return result.filter(sticker =>
-
-        sticker.name?.toLowerCase().includes(term)
-
-        ||
-
-        sticker.team?.toLowerCase().includes(term)
-
-        ||
-
-        sticker.code?.toLowerCase().includes(term)
-
+  // Search by sticker number
+  if (/^\d+$/.test(term)) {
+    return result.filter(
+      (sticker) =>
+        sticker.number === Number(term) || sticker.code?.toLowerCase() === term,
     );
+  }
 
+  // Search by name/team/code
+  return result.filter(
+    (sticker) =>
+      sticker.name?.toLowerCase().includes(term) ||
+      sticker.team?.toLowerCase().includes(term) ||
+      sticker.code?.toLowerCase().includes(term),
+  );
 }

@@ -6,6 +6,8 @@ import {
   View,
   ScrollView,
   LayoutAnimation,
+  Platform,
+  UIManager,
 } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -18,12 +20,16 @@ import Spacing from "../../theme/spacing";
 export default function ExpandableCard({
   title,
   titleLines = 1,
+
   subtitle,
   subtitleLines = 1,
 
   icon,
   iconSize = 22,
   iconColor,
+
+  // Custom header
+  headerContent,
 
   children,
   contentPadding = true,
@@ -36,6 +42,7 @@ export default function ExpandableCard({
 
   leftContent,
   rightContent,
+
   footer,
 
   emptyText = "No data",
@@ -59,12 +66,74 @@ export default function ExpandableCard({
     setExpanded((current) => {
       const next = !current;
 
-      if (next) onExpand?.();
-      else onCollapse?.();
+      if (next) {
+        onExpand?.();
+      } else {
+        onCollapse?.();
+      }
 
       return next;
     });
   }
+
+  const renderDefaultHeader = () => (
+    <View style={styles.headerContent}>
+      <View style={styles.left}>
+        {leftContent}
+
+        {icon && (
+          <Ionicons
+            name={icon}
+            size={iconSize}
+            color={iconColor ?? colors.primary}
+            style={styles.icon}
+          />
+        )}
+
+        <View style={styles.titleContainer}>
+          {!!title && (
+            <Text
+              style={[
+                styles.title,
+                {
+                  color: colors.text,
+                },
+              ]}
+              numberOfLines={titleLines}
+            >
+              {title}
+            </Text>
+          )}
+
+          {!!subtitle && (
+            <Text
+              style={[
+                styles.subtitle,
+                {
+                  color: colors.textSecondary,
+                },
+              ]}
+              numberOfLines={subtitleLines}
+            >
+              {subtitle}
+            </Text>
+          )}
+        </View>
+      </View>
+
+      <View style={styles.right}>
+        {rightContent}
+
+        {!disabled && (
+          <Ionicons
+            name={expanded ? "chevron-up" : "chevron-down"}
+            size={20}
+            color={colors.icon}
+          />
+        )}
+      </View>
+    </View>
+  );
 
   return (
     <View
@@ -84,50 +153,9 @@ export default function ExpandableCard({
           pressed && !disabled && styles.pressed,
         ]}
       >
-        <View style={styles.headerContent}>
-          <View style={styles.left}>
-            {leftContent}
-
-            {icon && (
-              <Ionicons
-                name={icon}
-                size={iconSize}
-                color={iconColor ?? colors.primary}
-                style={styles.icon}
-              />
-            )}
-
-            <View style={styles.titleContainer}>
-              <Text
-                style={[
-                  styles.title,
-                  {
-                    color: colors.text,
-                  },
-                ]}
-                numberOfLines={titleLines}
-              >
-                {title}
-              </Text>
-
-              {!!subtitle && (
-                <Text
-                  style={[
-                    styles.subtitle,
-                    {
-                      color: colors.textSecondary,
-                    },
-                  ]}
-                  numberOfLines={subtitleLines}
-                >
-                  {subtitle}
-                </Text>
-              )}
-            </View>
-          </View>
-
-          <View style={styles.right}>
-            {rightContent}
+        {headerContent ? (
+          <View style={styles.customHeaderContent}>
+            <View style={styles.customHeader}>{headerContent}</View>
 
             {!disabled && (
               <Ionicons
@@ -137,7 +165,9 @@ export default function ExpandableCard({
               />
             )}
           </View>
-        </View>
+        ) : (
+          renderDefaultHeader()
+        )}
       </Pressable>
 
       {expanded && (
@@ -179,8 +209,7 @@ export default function ExpandableCard({
                     </Text>
                   )}
             </ScrollView>
-          ) : // children
-          hasChildren ? (
+          ) : hasChildren ? (
             children
           ) : (
             !!emptyText && (
@@ -238,28 +267,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  titleContainer: {
+  customHeaderContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  customHeader: {
     flex: 1,
     marginRight: Spacing.md,
-  },
-
-  title: {
-    fontSize: Typography.body,
-    fontWeight: "700",
-  },
-
-  subtitle: {
-    marginTop: 3,
-    fontSize: Typography.caption,
-  },
-
-  content: {
-    borderTopWidth: 1,
-    // padding: Spacing.md,
-  },
-
-  pressed: {
-    opacity: 0.85,
   },
 
   left: {
@@ -275,8 +290,31 @@ const styles = StyleSheet.create({
     gap: 8,
   },
 
+  titleContainer: {
+    flex: 1,
+    marginRight: Spacing.md,
+  },
+
+  title: {
+    fontSize: Typography.body,
+    fontWeight: "700",
+  },
+
+  subtitle: {
+    marginTop: 3,
+    fontSize: Typography.caption,
+  },
+
   icon: {
     marginRight: 12,
+  },
+
+  content: {
+    borderTopWidth: 1,
+  },
+
+  pressed: {
+    opacity: 0.85,
   },
 
   footer: {

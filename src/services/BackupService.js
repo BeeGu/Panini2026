@@ -155,7 +155,6 @@ const BackupService = {
   async readBackup(uri) {
     return await readBackupUri(uri);
   },
-
 };
 
 export default BackupService;

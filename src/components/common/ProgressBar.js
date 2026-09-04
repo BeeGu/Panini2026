@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 import { View, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";

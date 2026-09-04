@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 import { StyleSheet, Text, View } from "react-native";
 
 import Flag from "../common/Flag";

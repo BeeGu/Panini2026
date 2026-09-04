@@ -1,4 +1,4 @@
-// ⭐️ Refactored
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";
@@ -6,6 +6,7 @@ import useTheme from "../../hooks/useTheme";
 import Badge from "../common/Badge";
 
 export default function AlbumStats({ owned, total, duplicates = 0 }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const missing = Math.max(0, total - owned);
@@ -15,13 +16,13 @@ export default function AlbumStats({ owned, total, duplicates = 0 }) {
       {missing === 0 ? (
         <Badge
           icon="checkmark-circle"
-          text="Completed"
+          text={t("common.completed")}
           color={colors.success}
         />
       ) : (
         <Badge
           icon="alert-circle"
-          text={`${missing} Missing`}
+          text={t("album.stats.missing", { count: missing })}
           color={colors.warning}
         />
       )}
@@ -29,7 +30,7 @@ export default function AlbumStats({ owned, total, duplicates = 0 }) {
       {duplicates > 0 && (
         <Badge
           icon="documents"
-          text={`${duplicates} Duplicates`}
+          text={t("album.stats.duplicates", { count: duplicates })}
           color={colors.primary}
         />
       )}

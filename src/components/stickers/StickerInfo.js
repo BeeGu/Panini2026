@@ -1,3 +1,5 @@
+// src/components/stickers/StickerInfo.js
+
 import { View, Text, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";
@@ -6,7 +8,11 @@ import { formatStickerNumber } from "../../utils/formatters";
 import Flag from "../common/Flag";
 import Badge from "../common/Badge";
 
-export default function StickerInfo({ sticker }) {
+export default function StickerInfo({
+  sticker,
+  showDuplicates = true,
+  showCode = true,
+}) {
   const { colors } = useTheme();
 
   return (
@@ -27,12 +33,11 @@ export default function StickerInfo({ sticker }) {
           </Text>
         </View>
 
-        {sticker.duplicates > 0 && (
+        {showDuplicates && sticker.duplicates > 0 && (
           <Badge
-            icon={"documents"}
+            icon="documents"
             text={`+${sticker.duplicates}`}
             color={colors.primary}
-            // backgroundColor={colors.primary}
           />
         )}
       </View>
@@ -47,6 +52,19 @@ export default function StickerInfo({ sticker }) {
       >
         {formatStickerNumber(sticker.number)} {sticker.name}
       </Text>
+
+      {showCode && sticker.code && (
+        <Text
+          style={[
+            styles.code,
+            {
+              color: colors.textSecondary,
+            },
+          ]}
+        >
+          {sticker.code}
+        </Text>
+      )}
     </View>
   );
 }
@@ -77,5 +95,11 @@ const styles = StyleSheet.create({
     marginTop: 6,
     fontSize: 18,
     fontWeight: "700",
+  },
+
+  code: {
+    marginTop: 4,
+    fontSize: 12,
+    fontWeight: "500",
   },
 });

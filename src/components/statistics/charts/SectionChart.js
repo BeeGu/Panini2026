@@ -1,4 +1,4 @@
-
+import { useTranslation } from "react-i18next";
 import { BarChart } from "react-native-gifted-charts";
 
 import useTheme from "../../../hooks/useTheme";
@@ -7,13 +7,17 @@ import useAlbum from "../../../hooks/useAlbum";
 import StatisticsChartCard from "./StatisticsChartCard";
 
 export default function SectionChart() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
   const { chartData } = useAlbum();
 
   const data = chartData?.sections ?? [];
 
   return (
-    <StatisticsChartCard title="Sections" subtitle="Completion by section">
+    <StatisticsChartCard
+      title={t("statistics.sections")}
+      subtitle={t("statistics.completionBySection")}
+    >
       <BarChart
         data={data}
         horizontal

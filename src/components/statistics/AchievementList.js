@@ -1,5 +1,3 @@
-// ⭐️ Refactored
-
 import AchievementCard from "./AchievementCard";
 
 export default function AchievementList({ achievements }) {

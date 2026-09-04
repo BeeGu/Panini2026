@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet } from "react-native";
 
 import FilterChip from "../common/FilterChip";
@@ -8,24 +9,25 @@ import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function AlbumFilters({ filter, setFilter, stats }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const filters = [
     {
       key: FILTERS.ALL,
-      title: `All (${stats.total})`,
+      title: `${t("album.filters.all")} (${stats.total})`,
     },
     {
       key: FILTERS.MISSING,
-      title: `Missing (${stats.missing})`,
+      title: `${t("album.filters.missing")} (${stats.missing})`,
     },
     {
       key: FILTERS.OWNED,
-      title: `Owned (${stats.owned})`,
+      title: `${t("album.filters.owned")} (${stats.owned})`,
     },
     {
       key: FILTERS.DUPLICATES,
-      title: `Duplicates (${stats.duplicates})`,
+      title: `${t("album.filters.duplicates")} (${stats.duplicates})`,
     },
   ];
 

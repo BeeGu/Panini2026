@@ -4,85 +4,65 @@ const GB = MB * 1024;
 const TB = GB * 1024;
 
 const FileUtils = {
+  formatSize(bytes = 0, decimals = 1) {
+    if (!bytes) {
+      return "0 B";
+    }
 
-    formatSize(bytes = 0, decimals = 1) {
+    if (bytes < KB) {
+      return `${bytes} B`;
+    }
 
-        if (!bytes) {
-            return "0 B";
-        }
+    if (bytes < MB) {
+      return `${(bytes / KB).toFixed(decimals)} KB`;
+    }
 
-        if (bytes < KB) {
-            return `${bytes} B`;
-        }
+    if (bytes < GB) {
+      return `${(bytes / MB).toFixed(decimals)} MB`;
+    }
 
-        if (bytes < MB) {
-            return `${(bytes / KB).toFixed(decimals)} KB`;
-        }
+    if (bytes < TB) {
+      return `${(bytes / GB).toFixed(decimals)} GB`;
+    }
 
-        if (bytes < GB) {
-            return `${(bytes / MB).toFixed(decimals)} MB`;
-        }
+    return `${(bytes / TB).toFixed(decimals)} TB`;
+  },
 
-        if (bytes < TB) {
-            return `${(bytes / GB).toFixed(decimals)} GB`;
-        }
+  extension(filename = "") {
+    const index = filename.lastIndexOf(".");
 
-        return `${(bytes / TB).toFixed(decimals)} TB`;
+    if (index === -1) {
+      return "";
+    }
 
-    },
+    return filename.substring(index + 1).toLowerCase();
+  },
 
-    extension(filename = "") {
+  filename(path = "") {
+    return path.split("/").pop() ?? "";
+  },
 
-        const index = filename.lastIndexOf(".");
+  filenameWithoutExtension(path = "") {
+    const file = this.filename(path);
 
-        if (index === -1) {
-            return "";
-        }
+    const index = file.lastIndexOf(".");
 
-        return filename.substring(index + 1).toLowerCase();
+    if (index === -1) {
+      return file;
+    }
 
-    },
+    return file.substring(0, index);
+  },
 
-    filename(path = "") {
+  isJson(filename = "") {
+    return this.extension(filename) === "json";
+  },
 
-        return path.split("/").pop() ?? "";
-
-    },
-
-    filenameWithoutExtension(path = "") {
-
-        const file = this.filename(path);
-
-        const index = file.lastIndexOf(".");
-
-        if (index === -1) {
-            return file;
-        }
-
-        return file.substring(0, index);
-
-    },
-
-    isJson(filename = "") {
-
-        return this.extension(filename) === "json";
-
-    },
-
-    isImage(filename = "") {
-
-        return [
-            "png",
-            "jpg",
-            "jpeg",
-            "gif",
-            "webp",
-        ].includes(
-            this.extension(filename)
-        );
-
-    },
-
+  isImage(filename = "") {
+    return ["png", "jpg", "jpeg", "gif", "webp"].includes(
+      this.extension(filename),
+    );
+  },
 };
 
 export default FileUtils;

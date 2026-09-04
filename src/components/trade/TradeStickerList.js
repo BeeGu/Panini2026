@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 import TradeStickerCard from "./TradeStickerCard";
 
 export default function TradeStickerList({ stickers, type, onPress }) {

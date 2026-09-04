@@ -1,80 +1,68 @@
-
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";
 
 import Spacing from "../../theme/spacing";
 
-export default function StickerNotesCard({
-    sticker,
-}) {
+export default function StickerNotesCard({ sticker }) {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
 
-    const { colors } = useTheme();
+  const hasNotes = sticker.notes?.trim();
 
-    const hasNotes =
-        sticker.notes?.trim();
+  return (
+    <View
+      style={[
+        styles.card,
+        {
+          backgroundColor: colors.card,
+          borderColor: colors.border,
+        },
+      ]}
+    >
+      <Text
+        style={[
+          styles.title,
+          {
+            color: colors.text,
+          },
+        ]}
+      >
+        {t("sticker.notes")}
+      </Text>
 
-    return (
-
-        <View
-            style={[
-                styles.card,
-                {
-                    backgroundColor: colors.card,
-                    borderColor: colors.border,
-                },
-            ]}
-        >
-
-            <Text
-                style={[
-                    styles.title,
-                    {
-                        color: colors.text,
-                    },
-                ]}
-            >
-                Notes
-            </Text>
-
-
-            <Text
-                style={[
-                    styles.notes,
-                    {
-                        color: hasNotes
-                            ? colors.text
-                            : colors.textMuted,
-                    },
-                ]}
-            >
-                {hasNotes ? sticker.notes : "No notes"}
-            </Text>
-
-        </View>
-
-    );
+      <Text
+        style={[
+          styles.notes,
+          {
+            color: hasNotes ? colors.text : colors.textMuted,
+          },
+        ]}
+      >
+        {hasNotes ? sticker.notes : t("sticker.noNotes")}
+      </Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  card: {
+    marginHorizontal: Spacing.md,
+    marginBottom: Spacing.lg,
+    padding: Spacing.lg,
+    borderRadius: 14,
+    borderWidth: 1,
+    elevation: 2,
+  },
 
-    card: {
-        marginHorizontal: Spacing.md,
-        marginBottom: Spacing.lg,
-        padding: Spacing.lg,
-        borderRadius: 14,
-        borderWidth: 1,
-        elevation: 2,
-    },
+  title: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginBottom: Spacing.md,
+  },
 
-    title: {
-        fontSize: 18,
-        fontWeight: "700",
-        marginBottom: Spacing.md,
-    },
-
-    notes: {
-        lineHeight: 22,
-    },
-
+  notes: {
+    lineHeight: 22,
+  },
 });

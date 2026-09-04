@@ -6,4 +6,3 @@ import StickerContext from "../context/StickerContext";
 export default function useStickers() {
   return useContext(StickerContext);
 }
-

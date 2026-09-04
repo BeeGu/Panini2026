@@ -1,5 +1,4 @@
-// ⭐️ Refactored
-
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";
@@ -10,36 +9,41 @@ import Spacing from "../../theme/spacing";
 
 export default function StatGrid({ stats }) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   const rows = [
     [
       {
         icon: "checkmark-circle-outline",
         color: colors.success,
-        title: "Owned",
+        title: t("statistics.owned"),
         value: stats.owned,
-        subtitle: `of ${stats.total}`,
+        subtitle: t("statistics.ofTotal", {
+          total: stats.total,
+        }),
       },
       {
         icon: "ellipse-outline",
         color: colors.warning,
-        title: "Missing",
+        title: t("statistics.missing"),
         value: stats.missing,
-        subtitle: `${stats.completion}% complete`,
+        subtitle: t("statistics.completePercentage", {
+          percentage: stats.completion,
+        }),
       },
     ],
     [
       {
         icon: "copy-outline",
         color: colors.primary,
-        title: "Duplicates",
+        title: t("statistics.duplicates"),
         value: stats.duplicates,
-        subtitle: "Available for trade",
+        subtitle: t("statistics.availableForTrade"),
       },
       {
         icon: "stats-chart-outline",
         color: colors.primary,
-        title: "Completion",
+        title: t("statistics.completion"),
         value: `${stats.completion}%`,
         subtitle: `${stats.owned}/${stats.total}`,
       },

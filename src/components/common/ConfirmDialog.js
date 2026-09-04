@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Modal, View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -18,10 +19,10 @@ export default function ConfirmDialog({
   icon,
   iconColor,
 
-  confirmText = "Confirm",
+  confirmText,
   confirmVariant = "primary",
 
-  cancelText = "Cancel",
+  cancelText,
   cancelVariant = "secondary",
 
   showCloseButton = false,
@@ -29,7 +30,11 @@ export default function ConfirmDialog({
   onConfirm,
   onCancel,
 }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
+
+  const resolvedConfirmText = confirmText ?? t("common.confirm");
+  const resolvedCancelText = cancelText ?? t("common.cancel");
 
   return (
     <Modal visible={visible} transparent animationType="fade">
@@ -79,13 +84,13 @@ export default function ConfirmDialog({
 
           <View style={styles.buttons}>
             <Button
-              title={cancelText}
+              title={resolvedCancelText}
               variant={cancelVariant}
               onPress={onCancel}
             />
 
             <Button
-              title={confirmText}
+              title={resolvedConfirmText}
               variant={confirmVariant}
               onPress={onConfirm}
             />

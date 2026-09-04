@@ -3,11 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import AlbumContext from "./AlbumContext";
 import AlbumService from "../services/AlbumService";
 import StatisticsService from "../services/StatisticsService";
+import AchievementService from "../services/AchievementService";
 import { FILTERS } from "../constants/filters";
 import filterStickers from "../utils/filterStickers";
 import groupAlbum from "../utils/groupAlbum";
 import groupBySectionAndTeam from "../utils/groupBySectionAndTeam";
-import AchievementService from "../services/AchievementService";
+import groupExtraStickers from "../utils/groupExtraStickers";
 
 export default function AlbumProvider({ children }) {
   const [stickers, setStickers] = useState([]);
@@ -38,7 +39,6 @@ export default function AlbumProvider({ children }) {
     reload();
   }
 
-  // ⚠️ toggleSticker <=> updateSticker
   function updateSticker(data) {
     AlbumService.updateSticker(data);
     reload();
@@ -64,19 +64,23 @@ export default function AlbumProvider({ children }) {
     reload();
   }
 
-  const stats = useMemo(() => {
-    return StatisticsService.calculateAlbum(stickers);
+  const normalStickers = useMemo(() => {
+    return stickers.filter((sticker) => sticker.section_code !== "EXTRA");
   }, [stickers]);
 
-  const filteredStickers = useMemo(() => {
-    return filterStickers(stickers, search, filter);
-  }, [stickers, search, filter]);
+  const extraStickers = useMemo(() => {
+    return groupExtraStickers(
+      stickers.filter((sticker) => sticker.section_code === "EXTRA"),
+    );
+  }, [stickers]);
 
-  // function getSticker(id) {
-  //   return stickers.find(
-  //       sticker => sticker.id === id
-  //   );
-  // }
+  const stats = useMemo(() => {
+    return StatisticsService.calculateAlbum(normalStickers);
+  }, [normalStickers]);
+
+  const filteredStickers = useMemo(() => {
+    return filterStickers(normalStickers, search, filter);
+  }, [normalStickers, search, filter]);
 
   const stickerMap = useMemo(() => {
     return new Map(stickers.map((s) => [s.id, s]));
@@ -113,18 +117,22 @@ export default function AlbumProvider({ children }) {
 
   // trade
   const duplicateStickers = useMemo(() => {
-    return stickers
+    return normalStickers
       .filter((s) => s.duplicates > 0)
       .sort((a, b) => {
-        if (b.duplicates !== a.duplicates) return b.duplicates - a.duplicates;
+        if (b.duplicates !== a.duplicates) {
+          return b.duplicates - a.duplicates;
+        }
 
         return a.number - b.number;
       });
-  }, [stickers]);
+  }, [normalStickers]);
 
   const missingStickers = useMemo(() => {
-    return stickers.filter((s) => !s.owned).sort((a, b) => a.number - b.number);
-  }, [stickers]);
+    return normalStickers
+      .filter((s) => !s.owned)
+      .sort((a, b) => a.number - b.number);
+  }, [normalStickers]);
 
   const tradeSummary = useMemo(() => {
     return {
@@ -142,12 +150,14 @@ export default function AlbumProvider({ children }) {
   }, [filteredStickers]);
 
   const groupedDuplicates = useMemo(() => {
-    return groupBySectionAndTeam(stickers.filter((s) => s.duplicates > 0));
-  }, [stickers]);
+    return groupBySectionAndTeam(
+      normalStickers.filter((s) => s.duplicates > 0),
+    );
+  }, [normalStickers]);
 
   const groupedMissing = useMemo(() => {
-    return groupBySectionAndTeam(stickers.filter((s) => !s.owned));
-  }, [stickers]);
+    return groupBySectionAndTeam(normalStickers.filter((s) => !s.owned));
+  }, [normalStickers]);
 
   // settings
   const generalStats = useMemo(() => {
@@ -163,42 +173,6 @@ export default function AlbumProvider({ children }) {
     });
   }, [stats, teamProgress, sectionProgress]);
 
-  // const teamCompletion = useMemo(() => {
-  //   return StatisticsService.getCompletionByTeam(stickers);
-  // }, [stickers]);
-
-  // const sectionCompletion = useMemo(() => {
-  //   return StatisticsService.getCompletionBySection(stickers);
-  // }, [stickers]);
-
-  // const chartData = useMemo(
-  //   () => ({
-  //     completion: StatisticsService.getCompletionDistribution(stickers),
-  //     duplicates: StatisticsService.getDuplicateDistribution(stickers),
-  //     topTeams: StatisticsService.getTopTeams(teamProgress),
-  //     worstTeams: StatisticsService.getWorstTeams(teamProgress),
-  //     sections: StatisticsService.getSectionChart(sectionProgress),
-  //   }),
-  //   [stickers, teamProgress, sectionProgress],
-  // );
-
-  // const chartData = useMemo(() => {
-  //   const teams = StatisticsService.getCompletionByTeam(stickers);
-  //   const sections = StatisticsService.getCompletionBySection(stickers);
-
-  //   return {
-  //     completion: StatisticsService.getCompletionDistribution(stickers),
-
-  //     duplicates: StatisticsService.getDuplicateDistribution(stickers),
-
-  //     topTeams: StatisticsService.getTopTeams(teams),
-
-  //     worstTeams: StatisticsService.getWorstTeams(teams),
-
-  //     sections: StatisticsService.getSectionChart(sections),
-  //   };
-  // }, [stickers]);
-
   const chartData = useMemo(() => {
     const topTeams = StatisticsService.getTopTeams(teamProgress);
 
@@ -210,6 +184,11 @@ export default function AlbumProvider({ children }) {
       sections: StatisticsService.getSectionChart(sectionProgress),
     };
   }, [stickers, teamProgress, sectionProgress]);
+
+  function toggleExtraSticker(id) {
+    AlbumService.toggleSticker(id);
+    reload();
+  }
 
   return (
     <AlbumContext.Provider
@@ -271,6 +250,10 @@ export default function AlbumProvider({ children }) {
         // sectionCompletion,
         achievements,
         chartData,
+
+        // extra stickers
+        extraStickers,
+        toggleExtraSticker,
       }}
     >
       {children}

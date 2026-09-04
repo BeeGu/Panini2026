@@ -4,23 +4,18 @@ import { useEffect, useState } from "react";
 import AlbumService from "../services/AlbumService";
 
 export default function useSticker(id) {
-    const [sticker, setSticker] = useState(null);
+  const [sticker, setSticker] = useState(null);
 
-    useEffect(() => {
-        load();
-    }, [id]);
+  useEffect(() => {
+    load();
+  }, [id]);
 
-    function load() {
+  function load() {
+    setSticker(AlbumService.getSticker(id));
+  }
 
-        setSticker(
-            AlbumService.getSticker(id)
-        );
-
-    }
-
-    return {
-        sticker,
-        reload: load,
-    };
-
+  return {
+    sticker,
+    reload: load,
+  };
 }

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { View, Text, StyleSheet } from "react-native";
 
 import useTheme from "../../hooks/useTheme";
@@ -6,7 +8,14 @@ import AchievementCard from "./AchievementCard";
 
 import Spacing from "../../theme/spacing";
 
-export default function AchievementsCard({ owned = 0, total = 0 }) {
+export default function AchievementsCard({
+  title,
+  subTitle,
+  owned = 0,
+  total = 0,
+}) {
+  const { t } = useTranslation();
+
   const { colors } = useTheme();
 
   const percentage = total > 0 ? (owned / total) * 100 : 0;
@@ -15,32 +24,32 @@ export default function AchievementsCard({ owned = 0, total = 0 }) {
     {
       id: 25,
       icon: "flag-outline",
-      title: "Getting Started",
-      description: "Collect 25% of the album",
+      title: t("achievements.gettingStarted.title"),
+      description: t("achievements.gettingStarted.description"),
       threshold: 25,
     },
 
     {
       id: 50,
       icon: "trophy-outline",
-      title: "Halfway There",
-      description: "Collect 50% of the album",
+      title: t("achievements.halfwayThere.title"),
+      description: t("achievements.halfwayThere.description"),
       threshold: 50,
     },
 
     {
       id: 75,
       icon: "medal-outline",
-      title: "Almost Complete",
-      description: "Collect 75% of the album",
+      title: t("achievements.almostComplete.title"),
+      description: t("achievements.almostComplete.description"),
       threshold: 75,
     },
 
     {
       id: 100,
       icon: "star-outline",
-      title: "Album Complete",
-      description: "Collect every sticker",
+      title: t("achievements.albumComplete.title"),
+      description: t("achievements.albumComplete.description"),
       threshold: 100,
     },
   ];
@@ -55,7 +64,7 @@ export default function AchievementsCard({ owned = 0, total = 0 }) {
           },
         ]}
       >
-        Achievements
+        {title}
       </Text>
 
       <Text
@@ -66,7 +75,7 @@ export default function AchievementsCard({ owned = 0, total = 0 }) {
           },
         ]}
       >
-        Track your collection milestones
+        {subTitle}
       </Text>
 
       {achievements.map((achievement) => {

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -17,6 +18,7 @@ export default function RestoreStoredBackupDialog({
   onRestore,
   onCancel,
 }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   if (!backup) return null;
@@ -24,12 +26,12 @@ export default function RestoreStoredBackupDialog({
   return (
     <ConfirmDialog
       visible={visible}
-      title="Restore backup"
+      title={t("backup.restoreBackup")}
       icon="refresh-circle-outline"
       iconColor={colors.primary}
-      confirmText="Restore"
+      confirmText={t("backup.restore")}
       confirmVariant="primary"
-      cancelText="Cancel"
+      cancelText={t("common.cancel")}
       showCloseButton
       onConfirm={onRestore}
       onCancel={onCancel}
@@ -38,7 +40,7 @@ export default function RestoreStoredBackupDialog({
         <Ionicons name="calendar-outline" size={20} color={colors.primary} />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          {formatRelativeDate(backup.createdAt)}
+          {formatRelativeDate(backup.createdAt, t)}
         </Text>
       </Row>
 
@@ -58,7 +60,7 @@ export default function RestoreStoredBackupDialog({
         />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          Owned: {backup.stats.owned}
+          {t("backup.owned")}: {backup.stats.owned}
         </Text>
       </Row>
 
@@ -70,7 +72,7 @@ export default function RestoreStoredBackupDialog({
         />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          Missing: {backup.stats.missing}
+          {t("backup.missing")}: {backup.stats.missing}
         </Text>
       </Row>
 
@@ -78,7 +80,7 @@ export default function RestoreStoredBackupDialog({
         <Ionicons name="gift-outline" size={20} color={colors.primary} />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          Duplicates: {backup.stats.duplicates}
+          {t("backup.duplicates")}: {backup.stats.duplicates}
         </Text>
       </Row>
 
@@ -90,7 +92,7 @@ export default function RestoreStoredBackupDialog({
           },
         ]}
       >
-        Your current collection will be replaced by this backup.
+        {t("backup.currentCollectionReplaced")}
       </Text>
     </ConfirmDialog>
   );

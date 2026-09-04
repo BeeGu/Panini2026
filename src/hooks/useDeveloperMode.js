@@ -1,11 +1,9 @@
 import useSettings from "./useSettings";
 
 export default function useDeveloperMode() {
+  const { developerMode } = useSettings();
 
-    const { developerMode } = useSettings();
-
-    return {
-        enabled: developerMode,
-    };
-
+  return {
+    enabled: developerMode,
+  };
 }

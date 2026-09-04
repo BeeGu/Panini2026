@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -18,6 +19,7 @@ export default function DeleteBackupDialog({
   onDelete,
   onCancel,
 }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   if (!backup) return null;
@@ -25,12 +27,12 @@ export default function DeleteBackupDialog({
   return (
     <ConfirmDialog
       visible={visible}
-      title="Delete backup"
+      title={t("backup.deleteTitle")}
       icon="trash-outline"
       iconColor={colors.danger}
-      confirmText="Delete"
+      confirmText={t("backup.deleteConfirm")}
       confirmVariant="danger"
-      cancelText="Cancel"
+      cancelText={t("common.cancel")}
       showCloseButton
       onConfirm={onDelete}
       onCancel={onCancel}
@@ -39,7 +41,7 @@ export default function DeleteBackupDialog({
         <Ionicons name="calendar-outline" size={20} color={colors.primary} />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          {formatRelativeDate(backup.createdAt)}
+          {formatRelativeDate(backup.createdAt, t)}
         </Text>
       </Row>
 
@@ -63,7 +65,9 @@ export default function DeleteBackupDialog({
         <Ionicons name="gift-outline" size={20} color={colors.warning} />
 
         <Text style={[styles.text, { color: colors.text }]}>
-          {backup.stats.duplicates} duplicates
+          {t("backup.duplicatesCount", {
+            count: backup.stats.duplicates,
+          })}
         </Text>
       </Row>
 
@@ -75,7 +79,7 @@ export default function DeleteBackupDialog({
           },
         ]}
       >
-        This backup file will be permanently deleted.
+        {t("backup.deleteWarning")}
       </Text>
     </ConfirmDialog>
   );

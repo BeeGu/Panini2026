@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -13,6 +14,7 @@ import tabIcons from "../constants/tabIcons";
 const Tab = createBottomTabNavigator();
 
 export default function BottomTabs() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   return (
@@ -43,15 +45,27 @@ export default function BottomTabs() {
         ),
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          title: t("navigation.home"),
+        }}
+      />
 
-      <Tab.Screen name="Album" component={AlbumScreen} />
+      <Tab.Screen
+        name="Album"
+        component={AlbumScreen}
+        options={{
+          title: t("navigation.album"),
+        }}
+      />
 
       <Tab.Screen
         name="Trade"
         component={TradeScreen}
         options={{
-          title: "Trade Center",
+          title: t("navigation.tradeCenter"),
         }}
       />
 
@@ -59,7 +73,7 @@ export default function BottomTabs() {
         name="Statistics"
         component={StatisticsScreen}
         options={{
-          title: "Statistics",
+          title: t("navigation.statistics"),
         }}
       />
 
@@ -67,10 +81,10 @@ export default function BottomTabs() {
         name="Settings"
         component={SettingsScreen}
         options={{
-          title: "Settings",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" color={color} size={size} />
-          ),
+          title: t("navigation.settings"),
+          // tabBarIcon: ({ color, size }) => (
+          //   <Ionicons name="settings-outline" color={color} size={size} />
+          // ),
         }}
       />
     </Tab.Navigator>

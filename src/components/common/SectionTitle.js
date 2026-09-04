@@ -1,4 +1,3 @@
-// ⭐️ Refactored
 /*
 În loc de:
 

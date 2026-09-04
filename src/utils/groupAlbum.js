@@ -1,83 +1,60 @@
 export default function groupAlbum(stickers) {
+  const sectionsMap = new Map();
 
-    const sectionsMap = new Map();
+  stickers.forEach((sticker) => {
+    let section = sectionsMap.get(sticker.section_id);
 
-    stickers.forEach(sticker => {
+    if (!section) {
+      section = {
+        id: sticker.section_id,
+        code: sticker.section_code,
+        name: sticker.section,
+        teams: new Map(),
+      };
 
-        let section = sectionsMap.get(sticker.section_id);
+      sectionsMap.set(section.id, section);
+    }
 
-        if (!section) {
+    let team = section.teams.get(sticker.team_id);
 
-            section = {
-                id: sticker.section_id,
-                code: sticker.section_code,
-                name: sticker.section,
-                teams: new Map(),
-            };
+    if (!team) {
+      team = {
+        id: sticker.team_id,
+        code: sticker.team_code,
+        iso2: sticker.team_iso2,
+        name: sticker.team,
+        stickers: [],
+        owned: 0,
+        total: 0,
+        duplicates: 0,
+      };
 
-            sectionsMap.set(section.id, section);
+      section.teams.set(team.id, team);
+    }
 
-        }
+    team.stickers.push(sticker);
+    team.total++;
 
-        let team = section.teams.get(sticker.team_id);
+    if (sticker.owned) team.owned++;
 
-        if (!team) {
+    team.duplicates += sticker.duplicates ?? 0;
+  });
 
-            team = {
-                id: sticker.team_id,
-                code: sticker.team_code,
-                iso2: sticker.team_iso2,
-                name: sticker.team,
-                stickers: [],
-                owned: 0,
-                total: 0,
-                duplicates: 0,
-            };
+  return [...sectionsMap.values()].map((section) => {
+    const teams = [...section.teams.values()];
 
-            section.teams.set(team.id, team);
+    return {
+      id: section.id,
+      code: section.code,
+      name: section.name,
 
-        }
+      owned: teams.reduce((s, t) => s + t.owned, 0),
 
-        team.stickers.push(sticker);
-        team.total++;
+      total: teams.reduce((s, t) => s + t.total, 0),
 
-        if (sticker.owned)
-            team.owned++;
+      duplicates: teams.reduce((s, t) => s + t.duplicates, 0),
 
-        team.duplicates += sticker.duplicates ?? 0;
-
-    });
-
-    return [...sectionsMap.values()]
-        .map(section => {
-
-            const teams = [...section.teams.values()];
-
-            return {
-
-                id: section.id,
-                code: section.code,
-                name: section.name,
-
-                owned: teams.reduce(
-                    (s, t) => s + t.owned,
-                    0
-                ),
-
-                total: teams.reduce(
-                    (s, t) => s + t.total,
-                    0
-                ),
-
-                duplicates: teams.reduce(
-                    (s, t) => s + t.duplicates,
-                    0
-                ),
-
-                teams,
-
-            };
-
-        });
-
+      teams,
+    };
+  });
 }

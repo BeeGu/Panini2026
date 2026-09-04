@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -7,6 +8,7 @@ import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
 export default function BackupEmpty() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   return (
@@ -21,7 +23,7 @@ export default function BackupEmpty() {
           },
         ]}
       >
-        No backups yet
+        {t("backup.noBackups")}
       </Text>
 
       <Text
@@ -32,7 +34,7 @@ export default function BackupEmpty() {
           },
         ]}
       >
-        Create your first backup to keep your collection safe.
+        {t("backup.createFirstBackup")}
       </Text>
     </View>
   );

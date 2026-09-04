@@ -1,16 +1,6 @@
-// ⭐️ Refactored
-// TradeScreen
-//  ├── ScreenHeader
-//  ├── TradeSummaryCard
-//  ├── SectionTitle
-//  ├── TradeSectionAccordion
-//  │    └── TradeTeamAccordion
-//  │         └── TradeStickerList/Card
-//  ├── SectionTitle
-//  └── TradeExportButtons
-// ⭐️ Refactored
-
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import { ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -28,10 +18,15 @@ import TradeSectionAccordion from "../components/trade/TradeSectionAccordion";
 import TradeExportButtons, {
   TRADE_MODES,
 } from "../components/trade/TradeExportButtons";
+import ImportedTradeCard from "../components/trade/ImportedTradeCard";
 
 import TradeExportService from "../services/TradeExportService";
+import TradeService from "../services/TradeService";
+
+import SettingsService from "../services/SettingsService";
 
 export default function TradeScreen() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const { stickers, duplicateStickers, missingStickers, tradeSummary } =
@@ -43,13 +38,21 @@ export default function TradeScreen() {
   const toast = useToast();
 
   const [tradeMode, setTradeMode] = useState(TRADE_MODES.BOTH);
+  const [importedTrade, setImportedTrade] = useState(null);
 
   const subtitle =
     tradeMode === TRADE_MODES.DUPLICATES
-      ? `${tradeSummary.duplicates} duplicates available`
+      ? t("trade.duplicatesAvailable", {
+          count: tradeSummary.duplicates,
+        })
       : tradeMode === TRADE_MODES.MISSING
-        ? `${tradeSummary.missing} stickers missing`
-        : `${tradeSummary.duplicates} duplicates • ${tradeSummary.missing} missing`;
+        ? t("trade.stickersMissing", {
+            count: tradeSummary.missing,
+          })
+        : t("trade.duplicatesAndMissing", {
+            duplicates: tradeSummary.duplicates,
+            missing: tradeSummary.missing,
+          });
 
   async function handleCopy() {
     try {
@@ -57,14 +60,14 @@ export default function TradeScreen() {
 
       toast.show({
         type: "success",
-        message: "Trade list copied to clipboard.",
+        message: t("trade.copySuccess"),
       });
     } catch (error) {
       console.error("Trade copy error:", error);
 
       toast.show({
         type: "error",
-        message: "Could not copy trade list.",
+        message: t("trade.copyError"),
       });
     }
   }
@@ -75,14 +78,55 @@ export default function TradeScreen() {
 
       toast.show({
         type: "success",
-        message: "Trade list shared.",
+        message: t("trade.shareSuccess"),
       });
     } catch (error) {
       console.error("Trade share error:", error);
 
       toast.show({
         type: "error",
-        message: "Could not share trade list.",
+        message: t("trade.shareError"),
+      });
+    }
+  }
+
+  async function handleShareJson() {
+    try {
+      const userName = SettingsService.getTradeUserName();
+
+      await TradeExportService.exportJson(stickers, userName);
+
+      toast.show({
+        type: "success",
+        message: t("trade.shareSuccess"),
+      });
+    } catch (error) {
+      console.error("Trade JSON share error:", error);
+
+      toast.show({
+        type: "error",
+        message: t("trade.shareError"),
+      });
+    }
+  }
+
+  async function handleImport() {
+    try {
+      const trade = await TradeService.importTrade();
+
+      if (!trade) {
+        return;
+      }
+
+      const match = TradeService.matchTrade(trade, stickers);
+
+      setImportedTrade(match);
+    } catch (error) {
+      console.error("Trade import error:", error);
+
+      toast.show({
+        type: "error",
+        message: error.message || t("trade.importError"),
       });
     }
   }
@@ -96,8 +140,8 @@ export default function TradeScreen() {
       }}
     >
       <ScreenHeader
-        title="Trade Center"
-        icon="swap-horizontal-outline"
+        title={t("trade.title")}
+        icon="git-compare-outline"
         subtitle={subtitle}
       />
 
@@ -105,7 +149,9 @@ export default function TradeScreen() {
         <TradeSummaryCard summary={tradeSummary} />
 
         <ExpandableCard
-          title={`Duplicates (${tradeSummary.duplicates})`}
+          title={t("trade.duplicatesCount", {
+            count: tradeSummary.duplicates,
+          })}
           icon="gift"
           initiallyExpanded={false}
           contentPadding={false}
@@ -120,7 +166,9 @@ export default function TradeScreen() {
         </ExpandableCard>
 
         <ExpandableCard
-          title={`Missing (${tradeSummary.missing})`}
+          title={t("trade.missingCount", {
+            count: tradeSummary.missing,
+          })}
           icon="alert-circle"
           initiallyExpanded={false}
           contentPadding={false}
@@ -139,7 +187,11 @@ export default function TradeScreen() {
           onModeChange={setTradeMode}
           onCopy={handleCopy}
           onShare={handleShare}
+          onShareJson={handleShareJson}
+          onImport={handleImport}
         />
+
+        {importedTrade && <ImportedTradeCard trade={importedTrade} />}
       </ScrollView>
     </SafeAreaView>
   );

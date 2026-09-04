@@ -61,8 +61,8 @@
     },
     {
         "sort_order": 13,
-        "code": "LOGO",
-        "name": "Logo"
+        "code": "INTRO",
+        "name": "Album Introduction"
     },
     {
         "sort_order": 14,
@@ -71,12 +71,12 @@
     },
     {
         "sort_order": 15,
-        "code": "TEAMS",
-        "name": "National Teams"
+        "code": "COCA-COLA",
+        "name": "Coca-Cola"
     },
     {
         "sort_order": 16,
-        "code": "COCA-COLA",
-        "name": "Coca-Cola"
+        "code": "EXTRA",
+        "name": "PANINI Extra"
     }
 ]

@@ -1,4 +1,4 @@
-
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, Image } from "react-native";
 
 import Flag from "../common/Flag";
@@ -12,145 +12,148 @@ import { formatStickerNumber } from "../../utils/formatters";
 
 import ImageService from "../../services/ImageService";
 
-export default function StickerHero({
-    sticker,
-}) {
+export default function StickerHero({ sticker }) {
+  const { t } = useTranslation();
+  const { colors } = useTheme();
 
-    const { colors } = useTheme();
+  const image = ImageService.getStickerImage(sticker);
 
-    const image = ImageService.getStickerImage(sticker);
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: colors.card,
+        },
+      ]}
+    >
+      {image ? (
+        <Image source={image} style={styles.image} resizeMode="contain" />
+      ) : (
+        <Flag iso2={sticker.team_iso2} size={90} />
+      )}
 
-    return (
+      <Text
+        style={[
+          styles.number,
+          {
+            color: colors.primary,
+          },
+        ]}
+      >
+        {formatStickerNumber(sticker.number)}
+      </Text>
 
+      <Text
+        style={[
+          styles.name,
+          {
+            color: colors.text,
+          },
+        ]}
+      >
+        {sticker.name}
+      </Text>
+
+      <Text
+        style={[
+          styles.team,
+          {
+            color: colors.textSecondary,
+          },
+        ]}
+      >
+        {sticker.team}
+      </Text>
+
+      {!!sticker.owned && (
         <View
-            style={[
-                styles.container,
-                {
-                    backgroundColor: colors.card,
-                },
-            ]}
+          style={[
+            styles.badgeContent,
+            {
+              backgroundColor: colors.success,
+            },
+          ]}
         >
-            {image ? (
-                <Image
-                    source={image}
-                    style={styles.image}
-                    resizeMode="contain"
-                />
-            ) : (
-                <Flag
-                    iso2={sticker.team_iso2}
-                    size={90}
-                />
-            )}
+          <Text
+            style={[
+              styles.checkmark,
+              {
+                color: colors.surface,
+              },
+            ]}
+          >
+            ✓
+          </Text>
 
-            <Text
-                style={[
-                    styles.number,
-                    {
-                        color: colors.primary,
-                    },
-                ]}
-            >
-                {formatStickerNumber(sticker.number)}
-            </Text>
-
-
-            <Text
-                style={[
-                    styles.name,
-                    {
-                        color: colors.text,
-                    },
-                ]}
-            >
-                {sticker.name}
-            </Text>
-
-
-            <Text
-                style={[
-                    styles.team,
-                    {
-                        color: colors.textSecondary,
-                    },
-                ]}
-            >
-                {sticker.team}
-            </Text>
-
-
-            {!!sticker.owned && (
-                <View
-                    style={[
-                        styles.badge,
-                        {
-                            backgroundColor: colors.success,
-                        },
-                    ]}
-                >
-                    <Text
-                        style={[
-                            styles.badgeText,
-                            {
-                                color: colors.surface,
-                            },
-                        ]}
-                    >
-                        ✓ Collected
-                    </Text>
-
-                </View>
-
-            )}
-
+          <Text
+            style={[
+              styles.badgeText,
+              {
+                color: colors.surface,
+              },
+            ]}
+          >
+            {t("sticker.collected")}
+          </Text>
         </View>
-
-    );
+      )}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    alignItems: "center",
+    paddingVertical: 24,
+    marginBottom: Spacing.md,
+    borderBottomLeftRadius: 24,
+    borderBottomRightRadius: 24,
+  },
 
-    container: {
-        alignItems: "center",
-        paddingVertical: 24,
-        marginBottom: Spacing.md,
-        borderBottomLeftRadius: 24,
-        borderBottomRightRadius: 24,
-    },
+  number: {
+    marginTop: 16,
+    fontSize: Typography.h2,
+    fontWeight: "700",
+  },
 
-    number: {
-        marginTop: 16,
-        fontSize: Typography.h2,
-        fontWeight: "700",
-    },
+  name: {
+    marginTop: 8,
+    fontSize: Typography.h1,
+    fontWeight: "700",
+    textAlign: "center",
+  },
 
-    name: {
-        marginTop: 8,
-        fontSize: Typography.h1,
-        fontWeight: "700",
-        textAlign: "center",
-    },
+  team: {
+    marginTop: 4,
+    fontSize: Typography.body,
+  },
 
-    team: {
-        marginTop: 4,
-        fontSize: Typography.body,
-    },
+  // Badge container
+  badgeContent: {
+    marginTop: 16,
+    borderRadius: 20,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
 
-    badge: {
-        marginTop: 16,
-        borderRadius: 20,
-        paddingHorizontal: 16,
-        paddingVertical: 8,
-    },
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 
-    badgeText: {
-        fontWeight: "700",
-    },
+  checkmark: {
+    marginRight: 6,
+    fontSize: 16,
+    fontWeight: "700",
+  },
 
-    image: {
-        width: 150,
-        height: 210,
-        marginBottom: 16,
-    },
+  badgeText: {
+    fontWeight: "700",
+  },
 
+  image: {
+    width: 150,
+    height: 210,
+    marginBottom: 16,
+  },
 });

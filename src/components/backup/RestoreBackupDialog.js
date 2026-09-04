@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -17,6 +18,7 @@ export default function RestoreBackupDialog({
   onRestore,
   onCancel,
 }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   if (!backup) return null;
@@ -45,17 +47,17 @@ export default function RestoreBackupDialog({
   return (
     <ConfirmDialog
       visible={visible}
-      title="Restore backup"
+      title={t("backup.restoreBackup")}
       icon="refresh-circle-outline"
       iconColor={colors.primary}
-      confirmText="Restore"
+      confirmText={t("backup.restore")}
       confirmVariant="primary"
       showCloseButton={true}
       onConfirm={onRestore}
       onCancel={onCancel}
     >
       <InfoRow icon="time-outline" color={colors.primary}>
-        {formatRelativeDate(backup.createdAt)}
+        {formatRelativeDate(backup.createdAt, t)}
       </InfoRow>
 
       <InfoRow icon="albums-outline" color={colors.primary}>
@@ -63,15 +65,15 @@ export default function RestoreBackupDialog({
       </InfoRow>
 
       <InfoRow icon="checkmark-circle-outline" color={colors.success}>
-        Owned: {backup.stats.owned}
+        {t("backup.owned")}: {backup.stats.owned}
       </InfoRow>
 
       <InfoRow icon="alert-circle-outline" color={colors.warning}>
-        Missing: {backup.stats.missing}
+        {t("backup.missing")}: {backup.stats.missing}
       </InfoRow>
 
       <InfoRow icon="gift-outline" color={colors.primary}>
-        Duplicates: {backup.stats.duplicates}
+        {t("backup.duplicates")}: {backup.stats.duplicates}
       </InfoRow>
 
       <Row style={styles.warningContainer}>
@@ -85,7 +87,7 @@ export default function RestoreBackupDialog({
             },
           ]}
         >
-          Your current collection will be replaced by this backup.
+          {t("backup.currentCollectionReplaced")}
         </Text>
       </Row>
     </ConfirmDialog>

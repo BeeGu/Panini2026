@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -5,6 +6,7 @@ import useTheme from "../../hooks/useTheme";
 import Spacing from "../../theme/spacing";
 
 export default function RecentActivity({ stickers, color }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
   const iconColor = color ?? colors.primary;
 
@@ -26,7 +28,7 @@ export default function RecentActivity({ stickers, color }) {
           },
         ]}
       >
-        Recent activity
+        {t("home.recentActivity")}
       </Text>
 
       {stickers.length === 0 ? (
@@ -38,7 +40,7 @@ export default function RecentActivity({ stickers, color }) {
             },
           ]}
         >
-          No stickers collected yet.
+          {t("home.noStickersCollected")}
         </Text>
       ) : (
         stickers.map((sticker) => (

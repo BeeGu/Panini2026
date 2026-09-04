@@ -1,11 +1,12 @@
-
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import useToast from "./useToast";
 
 import BackupService from "../services/BackupService";
 
 export default function useBackup() {
+  const { t } = useTranslation();
   const toast = useToast();
 
   const [backups, setBackups] = useState([]);
@@ -50,7 +51,7 @@ export default function useBackup() {
     try {
       await BackupService.createBackup();
 
-      toast.success("Backup created.");
+      toast.success(t("backup.created"));
 
       await reload();
     } catch (e) {
@@ -80,7 +81,7 @@ export default function useBackup() {
 
       closeDialog();
 
-      toast.success("Collection imported.");
+      toast.success(t("backup.imported"));
     } catch (e) {
       toast.error(e.message);
     }
@@ -93,7 +94,7 @@ export default function useBackup() {
 
       reloadAlbum?.();
 
-      toast.success("Backup restored.");
+      toast.success(t("backup.restored"));
     } catch (e) {
       toast.error(e.message);
     }
@@ -108,7 +109,7 @@ export default function useBackup() {
 
       closeDialog();
 
-      toast.success("Backup restored.");
+      toast.success(t("backup.restored"));
     } catch (e) {
       toast.error(e.message);
     }
@@ -119,7 +120,7 @@ export default function useBackup() {
     try {
       await BackupService.deleteBackup(uri);
 
-      toast.success("Backup deleted.");
+      toast.success(t("backup.deleted"));
 
       await reload();
     } catch (e) {
@@ -134,7 +135,7 @@ export default function useBackup() {
 
       closeDialog();
 
-      toast.success("Backup deleted.");
+      toast.success(t("backup.deleted"));
 
       await reload();
     } catch (e) {

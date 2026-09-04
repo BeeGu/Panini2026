@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -9,6 +10,7 @@ import Spacing from "../../theme/spacing";
 import Typography from "../../theme/typography";
 
 export default function BackupStats({ backups = [] }) {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const totalBackups = backups.length;
@@ -51,7 +53,7 @@ export default function BackupStats({ backups = [] }) {
               },
             ]}
           >
-            Backups
+            {t("backup.backups")}
           </Text>
         </View>
       </View>
@@ -79,7 +81,7 @@ export default function BackupStats({ backups = [] }) {
               },
             ]}
           >
-            Total size
+            {t("backup.totalSize")}
           </Text>
         </View>
       </View>

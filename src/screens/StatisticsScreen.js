@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -23,6 +24,7 @@ import TeamRanking from "../components/statistics/TeamRanking";
 import SectionRanking from "../components/statistics/SectionRanking";
 
 export default function StatisticsScreen() {
+  const { t } = useTranslation();
   const { colors } = useTheme();
 
   const {
@@ -33,8 +35,6 @@ export default function StatisticsScreen() {
     achievements,
     chartData,
   } = useAlbum();
-
-  // const { stats, chartData, achievements, recentActivity } = useAlbum();
 
   const completedAchievements = achievements.filter(
     (achievement) => achievement.completed,
@@ -51,9 +51,9 @@ export default function StatisticsScreen() {
       ]}
     >
       <ScreenHeader
-        title="Statistics"
+        title={t("statistics.title")}
+        subtitle={t("statistics.collectionOverview")}
         icon="stats-chart-outline"
-        subtitle="Collection overview"
       />
 
       <ScrollView
@@ -83,8 +83,10 @@ export default function StatisticsScreen() {
         <StatGrid stats={stats} />
 
         <ExpandableCard
-          title="Teams"
-          subtitle={`${teamProgress.length} national teams`}
+          title={t("statistics.teams")}
+          subtitle={t("statistics.nationalTeams", {
+            count: teamProgress.length,
+          })}
           icon="flag-outline"
           rightContent={
             <Badge text={teamProgress.length} color={colors.primary} />
@@ -103,8 +105,10 @@ export default function StatisticsScreen() {
         </ExpandableCard>
 
         <ExpandableCard
-          title="Sections"
-          subtitle={`${sectionProgress.length} sections`}
+          title={t("statistics.sections")}
+          subtitle={t("statistics.sectionsCount", {
+            count: sectionProgress.length,
+          })}
           icon="albums-outline"
           scrollable
           maxHeight={300}
@@ -120,8 +124,10 @@ export default function StatisticsScreen() {
         </ExpandableCard>
 
         <ExpandableCard
-          title="Achievements"
-          subtitle={`${completedAchievements} completed`}
+          title={t("statistics.achievements")}
+          subtitle={t("statistics.completed", {
+            count: completedAchievements,
+          })}
           icon="trophy-outline"
           scrollable
         >
@@ -131,8 +137,8 @@ export default function StatisticsScreen() {
         <DuplicatesBarChart data={chartData.duplicates} />
 
         <ExpandableCard
-          title="Top teams"
-          subtitle="Visual statistics"
+          title={t("statistics.topTeams")}
+          subtitle={t("statistics.visualStatistics")}
           icon="podium-outline"
           scrollable
         >
@@ -140,8 +146,8 @@ export default function StatisticsScreen() {
         </ExpandableCard>
 
         <ExpandableCard
-          title="Recent activity"
-          subtitle="Visual activity"
+          title={t("statistics.recentActivity")}
+          subtitle={t("statistics.visualActivity")}
           icon="time-outline"
           scrollable
         >
